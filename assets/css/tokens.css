@@ -1,0 +1,284 @@
+/* =========================================
+   强匠锁店 v2.0 - CSS Design System
+   Global Tokens & Bootstrap 5 Integration
+   ========================================= */
+
+:root {
+  /* ------ COLOR TOKENS (由 Skin 層覆蓋) ------ */
+  --text: #0b1220;
+  --text-secondary: #64748b;
+  --muted: #94a3b8;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --card-bg: #ffffff;
+  --on-surface: #0b1220;
+  --primary: #2f80ed;
+  --primary-light: #60a5fa;
+  --primary-dark: #1e40af;
+  --accent: #2f80ed;
+  --border: #e5e7eb;
+
+  /* ------ GLOBAL SPACING ------ */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* ------ GLOBAL BORDER RADIUS ------ */
+  --radius: 16px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* ------ GLOBAL SHADOWS ------ */
+  --shadow-1: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.15);
+
+  /* ------ CTA BUTTON COLORS (全站統一，不因 Skin 變動) ------ */
+  --cta-phone: #16a34a; /* Green - Call to Action */
+  --cta-line: #06b6d4;  /* Cyan - LINE Contact */
+  --cta-phone-hover: #15803d;
+  --cta-line-hover: #0891b2;
+
+  /* 品牌主色：救援黃 (高能見度、緊急感) */
+  --brand-primary: #FFC107; /* Bootstrap Warning Yellow */
+  --brand-primary-hover: #FFCA2C;
+  
+  /* 品牌輔助色：專業黑 (穩重、對比) */
+  --brand-dark: #212529; 
+  
+  /* 圓角與陰影 (保持質感) */
+  --radius: 8px; /*稍微方正一點，強調俐落速度感 */
+  --shadow-card: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* CTA 按鈕定義 */
+  --cta-phone-bg: #DC3545; /* 只有電話按鈕用紅色，代表最緊急 */
+  --cta-phone-text: #FFFFFF;
+  
+  --cta-line-bg: #06C755; /* LINE 官方綠 */
+  --cta-line-text: #FFFFFF;
+
+
+  /* ------ TYPOGRAPHY ------ */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ------ TRANSITIONS ------ */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+
+  /* ------ Z-INDEX SCALE ------ */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  --z-bottom-cta: 99;
+}
+
+/* =========================================
+   TYPOGRAPHY BASE
+   ========================================= */
+
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-normal);
+  color: var(--text, #1f2937);
+  background-color: var(--bg, #ffffff);
+  transition: background-color var(--transition-base),
+              color var(--transition-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--spacing-lg);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+/* =========================================
+   BUTTON STYLES
+   ========================================= */
+
+.btn {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: var(--font-size-body);
+  transition: all var(--transition-base);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--cta-phone);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--cta-phone-hover);
+  text-decoration: none;
+  color: white;
+  box-shadow: var(--shadow-card-hover);
+}
+
+.btn-secondary {
+  background-color: var(--cta-line);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: var(--cta-line-hover);
+  text-decoration: none;
+  color: white;
+  box-shadow: var(--shadow-card-hover);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary, #2F80ED);
+  color: var(--primary, #2F80ED);
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary, #2F80ED);
+  color: white;
+}
+
+/* =========================================
+   CARD COMPONENT
+   ========================================= */
+
+.card {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-base);
+  background-color: var(--card-bg, #ffffff);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+
+/* =========================================
+   UTILITIES
+   ========================================= */
+
+.rounded {
+  border-radius: var(--radius) !important;
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card) !important;
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.transition-base {
+  transition: all var(--transition-base);
+}
+
+/* 實用類別 */
+.text-brand { color: var(--brand-primary); }
+.bg-brand { background-color: var(--brand-primary); }
+
+/* =========================================
+   RESPONSIVE UTILITIES
+   ========================================= */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: 0.95rem;
+  }
+}
+
+/* Social Media Section Styles */
+.bg-gradient-dark {
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.group-hover-effect {
+  transition: transform 0.3s ease;
+}
+
+.group-hover-effect:hover {
+  transform: translateY(-5px);
+}
+
+/* 播放按鈕脈衝動畫 */
+.pulse-anim {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+}
+
+/* Footer Hover Effects */
+.hover-text-white:hover {
+  color: #ffffff !important;
+  transition: color 0.2s ease;
+}

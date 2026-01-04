@@ -1,0 +1,291 @@
+/* =========================================
+   Service Page Specific Styles
+   ========================================= */
+
+/* ===== HERO SECTION ===== */
+
+.hero-section {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, rgba(47, 128, 237, 0.05) 0%, transparent 100%);
+}
+
+.hero-section h1 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section .lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-secondary, #666);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1rem;
+  }
+}
+
+/* ===== FEATURE CARDS (PAIN POINTS) ===== */
+
+.pain-points .card {
+  transition: all var(--transition-base);
+  border: none;
+  box-shadow: var(--shadow-card);
+}
+
+.pain-points .card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.pain-points .feature-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.pain-points h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+/* ===== STEPPER / PROCESS ===== */
+
+.process {
+  background-color: var(--bg-secondary, #f8f9fa);
+}
+
+.stepper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.step-item {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem;
+  background: var(--card-bg, #fff);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.step-item:hover {
+  box-shadow: var(--shadow-card);
+  transform: translateX(4px);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  background: var(--primary, #2F80ED);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.step-content h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.step-content p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: var(--text-secondary, #666);
+}
+
+.step-divider {
+  height: 1px;
+  background: var(--border, #e5e7eb);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .step-item {
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* ===== TRUST BAR ===== */
+
+.trust-bar {
+  background: linear-gradient(135deg, rgba(47, 128, 237, 0.05) 0%, transparent 100%);
+}
+
+.trust-bar h4 {
+  color: var(--primary, #2F80ED);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.trust-bar p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* ===== FAQ / ACCORDION ===== */
+
+.accordion-button {
+  font-weight: 600;
+  color: var(--text);
+  background-color: var(--card-bg, #fff);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(47, 128, 237, 0.05);
+  color: var(--primary, #2F80ED);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border-color: var(--primary, #2F80ED);
+  box-shadow: 0 0 0 0.25rem rgba(47, 128, 237, 0.25);
+}
+
+.accordion-body {
+  background-color: var(--card-bg, #fff);
+  color: var(--text);
+}
+
+/* ===== SERVICE AREAS / LINKS ===== -->
+
+.areas .list-group-item {
+  border-color: var(--border, #e5e7eb);
+  background-color: var(--card-bg, #fff);
+  padding: 1rem;
+}
+
+.areas .list-group-item a {
+  color: var(--primary, #2F80ED);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-base);
+}
+
+.areas .list-group-item a:hover {
+  color: var(--primary-dark, #1e3a8a);
+  text-decoration: underline;
+}
+
+/* ===== REVIEWS / TESTIMONIALS ===== */
+
+.reviews .card {
+  border: none;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.reviews .card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+
+.reviews .card-body {
+  padding: 2rem;
+}
+
+.reviews .text-warning {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+/* ===== BOTTOM FIXED CTA BAR ===== */
+
+.bottom-cta-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--card-bg, #fff);
+  border-top: 1px solid var(--border, #e5e7eb);
+  height: 60px;
+  z-index: var(--z-bottom-cta, 99);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}
+
+@media (min-width: 769px) {
+  .bottom-cta-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px;
+  }
+
+  .bottom-cta-bar {
+    height: 70px;
+  }
+
+  .bottom-cta-bar .btn {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== RESPONSIVE UTILITIES ===== */
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .row.g-4 {
+    gap: 1rem !important;
+  }
+}
+
+/* ===== SKIN-SPECIFIC HERO STYLES ===== */
+
+[data-skin="high"] .hero-section,
+[data-skin="premium"] .hero-section {
+  background: linear-gradient(135deg, rgba(214, 177, 94, 0.1) 0%, transparent 100%);
+}
+
+[data-skin="high"] .pain-points,
+[data-skin="premium"] .pain-points {
+  background-color: var(--bg-secondary, #111c3b);
+}
+
+[data-skin="high"] .process,
+[data-skin="premium"] .process {
+  background-color: var(--bg-secondary, #111c3b);
+}
+
+[data-skin="high"] .reviews,
+[data-skin="premium"] .reviews {
+  background-color: var(--bg-secondary, #111c3b);
+}
+
+[data-skin="high"] .trust-bar,
+[data-skin="premium"] .trust-bar {
+  background: linear-gradient(135deg, rgba(214, 177, 94, 0.1) 0%, transparent 100%);
+}

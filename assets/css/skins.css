@@ -1,0 +1,236 @@
+/* =========================================
+   強匠鎖店 v2.0 - Skin System (3-Tier Design)
+   Using [data-skin="value"] selector
+   ========================================= */
+
+/* ------------------------------------------------------------------
+   TIER 1: BASE SKIN (基礎層 - 居家/緊急開鎖)
+   風格：高能見度、救援感、親切
+   策略：雖然背景是乾淨的白，但按鈕與強調色使用「救援橘紅」，
+         符合使用者「急著找人」的心理狀態。
+   ------------------------------------------------------------------ */
+[data-skin="base"],
+[data-skin="basic"],
+html:not([data-skin]) {
+  /* 背景與基底 */
+  --bg: #ffffff;
+  --bg-secondary: #fff7ed; /* 極淡的橘色背景，溫暖感 */
+  
+  /* 主色：咖啡色調，傳達專業與溫暖 */
+  --primary: #8B4513; /* 咖啡棕 (saddle brown) */
+  --primary-light: #D2691E; /* 巧克力色 */
+  --primary-dark: #654321; /* 深咖啡 */
+  
+  /* 強調色 */
+  --accent: #dc2626; /* 緊急紅 */
+  
+  /* 文字 */
+  --text: #1f2937; /* 深灰黑，比純黑柔和 */
+  --text-secondary: #4b5563;
+  
+  /* 邊框與表面 */
+  --border: #D2B48C; /* 淺咖啡邊框 */
+  --surface: #ffffff;
+  --card-bg: #ffffff;
+  --on-surface: #1f2937;
+  
+  /* CTA 按鈕 (全站統一，但 Base 層會經常用到) */
+  --cta-phone: #dc2626; /* 紅色電話按鈕：最緊急 */
+  --cta-line: #06c755;  /* LINE 綠色 */
+}
+
+/* Base Skin 作用域樣式 */
+[data-skin="base"] {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+[data-skin="base"] .navbar {
+  background-color: var(--bg) !important;
+  border-bottom: 2px solid var(--primary-light); /* 底部亮橘條 */
+}
+
+/* 警示感強烈的按鈕 */
+[data-skin="base"] .btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+  font-weight: 700; /* 加粗，強調行動 */
+}
+
+[data-skin="base"] .btn-primary:hover {
+  background-color: var(--primary-dark);
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3); /* 橘色光暈 */
+}
+
+[data-skin="base"] .card {
+  border: 1px solid var(--border);
+  background-color: var(--card-bg);
+  /* 輕微的橘色陰影，增加溫暖感 */
+  box-shadow: 0 4px 6px rgba(234, 88, 12, 0.05);
+}
+
+[data-skin="base"] h1,
+[data-skin="base"] h2,
+[data-skin="base"] h3 {
+  color: var(--primary-dark); /* 標題使用深橘紅 */
+}
+
+
+/* ------------------------------------------------------------------
+   TIER 2: MID SKIN (中端層 - 汽車鑰匙)
+   風格：科技、精準、速度、金屬感
+   策略：使用科技藍與銀灰色，傳達「精密儀器」與「原廠規格」的意象。
+   ------------------------------------------------------------------ */
+[data-skin="mid"],
+[data-skin="medium"] {
+  /* 背景與基底 */
+  --bg: #f8fafc; /* 冷色調灰白 */
+  --bg-secondary: #e2e8f0;
+  
+  /* 主色：科技藍 */
+  --primary: #0284c7; /* Sky Blue */
+  --primary-light: #38bdf8;
+  --primary-dark: #0369a1;
+  
+  /* 強調色：金屬銀 */
+  --accent: #64748b; /* Slate Grey */
+  
+  /* 文字 */
+  --text: #0f172a; /* 深藍黑 */
+  --text-secondary: #334155;
+  
+  /* 邊框與表面 */
+  --border: #cbd5e1;
+  --surface: #f1f5f9;
+  --card-bg: #ffffff;
+  --on-surface: #0f172a;
+}
+
+[data-skin="mid"],
+[data-skin="medium"] {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+[data-skin="mid"] .navbar {
+  background-color: #ffffff !important;
+  border-bottom: 3px solid var(--primary); /* 加粗藍線，科技感 */
+}
+
+[data-skin="mid"] .btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  /* 漸層按鈕，模擬金屬光澤 */
+  background: linear-gradient(180deg, var(--primary-light) 0%, var(--primary) 100%);
+}
+
+[data-skin="mid"] .btn-primary:hover {
+  background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.4);
+}
+
+[data-skin="mid"] .card {
+  border: 1px solid var(--border);
+  /* 卡片帶有冷色調漸層 */
+  background: linear-gradient(160deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+[data-skin="mid"] h1,
+[data-skin="mid"] h2,
+[data-skin="mid"] h3 {
+  color: var(--primary-dark);
+  letter-spacing: 0.5px; /* 稍微加寬字距，增加現代感 */
+}
+
+
+/* ------------------------------------------------------------------
+   TIER 3: HIGH SKIN (高端層 - 電子鎖)
+   風格：奢華、黑金配色、夜晚守護
+   策略：深色背景突顯電子鎖的「光線」與「質感」，讓產品看起來更昂貴。
+   ------------------------------------------------------------------ */
+[data-skin="high"],
+[data-skin="premium"] {
+  /* 背景：深邃的午夜藍黑 */
+  --bg: #0f172a; 
+  --bg-secondary: #1e293b;
+  
+  /* 主色：奢華金 */
+  --primary: #fbbf24; /* Amber 400 */
+  --primary-light: #fcd34d;
+  --primary-dark: #d97706;
+  
+  /* 強調色：白金 */
+  --accent: #e2e8f0;
+  
+  /* 文字：反白 */
+  --text: #f8fafc;
+  --text-secondary: #94a3b8;
+  
+  /* 邊框與表面 */
+  --border: #334155;
+  --surface: #1e293b;
+  --card-bg: #1e293b;
+  --on-surface: #f8fafc;
+}
+
+[data-skin="high"],
+[data-skin="premium"] {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+[data-skin="high"] .navbar {
+  background-color: rgba(15, 23, 42, 0.95) !important;
+  border-bottom: 1px solid rgba(251, 191, 36, 0.3); /* 金色細線 */
+  backdrop-filter: blur(12px);
+}
+
+[data-skin="high"] .btn-primary {
+  background-color: var(--primary);
+  color: #0f172a; /* 按鈕文字改為深色，增加對比 */
+  font-weight: 800;
+  border: none;
+}
+
+[data-skin="high"] .btn-primary:hover {
+  background-color: var(--primary-light);
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.5); /* 金色發光效果 */
+  transform: translateY(-2px);
+}
+
+[data-skin="high"] .card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px); /* 玻璃擬態 */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+[data-skin="high"] .card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 8px 32px rgba(251, 191, 36, 0.15);
+}
+
+[data-skin="high"] h1,
+[data-skin="high"] h2,
+[data-skin="high"] h3 {
+  color: var(--primary);
+  /* 文字光暈 */
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+/* High Skin 專屬：表單輸入框優化 (在深色底上看得清楚) */
+[data-skin="high"] input,
+[data-skin="high"] select,
+[data-skin="high"] textarea {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+[data-skin="high"] input:focus,
+[data-skin="high"] select:focus,
+[data-skin="high"] textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2);
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-skin="base">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>強匠鎖店 - 服務頁面</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/skins.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../html/index.html">
+                <strong>強匠鎖店</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service-areas">服務區域</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">常見問題</a>
+                    </li>
+                    <li class="nav-item">
+                        <select class="form-select form-select-sm" id="skinSelector" style="width: auto;">
+                            <option value="base">基礎版</option>
+                            <option value="mid">中端版</option>
+                            <option value="high">高端版</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== 1. HERO SECTION ===== -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3" id="heroTitle">
+                        [Hero Title]
+                    </h1>
+                    <p class="lead mb-4" id="heroSubtitle">
+                        [Hero Subtitle]
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="tel:+88612345678" class="btn btn-primary" id="btnCall">
+                            📞 一鍵撥號
+                        </a>
+                        <a href="https://line.me/R/ti/p/@locksmith" class="btn btn-secondary" id="btnLine">
+                            💬 LINE 諮詢
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/500x400?text=Hero+Image" alt="Hero" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 2. PAIN POINTS / USE CASES ===== -->
+    <section class="pain-points py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">適用情境</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-lock fs-1" style="color: var(--primary)"></i>
+                        </div>
+                        <h5>[Feature 1 Title]</h5>
+                        <p class="small">[Feature 1 Description]</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-key fs-1" style="color: var(--primary)"></i>
+                        </div>
+                        <h5>[Feature 2 Title]</h5>
+                        <p class="small">[Feature 2 Description]</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-clock fs-1" style="color: var(--primary)"></i>
+                        </div>
+                        <h5>[Feature 3 Title]</h5>
+                        <p class="small">[Feature 3 Description]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 3. PROCESS / STEPPER ===== -->
+    <section class="process py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">服務流程</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="stepper">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5>來電或 LINE 聯絡</h5>
+                                <p>描述第一步</p>
+                            </div>
+                        </div>
+                        <div class="step-divider"></div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5>傳照片加快效率</h5>
+                                <p>提供現場照片，我們可以快速評估並給予報價</p>
+                            </div>
+                        </div>
+                        <div class="step-divider"></div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h5>上門服務</h5>
+                                <p>專業技師到府服務，快速解決您的問題</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 4. TRUST BAR ===== -->
+    <section class="trust-bar py-4 border-top border-bottom">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div>
+                        <h4 class="mb-1">4.8 ⭐</h4>
+                        <p class="small text-muted">Google 評論 (442 評論)</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div>
+                        <h4 class="mb-1">24 小時</h4>
+                        <p class="small text-muted">全天候服務</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div>
+                        <h4 class="mb-1">不開不收錢</h4>
+                        <p class="small text-muted">誠信保證</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div>
+                        <h4 class="mb-1">透明報價</h4>
+                        <p class="small text-muted">無隱藏費用</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 5. FAQ / ACCORDION ===== -->
+    <section id="faq" class="faq py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">常見問題</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    [常見問題 1]
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    [回答 1]
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    [常見問題 2]
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    [回答 2]
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    [常見問題 3]
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    [回答 3]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 6. AREAS / SERVICE REGIONS ===== -->
+    <section id="service-areas" class="areas py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">服務區域</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="../html/sanmin.html">三民區開鎖服務</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="../html/zuoying.html">左營區開鎖服務</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="../html/xinxing.html">新興區開鎖服務</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="../html/qianjin.html">前金區開鎖服務</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="../html/lingya.html">苓雅區開鎖服務</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="../html/qianzheng.html">前鎮區開鎖服務</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 7. REVIEWS / TESTIMONIALS ===== -->
+    <section class="reviews py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">客戶評價</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                            <p class="card-text">
+                                "[客戶評論 1]"
+                            </p>
+                            <p class="small text-muted mb-0">
+                                — [客戶名稱 1]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                            <p class="card-text">
+                                "[客戶評論 2]"
+                            </p>
+                            <p class="small text-muted mb-0">
+                                — [客戶名稱 2]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 8. BOTTOM FIXED CTA BAR ===== -->
+    <div class="bottom-cta-bar" id="bottomCtaBar">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center g-2">
+                <div class="col-6">
+                    <a href="tel:+88612345678" class="btn btn-primary w-100 py-2">
+                        📞 撥號
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="https://line.me/R/ti/p/@locksmith" class="btn btn-secondary w-100 py-2">
+                        💬 LINE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top text-center text-muted">
+        <div class="container">
+            <p>&copy; 2026 強匠鎖店. 版權所有。</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Skin Switcher -->
+    <script src="../js/skin-switcher.js"></script>
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
