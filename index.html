@@ -23,7 +23,7 @@
 .hero-texture {
   background-image: 
     /* 淡淡的網格線，暗示精準 */
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     /* 暗示金屬質感的光暈 */
     radial-gradient(circle at 30% 30%, rgba(220, 53, 69, 0.08), transparent 50%),
@@ -34,7 +34,7 @@
 .hero-texture {
   /* 使用師傅施工照作為背景，並疊加深色遮罩 */
   background: 
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.315)),
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(41, 41, 41, 0.151)),
     url('assets/images/index/index_hero2.png'); /* 師傅施工照 */
   background-size: cover;
   background-position: center;
@@ -251,13 +251,16 @@
   <!-- 2. Hero Section: 救援優先戰情室 + 質感紋理 -->
   <header class="hero-section hero-texture text-center position-relative overflow-hidden">
     <!-- 背景遮罩：讓文字更清晰 -->
-    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(139, 69, 19, 0.7); z-index: 1;"></div>
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.425); z-index: 1;"></div>
     
     <!-- 內容層 -->
-    <div class="container position-relative py-5 mt-5" style="z-index: 2;">
-      <div class="row justify-content-center">
+    <div class="container position-relative mt-lg-5" style="z-index: 2;">
+      <div class="row justify-content-center py-1 py-lg-5 align-items-center min-vh-75">
         <div class="col-lg-8">
-          
+          <img src="assets/images/index/hero_locksmith.png" 
+                class="img-fluid mb-4 rounded-token d-block d-sm-none" 
+                alt="強匠鎖店-高雄24小時緊急開鎖服務" 
+                style="max-width: 100%; height: auto; ">
           <!-- 閃電急救標籤 (視覺定錨) -->
           <div class="d-inline-flex align-items-center bg-warning text-dark fw-bold px-4 py-2 rounded-pill mb-4 shadow-lg animate-bounce">
             <i class="bi bi-lightning-charge-fill me-2 fs-5 text-danger"></i> 
@@ -268,13 +271,13 @@
           <h1 class="display-3 fw-bolder text-white mb-3" style="text-shadow: 0 4px 12px rgba(0,0,0,0.5);">
             <span class="text-warning">急需</span> 開鎖救援？
           </h1>
-          <p class="lead text-white-50 mb-5 fs-4">
+          <p class="lead text-white-50 mb-4 mb-lg-5 fs-4">
             忘帶鑰匙、門鎖故障、汽機車鑰匙遺失、夜間開鎖。<br>
             <span class="text-white fw-bold">鎖不開不收錢，報價透明，立刻出發。</span>
           </p>
 
           <!-- 巨大的緊急按鈕群 -->
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-4 mb-5">
+          <div class="d-flex flex-column flex-sm-row justify-content-center gap-4 mb-4 mb-lg-5">
             <!-- 紅色救援按鈕：帶有脈衝動畫 + 流光 -->
             <a href="tel:0906921957" class="btn btn-danger btn-lg btn-shimmer pulse-anim px-5 py-4 fs-3 fw-bold shadow-lg rounded-pill d-flex align-items-center justify-content-center gap-3" style="position: relative; z-index: 1;">
               <i class="bi bi-telephone-fill"></i> 
@@ -289,7 +292,7 @@
           </div>
           
           <!-- 信任指標 -->
-          <div class="d-flex flex-wrap justify-content-center gap-4 text-white-50 small">
+          <div class="d-flex flex-wrap justify-content-center gap-4 text-white-50 small mb-4">
             <div class="d-flex align-items-center">
               <i class="bi bi-shield-fill-check text-warning me-2 fs-5"></i>
               <span>政府立案合法經營</span>
@@ -907,39 +910,41 @@
           </p>
           <div class="row g-3 mb-4">
             <div class="col-sm-6">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
                 <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
                 <span>政府立案合法營業</span>
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
                 <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
                 <span>24小時緊急救援</span>
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
                 <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
                 <span>專業技術團隊</span>
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
                 <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
                 <span>Google 4.8星好評</span>
               </div>
             </div>
           </div>
+          <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
           <a href="tel:0906921957" class="btn btn-primary btn-lg px-4 py-3 fw-bold">
             <i class="bi bi-telephone-fill me-2"></i>立即聯絡我們
           </a>
+          </div>
         </div>
         <div class="col-lg-6 position-relative">
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning rounded-token" style="transform: rotate(-3deg); z-index: -1; opacity: 0.2;"></div>
-        <img src="assets/images/index/index_hero2.png" 
-            class="img-fluid rounded-token shadow" 
-            alt="林師傅專注修鎖">
+          <img src="assets/images/index/about-locksmith.png" 
+              class="img-fluid rounded-token shadow" style="max-width: 100%; height: auto; transform: rotate(-2deg);"
+              alt="林師傅專注修鎖">
         </div>        
       </div>
     </div>
