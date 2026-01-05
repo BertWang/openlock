@@ -1,440 +1,488 @@
 <!DOCTYPE html>
 <html lang="zh-TW" data-skin="high">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>電子鎖安裝與維修 | 強匠鎖店 - 高端智能鎖解決方案</title>
-  <meta name="description" content="強匠鎖店電子鎖服務：指紋鎖、密碼鎖、卡片鎖安裝維修。智能家居解決方案，專業安裝團隊，品質保證。">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高雄專業電子鎖安裝 | 智能居家・尊榮安全 - 強匠鎖店</title>
+    <meta name="description" content="高雄電子鎖安裝首選強匠鎖店，Philips, Yale, Samsung 原廠授權經銷。提供免費到府丈量、無損安裝與完整教學。告別鑰匙，升級智慧居家安全。">
+    <meta name="keywords" content="高雄電子鎖, 電子鎖安裝, 指紋鎖, 密碼鎖, Philips電子鎖, Yale電子鎖, 高雄換鎖">    
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts: Noto Serif TC for luxury feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Design System -->
+    <link href="assets/css/tokens.css" rel="stylesheet">
+    <link href="assets/css/skins.css" rel="stylesheet">
+    
+    <style>
+        /* LUXURY MINIMALIST THEME OVERRIDES */
+        :root {
+            --bg-deep: #0B1B3A;
+            --bg-surface: #122442;
+            --gold-matte: #D6B15E; /* 消光金 */
+            --gold-light: #E5C985;
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --font-serif: 'Noto Serif TC', serif;
+            --font-sans: 'Noto Sans TC', sans-serif;
+        }
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            letter-spacing: 0.05em; /* 增加字距，提升高級感 */
+        }
 
-  <!-- 自訂 CSS -->
-  <link rel="stylesheet" href="/assets/css/tokens.css">
-  <link rel="stylesheet" href="/assets/css/components.css">
-  <link rel="stylesheet" href="/assets/css/skins.css">
-  <link rel="stylesheet" href="/assets/css/pages.css">
+        /* TYPOGRAPHY */
+        h1, h2, h3, .serif-font {
+            font-family: var(--font-serif);
+            font-weight: 600;
+        }
+        .text-gold { color: var(--gold-matte) !important; }
+        
+        /* NAVBAR: Minimalist Transparent */
+        .navbar {
+            background: rgba(11, 27, 58, 0.8) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem 0;
+            transition: all 0.3s;
+        }
+        .navbar-brand {
+            font-family: var(--font-serif);
+            letter-spacing: 0.1em;
+            font-size: 1.5rem;
+        }
+
+        /* HERO: Immersive & Clean */
+        .hero-section {
+            height: 100vh;
+            min-height: 700px;
+            background: linear-gradient(rgba(11, 27, 58, 0.4), var(--bg-deep)),
+                        url('https://placehold.co/1920x1080/0f172a/d6b15e?text=Cinematic+Luxury+Home+Entrance') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        
+        /* BUTTONS: Ghost & Minimal */
+        .btn-gold-outline {
+            border: 1px solid var(--gold-matte);
+            color: var(--gold-matte);
+            background: transparent;
+            padding: 12px 40px;
+            border-radius: 0; /* 直角按鈕更顯俐落 */
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            transition: all 0.4s ease;
+        }
+        .btn-gold-outline:hover {
+            background: var(--gold-matte);
+            color: #0B1B3A;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(214, 177, 94, 0.2);
+        }
+
+        /* TABS: Elegant Line Style */
+        .nav-tabs {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .nav-link {
+            color: var(--text-secondary);
+            background: transparent !important;
+            border: none;
+            border-bottom: 2px solid transparent;
+            padding: 1rem 0;
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--gold-matte);
+            border-bottom-color: var(--gold-matte);
+        }
+
+        /* PRODUCT CARDS: Floating Minimal */
+        .product-card {
+            background: transparent;
+            border: none;
+            transition: transform 0.5s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-img-wrapper {
+            background: var(--bg-surface);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .product-img {
+            transition: transform 0.5s ease;
+            mix-blend-mode: lighten; /* 讓產品與深色背景融合更好 */
+        }
+        .product-card:hover .product-img {
+            transform: scale(1.05);
+        }
+        .product-meta {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1rem;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* SOP SECTION: Editorial Layout */
+        .sop-section {
+            background-color: var(--bg-surface);
+            padding: 8rem 0;
+        }
+        .sop-number {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            color: rgba(255,255,255,0.05);
+            line-height: 1;
+            position: absolute;
+            top: -2rem;
+            left: -1rem;
+            z-index: 0;
+        }
+        .sop-content {
+            position: relative;
+            z-index: 1;
+            padding-left: 1rem;
+        }
+
+        /* FOOTER: Clean */
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            background: #08142b;
+        }
+
+        /* Utility */
+        .tracking-wide { letter-spacing: 0.15em; }
+        .text-justify { text-align: justify; }
+        .opacity-70 { opacity: 0.7; }
+        
+        /* Mobile Sticky CTA */
+        .sticky-cta {
+            background: rgba(11, 27, 58, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid var(--gold-matte);
+        }
+    </style>
 </head>
 <body>
-  <!-- 導覽欄 -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="/">🔐 強匠鎖店</a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="offcanvas offcanvas-start" id="navbarOffcanvas">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title">菜單</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-gold" href="index.html">
+                強匠鎖店 <span class="badge bg-primary ms-2 rounded-1">電子鎖旗艦館</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-4">
+                    <li class="nav-item"><a class="nav-link" href="services.html"><i class="bi bi-tools me-1"></i>開鎖服務</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="service-auto-keys.html"><i class="bi bi-car-front me-1"></i>汽車鑰匙</a></li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-geo-alt me-1"></i>品牌系列
+                      </a>
+                      <ul class="dropdown-menu shadow-sm border-0">
+                        <li><a class="dropdown-item" href="area-sanmin.html">BRAND 品牌</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a href="https://line.me/ti/p/~@giw8057p" class="btn btn-gold-outline py-2 px-4 small">
+                            預約鑑賞
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/">首頁</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/services.html">服務項目</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/digital-locks-catalog.html">電子鎖型錄</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/faq.html">常見問題</a>
-            </li>
-          </ul>
+    </nav>
+
+    <!-- 1. Hero Section: Cinematic & Minimal -->
+    <section class="hero-section">
+        <div class="container">
+            <p class="text-gold tracking-wide mb-4 small text-uppercase fade-in-up">Smart Living, Redefined.</p>
+            <h1 class="hero-title text-white mb-5 fade-in-up" style="animation-delay: 0.2s;">
+                安全，是家最美的裝潢
+            </h1>
+            <p class="lead text-white-50 mb-5 mx-auto opacity-70 fade-in-up" style="max-width: 600px; font-weight: 300; animation-delay: 0.4s;">
+                我們不只提供鎖，更提供一份對家人的承諾。<br>
+                強匠嚴選國際頂級電子鎖，將科技隱於美學之中。
+            </p>
+            <div class="fade-in-up" style="animation-delay: 0.6s;">
+                <a href="#brands" class="btn btn-gold-outline">
+                    探索系列作品
+                </a>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
+    </section>
 
-  <!-- Hero 區塊 -->
-  <section class="service-page-hero py-5" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);">
-    <div class="container">
-      <h1 class="text-white mb-4">🔐 智能電子鎖解決方案</h1>
-      <p class="lead text-white-75">指紋鎖、密碼鎖、卡片鎖的專業安裝與維修服務</p>
-    </div>
-  </section>
-
-  <!-- 區塊 1: 服務概述 -->
-  <section class="service-page-section py-5">
-    <div class="container">
-      <h2 class="mb-4">電子鎖服務介紹</h2>
-      <p>強匠鎖店提供全方位的電子鎖解決方案，包括指紋識別鎖、密碼鎖、卡片鎖等高科技安全產品的安裝、配置和維修服務。無論是住宅、辦公室或商業空間，我們都能提供專業的解決方案。</p>
-    </div>
-  </section>
-
-  <!-- 區塊 2: 主要服務項目 -->
-  <section class="service-page-section py-5" style="background-color: #f8f9fa;">
-    <div class="container">
-      <h2 class="mb-5">核心服務</h2>
-      
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">👆 指紋識別鎖</h5>
-              <p class="card-text">最先進的生物識別技術，無需鑰匙，指紋即可開門。高安全性與便利性的完美結合。</p>
-              <ul class="list-unstyled small">
-                <li>✓ 指紋識別系統</li>
-                <li>✓ 多指紋設定</li>
-                <li>✓ 緊急備用鑰匙</li>
-                <li>✓ 遠程開鎖管理</li>
-              </ul>
+    <!-- 2. Philosophy / Value Proposition -->
+    <section id="philosophy" class="py-5 my-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-8">
+                    <span class="text-gold serif-font d-block mb-3 fs-4">The Art of Security</span>
+                    <h2 class="display-5 text-white mb-4">當科技遇見職人精神</h2>
+                    <p class="text-secondary lh-lg mb-5 mx-auto" style="max-width: 700px;">
+                        對於高端住宅而言，門鎖不僅是防護，更是展現品味的第一道門面。<br>
+                        強匠鎖店代理 Philips, Yale, Samsung 等世界級品牌，<br>
+                        並由原廠認證技師提供精品級安裝服務，確保每一個細節都完美無瑕。
+                    </p>
+                    <div class="row g-5 pt-4">
+                        <div class="col-md-4">
+                            <h4 class="text-white serif-font h2">10+</h4>
+                            <p class="text-white-50 small tracking-wide text-uppercase">Years Experience</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="text-white serif-font h2">4800+</h4>
+                            <p class="text-white-50 small tracking-wide text-uppercase">Premium Installs</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="text-white serif-font h2">100%</h4>
+                            <p class="text-white-50 small tracking-wide text-uppercase">Official Warranty</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+    </section>
 
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">🔢 密碼鎖</h5>
-              <p class="card-text">靈活設定多組密碼，隨時變更，不用擔心鑰匙遺失。完美適合租屋、辦公室使用。</p>
-              <ul class="list-unstyled small">
-                <li>✓ 數字密碼設定</li>
-                <li>✓ 臨時密碼生成</li>
-                <li>✓ 開啟記錄查詢</li>
-                <li>✓ 防暴力破解設計</li>
-              </ul>
+    <!-- 3. Curated Brands (Tabs) -->
+    <section id="brands" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-gold small tracking-wide text-uppercase">Collection</span>
+                <h2 class="text-white mt-2">品牌旗艦系列</h2>
             </div>
-          </div>
+
+            <!-- Minimal Tabs -->
+            <ul class="nav nav-tabs brand-tabs" id="brandTab" role="tablist">
+                <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#philips">Philips</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#yale">Yale</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#samsung">Samsung</button></li>
+            </ul>
+
+            <div class="tab-content" id="brandTabContent">
+                <!-- Philips Tab -->
+                <div class="tab-pane fade show active" id="philips">
+                    <div class="row g-5">
+                        <!-- Product 1 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <div class="product-img-wrapper">
+                                    <img src="https://placehold.co/400x500/122442/d6b15e?text=Philips+Alpha" class="img-fluid product-img w-100" alt="Philips Alpha">
+                                </div>
+                                <h3 class="h4 text-white serif-font">Philips Alpha</h3>
+                                <p class="text-secondary small">推拉式旗艦．極致簡約</p>
+                                <div class="product-meta">
+                                    <span class="text-gold small">Fingerprint / Card / App</span>
+                                    <a href="#" class="text-white text-decoration-none small stretched-link">DETAILS <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <div class="product-img-wrapper">
+                                    <img src="https://placehold.co/400x500/122442/d6b15e?text=Philips+DDL702" class="img-fluid product-img w-100" alt="Philips DDL702">
+                                </div>
+                                <h3 class="h4 text-white serif-font">Philips DDL702</h3>
+                                <p class="text-secondary small">3D人臉辨識．解放雙手</p>
+                                <div class="product-meta">
+                                    <span class="text-gold small">Face ID / Wi-Fi</span>
+                                    <a href="#" class="text-white text-decoration-none small stretched-link">DETAILS <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <div class="product-img-wrapper">
+                                    <img src="https://placehold.co/400x500/122442/d6b15e?text=Philips+9300" class="img-fluid product-img w-100" alt="Philips 9300">
+                                </div>
+                                <h3 class="h4 text-white serif-font">Philips 9300</h3>
+                                <p class="text-secondary small">全自動鎖體．鋼化玻璃面板</p>
+                                <div class="product-meta">
+                                    <span class="text-gold small">IoT Ready / Auto Lock</span>
+                                    <a href="#" class="text-white text-decoration-none small stretched-link">DETAILS <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Other tabs similar structure... -->
+            </div>
+            
+            <div class="text-center mt-5 pt-4">
+                <a href="https://line.me/ti/p/~@giw8057p" class="btn btn-gold-outline">
+                    預約免費到府丈量
+                </a>
+            </div>
         </div>
+    </section>
 
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">🎫 卡片鎖系統</h5>
-              <p class="card-text">智能卡片開啟，易於管理和發放。適合公司、宿舍、停車場等大規模使用。</p>
-              <ul class="list-unstyled small">
-                <li>✓ RFID 卡片系統</li>
-                <li>✓ 批量卡片管理</li>
-                <li>✓ 遠程授權</li>
-                <li>✓ 開啟記錄追蹤</li>
-              </ul>
+    <!-- 4. Installation Service (Editorial Style) -->
+    <section id="service" class="sop-section">
+        <div class="container">
+            <div class="row align-items-center mb-5 pb-5 border-bottom border-white-10">
+                <div class="col-lg-6 pe-lg-5">
+                    <span class="text-gold small tracking-wide text-uppercase mb-2 d-block">Premium Service</span>
+                    <h2 class="display-6 text-white serif-font mb-4">看不見的細節，<br>決定了完美的體驗。</h2>
+                    <p class="text-secondary lh-lg mb-0">
+                        電子鎖的壽命，取決於安裝的精準度。強匠的技師不只是安裝工人，更是追求完美的職人。我們嚴格執行標準化作業流程 (SOP)，確保每一把鎖都能發揮其應有的價值。
+                    </p>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="https://placehold.co/800x500/122442/d6b15e?text=Technician+at+Work" class="img-fluid" alt="職人安裝">
+                </div>
             </div>
-          </div>
+
+            <!-- Steps Grid -->
+            <div class="row g-5 pt-4">
+                <div class="col-md-4">
+                    <div class="sop-content">
+                        <span class="sop-number">01</span>
+                        <h4 class="text-white h5 mb-3">精準評估</h4>
+                        <p class="text-secondary small text-justify">
+                            安裝前，我們會仔細評估門扇材質、厚度與水平度。針對特殊門款（如雙開門、鍛造門），提供客製化的配件解決方案。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sop-content">
+                        <span class="sop-number">02</span>
+                        <h4 class="text-white h5 mb-3">無損工藝</h4>
+                        <p class="text-secondary small text-justify">
+                            全程鋪設防塵地墊，使用精密開孔模具。我們承諾完工後，現場不留一點粉塵，門扇不留一絲刮痕。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sop-content">
+                        <span class="sop-number">03</span>
+                        <h4 class="text-white h5 mb-3">專屬顧問</h4>
+                        <p class="text-secondary small text-justify">
+                            不僅是教會您使用，更協助設定指紋、密碼與手機 APP 串接。並提供專屬的 24H 售後服務專線。
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">🔧 維修與升級</h5>
-              <p class="card-text">您的電子鎖故障？我們提供診斷、維修和軟體升級服務。</p>
-              <ul class="list-unstyled small">
-                <li>✓ 故障診斷</li>
-                <li>✓ 電池更換</li>
-                <li>✓ 軟體更新</li>
-                <li>✓ 性能優化</li>
-              </ul>
+    <!-- 5. Footer (Minimal) -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-gold d-block mb-3" href="index.html">強匠鎖店</a>
+                    <p class="text-secondary small">
+                        高雄在地經營10年，最實在的鎖店<br>定義居家安全新高度。我們專業、快速、誠信，讓您安心又放心。
+                    </p>
+                              <!-- Social Media Icons Row -->
+                    <div class="d-flex gap-3 mb-4">
+                      <a href="https://www.facebook.com/KHsmartlock/" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                      <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Instagram">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a href="https://www.threads.net/@0906921957lock" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Threads">
+                        <i class="bi bi-at"></i>
+                      </a>
+                      <a href="https://www.youtube.com/@24H%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97%E9%AB%98%E9%9B%84%E9%9B%BB%E5%AD%90%E9%8E%96" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="YouTube">
+                        <i class="bi bi-youtube"></i>
+                      </a>
+                      <a href="https://line.me/ti/p/~@giw8057p" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="LINE">
+                        <i class="bi bi-line"></i>
+                      </a>
+                    </div>
+
+                    <!-- Google Maps Button -->
+                    <a href="https://maps.app.goo.gl/SaT1dbcffoTzWQxq8" target="_blank" class="btn btn-outline-light btn-sm rounded-pill px-3">
+                      <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Google 地圖導航
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="text-white small tracking-wide mb-3">高雄全區快速服務</h5>
+                  <ul class="list-unstyled text-white-50 d-flex flex-wrap">
+                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">三民區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">左營區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">苓雅區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">前鎮區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">新興區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">鳳山區電子鎖</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-white small tracking-wide mb-3">聯絡資訊</h6>
+                    <ul class="list-unstyled small text-secondary">
+                        <li class="mb-2">0906-921-957 (林先生)</li>
+                        <li class="mb-2">
+                          <i class="bi bi-line me-2 text-success"></i>
+                          <a href="https://line.me/ti/p/~@giw8057p" class="text-white-50 text-decoration-none hover-text-white" target="_blank">ID: @giw8057p</a>
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-envelope me-2"></i>
+                          <a href="mailto:s10552@chyp.com.tw" class="text-white-50 text-decoration-none hover-text-white">s10552@chyp.com.tw</a>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start">
+                          <i class="bi bi-geo-alt me-2 mt-1"></i>
+                          <a href="https://share.google/mz73ioCzKOPI2kod4" class="text-white-50 text-decoration-none hover-text-white" target="_blank">
+                            高雄市新興區復橫一路 116 號
+                          </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 區塊 3: 產品展示 -->
-  <section class="service-page-section py-5">
-    <div class="container">
-      <h2 class="mb-5 text-center">我們安裝的電子鎖品牌</h2>
-      
-      <p class="text-center text-muted mb-5">我們與多個知名品牌合作，為您提供優質的電子鎖產品</p>
-      
-      <div class="row g-4">
-        <div class="col-md-4 text-center">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <div class="mb-3 display-6">🔐</div>
-              <h6>品牌 A - 旗艦指紋鎖</h6>
-              <p class="small text-muted">智能家居首選，識別速度快，安全可靠</p>
-              <a href="/digital-locks-catalog.html" class="btn btn-sm btn-outline-primary">查看詳情</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <div class="mb-3 display-6">🔢</div>
-              <h6>品牌 B - 商務密碼鎖</h6>
-              <p class="small text-muted">企業級管理，支援遠程監控</p>
-              <a href="/digital-locks-catalog.html" class="btn btn-sm btn-outline-primary">查看詳情</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <div class="mb-3 display-6">🎫</div>
-              <h6>品牌 C - 卡片管理系統</h6>
-              <p class="small text-muted">大樓住戶管理，專業安装支援</p>
-              <a href="/digital-locks-catalog.html" class="btn btn-sm btn-outline-primary">查看詳情</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 區塊 4: 為何選擇我們 -->
-  <section class="service-page-section py-5" style="background-color: #f8f9fa;">
-    <div class="container">
-      <h2 class="mb-5 text-center">為何選擇強匠電子鎖服務</h2>
-      
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="d-flex gap-3">
-            <div class="flex-shrink-0">
-              <span class="display-5">🏆</span>
-            </div>
-            <div>
-              <h6>十年安裝經驗</h6>
-              <p class="small text-muted">超過 1,000 套電子鎖安裝案例，經驗豐富</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="d-flex gap-3">
-            <div class="flex-shrink-0">
-              <span class="display-5">🎓</span>
-            </div>
-            <div>
-              <h6>專業認證安裝師</h6>
-              <p class="small text-muted">所有技術人員均持有廠商認證證書</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="d-flex gap-3">
-            <div class="flex-shrink-0">
-              <span class="display-5">🛡️</span>
-            </div>
-            <div>
-              <h6>完整保修服務</h6>
-              <p class="small text-muted">2 年產品保修，終身技術支援</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="d-flex gap-3">
-            <div class="flex-shrink-0">
-              <span class="display-5">💎</span>
-            </div>
-            <div>
-              <h6>高端品質承諾</h6>
-              <p class="small text-muted">堅持高品質標準，不低價競爭</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 區塊 5: 安裝流程 -->
-  <section class="service-page-section py-5">
-    <div class="container">
-      <h2 class="mb-5 text-center">電子鎖安裝流程</h2>
-      
-      <div class="process-section">
-        <div class="stepper">
-          <div class="step-item">
-            <div class="step-number">1</div>
-            <h6>咨詢評估</h6>
-            <p class="small text-muted">了解您的需求和現場環境</p>
-          </div>
-
-          <div class="step-item">
-            <div class="step-number">2</div>
-            <h6>方案設計</h6>
-            <p class="small text-muted">根據需求提供定製化解決方案</p>
-          </div>
-
-          <div class="step-item">
-            <div class="step-number">3</div>
-            <h6>專業安裝</h6>
-            <p class="small text-muted">認證安裝師上門進行安裝調試</p>
-          </div>
-
-          <div class="step-item">
-            <div class="step-number">4</div>
-            <h6>培訓與支援</h6>
-            <p class="small text-muted">教您使用方法，提供長期技術支援</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 區塊 6: FAQ -->
-  <section class="service-page-section py-5" style="background-color: #f8f9fa;">
-    <div class="container">
-      <h2 class="mb-5 text-center">常見問題解答</h2>
-      
-      <div class="faq-section">
-        <div class="accordion" id="faqAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                電子鎖安裝需要多長時間？
-              </button>
-            </h2>
-            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                通常需要 2-4 小時，包括舊鎖拆除、新鎖安裝、電源設置和系統調試。複雜情況可能需要更長時間。
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <span class="small text-white-50">&copy; 2025 強匠鎖店. All rights reserved.</span>
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <span class="small text-white-50 me-3">隱私權政策</span>
+                <span class="small text-white-50">服務條款</span>
               </div>
             </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                電子鎖費用多少？
-              </button>
-            </h2>
-            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                費用根據鎖的類型和品牌而異。指紋鎖 $8,000-15,000，密碼鎖 $5,000-8,000，卡片系統根據規模報價。歡迎來電免費評估。
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                電子鎖故障了怎麼辦？
-              </button>
-            </h2>
-            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                請立即聯絡我們，我們有應急響應服務。可以通過遠程診斷或上門檢修解決問題。在保修期內維修免費。
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                電子鎖支援遠程開鎖嗎？
-              </button>
-            </h2>
-            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                部分高端型號支援通過手機 APP 遠程開鎖。安裝時我們會為您講解所有功能和安全設置。
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                舊鎖如何處理？
-              </button>
-            </h2>
-            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                我們負責拆除舊鎖並回收處理，整個過程會保持您家的清潔。
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- 區塊 7: 成功案例 -->
-  <section class="service-page-section py-5">
-    <div class="container">
-      <h2 class="mb-5 text-center">成功安裝案例</h2>
-      
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <h6>豪宅指紋鎖系統</h6>
-              <p class="small text-muted">台北市信義區，安裝 4 套指紋鎖系統，客戶滿意度 100%</p>
-              <span class="badge bg-success">已完成</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <h6>辦公大樓卡片管理</h6>
-              <p class="small text-muted">新竹科技園區，15 樓層卡片鎖安裝與管理系統</p>
-              <span class="badge bg-success">已完成</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <h6>飯店房間升級</h6>
-              <p class="small text-muted">台中五星飯店，120 間房間密碼鎖升級</p>
-              <span class="badge bg-success">已完成</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 區塊 8: 底部 CTA -->
-  <section class="bottom-cta py-5">
-    <div class="container text-center">
-      <h3 class="mb-4">升級您的家庭安全</h3>
-      <p class="mb-4">立即咨詢，享受免費評估和安裝報價</p>
-      <div class="d-flex gap-3 justify-content-center flex-wrap">
-        <a href="tel:+886234567890" class="btn btn-call btn-lg">
-          📞 直接撥打
+    <!-- Mobile Sticky CTA -->
+    <div class="sticky-cta fixed-bottom d-md-none p-3 d-flex gap-2">
+        <a href="tel:0906921957" class="btn btn-gold-outline flex-grow-1 w-100 text-center" style="background: var(--gold-matte); color: #000;">
+            預約安裝
         </a>
-        <a href="https://line.me/R/ti/p/%40qwerty" class="btn btn-line btn-lg">
-          💬 LINE 聯絡
+        <a href="https://line.me/ti/p/~@giw8057p" class="btn btn-gold-outline flex-grow-1 w-100 text-center bg-transparent text-white border-white">
+            LINE 諮詢
         </a>
-      </div>
     </div>
-  </section>
 
-  <!-- 固定 CTA Bar（行動版） -->
-  <div class="cta-bar-fixed">
-    <a href="tel:+886234567890" class="btn btn-call btn-sm flex-fill">撥打</a>
-    <a href="https://line.me/R/ti/p/%40qwerty" class="btn btn-line btn-sm flex-fill">LINE</a>
-  </div>
-
-  <!-- 頁尾 -->
-  <footer class="bg-dark text-white py-5 mt-5">
-    <div class="container">
-      <div class="row g-4 mb-4">
-        <div class="col-md-6">
-          <h6>強匠鎖店</h6>
-          <p class="small text-muted">電子鎖、汽車鑰匙、開鎖服務 — 高端專業解決方案</p>
-        </div>
-        <div class="col-md-6">
-          <h6>快速連結</h6>
-          <ul class="list-unstyled small">
-            <li><a href="/" class="text-muted text-decoration-none">首頁</a></li>
-            <li><a href="/services.html" class="text-muted text-decoration-none">服務項目</a></li>
-            <li><a href="/digital-locks-catalog.html" class="text-muted text-decoration-none">電子鎖型錄</a></li>
-            <li><a href="/contact.html" class="text-muted text-decoration-none">聯絡我們</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr class="border-secondary">
-      <p class="text-center text-muted small mb-0">&copy; 2024 強匠鎖店. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap Bundle JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- 自訂 App JS -->
-  <script src="/assets/js/app.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
