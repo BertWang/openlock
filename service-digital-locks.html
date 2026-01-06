@@ -44,20 +44,6 @@
         }
         .text-gold { color: var(--gold-matte) !important; }
         
-        /* NAVBAR: Minimalist Transparent */
-        .navbar {
-            background: rgba(11, 27, 58, 0.8) !important;
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 1.5rem 0;
-            transition: all 0.3s;
-        }
-        .navbar-brand {
-            font-family: var(--font-serif);
-            letter-spacing: 0.1em;
-            font-size: 1.5rem;
-        }
-
         /* HERO: Immersive & Clean */
         .hero-section {
             height: 100vh;
@@ -95,26 +81,70 @@
             box-shadow: 0 10px 30px rgba(214, 177, 94, 0.2);
         }
 
-        /* TABS: Elegant Line Style */
+        /* --- 修正區域：NAVBAR 選單顏色 --- */
+        .navbar {
+            background: rgba(11, 27, 58, 0.95) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1rem 0;
+        }
+        
+        /* 強制設定導航連結顏色為淺色 */
+        .navbar .nav-link {
+            color: rgba(255, 255, 255, 0.7) !important; /* 預設淺灰白 */
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        /* 懸停時變亮 */
+        .navbar .nav-link:hover, 
+        .navbar .nav-link.active {
+            color: #ffffff !important; /* Hover 變純白 */
+        }
+
+        /* 下拉選單樣式修正 */
+        .navbar .dropdown-menu {
+            background-color: var(--bg-surface);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .navbar .dropdown-item {
+            color: var(--text-secondary);
+        }
+        .navbar .dropdown-item:hover {
+            background-color: rgba(255,255,255,0.05);
+            color: #fff;
+        }
+        /* --------------------------------- */
+
+        /* --- 核心修正：TABS 樣式 (保持上一步修正) --- */
         .nav-tabs {
             border-bottom: 1px solid rgba(255,255,255,0.1);
             justify-content: center;
             gap: 2rem;
             margin-bottom: 4rem;
         }
-        .nav-link {
-            color: var(--text-secondary);
-            background: transparent !important;
+        
+        /* 注意：這裡使用 .nav-tabs .nav-link 提高權重，避免被上方的 .navbar .nav-link 影響 */
+        .nav-tabs .nav-link {
+            color: var(--text-secondary) !important; 
+            background: transparent !important;      
             border: none;
-            border-bottom: 2px solid transparent;
+            border-bottom: 2px solid transparent;    
             padding: 1rem 0;
             font-family: var(--font-serif);
             font-size: 1.2rem;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
         }
-        .nav-link:hover, .nav-link.active {
-            color: var(--gold-matte);
-            border-bottom-color: var(--gold-matte);
+
+        .nav-tabs .nav-link:hover {
+            color: #ffffff !important;               
+            border-bottom-color: rgba(214, 177, 94, 0.5);
+        }
+
+        .nav-tabs .nav-link.active {
+            color: var(--gold-matte) !important;     
+            border-bottom: 2px solid var(--gold-matte);
+            background-color: transparent !important; 
         }
 
         /* PRODUCT CARDS: Floating Minimal */
@@ -187,6 +217,42 @@
             backdrop-filter: blur(10px);
             border-top: 1px solid var(--gold-matte);
         }
+        /* 新增：產品卡片優化 (適應直立鎖體) */
+        .product-img-wrapper {
+            background: linear-gradient(180deg, var(--bg-surface) 0%, rgba(0,0,0,0.2) 100%);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            aspect-ratio: 3/4; /* 更適合電子鎖的長寬比 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img {
+            max-height: 100%;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); /* 增加鎖體立體感 */
+        }
+        .tag-hot {
+            position: absolute; top: 10px; left: 10px;
+            background: var(--gold-matte); color: #000;
+            font-size: 0.75rem; font-weight: bold;
+            padding: 4px 8px; text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .feature-tag {
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            color: var(--text-secondary);
+            margin-right: 4px;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -195,7 +261,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand text-gold" href="index.html">
-                強匠鎖店 <span class="badge bg-primary ms-2 rounded-1">電子鎖旗艦館</span>
+                強匠鎖店 <span class="badge bg-primary ms-2 rounded-1">電子鎖體驗館</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
@@ -255,23 +321,22 @@
                     </p>
                     <div class="row g-5 pt-4">
                         <div class="col-md-4">
-                            <h4 class="text-white serif-font h2">10+</h4>
-                            <p class="text-white-50 small tracking-wide text-uppercase">Years Experience</p>
+                            <h4 class="text-white serif-font h2">10年</h4>
+                            <p class="text-white-50 small tracking-wide text-uppercase">在地經驗</p>
                         </div>
                         <div class="col-md-4">
-                            <h4 class="text-white serif-font h2">4800+</h4>
-                            <p class="text-white-50 small tracking-wide text-uppercase">Premium Installs</p>
+                            <h4 class="text-white serif-font h2">1000+</h4>
+                            <p class="text-white-50 small tracking-wide text-uppercase">豪宅安裝實績</p>
                         </div>
                         <div class="col-md-4">
                             <h4 class="text-white serif-font h2">100%</h4>
-                            <p class="text-white-50 small tracking-wide text-uppercase">Official Warranty</p>
+                            <p class="text-white-50 small tracking-wide text-uppercase">原廠保固</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- 3. Curated Brands (Tabs) -->
     <section id="brands" class="py-5">
         <div class="container">
@@ -282,59 +347,89 @@
 
             <!-- Minimal Tabs -->
             <ul class="nav nav-tabs brand-tabs" id="brandTab" role="tablist">
-                <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#philips">Philips</button></li>
-                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#yale">Yale</button></li>
-                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#samsung">Samsung</button></li>
+                <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#philips">Philips 飛利浦</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#yale">Yale 耶魯</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#samsung">Samsung 三星</button></li>
             </ul>
 
             <div class="tab-content" id="brandTabContent">
+                
                 <!-- Philips Tab -->
                 <div class="tab-pane fade show active" id="philips">
                     <div class="row g-5">
-                        <!-- Product 1 -->
+                        <!-- Product 1: Alpha -->
                         <div class="col-lg-4 col-md-6">
                             <div class="product-card">
-                                <div class="product-img-wrapper">
-                                    <img src="https://placehold.co/400x500/122442/d6b15e?text=Philips+Alpha" class="img-fluid product-img w-100" alt="Philips Alpha">
-                                </div>
-                                <h3 class="h4 text-white serif-font">Philips Alpha</h3>
-                                <p class="text-secondary small">推拉式旗艦．極致簡約</p>
-                                <div class="product-meta">
-                                    <span class="text-gold small">Fingerprint / Card / App</span>
-                                    <a href="#" class="text-white text-decoration-none small stretched-link">DETAILS <i class="bi bi-arrow-right ms-1"></i></a>
-                                </div>
+                                <a href="product-detail.html" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#D6B15E; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">熱銷 No.1</span>
+                                        <img src="https://placehold.co/300x500/122442/d6b15e?text=Philips+Alpha" class="img-fluid product-img" alt="Philips Alpha">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Philips Alpha</h3>
+                                    <p class="text-secondary small">推拉式旗艦．極致簡約美學</p>
+                                    <!-- 整合自舊版的功能標籤 -->
+                                    <div class="mb-3">
+                                        <span class="feature-tag">防夾手設計</span>
+                                        <span class="feature-tag">C級鎖芯</span>
+                                        <span class="feature-tag">靜音鎖體</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">指紋 / 密碼 / 卡片</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <!-- Product 2 -->
+                        
+                        <!-- Product 2: DDL702 -->
                         <div class="col-lg-4 col-md-6">
                             <div class="product-card">
-                                <div class="product-img-wrapper">
-                                    <img src="https://placehold.co/400x500/122442/d6b15e?text=Philips+DDL702" class="img-fluid product-img w-100" alt="Philips DDL702">
-                                </div>
-                                <h3 class="h4 text-white serif-font">Philips DDL702</h3>
-                                <p class="text-secondary small">3D人臉辨識．解放雙手</p>
-                                <div class="product-meta">
-                                    <span class="text-gold small">Face ID / Wi-Fi</span>
-                                    <a href="#" class="text-white text-decoration-none small stretched-link">DETAILS <i class="bi bi-arrow-right ms-1"></i></a>
-                                </div>
+                                <a href="product-detail.html" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#fff; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">人臉辨識</span>
+                                        <img src="https://placehold.co/300x500/122442/d6b15e?text=Philips+DDL702" class="img-fluid product-img" alt="Philips DDL702">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Philips DDL702E</h3>
+                                    <p class="text-secondary small">3D人臉辨識．雙手提物秒解鎖</p>
+                                    <div class="mb-3">
+                                        <span class="feature-tag">WiFi 直連</span>
+                                        <span class="feature-tag">雙目識別</span>
+                                        <span class="feature-tag">夜視紅外線</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">人臉 / 指紋 / App</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <!-- Product 3 -->
-                        <div class="col-lg-4 col-md-6">
+
+                         <!-- Product 3: 9300 -->
+                         <div class="col-lg-4 col-md-6">
                             <div class="product-card">
-                                <div class="product-img-wrapper">
-                                    <img src="https://placehold.co/400x500/122442/d6b15e?text=Philips+9300" class="img-fluid product-img w-100" alt="Philips 9300">
-                                </div>
-                                <h3 class="h4 text-white serif-font">Philips 9300</h3>
-                                <p class="text-secondary small">全自動鎖體．鋼化玻璃面板</p>
-                                <div class="product-meta">
-                                    <span class="text-gold small">IoT Ready / Auto Lock</span>
-                                    <a href="#" class="text-white text-decoration-none small stretched-link">DETAILS <i class="bi bi-arrow-right ms-1"></i></a>
-                                </div>
+                                <a href="product-detail.html" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <img src="https://placehold.co/300x500/122442/d6b15e?text=Philips+9300" class="img-fluid product-img" alt="Philips 9300">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Philips 9300</h3>
+                                    <p class="text-secondary small">全自動鎖體．鋼化玻璃面板</p>
+                                    <div class="mb-3">
+                                        <span class="feature-tag">鋼化玻璃</span>
+                                        <span class="feature-tag">自動上鎖</span>
+                                        <span class="feature-tag">室內感應開門</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">IoT 聯網 / 藍牙</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
                 <!-- Other tabs similar structure... -->
             </div>
             
@@ -404,7 +499,7 @@
                     <p class="text-secondary small">
                         高雄在地經營10年，最實在的鎖店<br>定義居家安全新高度。我們專業、快速、誠信，讓您安心又放心。
                     </p>
-                              <!-- Social Media Icons Row -->
+                    <!-- Social Media Icons Row -->
                     <div class="d-flex gap-3 mb-4">
                       <a href="https://www.facebook.com/KHsmartlock/" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook">
                         <i class="bi bi-facebook"></i>
