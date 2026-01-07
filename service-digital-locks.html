@@ -49,7 +49,7 @@
             height: 100vh;
             min-height: 700px;
             background: linear-gradient(rgba(11, 27, 58, 0.4), var(--bg-deep)),
-                        url('https://placehold.co/1920x1080/0f172a/d6b15e?text=Cinematic+Luxury+Home+Entrance') center/cover no-repeat;
+                        url('assets/images/service-digital-locks/hero.png') center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -253,6 +253,38 @@
             margin-bottom: 4px;
             display: inline-block;
         }
+        /* PARTNER BRANDS GRID */
+        .brand-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        @media (min-width: 768px) { .brand-grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (min-width: 992px) { .brand-grid { grid-template-columns: repeat(6, 1fr); } }
+        
+        .brand-pill {
+            display: flex; align-items: center; justify-content: center;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            padding: 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+        .brand-pill:hover {
+            background: rgba(214, 177, 94, 0.1);
+            border-color: var(--gold-matte);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        footer { border-top: 1px solid rgba(255,255,255,0.05); background: #08142b; }
+        .tracking-wide { letter-spacing: 0.15em; }
+        .text-justify { text-align: justify; }
+        .opacity-70 { opacity: 0.7; }
+        .sticky-cta { background: rgba(11, 27, 58, 0.95); backdrop-filter: blur(10px); border-top: 1px solid var(--gold-matte); }
+        .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
@@ -272,12 +304,17 @@
                     <li class="nav-item"><a class="nav-link" href="service-auto-keys.html"><i class="bi bi-car-front me-1"></i>汽車晶片鑰匙</a></li>
                     <li class="nav-item"><a class="nav-link active fw-bold" href="service-digital-locks.html"><i class="bi bi-fingerprint me-1"></i>電子鎖安裝</a></li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        <i class="bi bi-geo-alt me-1"></i>品牌系列
-                      </a>
-                      <ul class="dropdown-menu shadow-sm border-0">
-                        <li><a class="dropdown-item" href="area-sanmin.html">BRAND 品牌</a></li>
-                      </ul>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-grid-fill me-1"></i>品牌系列
+                        </a>
+                        <ul class="dropdown-menu shadow-sm border-0">
+                            <li><a class="dropdown-item" href="service-digital-locks.html?brand=philips#brands">Philips 飛利浦</a></li>
+                            <li><a class="dropdown-item" href="service-digital-locks.html?brand=samsung#brands">Samsung 三星</a></li>
+                            <li><a class="dropdown-item" href="service-digital-locks.html?brand=dormakaba#brands">Dormakaba 多瑪凱拔</a></li>
+                            <li><a class="dropdown-item" href="service-digital-locks.html?brand=mrlock#brands">Mr.Lock 鎖先生</a></li>
+                            <li><hr class="dropdown-divider" style="border-color:rgba(255,255,255,0.1);"></li>
+                            <li><a class="dropdown-item small text-secondary" href="service-digital-locks.html#partner-brands">查看所有合作品牌</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item d-none d-lg-block">
                         <a href="https://line.me/ti/p/~@giw8057p" class="btn btn-gold-outline py-2 px-4 small">
@@ -349,31 +386,137 @@
             <!-- Minimal Tabs -->
             <ul class="nav nav-tabs brand-tabs" id="brandTab" role="tablist">
                 <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#philips">Philips 飛利浦</button></li>
-                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#yale">Yale 耶魯</button></li>
                 <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#samsung">Samsung 三星</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#dormakaba">Dormakaba 多瑪凱拔</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#mrlock">Mr.Lock 電子鎖先生</button></li>
             </ul>
 
             <div class="tab-content" id="brandTabContent">
-                
-                <!-- Philips Tab -->
+                <!-- Philips Tab Content (Updated based on uploaded images) -->
                 <div class="tab-pane fade show active" id="philips">
                     <div class="row g-5">
-                        <!-- Product 1: Alpha -->
+                        
+                        <!-- Product 1: Philips DDL709-FVP (旗艦王者) -->
                         <div class="col-lg-4 col-md-6">
                             <div class="product-card">
-                                <a href="product-detail.html" class="text-decoration-none">
+                                <a href="#" class="text-decoration-none">
                                     <div class="product-img-wrapper">
-                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#D6B15E; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">熱銷 No.1</span>
-                                        <img src="https://placehold.co/300x500/122442/d6b15e?text=Philips+Alpha" class="img-fluid product-img" alt="Philips Alpha">
+                                        <!-- 建議標籤：旗艦新品 -->
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#D6B15E; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">旗艦王者</span>
+                                        <!-- 請替換為您的圖片: IMG_0803.jpg 或 f91c9fef...jpg -->
+                                        <img src="assets/images/service-digital-locks/philips/ddl709-fvp.jpg" class="img-fluid product-img" alt="Philips DDL709-FVP">
                                     </div>
-                                    <h3 class="h4 text-white serif-font mt-3">Philips Alpha</h3>
-                                    <p class="text-secondary small">推拉式旗艦．極致簡約美學</p>
-                                    <!-- 整合自舊版的功能標籤 -->
+                                    <h3 class="h4 text-white serif-font mt-3">Philips DDL709-FVP</h3>
+                                    <p class="text-secondary small">人臉辨識・可視貓眼・4吋大螢幕</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
                                     <div class="mb-3">
-                                        <span class="feature-tag">防夾手設計</span>
-                                        <span class="feature-tag">C級鎖芯</span>
-                                        <span class="feature-tag">靜音鎖體</span>
+                                        <span class="feature-tag">3D人臉識別</span>
+                                        <span class="feature-tag">遠程可視通話</span>
+                                        <span class="feature-tag">PIR徘徊報警</span>
                                     </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">人臉 / 指紋 / 密碼 / 卡片</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Product 2: Philips DDL702-FVP (新增：人臉可視) -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <!-- 新增項目 -->
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#fff; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">智能可視</span>
+                                        <!-- 圖片來源：之前提供的圖集 -->
+                                        <img src="assets/images/service-digital-locks/philips/ddl702-fvp.jpg" class="img-fluid product-img" alt="Philips DDL702-FVP">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Philips DDL702-FVP</h3>
+                                    <p class="text-secondary small">人臉辨識・Wi-Fi直連貓眼</p>
+                                    <div class="mb-3">
+                                        <span class="feature-tag">Wi-Fi直連</span>
+                                        <span class="feature-tag">雙向對講</span>
+                                        <span class="feature-tag">PIR人體偵測</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">人臉 / 指紋 / 密碼 / APP</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Product 2: Philips DDL702E (WIFI直連熱銷) -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#fff; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">Wi-Fi 直連</span>
+                                        <!-- 請替換為您的圖片: 5e6c99fc...jpg -->
+                                        <img src="assets/images/service-digital-locks/philips/ddl702e.jpg" class="img-fluid product-img" alt="Philips DDL702E">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Philips DDL702E</h3>
+                                    <p class="text-secondary small">Wi-Fi直連版・曜石黑推拉美學</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
+                                    <div class="mb-3">
+                                        <span class="feature-tag">免網關連線</span>
+                                        <span class="feature-tag">室內快開</span>
+                                        <span class="feature-tag">C級鎖芯</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">Wi-Fi / 指紋 / 密碼 / APP</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product 3: Philips DDL705E (經典執手式) -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <!-- 請替換為您的圖片: 759f6c73...jpg -->
+                                        <img src="assets/images/service-digital-locks/philips/ddl705e.jpg" class="img-fluid product-img" alt="Philips DDL705E">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Philips DDL705E</h3>
+                                    <p class="text-secondary small">經典執手式・指紋即握即開</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
+                                    <div class="mb-3">
+                                        <span class="feature-tag">把手指紋頭</span>
+                                        <span class="feature-tag">三色微笑燈</span>
+                                        <span class="feature-tag">防貓眼開啟</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">指紋 / 密碼 / 鑰匙 / 卡片</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product 4: Philips 703k (輕奢推薦 - 選擇性加入) -->
+                        <div class="col-lg-4 col-md-6 d-none d-lg-block">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <!-- 請替換為您的圖片: IMG_0804.jpg -->
+                                        <img src="assets/images/service-digital-locks/philips/703k.jpg" class="img-fluid product-img" alt="Philips 703k">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Philips 703k</h3>
+                                    <p class="text-secondary small">紅古銅輕奢款・全自動開關</p>
+                                    
+                                    <div class="mb-3">
+                                        <span class="feature-tag">室內逃生快開</span>
+                                        <span class="feature-tag">雙重驗證</span>
+                                        <span class="feature-tag">虛位密碼</span>
+                                    </div>
+                                    
                                     <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
                                         <span class="text-gold small" style="color: #D6B15E;">指紋 / 密碼 / 卡片</span>
                                         <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
@@ -381,46 +524,91 @@
                                 </a>
                             </div>
                         </div>
+
+                    </div>
+                </div>
+
+                <!-- Samsung Tab Content (Updated based on uploaded images) -->
+                <div class="tab-pane fade" id="samsung">
+                    <div class="row g-5">
                         
-                        <!-- Product 2: DDL702 -->
+                        <!-- Product 1: Samsung P70MAX (旗艦大屏) -->
                         <div class="col-lg-4 col-md-6">
                             <div class="product-card">
-                                <a href="product-detail.html" class="text-decoration-none">
+                                <a href="#" class="text-decoration-none">
                                     <div class="product-img-wrapper">
-                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#fff; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">人臉辨識</span>
-                                        <img src="https://placehold.co/300x500/122442/d6b15e?text=Philips+DDL702" class="img-fluid product-img" alt="Philips DDL702">
+                                        <!-- 圖片來源: d0bdc417...jpg -->
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#D6B15E; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">4.5吋大螢幕</span>
+                                        <!-- 請替換為您的圖片 -->
+                                        <img src="assets/images/service-digital-locks/samsung/p70max.jpg" class="img-fluid product-img" alt="Samsung P70MAX">
                                     </div>
-                                    <h3 class="h4 text-white serif-font mt-3">Philips DDL702E</h3>
-                                    <p class="text-secondary small">3D人臉辨識．雙手提物秒解鎖</p>
+                                    <h3 class="h4 text-white serif-font mt-3">Samsung P70MAX</h3>
+                                    <p class="text-secondary small">3D人臉識別・遠程可視旗艦</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
                                     <div class="mb-3">
-                                        <span class="feature-tag">WiFi 直連</span>
-                                        <span class="feature-tag">雙目識別</span>
-                                        <span class="feature-tag">夜視紅外線</span>
+                                        <span class="feature-tag">4.5吋IPS大屏</span>
+                                        <span class="feature-tag">3D人臉識別</span>
+                                        <span class="feature-tag">遠程解鎖</span>
                                     </div>
+                                    
                                     <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
-                                        <span class="text-gold small" style="color: #D6B15E;">人臉 / 指紋 / App</span>
+                                        <span class="text-gold small" style="color: #D6B15E;">人臉 / 指紋 / 密碼 / 卡片</span>
                                         <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
                                     </div>
                                 </a>
                             </div>
                         </div>
 
-                         <!-- Product 3: 9300 -->
-                         <div class="col-lg-4 col-md-6">
+                        <!-- Product 2: Samsung SY30MAX (掌靜脈黑科技) -->
+                        <div class="col-lg-4 col-md-6">
                             <div class="product-card">
-                                <a href="product-detail.html" class="text-decoration-none">
+                                <a href="#" class="text-decoration-none">
                                     <div class="product-img-wrapper">
-                                        <img src="https://placehold.co/300x500/122442/d6b15e?text=Philips+9300" class="img-fluid product-img" alt="Philips 9300">
+                                        <!-- 圖片來源: e6b8d870...jpg -->
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#fff; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">掌靜脈識別</span>
+                                        <!-- 請替換為您的圖片 -->
+                                        <img src="assets/images/service-digital-locks/samsung/sy30max.jpg" class="img-fluid product-img" alt="Samsung SY30MAX">
                                     </div>
-                                    <h3 class="h4 text-white serif-font mt-3">Philips 9300</h3>
-                                    <p class="text-secondary small">全自動鎖體．鋼化玻璃面板</p>
+                                    <h3 class="h4 text-white serif-font mt-3">Samsung SY30MAX</h3>
+                                    <p class="text-secondary small">掌靜脈識別・隔空解鎖新體驗</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
                                     <div class="mb-3">
-                                        <span class="feature-tag">鋼化玻璃</span>
-                                        <span class="feature-tag">自動上鎖</span>
-                                        <span class="feature-tag">室內感應開門</span>
+                                        <span class="feature-tag">掌靜脈識別</span>
+                                        <span class="feature-tag">3D人臉識別</span>
+                                        <span class="feature-tag">4吋IPS螢幕</span>
                                     </div>
+                                    
                                     <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
-                                        <span class="text-gold small" style="color: #D6B15E;">IoT 聯網 / 藍牙</span>
+                                        <span class="text-gold small" style="color: #D6B15E;">手掌 / 人臉 / 遠程可視</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product 3: Samsung SR60Max (經典人臉款) -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <!-- 圖片來源: ff18b25e...jpg -->
+                                        <!-- 請替換為您的圖片 -->
+                                        <img src="assets/images/service-digital-locks/samsung/sr60max.jpg" class="img-fluid product-img" alt="Samsung SR60Max">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Samsung SR60Max</h3>
+                                    <p class="text-secondary small">極簡美學・智能貓眼監控</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
+                                    <div class="mb-3">
+                                        <span class="feature-tag">3D人臉識別</span>
+                                        <span class="feature-tag">半導體指紋</span>
+                                        <span class="feature-tag">遠程可視</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">人臉 / 指紋 / 密碼 / 臨時密碼</span>
                                         <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
                                     </div>
                                 </a>
@@ -429,7 +617,186 @@
                     </div>
                 </div>
 
+                <!-- Dormakaba Tab Content (New Section) -->
+                <div class="tab-pane fade" id="dormakaba">
+                    <div class="row g-5">
+                        
+                        <!-- Product 1: Dormakaba AS850 (旗艦推拉) -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <!-- 圖片來源: C72EDFF2...jpg -->
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#D6B15E; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">德國工藝</span>
+                                        <!-- 請替換為您的圖片 -->
+                                        <img src="assets/images/service-digital-locks/dormakaba/as850.jpg" class="img-fluid product-img" alt="Dormakaba AS850">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Dormakaba AS850</h3>
+                                    <p class="text-secondary small">旗艦推拉式・奢華香檳金</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
+                                    <div class="mb-3">
+                                        <span class="feature-tag">四合一解鎖</span>
+                                        <span class="feature-tag">推拉式設計</span>
+                                        <span class="feature-tag">虛位密碼</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">指紋 / 密碼 / 卡片 / 鑰匙</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
+                        <!-- Product 2: Dormakaba AS701 (經典熱銷) -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <!-- 圖片來源: DAEEF1B9...jpg -->
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#fff; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">多彩選擇</span>
+                                        <!-- 請替換為您的圖片 -->
+                                        <img src="assets/images/service-digital-locks/dormakaba/as701.jpg" class="img-fluid product-img" alt="Dormakaba AS701">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Dormakaba AS701</h3>
+                                    <p class="text-secondary small">圓潤美學・三色任選</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
+                                    <div class="mb-3">
+                                        <span class="feature-tag">科技銀/香檳金/可可棕</span>
+                                        <span class="feature-tag">一握即開</span>
+                                        <span class="feature-tag">機械鑰匙</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">指紋 / 密碼 / 卡片 / 鑰匙</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product 3: Dormakaba ML660 (高CP值執手) -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <!-- 圖片來源: 8A50354A...jpg -->
+                                        <!-- 請替換為您的圖片 -->
+                                        <img src="assets/images/service-digital-locks/dormakaba/ml660.jpg" class="img-fluid product-img" alt="Dormakaba ML660">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">Dormakaba ML660</h3>
+                                    <p class="text-secondary small">極簡執手式・把手指紋設計</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
+                                    <div class="mb-3">
+                                        <span class="feature-tag">把手指紋辨識</span>
+                                        <span class="feature-tag">虛位密碼防窺</span>
+                                        <span class="feature-tag">靜音鎖體</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">指紋 / 密碼 / 卡片 / 鑰匙</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Mr.Lock Tab Content (New Section) -->
+                <div class="tab-pane fade" id="mrlock">
+                    <div class="row g-5">
+                        
+                        <!-- Product 1: 鎖先生 K1 (經典執手式) -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <!-- 圖片來源: B75E570B...jpg -->
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#D6B15E; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">五合一解鎖</span>
+                                        <!-- 請替換為您的圖片 -->
+                                        <img src="assets/images/service-digital-locks/mrlock/mrlock_k1.jpg" class="img-fluid product-img" alt="鎖先生 K1智能鎖">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">鎖先生 K1智能鎖</h3>
+                                    <p class="text-secondary small">經典執手式・把手指紋辨識</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
+                                    <div class="mb-3">
+                                        <span class="feature-tag">把手指紋頭</span>
+                                        <span class="feature-tag">多鎖點設計</span>
+                                        <span class="feature-tag">遠端管理</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">指紋 / 密碼 / 卡片 / 鑰匙 / 遠端</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product 2: 鎖先生 V8 (人臉可視) -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <!-- 圖片來源: 7DED7DB9...jpg -->
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#fff; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">人臉辨識</span>
+                                        <!-- 請替換為您的圖片 -->
+                                        <img src="assets/images/service-digital-locks/mrlock/mrlock_v8.jpg" class="img-fluid product-img" alt="鎖先生 V8智能鎖">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">鎖先生 V8智能鎖</h3>
+                                    <p class="text-secondary small">人臉辨識・遠端視訊對講</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
+                                    <div class="mb-3">
+                                        <span class="feature-tag">人臉辨識</span>
+                                        <span class="feature-tag">遠端視訊</span>
+                                        <span class="feature-tag">智能貓眼</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">人臉 / 指紋 / 密碼 / 卡片</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product 3: 鎖先生 S1 (旗艦可視) -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="product-img-wrapper">
+                                        <!-- 圖片來源: CD7A96BD...jpg -->
+                                        <span class="tag-hot" style="position:absolute; top:10px; left:10px; background:#D6B15E; color:#000; font-size:0.75rem; font-weight:bold; padding:4px 8px;">旗艦推薦</span>
+                                        <!-- 請替換為您的圖片 -->
+                                        <img src="assets/images/service-digital-locks/mrlock/mrlock_s1.jpg" class="img-fluid product-img" alt="鎖先生 S1智能鎖">
+                                    </div>
+                                    <h3 class="h4 text-white serif-font mt-3">鎖先生 S1智能鎖</h3>
+                                    <p class="text-secondary small">旗艦可視・大螢幕視訊門鎖</p>
+                                    
+                                    <!-- 來自圖片的功能亮點 -->
+                                    <div class="mb-3">
+                                        <span class="feature-tag">人臉辨識</span>
+                                        <span class="feature-tag">遠端視訊</span>
+                                        <span class="feature-tag">極簡黑色美學</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-3 mt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                        <span class="text-gold small" style="color: #D6B15E;">人臉 / 指紋 / 密碼 / 遠端</span>
+                                        <span class="text-white small">查看詳情 <i class="bi bi-arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
                 <!-- Other tabs similar structure... -->
             </div>
@@ -441,7 +808,55 @@
             </div>
         </div>
     </section>
-
+    <!-- NEW SECTION: All Partner Brands -->
+    <section id="partner-brands" class="py-5" style="background-color: rgba(0,0,0,0.2);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-gold small tracking-wide text-uppercase">Partners</span>
+                <h3 class="text-white mt-2">嚴選合作品牌</h3>
+                <p class="text-white-50 small">匯集全球頂尖電子鎖品牌，提供最完整的選擇</p>
+            </div>
+            
+            <div class="brand-grid">
+                <!-- A-C -->
+                <div class="brand-pill">Acer</div>
+                <div class="brand-pill">Arpha</div>
+                <div class="brand-pill">AXGON</div>
+                <!-- D-F -->
+                <div class="brand-pill text-gold">Dormakaba</div>
+                <div class="brand-pill">FAMMIX</div>
+                <!-- H-K -->
+                <div class="brand-pill">HITACHI</div>
+                <div class="brand-pill">Kaadas 凱迪仕</div>
+                <div class="brand-pill">Keenlock</div>
+                <div class="brand-pill">Kwikset</div>
+                <!-- L-M -->
+                <div class="brand-pill">Loock 鹿客</div>
+                <div class="brand-pill">Lockin</div>
+                <div class="brand-pill">Milre 美樂</div>
+                <!-- P-R -->
+                <div class="brand-pill text-gold">Philips 飛利浦</div>
+                <div class="brand-pill">RETH 瑋豪</div>
+                <!-- S -->
+                <div class="brand-pill text-gold">Samsung 三星</div>
+                <div class="brand-pill">SCION</div>
+                <div class="brand-pill">SHARP 夏普</div>
+                <div class="brand-pill">STANLEY</div>
+                <!-- V-W-Y -->
+                <div class="brand-pill">VIOMI 雲米</div>
+                <div class="brand-pill">WAFERLOCK 維夫拉克</div>
+                <div class="brand-pill">Yale 耶魯</div>
+                <!-- 中文品牌 -->
+                <div class="brand-pill text-gold">電子鎖先生 Mr.Lock</div>
+                <div class="brand-pill">小米 Xiaomi</div>
+                <div class="brand-pill">小島快鎖</div>
+                <div class="brand-pill">加安牌</div>
+                <div class="brand-pill">台熱牌</div>
+                <div class="brand-pill">琺博 FABO</div>
+                <div class="brand-pill">德國摩根</div>
+            </div>
+        </div>
+    </section>
     <!-- 4. Installation Service (Editorial Style) -->
     <section id="service" class="sop-section">
         <div class="container">
@@ -491,7 +906,7 @@
         </div>
     </section>
 
-    <!-- 5. Footer (Minimal) -->
+    <!-- Footer -->
     <footer class="py-5">
         <div class="container">
             <div class="row g-5">
@@ -500,26 +915,13 @@
                     <p class="text-secondary small">
                         高雄在地經營10年，最實在的鎖店<br>定義居家安全新高度。我們專業、快速、誠信，讓您安心又放心。
                     </p>
-                    <!-- Social Media Icons Row -->
                     <div class="d-flex gap-3 mb-4">
-                      <a href="https://www.facebook.com/KHsmartlock/" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook">
-                        <i class="bi bi-facebook"></i>
-                      </a>
-                      <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Instagram">
-                        <i class="bi bi-instagram"></i>
-                      </a>
-                      <a href="https://www.threads.net/@0906921957lock" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Threads">
-                        <i class="bi bi-at"></i>
-                      </a>
-                      <a href="https://www.youtube.com/@24H%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97%E9%AB%98%E9%9B%84%E9%9B%BB%E5%AD%90%E9%8E%96" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="YouTube">
-                        <i class="bi bi-youtube"></i>
-                      </a>
-                      <a href="https://line.me/ti/p/~@giw8057p" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="LINE">
-                        <i class="bi bi-line"></i>
-                      </a>
+                      <a href="https://www.facebook.com/KHsmartlock/" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Instagram"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.threads.net/@0906921957lock" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Threads"><i class="bi bi-at"></i></a>
+                      <a href="https://www.youtube.com/@24H%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97%E9%AB%98%E9%9B%84%E9%9B%BB%E5%AD%90%E9%8E%96" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="YouTube"><i class="bi bi-youtube"></i></a>
+                      <a href="https://line.me/ti/p/~@giw8057p" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="LINE"><i class="bi bi-line"></i></a>
                     </div>
-
-                    <!-- Google Maps Button -->
                     <a href="https://maps.app.goo.gl/SaT1dbcffoTzWQxq8" target="_blank" class="btn btn-outline-light btn-sm rounded-pill px-3">
                       <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Google 地圖導航
                     </a>
@@ -527,58 +929,71 @@
                 <div class="col-lg-4">
                   <h5 class="text-white small tracking-wide mb-3">高雄全區快速服務</h5>
                   <ul class="list-unstyled text-white-50 d-flex flex-wrap">
-                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">三民區電子鎖</a></li>
-                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">左營區電子鎖</a></li>
-                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">苓雅區電子鎖</a></li>
-                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">前鎮區電子鎖</a></li>
-                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">新興區電子鎖</a></li>
-                    <li class="w-50 mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-white">鳳山區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="area-sanmin.html" class="text-white-50 text-decoration-none hover-text-white">三民區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="area-zuoying.html" class="text-white-50 text-decoration-none hover-text-white">左營區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="area-lingya.html" class="text-white-50 text-decoration-none hover-text-white">苓雅區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="area-qianzheng.html" class="text-white-50 text-decoration-none hover-text-white">前鎮區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="area-xinxing.html" class="text-white-50 text-decoration-none hover-text-white">新興區電子鎖</a></li>
+                    <li class="w-50 mb-2"><a href="area-qianjin.html" class="text-white-50 text-decoration-none hover-text-white">前金區電子鎖</a></li>
                   </ul>
                 </div>
                 <div class="col-lg-4">
                     <h6 class="text-white small tracking-wide mb-3">聯絡資訊</h6>
                     <ul class="list-unstyled small text-secondary">
                         <li class="mb-2">0906-921-957 (林先生)</li>
-                        <li class="mb-2">
-                          <i class="bi bi-line me-2 text-success"></i>
-                          <a href="https://line.me/ti/p/~@giw8057p" class="text-white-50 text-decoration-none hover-text-white" target="_blank">ID: @giw8057p</a>
-                        </li>
-                        <li class="mb-2">
-                          <i class="bi bi-envelope me-2"></i>
-                          <a href="mailto:s10552@chyp.com.tw" class="text-white-50 text-decoration-none hover-text-white">s10552@chyp.com.tw</a>
-                        </li>
-                        <li class="mb-2 d-flex align-items-start">
-                          <i class="bi bi-geo-alt me-2 mt-1"></i>
-                          <a href="https://share.google/mz73ioCzKOPI2kod4" class="text-white-50 text-decoration-none hover-text-white" target="_blank">
-                            高雄市新興區復橫一路 116 號
-                          </a>
-                        </li>
+                        <li class="mb-2"><i class="bi bi-line me-2 text-success"></i><a href="https://line.me/ti/p/~@giw8057p" class="text-white-50 text-decoration-none hover-text-white" target="_blank">ID: @giw8057p</a></li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i><a href="mailto:s10552@chyp.com.tw" class="text-white-50 text-decoration-none hover-text-white">s10552@chyp.com.tw</a></li>
+                        <li class="mb-2 d-flex align-items-start"><i class="bi bi-geo-alt me-2 mt-1"></i><a href="https://share.google/mz73ioCzKOPI2kod4" class="text-white-50 text-decoration-none hover-text-white" target="_blank">高雄市新興區復橫一路 116 號</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="row align-items-center">
-              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                <span class="small text-white-50">&copy; 2025 強匠鎖店. All rights reserved.</span>
-              </div>
-              <div class="col-md-6 text-center text-md-end">
-                <span class="small text-white-50 me-3">隱私權政策</span>
-                <span class="small text-white-50">服務條款</span>
-              </div>
+            <div class="row align-items-center border-top border-white-10 pt-4 mt-4">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0"><span class="small text-white-50">&copy; 2025 強匠鎖店. All rights reserved.</span></div>
+              <div class="col-md-6 text-center text-md-end"><span class="small text-white-50 me-3">隱私權政策</span><span class="small text-white-50">服務條款</span></div>
             </div>
         </div>
     </footer>
 
     <!-- Mobile Sticky CTA -->
     <div class="sticky-cta fixed-bottom d-md-none p-3 d-flex gap-2">
-        <a href="tel:0906921957" class="btn btn-gold-outline flex-grow-1 w-100 text-center" style="background: var(--gold-matte); color: #000;">
-            預約安裝
-        </a>
-        <a href="https://line.me/ti/p/~@giw8057p" class="btn btn-gold-outline flex-grow-1 w-100 text-center bg-transparent text-white border-white">
-            LINE 諮詢
-        </a>
+        <a href="tel:0906921957" class="btn btn-gold-outline flex-grow-1 w-100 text-center" style="background: var(--gold-matte); color: #000;">預約安裝</a>
+        <a href="https://line.me/ti/p/~@giw8057p" class="btn btn-gold-outline flex-grow-1 w-100 text-center bg-transparent text-white border-white">LINE 諮詢</a>
     </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // 1. 解析 URL 中的參數
+        const urlParams = new URLSearchParams(window.location.search);
+        const brand = urlParams.get('brand');
+
+        if (brand) {
+            // 2. 找到對應的 Tab 按鈕 (例如 #philips-tab 或 data-bs-target="#philips")
+            // 假設您的 Tab 按鈕結構是 <button data-bs-target="#philips">
+            const tabButton = document.querySelector(`[data-bs-target="#${brand}"]`);
+
+            if (tabButton) {
+                // 3. 使用 Bootstrap API 切換 Tab
+                const tab = new bootstrap.Tab(tabButton);
+                tab.show();
+                
+                // 4. 滾動到品牌區塊 (修正 Header 遮擋)
+                const brandSection = document.getElementById('brands');
+                if (brandSection) {
+                    // 延遲一點點以確保 Tab 切換完成
+                    setTimeout(() => {
+                        const headerOffset = 80; // Navbar 高度
+                        const elementPosition = brandSection.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                    }, 100);
+                }
+            }
+        }
+    });
+</script>
+
 </body>
 </html>
