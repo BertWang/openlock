@@ -1,279 +1,136 @@
 <!DOCTYPE html>
-<html lang="zh-TW" data-skin="mid">
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>服務項目 | 強匠鎖店 - 台北開鎖、汽車鑰匙、電子鎖</title>
-  <meta name="description" content="強匠鎖店提供三大服務：汽車鑰匙配置、電子鎖安裝維修、一般開鎖服務。專業團隊、快速響應、24小時服務。">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- 自訂 CSS -->
-  <link rel="stylesheet" href="/assets/css/tokens.css">
-  <link rel="stylesheet" href="/assets/css/components.css">
-  <link rel="stylesheet" href="/assets/css/skins.css">
-  <link rel="stylesheet" href="/assets/css/pages.css">
-
-  <!-- favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>強匠鎖店 - 專業鎖定服務</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="skins.css">
+    <style>
+        body { background-color: var(--bg); color: var(--text); font-family: var(--font-primary); }
+        .btn-cta-phone { background-color: var(--cta-phone); color: white; border-radius: var(--radius); }
+        .btn-cta-line { background-color: var(--cta-line); color: white; border-radius: var(--radius); }
+        .card-service { background-color: var(--card-bg); border-radius: var(--radius); box-shadow: var(--shadow-card); border: 1px solid var(--accent); }
+        h1, h2, h3 { color: var(--primary); }
+    </style>
 </head>
-<body>
-  <!-- 導覽欄 -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" href="/">
-        <i class="bi bi-shield-lock-fill text-primary"></i>
-        強匠鎖店
-      </a>
-      
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body data-skin="base"> <!-- 可動態切換 high, mid, base -->
 
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-          <!-- 主要服務 - 按用戶意圖分類 -->
-          <li class="nav-item"><a class="nav-link active" href="/services.html">
-            <i class="bi bi-tools me-1"></i>開鎖服務
-          </a></li>
-          
-          <li class="nav-item"><a class="nav-link" href="/service-auto-keys.html">
-            <i class="bi bi-car-front me-1"></i>汽車鑰匙
-          </a></li>
-          
-          <li class="nav-item"><a class="nav-link" href="/digital-locks/models/index.html">
-            <i class="bi bi-fingerprint me-1"></i>電子鎖專區
-          </a></li>
-          
-          <!-- 服務區域下拉選單 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              <i class="bi bi-geo-alt me-1"></i>服務區域
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/area-sanmin.html">三民區</a></li>
-              <li><a class="dropdown-item" href="/area-zuoying.html">左營區</a></li>
-              <li><a class="dropdown-item" href="/area-xinxing.html">新興區</a></li>
-              <li><a class="dropdown-item" href="/area-qianjin.html">前金區</a></li>
-              <li><a class="dropdown-item" href="/area-lingya.html">苓雅區</a></li>
-              <li><a class="dropdown-item" href="/area-qianzheng.html">前鎮區</a></li>
-            </ul>
-          </li>
-          
-          <li class="nav-item"><a class="nav-link" href="/faq.html">
-            <i class="bi bi-question-circle me-1"></i>常見問題
-          </a></li>
-          
-          <li class="nav-item"><a class="nav-link" href="/reviews.html">
-            <i class="bi bi-star me-1"></i>客戶評價
-          </a></li>
-          
-          <li class="nav-item"><a class="nav-link" href="/contact.html">
-            <i class="bi bi-telephone me-1"></i>聯絡我們
-          </a></li>
-          
-          <!-- Desktop Only CTA Button -->
-          <li class="nav-item d-none d-lg-block ms-2">
-            <a href="tel:0906921957" class="btn rounded-pill px-4 py-2 fw-bold" style="background-color: var(--cta-phone); color: white; border: none;">
-              <i class="bi bi-telephone-fill me-2"></i>24H 緊急開鎖
-            </a>
-          </li>
-        </ul>
-      </div>
+    <!-- 1. Hero Section -->
+    <header class="container-fluid py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">高雄開鎖專家，30分鐘快速抵達</h1>
+            <p class="lead mb-4 text-muted">不開不收錢，價格透明，在地經營最有保障</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="tel:0912345678" class="btn btn-cta-phone btn-lg px-4">📞 立即通話</a>
+                <a href="https://line.me/ti/p/example" class="btn btn-cta-line btn-lg px-4">💬 LINE 報價</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Pain Points -->
+    <section class="container py-5">
+        <h2 class="text-center mb-5">您是否遇到這些問題？</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <article class="card-service p-4 h-100 text-center">
+                    <h3>半夜找不到人</h3>
+                    <p>鑰匙遺失或反鎖，深夜孤立無援？我們提供 24 小時緊急救援。</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="card-service p-4 h-100 text-center">
+                    <h3>擔心價格不透明</h3>
+                    <p>害怕師傅到場亂喊價？我們堅持「先報價後施工」，絕無隱形消費。</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="card-service p-4 h-100 text-center">
+                    <h3>鎖具被破壞</h3>
+                    <p>擔心開鎖傷門或傷車？專業無損開啟技術，保護您的資產。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Process -->
+    <section class="container py-5">
+        <h2 class="text-center mb-5">服務流程</h2>
+        <div class="row text-center">
+            <div class="col-4">
+                <div class="display-6 mb-2">📸</div>
+                <h4>1. 傳照報價</h4>
+                <p class="small">拍下鎖頭或鑰匙傳 LINE</p>
+            </div>
+            <div class="col-4">
+                <div class="display-6 mb-2">🚀</div>
+                <h4>2. 快速抵達</h4>
+                <p class="small">師傅 30 分鐘內趕到現場</p>
+            </div>
+            <div class="col-4">
+                <div class="display-6 mb-2">✅</div>
+                <h4>3. 完工付款</h4>
+                <p class="small">測試功能正常才收費</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Trust Bar -->
+    <section class="bg-light py-4" style="background-color: var(--accent) !important;">
+        <div class="container text-center">
+            <span class="h5 me-4">⭐ Google 評論 4.8 星</span>
+            <span class="h5">🛡️ 原廠保固承諾</span>
+        </div>
+    </section>
+
+    <!-- 5. Areas (SEO) -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">服務區域</h2>
+        <div class="row text-center">
+            <div class="col-4 col-md-2"><a href="#sanmin" class="text-decoration-none">三民區</a></div>
+            <div class="col-4 col-md-2"><a href="#zuoying" class="text-decoration-none">左營區</a></div>
+            <div class="col-4 col-md-2"><a href="#xinxing" class="text-decoration-none">新興區</a></div>
+            <div class="col-4 col-md-2"><a href="#qianjin" class="text-decoration-none">前金區</a></div>
+            <div class="col-4 col-md-2"><a href="#lingya" class="text-decoration-none">苓雅區</a></div>
+            <div class="col-4 col-md-2"><a href="#qianzhen" class="text-decoration-none">前鎮區</a></div>
+        </div>
+    </section>
+
+    <!-- 6. Reviews -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">客戶真實好評</h2>
+        <div class="card-service p-4 mb-3">
+            <p class="mb-2">"半夜兩點回家發現鑰匙不見，還好有強匠！師傅 20 分鐘就到了，開鎖速度超快。"</p>
+            <small class="text-muted">- 陳小姐 (三民區)</small>
+        </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="container py-5 mb-5">
+        <h2 class="text-center mb-4">常見問題</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        如果打不開會收費嗎？
+                    </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        我們承諾「不開不收錢」，若現場因技術問題無法開啟，絕不收取任何車馬費。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Sticky CTA -->
+    <div class="fixed-bottom d-md-none bg-white border-top p-3 d-flex gap-2" style="z-index: 1050;">
+        <a href="tel:0912345678" class="btn btn-cta-phone w-50 fw-bold">📞 電話急救</a>
+        <a href="https://line.me/ti/p/example" class="btn btn-cta-line w-50 fw-bold">💬 LINE 諮詢</a>
     </div>
-  </nav>
 
-  <!-- Hero 區塊 -->
-  <section class="service-page-hero py-5" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);">
-    <div class="container">
-      <h1 class="text-white mb-4">我們提供的服務</h1>
-      <p class="lead text-white-75">專業開鎖、配鑰匙、電子鎖安裝 — 全台灣信賴的鎖具服務商</p>
-    </div>
-  </section>
-
-  <!-- 服務卡片網格 -->
-  <section class="service-page-section py-5">
-    <div class="container">
-      <h2 class="mb-5 text-center">三大主要服務</h2>
-      
-      <div class="service-grid">
-        <!-- 服務 1: 汽車鑰匙 (Mid) -->
-        <div class="service-card" data-skin="mid">
-          <div class="card h-100 border-0">
-            <div class="card-body">
-              <h5 class="card-title">🚗 汽車鑰匙</h5>
-              <p class="card-text text-muted">專業汽車鑰匙配置與遙控器維修</p>
-              <ul class="list-unstyled small mb-4">
-                <li>✓ 各品牌車型鑰匙配置</li>
-                <li>✓ 遙控器電池更換</li>
-                <li>✓ 晶片鑰匙複製</li>
-                <li>✓ 現場快速服務</li>
-              </ul>
-            </div>
-            <div class="card-footer bg-transparent border-top-0 pt-0">
-              <a href="/service-auto-keys.html" class="btn btn-primary btn-sm w-100">了解更多</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 服務 2: 電子鎖 (High) -->
-        <div class="service-card" data-skin="high">
-          <div class="card h-100 border-0">
-            <div class="card-body">
-              <h5 class="card-title">🔐 電子鎖</h5>
-              <p class="card-text text-muted">智能電子鎖安裝與維修服務</p>
-              <ul class="list-unstyled small mb-4">
-                <li>✓ 指紋鎖安裝</li>
-                <li>✓ 密碼鎖配置</li>
-                <li>✓ 卡片鎖系統</li>
-                <li>✓ 故障診斷維修</li>
-              </ul>
-            </div>
-            <div class="card-footer bg-transparent border-top-0 pt-0">
-              <a href="/service-digital-locks.html" class="btn btn-primary btn-sm w-100">了解更多</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 服務 3: 開鎖 (Base) -->
-        <div class="service-card" data-skin="base">
-          <div class="card h-100 border-0">
-            <div class="card-body">
-              <h5 class="card-title">🔑 一般開鎖</h5>
-              <p class="card-text text-muted">快速專業的開鎖服務</p>
-              <ul class="list-unstyled small mb-4">
-                <li>✓ 住家開鎖</li>
-                <li>✓ 機車鎖開啟</li>
-                <li>✓ 櫃子門鎖</li>
-                <li>✓ 24 小時服務</li>
-              </ul>
-            </div>
-            <div class="card-footer bg-transparent border-top-0 pt-0">
-              <a href="/service-emergency-lock.html" class="btn btn-primary btn-sm w-100">了解更多</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 為何選擇強匠 -->
-  <section class="service-page-section py-5" style="background-color: #f8f9fa;">
-    <div class="container">
-      <h2 class="mb-5 text-center">為何選擇強匠鎖店</h2>
-      
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="trust-badge text-center">
-            <div class="trust-icon mb-3">
-              <span class="display-5">⭐</span>
-            </div>
-            <h6>高品質服務</h6>
-            <p class="small text-muted">專業技術團隊，確保每項工作都達到高標準</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="trust-badge text-center">
-            <div class="trust-icon mb-3">
-              <span class="display-5">⏱️</span>
-            </div>
-            <h6>快速響應</h6>
-            <p class="small text-muted">緊急狀況快速出車，30 分鐘內抵達現場</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="trust-badge text-center">
-            <div class="trust-icon mb-3">
-              <span class="display-5">🛡️</span>
-            </div>
-            <h6>保密安全</h6>
-            <p class="small text-muted">嚴格保護客戶隱私，遵守行業最高倫理標準</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="trust-badge text-center">
-            <div class="trust-icon mb-3">
-              <span class="display-5">💰</span>
-            </div>
-            <h6>合理價格</h6>
-            <p class="small text-muted">透明計價，無隱藏費用，提供多種付款方式</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 服務覆蓋地區 -->
-  <section class="service-page-section py-5">
-    <div class="container">
-      <h2 class="mb-5 text-center">服務地區</h2>
-      <p class="text-center mb-5 text-muted">我們服務台北市多個行政區，歡迎來電查詢是否服務您的區域</p>
-      
-      <div class="areas-grid">
-        <a href="/area-sanmin.html" class="btn btn-outline-primary">三民區</a>
-        <a href="/area-zuoying.html" class="btn btn-outline-primary">左營區</a>
-        <a href="/area-xinxing.html" class="btn btn-outline-primary">新興區</a>
-        <a href="/area-qianjin.html" class="btn btn-outline-primary">前金區</a>
-        <a href="/area-lingya.html" class="btn btn-outline-primary">苓雅區</a>
-        <a href="/area-qianzheng.html" class="btn btn-outline-primary">前鎮區</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 底部 CTA -->
-  <section class="bottom-cta py-5">
-    <div class="container text-center">
-      <h3 class="mb-4">需要立即服務嗎？</h3>
-      <div class="d-flex gap-3 justify-content-center flex-wrap">
-        <a href="tel:+886234567890" class="btn btn-call btn-lg">
-          📞 直接撥打
-        </a>
-        <a href="https://line.me/R/ti/p/%40qwerty" class="btn btn-line btn-lg">
-          💬 LINE 聯絡
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 固定 CTA Bar（行動版） -->
-  <div class="cta-bar-fixed">
-    <a href="tel:+886234567890" class="btn btn-call btn-sm flex-fill">撥打</a>
-    <a href="https://line.me/R/ti/p/%40qwerty" class="btn btn-line btn-sm flex-fill">LINE</a>
-  </div>
-
-  <!-- 頁尾 -->
-  <footer class="bg-dark text-white py-5 mt-5">
-    <div class="container">
-      <div class="row g-4 mb-4">
-        <div class="col-md-6">
-          <h6>強匠鎖店</h6>
-          <p class="small text-muted">
-            專業開鎖、汽車鑰匙、電子鎖服務<br>
-            24 小時營業，快速響應
-          </p>
-        </div>
-        <div class="col-md-6">
-          <h6>快速連結</h6>
-          <ul class="list-unstyled small">
-            <li><a href="/" class="text-muted text-decoration-none">首頁</a></li>
-            <li><a href="/services.html" class="text-muted text-decoration-none">服務項目</a></li>
-            <li><a href="/contact.html" class="text-muted text-decoration-none">聯絡我們</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr class="border-secondary">
-      <p class="text-center text-muted small mb-0">&copy; 2024 強匠鎖店. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap Bundle JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- 自訂 App JS -->
-  <script src="/assets/js/app.js"></script>
 </body>
 </html>
