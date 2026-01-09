@@ -358,15 +358,15 @@
                         並由原廠認證技師提供精品級安裝服務，確保每一個細節都完美無瑕。
                     </p>
                     <div class="row g-5 pt-4">
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <h4 class="text-white serif-font h2">10年</h4>
                             <p class="text-white-50 small tracking-wide text-uppercase">在地經驗</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <h4 class="text-white serif-font h2">1000+</h4>
                             <p class="text-white-50 small tracking-wide text-uppercase">豪宅安裝實績</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <h4 class="text-white serif-font h2">100%</h4>
                             <p class="text-white-50 small tracking-wide text-uppercase">原廠保固</p>
                         </div>
@@ -808,55 +808,6 @@
             </div>
         </div>
     </section>
-    <!-- NEW SECTION: All Partner Brands -->
-    <section id="partner-brands" class="py-5" style="background-color: rgba(0,0,0,0.2);">
-        <div class="container">
-            <div class="text-center mb-5">
-                <span class="text-gold small tracking-wide text-uppercase">Partners</span>
-                <h3 class="text-white mt-2">嚴選合作品牌</h3>
-                <p class="text-white-50 small">匯集全球頂尖電子鎖品牌，提供最完整的選擇</p>
-            </div>
-            
-            <div class="brand-grid">
-                <!-- A-C -->
-                <div class="brand-pill">Acer</div>
-                <div class="brand-pill">Arpha</div>
-                <div class="brand-pill">AXGON</div>
-                <!-- D-F -->
-                <div class="brand-pill text-gold">Dormakaba</div>
-                <div class="brand-pill">FAMMIX</div>
-                <!-- H-K -->
-                <div class="brand-pill">HITACHI</div>
-                <div class="brand-pill">Kaadas 凱迪仕</div>
-                <div class="brand-pill">Keenlock</div>
-                <div class="brand-pill">Kwikset</div>
-                <!-- L-M -->
-                <div class="brand-pill">Loock 鹿客</div>
-                <div class="brand-pill">Lockin</div>
-                <div class="brand-pill">Milre 美樂</div>
-                <!-- P-R -->
-                <div class="brand-pill text-gold">Philips 飛利浦</div>
-                <div class="brand-pill">RETH 瑋豪</div>
-                <!-- S -->
-                <div class="brand-pill text-gold">Samsung 三星</div>
-                <div class="brand-pill">SCION</div>
-                <div class="brand-pill">SHARP 夏普</div>
-                <div class="brand-pill">STANLEY</div>
-                <!-- V-W-Y -->
-                <div class="brand-pill">VIOMI 雲米</div>
-                <div class="brand-pill">WAFERLOCK 維夫拉克</div>
-                <div class="brand-pill">Yale 耶魯</div>
-                <!-- 中文品牌 -->
-                <div class="brand-pill text-gold">電子鎖先生 Mr.Lock</div>
-                <div class="brand-pill">小米 Xiaomi</div>
-                <div class="brand-pill">小島快鎖</div>
-                <div class="brand-pill">加安牌</div>
-                <div class="brand-pill">台熱牌</div>
-                <div class="brand-pill">琺博 FABO</div>
-                <div class="brand-pill">德國摩根</div>
-            </div>
-        </div>
-    </section>
     <!-- 4. Installation Service (Editorial Style) -->
     <section id="service" class="sop-section">
         <div class="container">
@@ -879,9 +830,43 @@
                     <div class="sop-content">
                         <span class="sop-number">01</span>
                         <h4 class="text-white h5 mb-3">精準評估</h4>
-                        <p class="text-secondary small text-justify">
-                            安裝前，我們會仔細評估門扇材質、厚度與水平度。針對特殊門款（如雙開門、鍛造門），提供客製化的配件解決方案。
+                        <p class="text-secondary small text-justify mb-3">
+                            安裝前測量門厚(35-50mm)、鉸鏈位置、鎖舌伸出、門縫間隙、門材質。確認推拉/平開/防盜門類型，提供客製方案。
                         </p>
+                                                
+                        <!-- 評估照片範例（RWD優化） -->
+                        <div class="assess-gallery row g-2">
+                            <div class="col-6 col-md-6">
+                                <img src="assets/images/service-digital-locks/door-assess-1.jpg" class="img-fluid rounded shadow-sm modal-trigger" data-bs-toggle="modal" data-bs-target="#assessModal1" alt="門厚與鉸鏈測量">
+                                <small class="text-white-50 d-block text-center mt-1">門厚・鉸鏈</small>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <img src="assets/images/service-digital-locks/door-assess-2.jpg" class="img-fluid rounded shadow-sm modal-trigger" data-bs-toggle="modal" data-bs-target="#assessModal2" alt="鎖舌伸出與門縫測量">
+                                <small class="text-white-50 d-block text-center mt-1">鎖舌・門縫</small>
+                            </div>
+                        </div>
+                        <p class="text-secondary small text-justify mb-0 mt-3">
+                            上傳類似照片，即可線上免費評估適合型號。
+                        </p>
+                    </div>
+                </div>
+                <!-- 點擊放大模態框（手機友好） -->
+                <div class="modal fade" id="assessModal1" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content bg-dark border-0">
+                            <div class="modal-body p-0">
+                                <img src="assets/images/service-digital-locks/door-assess-1.jpg" class="modal-img w-100" alt="門厚與鉸鏈測量細節">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="assessModal2" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content bg-dark border-0">
+                            <div class="modal-body p-0">
+                                <img src="assets/images/service-digital-locks/door-assess-2.jpg" class="modal-img w-100" alt="鎖舌伸出與門縫測量細節">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
