@@ -754,3 +754,8 @@ body {
     display: none !important;
   }
 }
+@media (max-width: 991px) {
+    body {
+        padding-bottom: 110px; /* 懸浮欄高度 + 緩衝 */
+    }
+}
