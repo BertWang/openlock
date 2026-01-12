@@ -429,6 +429,32 @@ body {
   flex-wrap: wrap;
 }
 
+@media (min-width: 992px) {
+  .fs-lg-3 { font-size: 1.75rem !important; } /* Bootstrap fs-3 */
+  .fs-lg-5 { font-size: 1.25rem !important; } /* Bootstrap fs-5 */
+  .service-card-item .rounded-circle { width: 60px !important; height: 60px !important; }
+}
+
+/* 手機版 (預設) */
+.step-circle {
+    width: 45px !important; 
+    height: 45px !important; 
+    font-size: 1.2rem !important;
+}
+
+/* 桌機版 (md 以上) */
+@media (min-width: 768px) {
+    .step-circle {
+        width: 60px !important; 
+        height: 60px !important; 
+        font-size: 1.5rem !important;
+    }
+    .position-absolute.border-top {
+        top: 50% !important; /* 桌機版連接線位置恢復 */
+        transform: translateY(-20px);
+    }
+}
+
 /* 服務頁區塊間距 */
 
 .service-page-section {
