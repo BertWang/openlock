@@ -671,6 +671,13 @@ body {
   color: var(--on-surface, #0b1220);
 }
 
+.transition-hover {
+    transition: background-color 0.2s ease;
+}
+.transition-hover:hover {
+    background-color: #f8f9fa; /* 極淺灰色背景 */
+    cursor: default;
+}
 /* ========== 響應式調整 ========== */
 
 @media (max-width: 768px) {
