@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,174 +16,197 @@
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/home.css" />
   <style>
-/* =========================================
+    /* =========================================
    質感增強 CSS - 記憶錨點系統
    ========================================= */
 
-/* A. Hero 背景質感化 (Tech & Craft Texture) */
-.hero-texture {
-  background-image: 
-    /* 淡淡的網格線，暗示精準 */
-    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    /* 暗示金屬質感的光暈 */
-    radial-gradient(circle at 30% 30%, rgba(220, 53, 69, 0.08), transparent 50%),
-    radial-gradient(circle at 70% 70%, rgba(251, 191, 36, 0.08), transparent 50%);
-  background-size: 50px 50px, 50px 50px, 100% 100%, 100% 100%;
-  background-position: 0 0, 0 0, center, center;
-}
-.hero-texture {
-  /* 使用師傅施工照作為背景，並疊加深色遮罩 */
-  background: 
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(41, 41, 41, 0.151)),
-    url('assets/images/index/index_hero2.webp'); /* 師傅施工照 */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* 視差滾動效果，質感更佳 */
-}
-/* B. 脈衝動畫：讓救援按鈕看起來像在呼吸 */
-@keyframes pulse-red {
-  0% {
-    box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
-  }
-  70% {
-    box-shadow: 0 0 0 20px rgba(220, 53, 69, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
-  }
-}
+    /* A. Hero 背景質感化 (Tech & Craft Texture) */
+    .hero-texture {
+      background-image:
+        /* 淡淡的網格線，暗示精準 */
+        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        /* 暗示金屬質感的光暈 */
+        radial-gradient(circle at 30% 30%, rgba(220, 53, 69, 0.08), transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba(251, 191, 36, 0.08), transparent 50%);
+      background-size: 50px 50px, 50px 50px, 100% 100%, 100% 100%;
+      background-position: 0 0, 0 0, center, center;
+    }
 
-.pulse-anim {
-  animation: pulse-red 2s infinite;
-}
+    .hero-texture {
+      /* 使用師傅施工照作為背景，並疊加深色遮罩 */
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(41, 41, 41, 0.151)),
+        url('assets/images/index/index_hero2.webp');
+      /* 師傅施工照 */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      /* 視差滾動效果，質感更佳 */
+    }
 
-/* C. 輕微跳動：讓標籤更顯眼 */
-@keyframes bounce-gentle {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-}
+    /* B. 脈衝動畫：讓救援按鈕看起來像在呼吸 */
+    @keyframes pulse-red {
+      0% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+      }
 
-.animate-bounce {
-  animation: bounce-gentle 3s infinite ease-in-out;
-}
+      70% {
+        box-shadow: 0 0 0 20px rgba(220, 53, 69, 0);
+      }
 
-/* D. 按鈕流光效果 (Shimmer Effect) */
-.btn-shimmer {
-  position: relative;
-  overflow: hidden;
-}
+      100% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+      }
+    }
 
-.btn-shimmer::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transform: skewX(-25deg);
-  animation: shimmer 3s infinite;
-  pointer-events: none; /* 確保不會阻擋點擊 */
-}
+    .pulse-anim {
+      animation: pulse-red 2s infinite;
+    }
 
-@keyframes shimmer {
-  0% { left: -100%; }
-  20% { left: 200%; }
-  100% { left: 200%; }
-}
+    /* C. 輕微跳動：讓標籤更顯眼 */
+    @keyframes bounce-gentle {
 
-/* E. 服務卡片的「解鎖」互動 (Unlock Hover) */
-.service-split-item {
-  position: relative;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-top: 4px solid transparent;
-  cursor: pointer;
-}
+      0%,
+      100% {
+        transform: translateY(0);
+      }
 
-.service-split-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-  z-index: 10;
-}
+      50% {
+        transform: translateY(-5px);
+      }
+    }
 
-/* 針對不同區塊的 Hover 線條顏色 */
-.service-split-item:nth-child(1):hover { 
-  border-top-color: #dc3545; 
-  background-color: #fff !important;
-}
-.service-split-item:nth-child(2):hover { 
-  border-top-color: #0d6efd; 
-  background-color: #fff !important;
-}
-.service-split-item:nth-child(3):hover { 
-  border-top-color: #ffc107; 
-  background-color: #1a1a1a !important;
-}
+    .animate-bounce {
+      animation: bounce-gentle 3s infinite ease-in-out;
+    }
 
-/* 圖示放大 */
-.service-split-item:hover i {
-  transform: scale(1.2) rotate(5deg);
-  transition: transform 0.3s ease;
-}
+    /* D. 按鈕流光效果 (Shimmer Effect) */
+    .btn-shimmer {
+      position: relative;
+      overflow: hidden;
+    }
 
-/* F. 手機版優化 */
-@media (max-width: 768px) {
-  .hero-section {
-    padding-top: 80px !important;
-  }
-  
-  .service-split-item {
-    border-right: none !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  }
-  
-  .btn-shimmer {
-    font-size: 1.25rem !important;
-    padding: 1rem 2rem !important;
-  }
-}
+    .btn-shimmer::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(to right,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.3) 50%,
+          rgba(255, 255, 255, 0) 100%);
+      transform: skewX(-25deg);
+      animation: shimmer 3s infinite;
+      pointer-events: none;
+      /* 確保不會阻擋點擊 */
+    }
 
-/* G. 確保按鈕文字在動畫時清晰可見 */
-.btn-shimmer span,
-.btn-shimmer i {
-  position: relative;
-  z-index: 1;
-}
+    @keyframes shimmer {
+      0% {
+        left: -100%;
+      }
 
-/* Bottom Fixed CTA Bar */
-.fixed-cta-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background: white;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-  padding: 10px;
-}
-/* 讓卡片浮起的互動效果 */
-.hover-lift:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-}
+      20% {
+        left: 200%;
+      }
 
-.transition-base {
-  transition: all 0.3s ease-in-out;
-}
+      100% {
+        left: 200%;
+      }
+    }
 
-/* 字距微調，讓小字更易讀 */
-.ls-1 {
-  letter-spacing: 1px;
-}
+    /* E. 服務卡片的「解鎖」互動 (Unlock Hover) */
+    .service-split-item {
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border-top: 4px solid transparent;
+      cursor: pointer;
+    }
 
-   </style>
+    .service-split-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      z-index: 10;
+    }
+
+    /* 針對不同區塊的 Hover 線條顏色 */
+    .service-split-item:nth-child(1):hover {
+      border-top-color: #dc3545;
+      background-color: #fff !important;
+    }
+
+    .service-split-item:nth-child(2):hover {
+      border-top-color: #0d6efd;
+      background-color: #fff !important;
+    }
+
+    .service-split-item:nth-child(3):hover {
+      border-top-color: #ffc107;
+      background-color: #1a1a1a !important;
+    }
+
+    /* 圖示放大 */
+    .service-split-item:hover i {
+      transform: scale(1.2) rotate(5deg);
+      transition: transform 0.3s ease;
+    }
+
+    /* F. 手機版優化 */
+    @media (max-width: 768px) {
+      .hero-section {
+        padding-top: 80px !important;
+      }
+
+      .service-split-item {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .btn-shimmer {
+        font-size: 1.25rem !important;
+        padding: 1rem 2rem !important;
+      }
+    }
+
+    /* G. 確保按鈕文字在動畫時清晰可見 */
+    .btn-shimmer span,
+    .btn-shimmer i {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Bottom Fixed CTA Bar */
+    .fixed-cta-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: white;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+
+    /* 讓卡片浮起的互動效果 */
+    .hover-lift:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .transition-base {
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* 字距微調，讓小字更易讀 */
+    .ls-1 {
+      letter-spacing: 1px;
+    }
+  </style>
 </head>
+
 <body>
   <!-- 1. Header / Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
@@ -190,7 +214,7 @@
       <a class="navbar-brand fw-bold align-items-center gap-2r" href="index.html">
         <img src="assets/images/logo.png" alt="強匠鎖店" class="img-fluid " style="max-width: 40px;">
         <span style="color: #D6B15E;">強匠</span>鎖店
-      </a>    
+      </a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -199,28 +223,31 @@
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
           <!-- 主要服務 - 按用戶意圖分類 -->
           <li class="nav-item"><a class="nav-link" href="services.html"><i class="bi bi-tools me-1"></i>開鎖服務</a></li>
-          <li class="nav-item"><a class="nav-link" href="service-auto-keys.html"><i class="bi bi-car-front me-1"></i>汽車晶片鑰匙</a></li>
-          <li class="nav-item"><a class="nav-link" href="service-digital-locks.html"><i class="bi bi-fingerprint me-1"></i>電子鎖安裝</a></li>
+          <li class="nav-item"><a class="nav-link" href="service-auto-keys.html"><i
+                class="bi bi-car-front me-1"></i>汽車晶片鑰匙</a></li>
+          <li class="nav-item"><a class="nav-link" href="service-digital-locks.html"><i
+                class="bi bi-fingerprint me-1"></i>電子鎖安裝</a></li>
           <!-- 服務區域下拉選單 -->
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                  <i class="bi bi-geo-alt me-1"></i>服務地區
-              </a>
-              <ul class="dropdown-menu shadow-sm border-0">
-                  <li><a class="dropdown-item" href="area-sanmin.html">三民區開鎖</a></li>
-                  <li><a class="dropdown-item" href="area-zuoying.html">左營區開鎖</a></li>
-                  <li><a class="dropdown-item" href="area-xinxing.html">新興區開鎖</a></li>
-                  <li><a class="dropdown-item" href="area-qianjin.html">前金區開鎖</a></li>
-                  <li><a class="dropdown-item" href="area-lingya.html">苓雅區開鎖</a></li>
-                  <li><a class="dropdown-item" href="area-qianzheng.html">前鎮區開鎖</a></li>       
-              </ul>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-geo-alt me-1"></i>服務地區
+            </a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item" href="area-sanmin.html">三民區開鎖</a></li>
+              <li><a class="dropdown-item" href="area-zuoying.html">左營區開鎖</a></li>
+              <li><a class="dropdown-item" href="area-xinxing.html">新興區開鎖</a></li>
+              <li><a class="dropdown-item" href="area-qianjin.html">前金區開鎖</a></li>
+              <li><a class="dropdown-item" href="area-lingya.html">苓雅區開鎖</a></li>
+              <li><a class="dropdown-item" href="area-qianzheng.html">前鎮區開鎖</a></li>
+            </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-info-circle me-1"></i>關於我們</a></li>
-          <li class="nav-item"><a class="nav-link" href="#reviews"><i class="bi bi-star me-1"></i>客戶評價</a></li>      
-          <li class="nav-item"><a class="nav-link" href="#faq"><i class="bi bi-question-circle me-1"></i>常見問題</a></li>       
+          <li class="nav-item"><a class="nav-link" href="#reviews"><i class="bi bi-star me-1"></i>客戶評價</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq"><i class="bi bi-question-circle me-1"></i>常見問題</a></li>
           <!-- Desktop Only CTA Button -->
           <li class="nav-item d-none d-lg-block ms-2">
-            <a href="tel:0906921957" class="btn rounded-pill px-4 py-2 fw-bold" style="background-color: var(--cta-phone); color: white; border: none;">
+            <a href="tel:0906921957" class="btn rounded-pill px-4 py-2 fw-bold"
+              style="background-color: var(--cta-phone); color: white; border: none;">
               <i class="bi bi-telephone-fill me-2"></i>24H 緊急開鎖
             </a>
           </li>
@@ -229,23 +256,23 @@
     </div>
   </nav>
   <!-- 2. Hero Section: 救援優先戰情室 + 質感紋理 -->
-  <header class="hero-section hero-texture text-center position-relative overflow-hidden border-bottom" >
+  <header class="hero-section hero-texture text-center position-relative overflow-hidden border-bottom">
     <!-- 背景遮罩：讓文字更清晰 -->
-    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.425); z-index: 1;"></div>
-        <!-- 內容層 -->
+    <div class="position-absolute top-0 start-0 w-100 h-100"
+      style="background-color: rgba(0, 0, 0, 0.425); z-index: 1;"></div>
+    <!-- 內容層 -->
     <div class="container position-relative mt-lg-5" style="z-index: 2;">
       <div class="row justify-content-center py-1 py-lg-5 align-items-center min-vh-75">
         <div class="col-lg-8">
-          <img src="assets/images/index/hero_locksmith.webp" 
-                class="img-fluid mb-4 rounded-token d-block d-sm-none fs-5" 
-                alt="強匠鎖店-高雄24小時緊急開鎖服務" 
-                style="max-width: 100%; height: auto; ">
+          <img src="assets/images/index/hero_locksmith.webp" class="img-fluid mb-4 rounded-token d-block d-sm-none fs-5"
+            alt="強匠鎖店-高雄24小時緊急開鎖服務" style="max-width: 100%; height: auto; ">
           <!-- 閃電急救標籤 (視覺定錨) -->
-          <div class="d-inline-flex align-items-center bg-warning text-dark fw-bold px-4 py-2 rounded-pill mb-4 shadow-lg animate-bounce">
-            <i class="bi bi-lightning-charge-fill me-2 fs-5 text-danger"></i> 
+          <div
+            class="d-inline-flex align-items-center bg-warning text-dark fw-bold px-4 py-2 rounded-pill mb-4 shadow-lg animate-bounce">
+            <i class="bi bi-lightning-charge-fill me-2 fs-5 text-danger"></i>
             <span class="text-uppercase" style="letter-spacing: 1px;">高雄全區・最快 30 分鐘抵達</span>
           </div>
-          
+
           <!-- 主標題：紅黃配色激發急迫感 -->
           <h1 class="display-3 fw-bolder text-white mb-3" style="text-shadow: 0 4px 12px rgba(0,0,0,0.5);">
             <span class="text-warning">急需</span> 開鎖救援？
@@ -258,18 +285,22 @@
           <!-- 巨大的緊急按鈕群 -->
           <div class="d-flex flex-column flex-sm-row justify-content-center gap-4 mb-4 mb-lg-5">
             <!-- 紅色救援按鈕：帶有脈衝動畫 + 流光 -->
-            <a href="tel:0906921957" class="btn btn-danger btn-lg btn-shimmer pulse-anim px-5 py-4 fs-3 fw-bold shadow-lg rounded-pill d-flex align-items-center justify-content-center gap-3" style="position: relative; z-index: 1;">
-              <i class="bi bi-telephone-fill"></i> 
+            <a href="tel:0906921957"
+              class="btn btn-danger btn-lg btn-shimmer pulse-anim px-5 py-4 fs-3 fw-bold shadow-lg rounded-pill d-flex align-items-center justify-content-center gap-3"
+              style="position: relative; z-index: 1;">
+              <i class="bi bi-telephone-fill"></i>
               <span>一鍵開鎖</span>
             </a>
-            
+
             <!-- LINE 報價按鈕：次要但顯眼 + 流光 -->
-            <a href="https://line.me/ti/p/~@giw8057p" class="btn btn-success btn-lg btn-shimmer px-5 py-4 fs-3 fw-bold shadow-lg rounded-pill d-flex align-items-center justify-content-center gap-3" style="position: relative; z-index: 1; background-color: #06c755; border: none;">
-              <i class="bi bi-line"></i> 
+            <a href="https://line.me/ti/p/~@giw8057p"
+              class="btn btn-success btn-lg btn-shimmer px-5 py-4 fs-3 fw-bold shadow-lg rounded-pill d-flex align-items-center justify-content-center gap-3"
+              style="position: relative; z-index: 1; background-color: #06c755; border: none;">
+              <i class="bi bi-line"></i>
               <span>鎖匠服務</span>
             </a>
           </div>
-          
+
           <!-- 信任指標 -->
           <div class="d-flex flex-wrap justify-content-center gap-4 text-white-50 small mb-4">
             <div class="d-flex align-items-center">
@@ -288,9 +319,10 @@
     <!-- 3. Service Split Bar (底部三層分流) - 嵌入在 Hero 底部 -->
     <div class="service-split-bar container-fluid p-0 mt-5 position-relative" style="z-index: 3;">
       <div class="row g-0">
-        
+
         <!-- Base: 居家開鎖 -->
-        <div class="col-12 col-md-6 col-lg-4 service-split-item p-4 p-lg-5 text-dark bg-white border-end" onclick="location.href='#locksmith'">
+        <div class="col-12 col-md-6 col-lg-4 service-split-item p-4 p-lg-5 text-dark bg-white border-end"
+          onclick="location.href='#locksmith'">
           <div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
             <div class="p-3 rounded-circle bg-danger bg-opacity-10 text-danger">
               <i class="bi bi-house-lock-fill fs-2"></i>
@@ -301,9 +333,10 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Mid: 汽車鑰匙 -->
-        <div class="col-12 col-md-6 col-lg-4 service-split-item p-4 p-lg-5 text-dark bg-light border-end" onclick="location.href='#carkey'">
+        <div class="col-12 col-md-6 col-lg-4 service-split-item p-4 p-lg-5 text-dark bg-light border-end"
+          onclick="location.href='#carkey'">
           <div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
             <div class="p-3 rounded-circle bg-primary bg-opacity-10 text-primary">
               <i class="bi bi-car-front-fill fs-2"></i>
@@ -316,7 +349,8 @@
         </div>
 
         <!-- High: 電子鎖 -->
-        <div class="col-12 col-md-12 col-lg-4 service-split-item p-4 p-lg-5 text-white bg-primary" onclick="location.href='#smartlock'">
+        <div class="col-12 col-md-12 col-lg-4 service-split-item p-4 p-lg-5 text-white bg-primary"
+          onclick="location.href='#smartlock'">
           <div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
             <div class="p-3 rounded-circle bg-warning bg-opacity-25 text-warning">
               <i class="bi bi-fingerprint fs-2"></i>
@@ -336,16 +370,19 @@
   <!-- 4. Stats Bar (信任數據展示) -->
   <section class="stats-section py-5 bg-light position-relative border-bottom">
     <!-- 裝飾背景：讓區塊不單調 -->
-    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-50" 
-         style="background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 20px 20px;"></div>
+    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-50"
+      style="background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 20px 20px;"></div>
 
     <div class="container position-relative">
       <div class="row g-4 justify-content-center">
-        
+
         <!-- Item 1: 經驗 (專業藍) -->
         <div class="col-6 col-md-3">
-          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-primary hover-lift transition-base">
-            <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle mb-3" style="width: 60px; height: 60px;">
+          <div
+            class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-primary hover-lift transition-base">
+            <div
+              class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle mb-3"
+              style="width: 60px; height: 60px;">
               <i class="bi bi-award-fill fs-3"></i>
             </div>
             <h3 class="fw-bolder text-dark mb-1 display-6">10<span class="fs-5 text-muted ms-1">年</span></h3>
@@ -355,8 +392,11 @@
 
         <!-- Item 2: 速度 (緊急紅) -->
         <div class="col-6 col-md-3">
-          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-danger hover-lift transition-base">
-            <div class="d-inline-flex align-items-center justify-content-center bg-danger bg-opacity-10 text-danger rounded-circle mb-3" style="width: 60px; height: 60px;">
+          <div
+            class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-danger hover-lift transition-base">
+            <div
+              class="d-inline-flex align-items-center justify-content-center bg-danger bg-opacity-10 text-danger rounded-circle mb-3"
+              style="width: 60px; height: 60px;">
               <i class="bi bi-stopwatch-fill fs-3"></i>
             </div>
             <h3 class="fw-bolder text-dark mb-1 display-6">30<span class="fs-5 text-muted ms-1">分</span></h3>
@@ -366,8 +406,11 @@
 
         <!-- Item 3: 案例 (成功綠) -->
         <div class="col-6 col-md-3">
-          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-success hover-lift transition-base">
-            <div class="d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-circle mb-3" style="width: 60px; height: 60px;">
+          <div
+            class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-success hover-lift transition-base">
+            <div
+              class="d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-circle mb-3"
+              style="width: 60px; height: 60px;">
               <i class="bi bi-check-circle-fill fs-3"></i>
             </div>
             <h3 class="fw-bolder text-dark mb-1 display-6">5000<span class="fs-5 text-muted ms-1">+</span></h3>
@@ -377,8 +420,11 @@
 
         <!-- Item 4: 好評 (星級黃) -->
         <div class="col-6 col-md-3">
-          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-warning hover-lift transition-base">
-            <div class="d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning rounded-circle mb-3" style="width: 60px; height: 60px;">
+          <div
+            class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-warning hover-lift transition-base">
+            <div
+              class="d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning rounded-circle mb-3"
+              style="width: 60px; height: 60px;">
               <i class="bi bi-star-fill fs-3"></i>
             </div>
             <h3 class="fw-bolder text-dark mb-1 display-6">4.8<span class="fs-5 text-muted ms-1">星</span></h3>
@@ -394,14 +440,13 @@
   <!-- 5. Services Showcase (Zig-Zag) -->
   <section id="services" class="py-5 bg-white">
     <div class="container py-lg-4">
-      
+
       <!-- Block 1: Smart Lock -->
       <div class="row align-items-center mb-5 gx-lg-5" id="smartlock">
         <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-            <img src="assets/images/index/digital_lock_installation.png" 
-         class="img-fluid rounded-token shadow-lg border border-white border-4" 
-         alt="強匠鎖店-實體門市電子鎖展示" 
-         style="max-width: 100%; height: auto; transform: rotate(-2deg);"> 
+          <img src="assets/images/index/digital_lock_installation.png"
+            class="img-fluid rounded-token shadow-lg border border-white border-4" alt="強匠鎖店-實體門市電子鎖展示"
+            style="max-width: 100%; height: auto; transform: rotate(-2deg);">
 
         </div>
         <div class="col-lg-6">
@@ -417,7 +462,8 @@
               <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>原廠保固，售後維修有保障</li>
               <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>配合裝潢風格，提供美學建議</li>
             </ul>
-            <a href="digital-locks-catalog.html" class="btn btn-danger px-5 d-flex justify-content-center" style="background-color: var(--cta-phone); color: white; border: none;">查看電子鎖型錄</a>
+            <a href="digital-locks-catalog.html" class="btn btn-danger px-5 d-flex justify-content-center"
+              style="background-color: var(--cta-phone); color: white; border: none;">查看電子鎖型錄</a>
           </div>
         </div>
       </div>
@@ -425,10 +471,9 @@
       <!-- Block 2: Car Key -->
       <div class="row align-items-center mb-5 gx-lg-5 flex-lg-row-reverse" id="carkey">
         <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-            <img src="assets/images/index/car_key_service.webp" 
-         class="img-fluid rounded-token shadow-lg border border-white border-4" 
-         alt="強匠鎖店-汽車晶片鑰匙專業配製" 
-         style="max-width: 100%; height: auto; transform: rotate(2deg);">
+          <img src="assets/images/index/car_key_service.webp"
+            class="img-fluid rounded-token shadow-lg border border-white border-4" alt="強匠鎖店-汽車晶片鑰匙專業配製"
+            style="max-width: 100%; height: auto; transform: rotate(2deg);">
 
         </div>
         <div class="col-lg-6">
@@ -444,7 +489,8 @@
               <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>現場取件，無需留車</li>
               <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>支援各年份主流車款</li>
             </ul>
-            <a href="service-auto-keys.html" class="btn rounded-token px-5 d-flex justify-content-center" style="background-color: var(--cta-line); color: white; border: none;">車鑰匙服務詳情</a>
+            <a href="service-auto-keys.html" class="btn rounded-token px-5 d-flex justify-content-center"
+              style="background-color: var(--cta-line); color: white; border: none;">車鑰匙服務詳情</a>
           </div>
         </div>
       </div>
@@ -453,10 +499,9 @@
       <div class="row align-items-center gx-lg-5" id="locksmith">
         <div class="col-lg-6 mb-4 mb-lg-0 text-center">
 
-            <img src="assets/images/index/emergency_lock_service.webp" 
-         class="img-fluid rounded-token shadow-lg border border-white border-4" 
-         alt="強匠鎖店-居家開鎖" 
-         style="max-width: 100%; height: auto; transform: rotate(-2deg);"> 
+          <img src="assets/images/index/emergency_lock_service.webp"
+            class="img-fluid rounded-token shadow-lg border border-white border-4" alt="強匠鎖店-居家開鎖"
+            style="max-width: 100%; height: auto; transform: rotate(-2deg);">
         </div>
         <div class="col-lg-6">
           <div class="ps-lg-4">
@@ -471,32 +516,36 @@
               <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>保護門鎖結構，優先採用無損開鎖</li>
               <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>合法立案，安全有保障</li>
             </ul>
-            <a href="tel:0906921957" class="btn rounded-token px-5 d-flex justify-content-center" style="background-color: var(--cta-phone); color: white; border: none;">立即呼叫師傅</a>
+            <a href="tel:0906921957" class="btn rounded-token px-5 d-flex justify-content-center"
+              style="background-color: var(--cta-phone); color: white; border: none;">立即呼叫師傅</a>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- 6. Bottom CTA (Desktop Only) - 修正按鍵色系與增強質感 -->
-  <section class="py-5 text-white d-none d-lg-block" style="background: linear-gradient(180deg, #654321 0%, #8B4513 100%);">
+  <section class="py-5 text-white d-none d-lg-block"
+    style="background: linear-gradient(180deg, #654321 0%, #8B4513 100%);">
     <div class="container text-center py-4">
       <h2 class="fw-bold mb-3">遇到鎖的問題？現在就解決</h2>
       <p class="lead mb-4 opacity-50">一通電話，強匠為您即刻處理。</p>
-      
+
       <div class="d-flex justify-content-center gap-4 flex-wrap">
-        
+
         <!-- 一鍵撥號：紅色 + 脈衝動畫 + 流光效果 -->
-        <a href="tel:0906921957" class="btn btn-danger btn-lg rounded-pill px-5 py-3 shadow-lg btn-shimmer pulse-anim d-flex align-items-center gap-2" 
-           style="background-color: #dc3545; border: none; font-size: 1.25rem;">
+        <a href="tel:0906921957"
+          class="btn btn-danger btn-lg rounded-pill px-5 py-3 shadow-lg btn-shimmer pulse-anim d-flex align-items-center gap-2"
+          style="background-color: #dc3545; border: none; font-size: 1.25rem;">
           <i class="bi bi-telephone-fill"></i> 一鍵開鎖
         </a>
 
         <!-- LINE 諮詢：官方綠色 + 流光效果 -->
-        <a href="https://line.me/ti/p/~@giw8057p" class="btn btn-success btn-lg rounded-pill px-5 py-3 shadow-lg btn-shimmer d-flex align-items-center gap-2" 
-           style="background-color: #06c755; border: none; font-size: 1.25rem;">
+        <a href="https://line.me/ti/p/~@giw8057p"
+          class="btn btn-success btn-lg rounded-pill px-5 py-3 shadow-lg btn-shimmer d-flex align-items-center gap-2"
+          style="background-color: #06c755; border: none; font-size: 1.25rem;">
           <i class="bi bi-line fs-4"></i> 鎖匠服務
         </a>
-        
+
       </div>
     </div>
   </section>
@@ -504,17 +553,18 @@
   <section id="reviews" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center fw-bold mb-5">客戶真實見證</h2>
-      
+
       <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          
+
           <!-- Review 1 -->
           <div class="carousel-item active">
             <div class="row justify-content-center">
               <div class="col-md-8">
                 <div class="review-card text-center">
                   <div class="text-warning mb-3">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p class="fs-5 fst-italic mb-4 text-muted">
                     "半夜兩點回家發現鑰匙不見，還好有強匠！師傅 20 分鐘就到了，開鎖速度超快，而且價格比我想像中便宜，真的救了我一命！"
@@ -532,7 +582,8 @@
               <div class="col-md-8">
                 <div class="review-card text-center">
                   <div class="text-warning mb-3">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p class="fs-5 fst-italic mb-4 text-muted">
                     "想把家裡的舊鎖換成電子鎖，老闆解說很詳細，安裝過程地板都鋪了墊子很細心，教學也很有耐心，長輩一次就學會了。"
@@ -550,7 +601,8 @@
               <div class="col-md-8">
                 <div class="review-card text-center">
                   <div class="text-warning mb-3">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p class="fs-5 fst-italic mb-4 text-muted">
                     "車鑰匙掉在水溝裡壞了，原廠說要等兩週。來這邊現場半小時就搞定，晶片感應很靈敏，還多打了一把備用，大推！"
@@ -563,34 +615,38 @@
           </div>
 
         </div>
-        
+
         <!-- Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon rounded-circle p-3" style="background-color: #8B4513;" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon rounded-circle p-3" style="background-color: #8B4513;"
+            aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon rounded-circle p-3" style="background-color: #8B4513;" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon rounded-circle p-3" style="background-color: #8B4513;"
+            aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </div>
   </section>
   <!-- 5.5 Service Areas Section (服務區域) -->
-    <!-- 5.5 Service Areas Section (服務區域) -->
+  <!-- 5.5 Service Areas Section (服務區域) -->
   <section id="areas" class="py-5 bg-white border-top">
     <div class="container">
       <div class="row align-items-center">
-        
+
         <!-- 左側：視覺意象 (地圖或機動性) -->
         <div class="col-lg-5 mb-4 mb-lg-0 text-center">
           <div class="position-relative d-inline-block">
             <!-- 圖片建議：使用一張高雄地圖上有標記點的圖片，或者師傅騎機車穿梭街道的照片 -->
-            <img src="assets/images/index/kaohsiung_service_area_map.webp" 
-                 class="img-fluid rounded-token shadow-sm" alt="高雄服務區域地圖">
-            
+            <img src="assets/images/index/kaohsiung_service_area_map.webp" class="img-fluid rounded-token shadow-sm"
+              alt="高雄服務區域地圖">
+
             <!-- 浮動標籤：強調速度與覆蓋率 -->
-            <div class="position-absolute top-50 start-50 translate-middle bg-danger text-white px-4 py-2 rounded-pill shadow fw-bold" style="white-space: nowrap;">
+            <div
+              class="position-absolute top-50 start-50 translate-middle bg-danger text-white px-4 py-2 rounded-pill shadow fw-bold"
+              style="white-space: nowrap;">
               <i class="bi bi-geo-alt-fill me-1"></i> 全高雄皆可服務
             </div>
           </div>
@@ -665,11 +721,11 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
-            <div class="text-center mb-5">
-                <span class="badge bg-primary bg-opacity-10 text-primary mb-2">FAQ</span>
-                <h2 class="fw-bold">常見問題</h2>
-                <p class="text-muted">鎖不開不收錢，報價透明，無隱藏費用</p>
-            </div>
+          <div class="text-center mb-5">
+            <span class="badge bg-primary bg-opacity-10 text-primary mb-2">FAQ</span>
+            <h2 class="fw-bold">常見問題</h2>
+            <p class="text-muted">鎖不開不收錢，報價透明，無隱藏費用</p>
+          </div>
 
           <div class="accordion" id="faqAccordion">
             <!-- Q1: 緊急開鎖費用 -->
@@ -683,11 +739,11 @@
                 <div class="accordion-body">
                   <p>我們的收費標準：</p>
                   <ul>
-                      <li><strong>喇叭鎖：</strong> NT$ 500-800（依鎖型複雜度）</li>
-                      <li><strong>多段鎖：</strong> NT$ 500-2000（依鎖型複雜度）</li>
-                      <li><strong>汽車門鎖：</strong> NT$ 800-3000（依車型與晶片複雜度）</li>
-                      <li><strong>機車鎖：</strong> NT$ 500-1200（依車型與晶片複雜度）</li>
-                      <li><strong>電子鎖：</strong> NT$ 800-4500（依品牌與安裝難度）</li>
+                    <li><strong>喇叭鎖：</strong> NT$ 500-800（依鎖型複雜度）</li>
+                    <li><strong>多段鎖：</strong> NT$ 500-2000（依鎖型複雜度）</li>
+                    <li><strong>汽車門鎖：</strong> NT$ 800-3000（依車型與晶片複雜度）</li>
+                    <li><strong>機車鎖：</strong> NT$ 500-1200（依車型與晶片複雜度）</li>
+                    <li><strong>電子鎖：</strong> NT$ 800-4500（依品牌與安裝難度）</li>
                   </ul>
                   <p class="text-muted small mt-2">※ 鎖不開不收錢，報價透明，無隱藏費用</p>
                 </div>
@@ -697,7 +753,8 @@
             <!-- Q2: 服務時間 -->
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
                   <i class="bi bi-clock me-2"></i>什麼時候可以提供服務？
                 </button>
               </h3>
@@ -707,7 +764,7 @@
                   <ul>
                     <li>平日：08:00-22:00（正常服務時間）</li>
                     <li>假日：24小時（緊急救援優先）</li>
-                    <li>夜間：22:00-08:00（夜間加成費 NT$ 500）</li>
+                    <li>夜間：22:00-08:00（夜間加成費 每個時段不一樣 歡迎來電諮詢）</li>
                   </ul>
                   <p class="text-success fw-bold">高雄全區最快30分鐘抵達！</p>
                 </div>
@@ -717,7 +774,8 @@
             <!-- Q3: 服務區域 -->
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
                   <i class="bi bi-geo-alt me-2"></i>服務範圍涵蓋哪些區域？
                 </button>
               </h3>
@@ -752,7 +810,8 @@
             <!-- Q4: 電子鎖安裝 -->
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq4">
                   <i class="bi bi-fingerprint me-2"></i>電子鎖安裝需要準備什麼？
                 </button>
               </h3>
@@ -773,7 +832,8 @@
             <!-- Q5: 保固服務 -->
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq5">
                   <i class="bi bi-shield-check me-2"></i>電子鎖有保固嗎？
                 </button>
               </h3>
@@ -800,24 +860,24 @@
   <section id="about" class="py-5 bg-white border-top">
     <div class="container">
       <div class="row align-items-center gy-5">
-        
+
         <!-- 左側：品牌故事文案 -->
         <div class="col-lg-6">
           <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold">
             <i class="bi bi-check-circle-fill me-1"></i> 高雄在地首選
           </span>
           <h2 class="display-6 fw-bold mb-4">最實在鎖店 — 強匠鎖店</h2>
-          
+
           <p class="lead text-dark fw-bold mb-4">
             開鎖至今已有 10 多年的經驗，技術純熟、收費實在，廣受消費者肯定。
           </p>
-          
+
           <p class="text-muted mb-4" style="line-height: 1.8;">
             我們服務迄今始終秉持著<span class="text-danger fw-bold bg-danger bg-opacity-10 px-1">【鎖不開、不收錢】</span>的態度來做事。
             在這個漫天喊價的市場中，強匠堅持以誠懇實在的精神，提供最合理的報價來服務大家！
             無論是半夜緊急救援，還是精密電子鎖安裝，我們都是您最安心的依靠。
           </p>
-          
+
           <!-- 重點承諾列表 -->
           <div class="row g-3 mb-5">
             <div class="col-sm-6">
@@ -840,28 +900,28 @@
             </div>
           </div>
           <div class="align-items-center justify-content-center justify-content-sm-start">
-          <a href="tel:0906921957" class="btn btn-primary d-flex justify-content-center">
-            <i class="bi bi-telephone-fill me-2"></i>聯絡林師傅
-          </a>
+            <a href="tel:0906921957" class="btn btn-primary d-flex justify-content-center">
+              <i class="bi bi-telephone-fill me-2"></i>聯絡林師傅
+            </a>
           </div>
         </div>
-        
+
         <!-- 右側：師傅照片 (建議使用先前上傳的 DM_20260104110826_031.webp) -->
         <div class="col-lg-6 position-relative">
           <!-- 背景裝飾 -->
-          <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning rounded-4" 
-               style="transform: rotate(3deg); z-index: 0; opacity: 0.1;"></div>
-          <div class="position-absolute bottom-0 end-0 w-100 h-100 border border-2 border-primary rounded-4" 
-               style="transform: rotate(-2deg); z-index: 0; opacity: 0.2;"></div>
-          
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning rounded-4"
+            style="transform: rotate(3deg); z-index: 0; opacity: 0.1;"></div>
+          <div class="position-absolute bottom-0 end-0 w-100 h-100 border border-2 border-primary rounded-4"
+            style="transform: rotate(-2deg); z-index: 0; opacity: 0.2;"></div>
+
           <!-- 實際照片 -->
-          <img src="assets/images/index/about-locksmith.webp" 
-               class="img-fluid rounded-4 shadow-lg position-relative" 
-               alt="林師傅專注修鎖-強匠鎖店" 
-               style="z-index: 1;">
-               
+          <img src="assets/images/index/about-locksmith.webp" class="img-fluid rounded-4 shadow-lg position-relative"
+            alt="林師傅專注修鎖-強匠鎖店" style="z-index: 1;">
+
           <!-- 浮動卡片：強調口碑 -->
-          <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded-3 shadow-lg m-4 d-flex align-items-center gap-3 animate-bounce" style="z-index: 2; max-width: 250px;">
+          <div
+            class="position-absolute bottom-0 start-0 bg-white p-3 rounded-3 shadow-lg m-4 d-flex align-items-center gap-3 animate-bounce"
+            style="z-index: 2; max-width: 250px;">
             <div class="bg-success text-white rounded-circle p-2">
               <i class="bi bi-hand-thumbs-up-fill fs-4"></i>
             </div>
@@ -891,12 +951,15 @@
           <div class="card border-0 shadow-card h-100 overflow-hidden group-hover-effect">
             <div class="position-relative">
               <!-- 模擬 Threads 封面 (使用黑色系) -->
-              <img src="https://placehold.co/600x340/000000/ffffff/png?text=Threads" class="card-img-top" alt="強匠鎖店 Threads">
+              <img src="https://placehold.co/600x340/000000/ffffff/png?text=Threads" class="card-img-top"
+                alt="強匠鎖店 Threads">
               <div class="position-absolute top-50 start-50 translate-middle">
                 <!-- Threads 的 Logo 通常是白色線條，背景用黑色圓形 -->
-                <a href="https://www.threads.net/@0906921957lock" target="_blank" class="btn btn-dark btn-lg rounded-circle shadow-lg pulse-anim" style="width: 64px; height: 64px; display: flex; align-items: center; justify-content: center;">
+                <a href="https://www.threads.net/@0906921957lock" target="_blank"
+                  class="btn btn-dark btn-lg rounded-circle shadow-lg pulse-anim"
+                  style="width: 64px; height: 64px; display: flex; align-items: center; justify-content: center;">
                   <!-- Bootstrap Icons 可能還沒有 Threads icon，暫用 @ 符號或類似的 -->
-                  <i class="bi bi-at fs-2"></i> 
+                  <i class="bi bi-at fs-2"></i>
                   <!-- 如果 bi-threads 顯示不出來，可以改用 bi-at 或 SVG -->
                 </a>
               </div>
@@ -904,7 +967,8 @@
             <div class="card-body text-center p-4">
               <h5 class="fw-bold mb-2">Threads 官方帳號</h5>
               <p class="text-muted small mb-3">查看師傅的即時碎碎念與開鎖日常。</p>
-              <a href="https://www.threads.net/@0906921957lock" target="_blank" class="btn btn-dark btn-sm rounded-pill px-4">
+              <a href="https://www.threads.net/@0906921957lock" target="_blank"
+                class="btn btn-dark btn-sm rounded-pill px-4">
                 追蹤起來
               </a>
             </div>
@@ -915,8 +979,10 @@
           <div class="card border-0 shadow-card h-100 overflow-hidden group-hover-effect">
             <div class="position-relative">
               <!-- 模擬 FB 封面 -->
-              <img src="https://placehold.co/600x340/1877f2/ffffff/png?text=Facebook+Page" class="card-img-top" alt="強匠鎖店 Facebook">
-              <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(139, 69, 19, 0.8), rgba(0,0,0,0.6));">
+              <img src="https://placehold.co/600x340/1877f2/ffffff/png?text=Facebook+Page" class="card-img-top"
+                alt="強匠鎖店 Facebook">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3"
+                style="background: linear-gradient(to top, rgba(139, 69, 19, 0.8), rgba(0,0,0,0.6));">
                 <span class="text-white small"><i class="bi bi-hand-thumbs-up-fill me-1"></i> 粉絲專頁</span>
               </div>
             </div>
@@ -924,10 +990,12 @@
               <h5 class="fw-bold mb-2">Facebook 粉絲團</h5>
               <p class="text-muted small mb-3">掌握最新電子鎖優惠、即時救援案例分享。</p>
               <div class="d-flex justify-content-center gap-2">
-                <a href="https://www.facebook.com/p/%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97-%E9%AB%98%E9%9B%84%E6%B1%BD%E8%BB%8A%E6%99%B6%E7%89%87%E9%91%B0%E5%8C%99%E6%8B%B7%E8%B2%9D-100064005971195/?locale=zh_TW" target="_blank" class="btn btn-dark btn-sm rounded-pill px-3">
+                <a href="https://www.facebook.com/p/%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97-%E9%AB%98%E9%9B%84%E6%B1%BD%E8%BB%8A%E6%99%B6%E7%89%87%E9%91%B0%E5%8C%99%E6%8B%B7%E8%B2%9D-100064005971195/?locale=zh_TW"
+                  target="_blank" class="btn btn-dark btn-sm rounded-pill px-3">
                   汽車鑰匙專頁
                 </a>
-                <a href="https://www.facebook.com/KHsmartlock/" target="_blank" class="btn btn-dark btn-sm rounded-pill px-3">
+                <a href="https://www.facebook.com/KHsmartlock/" target="_blank"
+                  class="btn btn-dark btn-sm rounded-pill px-3">
                   電子鎖體驗館
                 </a>
               </div>
@@ -939,9 +1007,11 @@
           <div class="card border-0 shadow-card h-100 overflow-hidden group-hover-effect">
             <div class="position-relative">
               <!-- 模擬 IG 封面 -->
-              <img src="https://placehold.co/600x340/E1306C/ffffff/png?text=Instagram+Reels" class="card-img-top" alt="強匠鎖店 IG">
+              <img src="https://placehold.co/600x340/E1306C/ffffff/png?text=Instagram+Reels" class="card-img-top"
+                alt="強匠鎖店 IG">
               <div class="position-absolute top-50 start-50 translate-middle">
-                <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank" class="btn btn-light btn-lg rounded-circle shadow-lg text-danger">
+                <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank"
+                  class="btn btn-light btn-lg rounded-circle shadow-lg text-danger">
                   <i class="bi bi-instagram fs-4"></i>
                 </a>
               </div>
@@ -949,7 +1019,8 @@
             <div class="card-body text-center p-4">
               <h5 class="fw-bold mb-2">Instagram Reels</h5>
               <p class="text-muted small mb-3">高雄電子鎖專賣店 飛利浦 美樂 Yale Dormakaba</p>
-              <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank" class="btn btn-dark btn-sm rounded-pill px-4">
+              <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank"
+                class="btn btn-dark btn-sm rounded-pill px-4">
                 追蹤 IG
               </a>
             </div>
@@ -958,112 +1029,127 @@
       </div>
     </div>
   </section>
-<!-- 7. Footer -->
-<footer class="text-secondary py-5" style="background-color: #2d3748;">
-  <div class="container">
-    <!-- 加入 text-center text-lg-start 讓手機版置中，大螢幕左對齊 -->
-    <div class="row g-4 text-center text-lg-start">
-      
-      <!-- Column 1: Brand Info & Social Icons -->
-      <div class="col-lg-4">
-        <h5 class="text-white mb-3">🔒 強匠鎖店</h5>
-        <p class="small text-white-50 mb-4 mx-auto mx-lg-0" style="max-width: 400px;">
-          高雄在地經營10年，最實在的鎖店，提供高雄鎖店、高雄開鎖、24小時開鎖、高雄汽機車開鎖救援、機車開鎖、夜間開鎖等全方位服務。
-        </p>
-        
-        <!-- Social Media Icons Row -->
-        <!-- 加入 justify-content-center justify-content-lg-start -->
-        <div class="d-flex gap-3 mb-4 justify-content-center justify-content-lg-start">
-          <a href="https://www.facebook.com/KHsmartlock/" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook">
-            <i class="bi bi-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Instagram">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a href="https://www.threads.net/@0906921957lock" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Threads">
-            <i class="bi bi-at"></i>
-          </a>
-          <a href="https://www.youtube.com/@24H%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97%E9%AB%98%E9%9B%84%E9%9B%BB%E5%AD%90%E9%8E%96" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="YouTube">
-            <i class="bi bi-youtube"></i>
-          </a>
-          <a href="https://line.me/ti/p/~@giw8057p" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="LINE">
-            <i class="bi bi-line"></i>
+  <!-- 7. Footer -->
+  <footer class="text-secondary py-5" style="background-color: #2d3748;">
+    <div class="container">
+      <!-- 加入 text-center text-lg-start 讓手機版置中，大螢幕左對齊 -->
+      <div class="row g-4 text-center text-lg-start">
+
+        <!-- Column 1: Brand Info & Social Icons -->
+        <div class="col-lg-4">
+          <h5 class="text-white mb-3">🔒 強匠鎖店</h5>
+          <p class="small text-white-50 mb-4 mx-auto mx-lg-0" style="max-width: 400px;">
+            高雄在地經營10年，最實在的鎖店，提供高雄鎖店、高雄開鎖、24小時開鎖、高雄汽機車開鎖救援、機車開鎖、夜間開鎖等全方位服務。
+          </p>
+
+          <!-- Social Media Icons Row -->
+          <!-- 加入 justify-content-center justify-content-lg-start -->
+          <div class="d-flex gap-3 mb-4 justify-content-center justify-content-lg-start">
+            <a href="https://www.facebook.com/KHsmartlock/" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.threads.net/@0906921957lock" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Threads">
+              <i class="bi bi-at"></i>
+            </a>
+            <a href="https://www.youtube.com/@24H%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97%E9%AB%98%E9%9B%84%E9%9B%BB%E5%AD%90%E9%8E%96"
+              target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://line.me/ti/p/~@giw8057p" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="LINE">
+              <i class="bi bi-line"></i>
+            </a>
+          </div>
+
+          <!-- Google Maps Button -->
+          <a href="https://maps.app.goo.gl/SaT1dbcffoTzWQxq8" target="_blank"
+            class="btn btn-outline-light btn-sm rounded-pill px-3 mb-4 mb-lg-0">
+            <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Google 地圖導航
           </a>
         </div>
 
-        <!-- Google Maps Button -->
-        <a href="https://maps.app.goo.gl/SaT1dbcffoTzWQxq8" target="_blank" class="btn btn-outline-light btn-sm rounded-pill px-3 mb-4 mb-lg-0">
-          <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Google 地圖導航
-        </a>
+        <!-- Column 2: Service Areas -->
+        <!-- 改為雙欄排列以節省手機版高度 -->
+        <div class="col-lg-4">
+          <h5 class="text-white mb-3">快速服務區域</h5>
+          <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-6 col-lg-6">
+              <ul class="list-unstyled text-white-50 mb-0">
+                <li class="mb-2"><a href="area-sanmin.html"
+                    class="text-white-50 text-decoration-none hover-text-white">三民區</a></li>
+                <li class="mb-2"><a href="area-zuoying.html"
+                    class="text-white-50 text-decoration-none hover-text-white">左營區</a></li>
+                <li class="mb-2"><a href="area-qianjin.html"
+                    class="text-white-50 text-decoration-none hover-text-white">前金區</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-6">
+              <ul class="list-unstyled text-white-50 mb-0">
+                <li class="mb-2"><a href="area-qianzheng.html"
+                    class="text-white-50 text-decoration-none hover-text-white">前鎮區</a></li>
+                <li class="mb-2"><a href="area-xinxing.html"
+                    class="text-white-50 text-decoration-none hover-text-white">新興區</a></li>
+                <li class="mb-2"><a href="area-lingya.html"
+                    class="text-white-50 text-decoration-none hover-text-white">苓雅區</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="col-lg-4">
+          <h5 class="text-white mb-3">聯絡資訊</h5>
+          <!-- 手機版置中，大螢幕靠左 -->
+          <ul class="list-unstyled small text-white-50 d-inline-block d-lg-block text-start">
+            <li class="mb-3 d-flex align-items-start">
+              <div class="me-2 mt-1"><i class="bi bi-telephone-fill text-primary"></i></div>
+              <div>
+                <span class="d-block text-white-50">24H 救援專線</span>
+                <a href="tel:0906921957" class="text-white fw-bold text-decoration-none fs-5">0906-921-957</a>
+                <span class="ms-1">(林師傅)</span>
+              </div>
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <div class="me-2"><i class="bi bi-line text-success"></i></div>
+              <a href="https://line.me/ti/p/~@giw8057p" class="text-white-50 text-decoration-none hover-text-white"
+                target="_blank">ID: @giw8057p</a>
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <div class="me-2"><i class="bi bi-envelope"></i></div>
+              <a href="mailto:s10552@chyp.com.tw"
+                class="text-white-50 text-decoration-none hover-text-white">s10552@chyp.com.tw</a>
+            </li>
+            <li class="mb-2 d-flex align-items-start">
+              <div class="me-2 mt-1"><i class="bi bi-geo-alt"></i></div>
+              <a href="https://share.google/mz73ioCzKOPI2kod4"
+                class="text-white-50 text-decoration-none hover-text-white" target="_blank">
+                高雄市新興區復橫一路 116 號
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </div>
 
-      <!-- Column 2: Service Areas -->
-      <!-- 改為雙欄排列以節省手機版高度 -->
-      <div class="col-lg-4">
-        <h5 class="text-white mb-3">快速服務區域</h5>
-        <div class="row justify-content-center justify-content-lg-start">
-            <div class="col-6 col-lg-6">
-                <ul class="list-unstyled text-white-50 mb-0">  
-                    <li class="mb-2"><a href="area-sanmin.html" class="text-white-50 text-decoration-none hover-text-white">三民區</a></li>
-                    <li class="mb-2"><a href="area-zuoying.html" class="text-white-50 text-decoration-none hover-text-white">左營區</a></li>
-                    <li class="mb-2"><a href="area-qianjin.html" class="text-white-50 text-decoration-none hover-text-white">前金區</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-lg-6">
-                 <ul class="list-unstyled text-white-50 mb-0">  
-                    <li class="mb-2"><a href="area-qianzheng.html" class="text-white-50 text-decoration-none hover-text-white">前鎮區</a></li>
-                    <li class="mb-2"><a href="area-xinxing.html" class="text-white-50 text-decoration-none hover-text-white">新興區</a></li>
-                    <li class="mb-2"><a href="area-lingya.html" class="text-white-50 text-decoration-none hover-text-white">苓雅區</a></li>
-                 </ul>
-            </div>
+      <hr class="border-secondary mt-5 mb-4 opacity-25">
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="small text-white-50">&copy; 2026 強匠鎖店. All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <span class="small text-white-50 me-3">最實在鎖店</span>
+          <span class="small text-white-50">專業 · 安全 · 信賴</span>
         </div>
       </div>
-
-      <!-- Column 3: Contact Info -->
-      <div class="col-lg-4">
-        <h5 class="text-white mb-3">聯絡資訊</h5>
-        <!-- 手機版置中，大螢幕靠左 -->
-        <ul class="list-unstyled small text-white-50 d-inline-block d-lg-block text-start">
-          <li class="mb-3 d-flex align-items-start">
-            <div class="me-2 mt-1"><i class="bi bi-telephone-fill text-primary"></i></div>
-            <div>
-              <span class="d-block text-white-50">24H 救援專線</span>
-              <a href="tel:0906921957" class="text-white fw-bold text-decoration-none fs-5">0906-921-957</a>
-              <span class="ms-1">(林師傅)</span>
-            </div>
-          </li>
-          <li class="mb-2 d-flex align-items-center">
-             <div class="me-2"><i class="bi bi-line text-success"></i></div>
-             <a href="https://line.me/ti/p/~@giw8057p" class="text-white-50 text-decoration-none hover-text-white" target="_blank">ID: @giw8057p</a>
-          </li>
-          <li class="mb-2 d-flex align-items-center">
-             <div class="me-2"><i class="bi bi-envelope"></i></div>
-             <a href="mailto:s10552@chyp.com.tw" class="text-white-50 text-decoration-none hover-text-white">s10552@chyp.com.tw</a>
-          </li>
-          <li class="mb-2 d-flex align-items-start">
-             <div class="me-2 mt-1"><i class="bi bi-geo-alt"></i></div>
-             <a href="https://share.google/mz73ioCzKOPI2kod4" class="text-white-50 text-decoration-none hover-text-white" target="_blank">
-               高雄市新興區復橫一路 116 號
-             </a>
-          </li>
-        </ul>
-      </div>
-
     </div>
-    
-    <hr class="border-secondary mt-5 mb-4 opacity-25">
-    
-    <div class="row align-items-center">
-      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-        <span class="small text-white-50">&copy; 2026 強匠鎖店. All rights reserved.</span>
-      </div>
-      <div class="col-md-6 text-center text-md-end">
-        <span class="small text-white-50 me-3">最實在鎖店</span>
-        <span class="small text-white-50">專業 · 安全 · 信賴</span>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- Bottom Fixed CTA Bar for Mobile -->
   <div class="fixed-cta-bar d-lg-none">
@@ -1079,4 +1165,5 @@
   <!-- 9. Footer -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

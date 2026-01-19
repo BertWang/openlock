@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW" data-skin="high">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +23,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
   <!-- Google Fonts (same spirit as service-digital-locks.html) -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap"
+    rel="stylesheet" />
 
   <!-- Design System -->
   <link href="../assets/css/tokens.css" rel="stylesheet" />
@@ -113,11 +116,29 @@
       letter-spacing: 0.05em;
     }
 
-    h1, h2, h3, .serif-font { font-family: var(--font-serif); font-weight: 600; }
-    .text-gold { color: var(--gold-matte) !important; }
-    .opacity-70 { opacity: 0.7; }
-    .tracking-wide { letter-spacing: 0.15em; }
-    .text-justify { text-align: justify; }
+    h1,
+    h2,
+    h3,
+    .serif-font {
+      font-family: var(--font-serif);
+      font-weight: 600;
+    }
+
+    .text-gold {
+      color: var(--gold-matte) !important;
+    }
+
+    .opacity-70 {
+      opacity: 0.7;
+    }
+
+    .tracking-wide {
+      letter-spacing: 0.15em;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
 
     .navbar {
       background: rgba(11, 27, 58, 0.95) !important;
@@ -125,11 +146,30 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       padding: 1rem 0;
     }
-    .navbar .nav-link { color: rgba(255, 255, 255, 0.7) !important; font-weight: 500; }
-    .navbar .nav-link:hover, .navbar .nav-link.active { color: #fff !important; }
-    .navbar .dropdown-menu { background-color: var(--bg-surface); border: 1px solid rgba(255,255,255,0.1); }
-    .navbar .dropdown-item { color: var(--text-secondary); }
-    .navbar .dropdown-item:hover { background-color: rgba(255,255,255,0.05); color: #fff; }
+
+    .navbar .nav-link {
+      color: rgba(255, 255, 255, 0.7) !important;
+      font-weight: 500;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #fff !important;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: var(--bg-surface);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar .dropdown-item {
+      color: var(--text-secondary);
+    }
+
+    .navbar .dropdown-item:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #fff;
+    }
 
     .btn-gold-outline {
       border: 1px solid var(--gold-matte);
@@ -144,6 +184,7 @@
       display: inline-block;
       text-align: center;
     }
+
     .btn-gold-outline:hover {
       background: var(--gold-matte);
       color: #0B1B3A;
@@ -164,6 +205,7 @@
       display: inline-block;
       text-align: center;
     }
+
     .btn-gold-solid:hover {
       filter: brightness(1.05);
       transform: translateY(-2px);
@@ -179,33 +221,37 @@
         linear-gradient(180deg, rgba(11, 27, 58, 0.65) 0%, rgba(11, 27, 58, 0.98) 70%),
         url("../assets/images/service-digital-locks/hero.png") center/cover no-repeat;
     }
+
     .hero-card {
       background: rgba(18, 36, 66, 0.65);
-      border: 1px solid rgba(255,255,255,0.08);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
     }
 
     .feature-pill {
       font-size: 0.78rem;
       padding: 0.35rem 0.75rem;
-      border: 1px solid rgba(255,255,255,0.16);
+      border: 1px solid rgba(255, 255, 255, 0.16);
       border-radius: 999px;
       color: var(--text-secondary);
       display: inline-flex;
       gap: 0.4rem;
       align-items: center;
-      background: rgba(255,255,255,0.02);
+      background: rgba(255, 255, 255, 0.02);
     }
 
     .panel {
       background: var(--bg-surface);
-      border: 1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .icon-circle {
-      width: 56px; height: 56px;
+      width: 56px;
+      height: 56px;
       border-radius: 999px;
-      display: inline-flex; align-items: center; justify-content: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: rgba(214, 177, 94, 0.12);
       border: 1px solid rgba(214, 177, 94, 0.25);
       color: var(--gold-light);
@@ -213,37 +259,48 @@
 
     .card-dark {
       background: rgba(18, 36, 66, 0.65);
-      border: 1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       transition: transform 0.35s ease, box-shadow 0.35s ease;
     }
+
     .card-dark:hover {
       transform: translateY(-6px);
-      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
     }
 
     .divider {
-      border-top: 1px solid rgba(255,255,255,0.08);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     /* Accordion */
     .accordion-item {
       background: rgba(18, 36, 66, 0.65);
-      border: 1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
+
     .accordion-button {
       background: transparent !important;
       color: #fff !important;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
-    .accordion-button:focus { box-shadow: none; }
-    .accordion-body { color: var(--text-secondary); }
+
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+
+    .accordion-body {
+      color: var(--text-secondary);
+    }
 
     /* Footer */
     footer {
-      border-top: 1px solid rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
       background: #08142b;
     }
-    .hover-text-white:hover { color: #fff !important; }
+
+    .hover-text-white:hover {
+      color: #fff !important;
+    }
 
     /* Sticky CTA (mobile) */
     .sticky-cta {
@@ -251,11 +308,24 @@
       backdrop-filter: blur(10px);
       border-top: 1px solid var(--gold-matte);
     }
+
     /* Ad-hoc styles for this block */
-    .bg-gold-subtle { background-color: rgba(214, 177, 94, 0.15); }
-    .border-gold-subtle { border-color: rgba(214, 177, 94, 0.3) !important; }
-    .text-gold { color: var(--gold-matte) !important; }
-    .super-small { font-size: 0.75rem; }
+    .bg-gold-subtle {
+      background-color: rgba(214, 177, 94, 0.15);
+    }
+
+    .border-gold-subtle {
+      border-color: rgba(214, 177, 94, 0.3) !important;
+    }
+
+    .text-gold {
+      color: var(--gold-matte) !important;
+    }
+
+    .super-small {
+      font-size: 0.75rem;
+    }
+
     .feature-pill {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -271,394 +341,407 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand text-gold" href="../index.html">
-              <img src="../assets/images/logo2.png" alt="強匠鎖店" class="img-fluid " style="max-width: 40px;">
-                強匠鎖店 <span class="badge bg-primary ms-2 rounded-1">電子鎖體驗館</span>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-gold" href="../index.html">
+        <img src="../assets/images/logo2.png" alt="強匠鎖店" class="img-fluid " style="max-width: 40px;">
+        強匠鎖店 <span class="badge bg-primary ms-2 rounded-1">電子鎖體驗館</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-4">
+          <li class="nav-item"><a class="nav-link" href="../services.html"><i class="bi bi-tools me-1"></i>開鎖服務</a></li>
+          <li class="nav-item"><a class="nav-link" href="../service-auto-keys.html"><i
+                class="bi bi-car-front me-1"></i>汽車晶片鑰匙</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold" href="../service-digital-locks.html"><i
+                class="bi bi-fingerprint me-1"></i>電子鎖安裝</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-grid-fill me-1"></i>品牌系列
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center gap-4">
-                    <li class="nav-item"><a class="nav-link" href="../services.html"><i class="bi bi-tools me-1"></i>開鎖服務</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../service-auto-keys.html"><i class="bi bi-car-front me-1"></i>汽車晶片鑰匙</a></li>
-                    <li class="nav-item"><a class="nav-link active fw-bold" href="../service-digital-locks.html"><i class="bi bi-fingerprint me-1"></i>電子鎖安裝</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            <i class="bi bi-grid-fill me-1"></i>品牌系列
-                        </a>
-                        <ul class="dropdown-menu shadow-sm border-0">
-                            <li><a class="dropdown-item" href="../service-digital-locks.html?brand=philips#brands">Philips 飛利浦</a></li>
-                            <li><a class="dropdown-item" href="../service-digital-locks.html?brand=samsung#brands">Samsung 三星</a></li>
-                            <li><a class="dropdown-item" href="../service-digital-locks.html?brand=dormakaba#brands">Dormakaba 多瑪凱拔</a></li>
-                            <li><a class="dropdown-item" href="../service-digital-locks.html?brand=mrlock#brands">Sensirs 鎖先森</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a href="https://line.me/ti/p/giw8057p" target="_blank" class="btn-gold-outline py-2 px-4 small">
-                        <i class="bi bi-line me-2"></i>LINE 免費評估
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-<!-- 1. Hero: Reliable Classic (Dormakaba ML660) -->
-<header class="hero-product">
-  <div class="container">
-    <div class="row align-items-center g-5">
-
-      <div class="col-lg-6">
-        <!-- Top Badge -->
-        <span class="badge bg-gold-subtle text-gold mb-3 px-3 py-2 rounded-pill fw-bold border border-gold-subtle tracking-wide">
-          <i class="bi bi-award me-1"></i> German Quality · High Value Choice
-        </span>
-
-        <!-- Main Title -->
-        <h1 class="display-4 fw-bold text-white mb-3 lh-sm">
-          Dormakaba ML660<br>
-          <span class="text-gold">德國經典握把式電子鎖</span>
-        </h1>
-
-        <!-- Value Prop -->
-        <p class="lead text-white-50 mb-4 opacity-70 fw-light">
-          沒有複雜的推拉機構，也不用學習新的開門方式。<br>
-          用最熟悉的轉動把手，享受德國工藝的穩定與安心。
-        </p>
-
-        <!-- Feature Pills -->
-        <div class="d-flex flex-wrap gap-2 mb-4">
-          <span class="feature-pill"><i class="bi bi-door-closed text-gold"></i> 經典握把式</span>
-          <span class="feature-pill"><i class="bi bi-fingerprint text-gold"></i> 半導體指紋</span>
-          <span class="feature-pill"><i class="bi bi-shield-lock text-gold"></i> 虛位密碼</span>
-          <span class="feature-pill"><i class="bi bi-key text-gold"></i> 機械鑰匙</span>
-          <span class="feature-pill"><i class="bi bi-battery-charging text-gold"></i> 低電量警示</span>
-          <span class="feature-pill"><i class="bi bi-hammer text-gold"></i> 耐用結構</span>
-        </div>
-
-        <!-- Urgency Banner -->
-        <div class="mt-4 p-3 rounded-3 mb-3" style="background: rgba(214, 177, 94, 0.1); border: 1px solid var(--gold-matte); border-radius: 12px;">
-          <div class="text-center">
-            <i class="bi bi-gift text-gold fs-4 me-2"></i>
-            <span class="text-gold fw-bold">強匠專屬服務：</span>
-            <span class="text-white">德國品質平價安裝</span>
-            <div class="small text-gold mt-1">⚡ 快速施工 · 舊鎖孔完美遮蔽</div>
-          </div>
-        </div>
-
-        <!-- CTA Buttons -->
-        <div class="d-flex gap-3 mb-5">
-          <a class="btn-gold-solid flex-grow-1 text-center py-3 rounded-1 shadow-lg" href="#consult">
-            <i class="bi bi-shield-check me-2"></i>找強匠安裝 / 諮詢
-          </a>
-          <a class="btn-gold-outline flex-grow-1 text-center py-3 rounded-1" href="#scenarios">
-            <i class="bi bi-arrow-down-circle me-2"></i>看握把式優勢
-          </a>
-        </div>
-
-        <!-- Service Pillars -->
-        <div class="mt-4">
-          <div class="row g-3">
-            <div class="col-6 col-md-3">
-              <div class="panel rounded-3 p-3 text-center h-100">
-                <div class="icon-circle mx-auto mb-2"><i class="bi bi-award"></i></div>
-                <div class="small text-white">在地經驗</div>
-                <div class="small text-secondary opacity-70">高雄服務</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="panel rounded-3 p-3 text-center h-100">
-                <div class="icon-circle mx-auto mb-2"><i class="bi bi-tools"></i></div>
-                <div class="small text-white">精準施工</div>
-                <div class="small text-secondary opacity-70">SOP 安裝</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="panel rounded-3 p-3 text-center h-100">
-                <div class="icon-circle mx-auto mb-2"><i class="bi bi-phone"></i></div>
-                <div class="small text-white">操作教學</div>
-                <div class="small text-secondary opacity-70">指紋錄入</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="panel rounded-3 p-3 text-center h-100">
-                <div class="icon-circle mx-auto mb-2"><i class="bi bi-headset"></i></div>
-                <div class="small text-white">售後支援</div>
-                <div class="small text-secondary opacity-70">原廠保固</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right: Product Visual -->
-      <div class="col-lg-6">
-        <div class="card hero-card border-0 rounded-4 overflow-hidden">
-          <div class="row g-0 align-items-stretch">
-            <div class="col-md-6 p-4">
-              <p class="text-gold tracking-wide small text-uppercase mb-2 opacity-70">Product View</p>
-              <h2 class="h4 text-white serif-font mb-3">簡約耐看 · 百搭風格</h2>
-              <p class="text-secondary small text-justify mb-4">
-                ML660 採用經典黑色磨砂金屬機身，線條簡潔不浮誇。無論是現代大樓或傳統公寓，都能自然融入，低調而有質感。
-              </p>
-
-              <div class="divider my-3"></div>
-
-              <div class="d-grid gap-2">
-                <a class="btn-gold-solid" href="https://line.me/ti/p/giw8057p" target="_blank">
-                  <i class="bi bi-line me-2"></i>LINE 傳門照 → 快速評估
-                </a>
-                <a class="btn-gold-outline" href="tel:0906921957">
-                  <i class="bi bi-telephone-fill me-2"></i>0906-921-957
-                </a>
-              </div>
-
-              <div class="mt-3 small text-secondary opacity-70">
-                建議傳：門扇正面、側面、舊鎖孔近照。
-              </div>
-            </div>
-
-            <div class="col-md-6 bg-dark d-flex align-items-center justify-content-center p-4">
-              <!-- TODO: 替換為 Dormakaba ML660 真實產品照片 -->
-              <img src="../assets/images/service-digital-locks/dormakaba/ml660.jpg"
-                   class="img-fluid"
-                   alt="Dormakaba ML660 經典握把式電子鎖產品圖 - 高雄強匠鎖店專業安裝推薦"
-                   style="max-height: 420px; object-fit: contain; filter: drop-shadow(0 12px 30px rgba(0,0,0,0.45));" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</header>
-
-<!-- 2. Scenarios: Practical Daily Solutions -->
-<section class="py-5" id="scenarios">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">Scenario Solutions</span>
-      <h2 class="text-white mt-2">忘帶鑰匙 / 長輩不適應 / 預算有限：務實痛點逐一擊破</h2>
-      <p class="text-secondary mx-auto opacity-70" style="max-width: 820px;">
-        ML660 不追求浮誇功能，只專注解決最實際的生活困擾。
-      </p>
-    </div>
-
-    <div class="row g-4">
-      <!-- Scenario 1: Familiar Operation -->
-      <div class="col-lg-4">
-        <div class="card card-dark rounded-4 h-100">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="icon-circle"><i class="bi bi-hand-index-thumb"></i></div>
-              <h3 class="h5 text-white mb-0 serif-font">長輩零學習上手</h3>
-            </div>
-            <div class="small text-secondary opacity-70 mb-3">
-              擔心推拉式太新潮，長輩不習慣用身體開門，還是想要傳統的轉把手？
-            </div>
-            <ul class="small text-secondary mb-0">
-              <li class="mb-2"><strong class="text-gold">經典握把式設計</strong>：完全不用改變開門習慣，驗證指紋後，轉動把手就能進門，跟用傳統鑰匙一模一樣。</li>
-              <li class="mb-2">從室內出門也是轉把手即可，動作直覺，長輩不用花時間重新適應。</li>
-              <li>把手結構簡單耐用，故障率極低，適合追求穩定的保守型家庭。</li>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item" href="../service-digital-locks.html?brand=philips#brands">Philips 飛利浦</a>
+              </li>
+              <li><a class="dropdown-item" href="../service-digital-locks.html?brand=samsung#brands">Samsung 三星</a></li>
+              <li><a class="dropdown-item" href="../service-digital-locks.html?brand=dormakaba#brands">Dormakaba
+                  多瑪凱拔</a></li>
+              <li><a class="dropdown-item" href="../service-digital-locks.html?brand=mrlock#brands">Sensirs 鎖先森</a></li>
+              <li><a class="dropdown-item" href="../service-digital-locks.html?brand=milre#brands">Milre 美樂</a></li>
             </ul>
-          </div>
-          <div class="card-footer bg-transparent border-0 p-4 pt-0">
-            <a class="btn-gold-outline w-100" href="#consult">詢問長輩適用性</a>
-          </div>
-        </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <a href="https://line.me/ti/p/giw8057p" target="_blank" class="btn-gold-outline py-2 px-4 small">
+              <i class="bi bi-line me-2"></i>LINE 免費評估
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <!-- Scenario 2: Forget Keys -->
-      <div class="col-lg-4">
-        <div class="card card-dark rounded-4 h-100">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="icon-circle"><i class="bi bi-key-fill"></i></div>
-              <h3 class="h5 text-white mb-0 serif-font">忘帶鑰匙不再尷尬</h3>
-            </div>
-            <div class="small text-secondary opacity-70 mb-3">
-              出門倒垃圾、去便利商店，總是忘記帶鑰匙，被鎖在外面要叫鎖匠？
-            </div>
-            <ul class="small text-secondary mb-0">
-              <li class="mb-2"><strong class="text-gold">指紋 + 密碼雙解鎖</strong>：只要錄入指紋，出門就算兩手空空也能隨時回家。</li>
-              <li class="mb-2">若手指受傷或沾到油污，還能用密碼解鎖（支援虛位密碼，防止旁人窺視）。</li>
-              <li>機械鑰匙作為最終備案，建議放在車上或辦公室，以備不時之需。</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-transparent border-0 p-4 pt-0">
-            <a class="btn-gold-outline w-100" href="#consult">了解解鎖方式</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Scenario 3: Budget Conscious -->
-      <div class="col-lg-4">
-        <div class="card card-dark rounded-4 h-100">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="icon-circle"><i class="bi bi-piggy-bank"></i></div>
-              <h3 class="h5 text-white mb-0 serif-font">預算有限也能享德國品質</h3>
-            </div>
-            <div class="small text-secondary opacity-70 mb-3">
-              想要可靠的電子鎖，但不想花大錢買一堆用不到的功能（如人臉辨識、遠端 APP）？
-            </div>
-            <ul class="small text-secondary mb-0">
-              <li class="mb-2"><strong class="text-gold">高 CP 值入門款</strong>：ML660 捨棄花俏功能，專注於鎖具本質，價格親民但品質不妥協。</li>
-              <li class="mb-2">採用 Dormakaba 德國原廠的機械結構與指紋模組，耐用度遠勝同價位雜牌。</li>
-              <li>適合首次升級電子鎖、或是租屋族想要基本防護的實用選擇。</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-transparent border-0 p-4 pt-0">
-            <a class="btn-gold-outline w-100" href="#consult">詢問優惠方案</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
-<!-- 3. Key Features (Dormakaba ML660 Specific) -->
-<section class="py-5" id="features" style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, var(--bg-deep) 100%);">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">Key Features</span>
-      <h2 class="text-white mt-2">簡單可靠，德國穩定工藝</h2>
-      <p class="text-secondary mx-auto opacity-70" style="max-width: 860px;">
-        Dormakaba ML660 不玩花俏噱頭，將德國品牌的精髓濃縮在最實用的功能上，讓您用最合理的預算，享受最安心的守護。
-      </p>
-    </div>
+  </nav>
+  <!-- 1. Hero: Reliable Classic (Dormakaba ML660) -->
+  <header class="hero-product">
+    <div class="container">
+      <div class="row align-items-center g-5">
 
-    <div class="row g-4 align-items-center">
-      <!-- Left: Product Features -->
-      <div class="col-lg-6">
-        <div class="panel rounded-4 p-4">
-          
-          <!-- Feature 1: Classic Handle -->
-          <div class="d-flex align-items-start gap-3">
-            <div class="icon-circle"><i class="bi bi-door-closed"></i></div>
-            <div>
-              <h3 class="h5 text-white serif-font mb-2">經典握把式操作</h3>
-              <p class="text-secondary opacity-70 mb-0">
-                延續傳統門鎖的轉動把手設計，無需學習新的開門方式。驗證指紋或密碼後，轉動把手即可進入，動作直覺流暢，全家老小都能立刻上手。
-              </p>
-            </div>
-          </div>
+        <div class="col-lg-6">
+          <!-- Top Badge -->
+          <span
+            class="badge bg-gold-subtle text-gold mb-3 px-3 py-2 rounded-pill fw-bold border border-gold-subtle tracking-wide">
+            <i class="bi bi-award me-1"></i> German Quality · High Value Choice
+          </span>
 
-          <hr class="divider my-4" />
+          <!-- Main Title -->
+          <h1 class="display-4 fw-bold text-white mb-3 lh-sm">
+            Dormakaba ML660<br>
+            <span class="text-gold">德國經典握把式電子鎖</span>
+          </h1>
 
-          <!-- Feature 2: Semiconductor Fingerprint -->
-          <div class="d-flex align-items-start gap-3">
-            <div class="icon-circle"><i class="bi bi-fingerprint"></i></div>
-            <div>
-              <h3 class="h5 text-white serif-font mb-2">半導體指紋辨識</h3>
-              <p class="text-secondary opacity-70 mb-0">
-                採用高靈敏度半導體指紋感應器，辨識速度快且準確。雖非頂規 FPC，但對於一般家庭使用已綽綽有餘，性價比極高。
-              </p>
-            </div>
-          </div>
-
-          <hr class="divider my-4" />
-
-          <!-- Feature 3: Virtual Password -->
-          <div class="d-flex align-items-start gap-3">
-            <div class="icon-circle"><i class="bi bi-shield-lock"></i></div>
-            <div>
-              <h3 class="h5 text-white serif-font mb-2">虛位密碼防窺視</h3>
-              <p class="text-secondary opacity-70 mb-0">
-                支援虛位密碼功能，可在正確密碼前後輸入任意亂碼，有效防止旁人記住您的密碼或是透過指紋殘留推測密碼組合。
-              </p>
-            </div>
-          </div>
-
-          <hr class="divider my-4" />
-
-          <!-- Feature 4: Durable Structure -->
-          <div class="d-flex align-items-start gap-3">
-            <div class="icon-circle"><i class="bi bi-hammer"></i></div>
-            <div>
-              <h3 class="h5 text-white serif-font mb-2">德國工藝耐用結構</h3>
-              <p class="text-secondary opacity-70 mb-0">
-                外殼採用高強度鋅合金材質，內部離合器與鎖舌機構經過嚴格測試。Dormakaba 百年品牌保證，故障率遠低於同價位雜牌電子鎖。
-              </p>
-            </div>
-          </div>
-
-          <div class="mt-4 small text-secondary opacity-70">
-            備註：指紋容量 100 組；密碼 4 組（6-12 位數）；機械鑰匙 2 把。
-          </div>
-        </div>
-      </div>
-
-      <!-- Right: Installation SOP (Standardized) -->
-      <div class="col-lg-6">
-        <div class="panel rounded-4 p-4 h-100">
-          <p class="text-gold tracking-wide small text-uppercase mb-2 opacity-70">Installation matters</p>
-          <h3 class="text-white serif-font mb-3">好鎖配好工，才能用得久</h3>
-          <p class="text-secondary opacity-70 text-justify mb-4">
-            雖然 ML660 結構簡單，但安裝時若孔位不正、螺絲鎖得過緊或過鬆，都會影響把手順暢度與電子元件壽命。強匠技師堅持標準化施工流程，確保每一把鎖都能發揮最佳效能。
+          <!-- Value Prop -->
+          <p class="lead text-white-50 mb-4 opacity-70 fw-light">
+            沒有複雜的推拉機構，也不用學習新的開門方式。<br>
+            用最熟悉的轉動把手，享受德國工藝的穩定與安心。
           </p>
 
-          <div class="row g-3">
-            <div class="col-md-4">
-              <div class="card card-dark rounded-4 h-100">
-                <div class="card-body p-4">
-                  <div class="text-gold serif-font display-6 mb-2">01</div>
-                  <h4 class="h6 text-white mb-2">精準開孔</h4>
-                  <p class="small text-secondary mb-0 text-justify">
-                    使用專用治具定位，確保前後面板對齊無誤差，避免因歪斜導致把手卡澀或電池接觸不良。
-                  </p>
+          <!-- Feature Pills -->
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="feature-pill"><i class="bi bi-door-closed text-gold"></i> 經典握把式</span>
+            <span class="feature-pill"><i class="bi bi-fingerprint text-gold"></i> 半導體指紋</span>
+            <span class="feature-pill"><i class="bi bi-shield-lock text-gold"></i> 虛位密碼</span>
+            <span class="feature-pill"><i class="bi bi-key text-gold"></i> 機械鑰匙</span>
+            <span class="feature-pill"><i class="bi bi-battery-charging text-gold"></i> 低電量警示</span>
+            <span class="feature-pill"><i class="bi bi-hammer text-gold"></i> 耐用結構</span>
+          </div>
+
+          <!-- Urgency Banner -->
+          <div class="mt-4 p-3 rounded-3 mb-3"
+            style="background: rgba(214, 177, 94, 0.1); border: 1px solid var(--gold-matte); border-radius: 12px;">
+            <div class="text-center">
+              <i class="bi bi-gift text-gold fs-4 me-2"></i>
+              <span class="text-gold fw-bold">強匠專屬服務：</span>
+              <span class="text-white">德國品質平價安裝</span>
+              <div class="small text-gold mt-1">⚡ 快速施工 · 舊鎖孔完美遮蔽</div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="d-flex gap-3 mb-5">
+            <a class="btn-gold-solid flex-grow-1 text-center py-3 rounded-1 shadow-lg" href="#consult">
+              <i class="bi bi-shield-check me-2"></i>找強匠安裝 / 諮詢
+            </a>
+            <a class="btn-gold-outline flex-grow-1 text-center py-3 rounded-1" href="#scenarios">
+              <i class="bi bi-arrow-down-circle me-2"></i>看握把式優勢
+            </a>
+          </div>
+
+          <!-- Service Pillars -->
+          <div class="mt-4">
+            <div class="row g-3">
+              <div class="col-6 col-md-3">
+                <div class="panel rounded-3 p-3 text-center h-100">
+                  <div class="icon-circle mx-auto mb-2"><i class="bi bi-award"></i></div>
+                  <div class="small text-white">在地經驗</div>
+                  <div class="small text-secondary opacity-70">高雄服務</div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-dark rounded-4 h-100">
-                <div class="card-body p-4">
-                  <div class="text-gold serif-font display-6 mb-2">02</div>
-                  <h4 class="h6 text-white mb-2">舊孔遮蔽</h4>
-                  <p class="small text-secondary mb-0 text-justify">
-                    針對舊鎖留下的孔位，提供不鏽鋼飾板進行完美覆蓋，讓升級後的門面依然平整美觀。
-                  </p>
+              <div class="col-6 col-md-3">
+                <div class="panel rounded-3 p-3 text-center h-100">
+                  <div class="icon-circle mx-auto mb-2"><i class="bi bi-tools"></i></div>
+                  <div class="small text-white">精準施工</div>
+                  <div class="small text-secondary opacity-70">SOP 安裝</div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-dark rounded-4 h-100">
-                <div class="card-body p-4">
-                  <div class="text-gold serif-font display-6 mb-2">03</div>
-                  <h4 class="h6 text-white mb-2">現場教學</h4>
-                  <p class="small text-secondary mb-0 text-justify">
-                    安裝完成後，技師會逐步教學指紋錄入、密碼設定與低電量提醒，確保您完全會用。
-                  </p>
+              <div class="col-6 col-md-3">
+                <div class="panel rounded-3 p-3 text-center h-100">
+                  <div class="icon-circle mx-auto mb-2"><i class="bi bi-phone"></i></div>
+                  <div class="small text-white">操作教學</div>
+                  <div class="small text-secondary opacity-70">指紋錄入</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="panel rounded-3 p-3 text-center h-100">
+                  <div class="icon-circle mx-auto mb-2"><i class="bi bi-headset"></i></div>
+                  <div class="small text-white">售後支援</div>
+                  <div class="small text-secondary opacity-70">原廠保固</div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="mt-4 d-flex flex-wrap gap-3">
-            <a class="btn-gold-solid flex-grow-1" href="#consult"><i class="bi bi-shield-check me-2"></i>預約專業安裝（找強匠）</a>
-            <a class="btn-gold-outline flex-grow-1" href="https://line.me/ti/p/giw8057p" target="_blank"><i class="bi bi-line me-2"></i>LINE 傳門照</a>
+        <!-- Right: Product Visual -->
+        <div class="col-lg-6">
+          <div class="card hero-card border-0 rounded-4 overflow-hidden">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-md-6 p-4">
+                <p class="text-gold tracking-wide small text-uppercase mb-2 opacity-70">Product View</p>
+                <h2 class="h4 text-white serif-font mb-3">簡約耐看 · 百搭風格</h2>
+                <p class="text-secondary small text-justify mb-4">
+                  ML660 採用經典黑色磨砂金屬機身，線條簡潔不浮誇。無論是現代大樓或傳統公寓，都能自然融入，低調而有質感。
+                </p>
+
+                <div class="divider my-3"></div>
+
+                <div class="d-grid gap-2">
+                  <a class="btn-gold-solid" href="https://line.me/ti/p/giw8057p" target="_blank">
+                    <i class="bi bi-line me-2"></i>LINE 傳門照 → 快速評估
+                  </a>
+                  <a class="btn-gold-outline" href="tel:0906921957">
+                    <i class="bi bi-telephone-fill me-2"></i>0906-921-957
+                  </a>
+                </div>
+
+                <div class="mt-3 small text-secondary opacity-70">
+                  建議傳：門扇正面、側面、舊鎖孔近照。
+                </div>
+              </div>
+
+              <div class="col-md-6 bg-dark d-flex align-items-center justify-content-center p-4">
+                <!-- TODO: 替換為 Dormakaba ML660 真實產品照片 -->
+                <img src="../assets/images/service-digital-locks/dormakaba/ml660.jpg" class="img-fluid"
+                  alt="Dormakaba ML660 經典握把式電子鎖產品圖 - 高雄強匠鎖店專業安裝推薦"
+                  style="max-height: 420px; object-fit: contain; filter: drop-shadow(0 12px 30px rgba(0,0,0,0.45));" />
+              </div>
+            </div>
           </div>
+        </div>
 
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Scenarios: Practical Daily Solutions -->
+  <section class="py-5" id="scenarios">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">Scenario Solutions</span>
+        <h2 class="text-white mt-2">忘帶鑰匙 / 長輩不適應 / 預算有限：務實痛點逐一擊破</h2>
+        <p class="text-secondary mx-auto opacity-70" style="max-width: 820px;">
+          ML660 不追求浮誇功能，只專注解決最實際的生活困擾。
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Scenario 1: Familiar Operation -->
+        <div class="col-lg-4">
+          <div class="card card-dark rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="icon-circle"><i class="bi bi-hand-index-thumb"></i></div>
+                <h3 class="h5 text-white mb-0 serif-font">長輩零學習上手</h3>
+              </div>
+              <div class="small text-secondary opacity-70 mb-3">
+                擔心推拉式太新潮，長輩不習慣用身體開門，還是想要傳統的轉把手？
+              </div>
+              <ul class="small text-secondary mb-0">
+                <li class="mb-2"><strong class="text-gold">經典握把式設計</strong>：完全不用改變開門習慣，驗證指紋後，轉動把手就能進門，跟用傳統鑰匙一模一樣。</li>
+                <li class="mb-2">從室內出門也是轉把手即可，動作直覺，長輩不用花時間重新適應。</li>
+                <li>把手結構簡單耐用，故障率極低，適合追求穩定的保守型家庭。</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-4 pt-0">
+              <a class="btn-gold-outline w-100" href="#consult">詢問長輩適用性</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scenario 2: Forget Keys -->
+        <div class="col-lg-4">
+          <div class="card card-dark rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="icon-circle"><i class="bi bi-key-fill"></i></div>
+                <h3 class="h5 text-white mb-0 serif-font">忘帶鑰匙不再尷尬</h3>
+              </div>
+              <div class="small text-secondary opacity-70 mb-3">
+                出門倒垃圾、去便利商店，總是忘記帶鑰匙，被鎖在外面要叫鎖匠？
+              </div>
+              <ul class="small text-secondary mb-0">
+                <li class="mb-2"><strong class="text-gold">指紋 + 密碼雙解鎖</strong>：只要錄入指紋，出門就算兩手空空也能隨時回家。</li>
+                <li class="mb-2">若手指受傷或沾到油污，還能用密碼解鎖（支援虛位密碼，防止旁人窺視）。</li>
+                <li>機械鑰匙作為最終備案，建議放在車上或辦公室，以備不時之需。</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-4 pt-0">
+              <a class="btn-gold-outline w-100" href="#consult">了解解鎖方式</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scenario 3: Budget Conscious -->
+        <div class="col-lg-4">
+          <div class="card card-dark rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="icon-circle"><i class="bi bi-piggy-bank"></i></div>
+                <h3 class="h5 text-white mb-0 serif-font">預算有限也能享德國品質</h3>
+              </div>
+              <div class="small text-secondary opacity-70 mb-3">
+                想要可靠的電子鎖，但不想花大錢買一堆用不到的功能（如人臉辨識、遠端 APP）？
+              </div>
+              <ul class="small text-secondary mb-0">
+                <li class="mb-2"><strong class="text-gold">高 CP 值入門款</strong>：ML660 捨棄花俏功能，專注於鎖具本質，價格親民但品質不妥協。</li>
+                <li class="mb-2">採用 Dormakaba 德國原廠的機械結構與指紋模組，耐用度遠勝同價位雜牌。</li>
+                <li>適合首次升級電子鎖、或是租屋族想要基本防護的實用選擇。</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-4 pt-0">
+              <a class="btn-gold-outline w-100" href="#consult">詢問優惠方案</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- 3. Key Features (Dormakaba ML660 Specific) -->
+  <section class="py-5" id="features"
+    style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, var(--bg-deep) 100%);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">Key Features</span>
+        <h2 class="text-white mt-2">簡單可靠，德國穩定工藝</h2>
+        <p class="text-secondary mx-auto opacity-70" style="max-width: 860px;">
+          Dormakaba ML660 不玩花俏噱頭，將德國品牌的精髓濃縮在最實用的功能上，讓您用最合理的預算，享受最安心的守護。
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <!-- Left: Product Features -->
+        <div class="col-lg-6">
+          <div class="panel rounded-4 p-4">
+
+            <!-- Feature 1: Classic Handle -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-circle"><i class="bi bi-door-closed"></i></div>
+              <div>
+                <h3 class="h5 text-white serif-font mb-2">經典握把式操作</h3>
+                <p class="text-secondary opacity-70 mb-0">
+                  延續傳統門鎖的轉動把手設計，無需學習新的開門方式。驗證指紋或密碼後，轉動把手即可進入，動作直覺流暢，全家老小都能立刻上手。
+                </p>
+              </div>
+            </div>
+
+            <hr class="divider my-4" />
+
+            <!-- Feature 2: Semiconductor Fingerprint -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-circle"><i class="bi bi-fingerprint"></i></div>
+              <div>
+                <h3 class="h5 text-white serif-font mb-2">半導體指紋辨識</h3>
+                <p class="text-secondary opacity-70 mb-0">
+                  採用高靈敏度半導體指紋感應器，辨識速度快且準確。雖非頂規 FPC，但對於一般家庭使用已綽綽有餘，性價比極高。
+                </p>
+              </div>
+            </div>
+
+            <hr class="divider my-4" />
+
+            <!-- Feature 3: Virtual Password -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-circle"><i class="bi bi-shield-lock"></i></div>
+              <div>
+                <h3 class="h5 text-white serif-font mb-2">虛位密碼防窺視</h3>
+                <p class="text-secondary opacity-70 mb-0">
+                  支援虛位密碼功能，可在正確密碼前後輸入任意亂碼，有效防止旁人記住您的密碼或是透過指紋殘留推測密碼組合。
+                </p>
+              </div>
+            </div>
+
+            <hr class="divider my-4" />
+
+            <!-- Feature 4: Durable Structure -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-circle"><i class="bi bi-hammer"></i></div>
+              <div>
+                <h3 class="h5 text-white serif-font mb-2">德國工藝耐用結構</h3>
+                <p class="text-secondary opacity-70 mb-0">
+                  外殼採用高強度鋅合金材質，內部離合器與鎖舌機構經過嚴格測試。Dormakaba 百年品牌保證，故障率遠低於同價位雜牌電子鎖。
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-4 small text-secondary opacity-70">
+              備註：指紋容量 100 組；密碼 4 組（6-12 位數）；機械鑰匙 2 把。
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Installation SOP (Standardized) -->
+        <div class="col-lg-6">
+          <div class="panel rounded-4 p-4 h-100">
+            <p class="text-gold tracking-wide small text-uppercase mb-2 opacity-70">Installation matters</p>
+            <h3 class="text-white serif-font mb-3">好鎖配好工，才能用得久</h3>
+            <p class="text-secondary opacity-70 text-justify mb-4">
+              雖然 ML660 結構簡單，但安裝時若孔位不正、螺絲鎖得過緊或過鬆，都會影響把手順暢度與電子元件壽命。強匠技師堅持標準化施工流程，確保每一把鎖都能發揮最佳效能。
+            </p>
+
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="card card-dark rounded-4 h-100">
+                  <div class="card-body p-4">
+                    <div class="text-gold serif-font display-6 mb-2">01</div>
+                    <h4 class="h6 text-white mb-2">精準開孔</h4>
+                    <p class="small text-secondary mb-0 text-justify">
+                      使用專用治具定位，確保前後面板對齊無誤差，避免因歪斜導致把手卡澀或電池接觸不良。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-dark rounded-4 h-100">
+                  <div class="card-body p-4">
+                    <div class="text-gold serif-font display-6 mb-2">02</div>
+                    <h4 class="h6 text-white mb-2">舊孔遮蔽</h4>
+                    <p class="small text-secondary mb-0 text-justify">
+                      針對舊鎖留下的孔位，提供不鏽鋼飾板進行完美覆蓋，讓升級後的門面依然平整美觀。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-dark rounded-4 h-100">
+                  <div class="card-body p-4">
+                    <div class="text-gold serif-font display-6 mb-2">03</div>
+                    <h4 class="h6 text-white mb-2">現場教學</h4>
+                    <p class="small text-secondary mb-0 text-justify">
+                      安裝完成後，技師會逐步教學指紋錄入、密碼設定與低電量提醒，確保您完全會用。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 d-flex flex-wrap gap-3">
+              <a class="btn-gold-solid flex-grow-1" href="#consult"><i
+                  class="bi bi-shield-check me-2"></i>預約專業安裝（找強匠）</a>
+              <a class="btn-gold-outline flex-grow-1" href="https://line.me/ti/p/giw8057p" target="_blank"><i
+                  class="bi bi-line me-2"></i>LINE 傳門照</a>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- 🔥 POWERFUL CONVERSION CTA (Refined Gold) -->
-  <section class="py-5 text-center" style="background: linear-gradient(135deg, #D6B15E 0%, #E5C985 100%); position: relative; overflow: hidden;">
+  <section class="py-5 text-center"
+    style="background: linear-gradient(135deg, #D6B15E 0%, #E5C985 100%); position: relative; overflow: hidden;">
     <div class="container position-relative">
       <!-- Background Pattern (Subtle Grain) -->
-      <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.08; background-image: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3e%3cdefs%3e%3cpattern id=%22grain%22 width=%22100%22 height=%22100%22 patternUnits=%22userSpaceOnUse%22%3e%3ccircle cx=%2225%22 cy=%2225%22 r=%221%22 fill=%22%23000%22/%3e%3ccircle cx=%2275%22 cy=%2275%22 r=%221%22 fill=%22%23000%22/%3e%3ccircle cx=%2250%22 cy=%2250%22 r=%220.5%22 fill=%22%23000%22/%3e%3c/pattern%3e%3c/defs%3e%3crect width=%22100%22 height=%22100%22 fill=%22url(%23grain)%22/%3e%3c/svg%3e');"></div>
+      <div
+        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.08; background-image: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3e%3cdefs%3e%3cpattern id=%22grain%22 width=%22100%22 height=%22100%22 patternUnits=%22userSpaceOnUse%22%3e%3ccircle cx=%2225%22 cy=%2225%22 r=%221%22 fill=%22%23000%22/%3e%3ccircle cx=%2275%22 cy=%2275%22 r=%221%22 fill=%22%23000%22/%3e%3ccircle cx=%2250%22 cy=%2250%22 r=%220.5%22 fill=%22%23000%22/%3e%3c/pattern%3e%3c/defs%3e%3crect width=%22100%22 height=%22100%22 fill=%22url(%23grain)%22/%3e%3c/svg%3e');">
+      </div>
 
       <div class="row justify-content-center position-relative" style="z-index: 2;">
         <div class="col-lg-8">
-          
+
           <!-- Trust Badge -->
-          <div class="d-inline-flex align-items-center bg-white bg-opacity-25 border border-white border-opacity-50 px-4 py-2 rounded-pill mb-4 backdrop-blur shadow-sm">
+          <div
+            class="d-inline-flex align-items-center bg-white bg-opacity-25 border border-white border-opacity-50 px-4 py-2 rounded-pill mb-4 backdrop-blur shadow-sm">
             <i class="bi bi-patch-check-fill text-dark me-2 fs-5"></i>
             <span class="text-dark fw-bold tracking-wide">高雄在地 · 實體店面保障</span>
           </div>
@@ -677,15 +760,19 @@
           <!-- CTA Buttons -->
           <div class="d-flex flex-column flex-md-row gap-3 justify-content-center mb-5">
             <!-- Primary Action -->
-            <a href="https://line.me/ti/p/giw8057p" target="_blank" class="btn btn-dark btn-lg px-5 py-3 shadow-lg d-flex align-items-center justify-content-center" style="border-radius: 50px; min-width: 260px;">
+            <a href="https://line.me/ti/p/giw8057p" target="_blank"
+              class="btn btn-dark btn-lg px-5 py-3 shadow-lg d-flex align-items-center justify-content-center"
+              style="border-radius: 50px; min-width: 260px;">
               <div class="text-start">
                 <div class="fw-bold fs-5"><i class="bi bi-line me-2"></i>LINE 免費評估</div>
                 <div class="small text-white-50" style="font-size: 0.75rem;">傳照片，快速回覆</div>
               </div>
             </a>
-            
+
             <!-- Secondary Action -->
-            <a href="tel:0906921957" class="btn btn-success btn-lg px-5 py-3 shadow-sm d-flex align-items-center justify-content-center" style="border-radius: 50px; border-width: 2px; min-width: 260px;">
+            <a href="tel:0906921957"
+              class="btn btn-success btn-lg px-5 py-3 shadow-sm d-flex align-items-center justify-content-center"
+              style="border-radius: 50px; border-width: 2px; min-width: 260px;">
               <div class="text-start">
                 <div class="fw-bold fs-5"><i class="bi bi-telephone-fill me-2"></i>0906-921-957</div>
                 <div class="small opacity-75" style="font-size: 0.75rem;">24H 緊急諮詢專線</div>
@@ -724,346 +811,362 @@
 
   </section>
 
-<!-- 4. Install Proof / Gallery (Local Proof) -->
-<section class="py-5" id="portfolio">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">Local Proof</span>
-      <h2 class="text-white mt-2">強匠安裝實績</h2>
-      <p class="text-secondary mx-auto opacity-70" style="max-width: 820px;">
-        ML660 以高 CP 值深受高雄小家庭與租屋族喜愛，簡約耐用不浮誇。
-      </p>
-    </div>
+  <!-- 4. Install Proof / Gallery (Local Proof) -->
+  <section class="py-5" id="portfolio">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">Local Proof</span>
+        <h2 class="text-white mt-2">強匠安裝實績</h2>
+        <p class="text-secondary mx-auto opacity-70" style="max-width: 820px;">
+          ML660 以高 CP 值深受高雄小家庭與租屋族喜愛，簡約耐用不浮誇。
+        </p>
+      </div>
 
-    <div class="row g-3">
-      <div class="col-md-4">
-        <div class="panel rounded-4 overflow-hidden h-100">
-          <!-- TODO: 替換為 ML660 安裝照片 -->
-          <img src="../assets/images/service-digital-locks/door-assess-1.jpg" class="img-fluid w-100" alt="高雄公寓 ML660 安裝實例" loading="lazy">
-          <div class="p-3">
-            <div class="small text-white">高雄 · 三民區公寓</div>
-            <div class="small text-secondary opacity-70">特色：經典握把/長輩適用</div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="panel rounded-4 overflow-hidden h-100">
+            <!-- TODO: 替換為 ML660 安裝照片 -->
+            <img src="../assets/images/service-digital-locks/door-assess-1.jpg" class="img-fluid w-100"
+              alt="高雄公寓 ML660 安裝實例" loading="lazy">
+            <div class="p-3">
+              <div class="small text-white">高雄 · 三民區公寓</div>
+              <div class="small text-secondary opacity-70">特色：經典握把/長輩適用</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel rounded-4 overflow-hidden h-100">
+            <!-- TODO: 替換為 ML660 安裝照片 -->
+            <img src="../assets/images/service-digital-locks/door-assess-2.jpg" class="img-fluid w-100"
+              alt="高雄租屋 ML660 安裝實例" loading="lazy">
+            <div class="p-3">
+              <div class="small text-white">高雄 · 前金套房</div>
+              <div class="small text-secondary opacity-70">特色：租屋首選/高 CP 值</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel rounded-4 overflow-hidden h-100">
+            <!-- TODO: 替換為師傅施工照片 -->
+            <img src="../assets/images/service-digital-locks/technician-at-work.png" class="img-fluid w-100"
+              alt="強匠師傅施工示意" loading="lazy">
+            <div class="p-3">
+              <div class="small text-white">標準化施工流程</div>
+              <div class="small text-secondary opacity-70">治具定位、功能測試、操作教學</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="panel rounded-4 overflow-hidden h-100">
-          <!-- TODO: 替換為 ML660 安裝照片 -->
-          <img src="../assets/images/service-digital-locks/door-assess-2.jpg" class="img-fluid w-100" alt="高雄租屋 ML660 安裝實例" loading="lazy">
-          <div class="p-3">
-            <div class="small text-white">高雄 · 前金套房</div>
-            <div class="small text-secondary opacity-70">特色：租屋首選/高 CP 值</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="panel rounded-4 overflow-hidden h-100">
-          <!-- TODO: 替換為師傅施工照片 -->
-          <img src="../assets/images/service-digital-locks/technician-at-work.png" class="img-fluid w-100" alt="強匠師傅施工示意" loading="lazy">
-          <div class="p-3">
-            <div class="small text-white">標準化施工流程</div>
-            <div class="small text-secondary opacity-70">治具定位、功能測試、操作教學</div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- 5. Customer Testimonials (Dormakaba ML660 Specific) -->
-<section class="py-5" style="background: linear-gradient(180deg, rgba(11, 27, 58, 0.95) 0%, rgba(18, 36, 66, 0.95) 100%);">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">客戶見證</span>
-      <h2 class="text-white mt-2">選擇 Dormakaba ML660 的理由</h2>
-      <p class="text-secondary mx-auto opacity-70" style="max-width: 600px;">
-        聽聽高雄客戶的真實使用體驗
-      </p>
-    </div>
+  <!-- 5. Customer Testimonials (Dormakaba ML660 Specific) -->
+  <section class="py-5"
+    style="background: linear-gradient(180deg, rgba(11, 27, 58, 0.95) 0%, rgba(18, 36, 66, 0.95) 100%);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">客戶見證</span>
+        <h2 class="text-white mt-2">選擇 Dormakaba ML660 的理由</h2>
+        <p class="text-secondary mx-auto opacity-70" style="max-width: 600px;">
+          聽聽高雄客戶的真實使用體驗
+        </p>
+      </div>
 
-    <div class="row g-4">
-      <!-- Testimonial 1 -->
-      <div class="col-lg-4">
-        <div class="card card-dark h-100 rounded-4 shadow-lg">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center mb-3">
-              <div class="flex-shrink-0">
-                <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                  <span class="text-dark fw-bold fs-5">黃</span>
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-lg-4">
+          <div class="card card-dark h-100 rounded-4 shadow-lg">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0">
+                  <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <span class="text-dark fw-bold fs-5">黃</span>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div class="text-white fw-bold">黃阿姨 · 新興區舊公寓</div>
+                  <div class="text-secondary small">安裝時間：2024年7月</div>
                 </div>
               </div>
-              <div class="ms-3">
-                <div class="text-white fw-bold">黃阿姨 · 新興區舊公寓</div>
-                <div class="text-secondary small">安裝時間：2024年7月</div>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
               </div>
+              <p class="text-secondary mb-0">
+                "我不太會用那些新科技的東西，這把鎖就是<strong class="text-gold">轉把手</strong>，跟以前一模一樣，完全不用學。師傅也很細心教我怎麼按指紋，現在買菜回來都不用翻鑰匙了。"
+              </p>
             </div>
-            <div class="mb-3">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-            </div>
-            <p class="text-secondary mb-0">
-              "我不太會用那些新科技的東西，這把鎖就是<strong class="text-gold">轉把手</strong>，跟以前一模一樣，完全不用學。師傅也很細心教我怎麼按指紋，現在買菜回來都不用翻鑰匙了。"
-            </p>
           </div>
         </div>
-      </div>
 
-      <!-- Testimonial 2 -->
-      <div class="col-lg-4">
-        <div class="card card-dark h-100 rounded-4 shadow-lg">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center mb-3">
-              <div class="flex-shrink-0">
-                <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                  <span class="text-dark fw-bold fs-5">劉</span>
+        <!-- Testimonial 2 -->
+        <div class="col-lg-4">
+          <div class="card card-dark h-100 rounded-4 shadow-lg">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0">
+                  <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <span class="text-dark fw-bold fs-5">劉</span>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div class="text-white fw-bold">劉小姐 · 苓雅區套房</div>
+                  <div class="text-secondary small">安裝時間：2024年9月</div>
                 </div>
               </div>
-              <div class="ms-3">
-                <div class="text-white fw-bold">劉小姐 · 苓雅區套房</div>
-                <div class="text-secondary small">安裝時間：2024年9月</div>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
               </div>
+              <p class="text-secondary mb-0">
+                "我是租屋族，房東同意讓我升級電子鎖。選 ML660 是因為<strong class="text-gold">價格實在</strong>，但又是德國品牌有保障。用了半年多，指紋辨識很穩，沒有出過問題。"
+              </p>
             </div>
-            <div class="mb-3">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-            </div>
-            <p class="text-secondary mb-0">
-              "我是租屋族，房東同意讓我升級電子鎖。選 ML660 是因為<strong class="text-gold">價格實在</strong>，但又是德國品牌有保障。用了半年多，指紋辨識很穩，沒有出過問題。"
-            </p>
           </div>
         </div>
-      </div>
 
-      <!-- Testimonial 3 -->
-      <div class="col-lg-4">
-        <div class="card card-dark h-100 rounded-4 shadow-lg">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center mb-3">
-              <div class="flex-shrink-0">
-                <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                  <span class="text-dark fw-bold fs-5">吳</span>
+        <!-- Testimonial 3 -->
+        <div class="col-lg-4">
+          <div class="card card-dark h-100 rounded-4 shadow-lg">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0">
+                  <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <span class="text-dark fw-bold fs-5">吳</span>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div class="text-white fw-bold">吳先生 · 鳳山透天</div>
+                  <div class="text-secondary small">安裝時間：2024年11月</div>
                 </div>
               </div>
-              <div class="ms-3">
-                <div class="text-white fw-bold">吳先生 · 鳳山透天</div>
-                <div class="text-secondary small">安裝時間：2024年11月</div>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
               </div>
+              <p class="text-secondary mb-0">
+                "我只需要<strong class="text-gold">簡單實用</strong>，不要太複雜的功能。ML660 剛好符合，指紋加密碼就夠了，而且 Dormakaba 這個牌子我信得過，用起來很安心。"
+              </p>
             </div>
-            <div class="mb-3">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Stats -->
+      <div class="row text-center mt-5 pt-4 border-top border-secondary border-opacity-25">
+        <div class="col-3">
+          <div class="h2 text-gold mb-2 fw-bold">200+</div>
+          <div class="text-secondary small">ML660 安裝案例</div>
+        </div>
+        <div class="col-3">
+          <div class="h2 text-gold mb-2 fw-bold">4.7</div>
+          <div class="text-secondary small">客戶滿意度</div>
+        </div>
+        <div class="col-3">
+          <div class="h2 text-gold mb-2 fw-bold">10年</div>
+          <div class="text-secondary small">在地服務經驗</div>
+        </div>
+        <div class="col-3">
+          <div class="h2 text-gold mb-2 fw-bold">24H</div>
+          <div class="text-secondary small">技術支援服務</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 6. Security FAQ (Dormakaba ML660 Specific) -->
+  <section class="py-5" id="faq" style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, var(--bg-deep) 100%);">
+    <div class="container" style="max-width: 920px;">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">FAQ</span>
+        <h2 class="text-white mt-2">安全疑慮先解決，安裝才會順</h2>
+        <p class="text-secondary opacity-70">關於經典握把式電子鎖的常見問題，我們一次為您解答。</p>
+      </div>
+
+      <div class="accordion" id="securityFAQ">
+        <!-- Q1 -->
+        <div class="accordion-item rounded-4 mb-3 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+              aria-expanded="true">
+              <span class="text-gold me-3 fw-bold">Q1</span>握把式會不會比推拉式容易壞？
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              不會。握把式的機械結構比推拉式更簡單，零件少故障率反而更低。ML660 採用 Dormakaba 德國原廠設計的離合器與鎖舌機構，經過嚴格的耐久測試，正常使用下可維持多年穩定運作。
             </div>
-            <p class="text-secondary mb-0">
-              "我只需要<strong class="text-gold">簡單實用</strong>，不要太複雜的功能。ML660 剛好符合，指紋加密碼就夠了，而且 Dormakaba 這個牌子我信得過，用起來很安心。"
-            </p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Trust Stats -->
-    <div class="row text-center mt-5 pt-4 border-top border-secondary border-opacity-25">
-      <div class="col-3">
-        <div class="h2 text-gold mb-2 fw-bold">200+</div>
-        <div class="text-secondary small">ML660 安裝案例</div>
-      </div>
-      <div class="col-3">
-        <div class="h2 text-gold mb-2 fw-bold">4.7</div>
-        <div class="text-secondary small">客戶滿意度</div>
-      </div>
-      <div class="col-3">
-        <div class="h2 text-gold mb-2 fw-bold">10年</div>
-        <div class="text-secondary small">在地服務經驗</div>
-      </div>
-      <div class="col-3">
-        <div class="h2 text-gold mb-2 fw-bold">24H</div>
-        <div class="text-secondary small">技術支援服務</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- 6. Security FAQ (Dormakaba ML660 Specific) -->
-<section class="py-5" id="faq" style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, var(--bg-deep) 100%);">
-  <div class="container" style="max-width: 920px;">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">FAQ</span>
-      <h2 class="text-white mt-2">安全疑慮先解決，安裝才會順</h2>
-      <p class="text-secondary opacity-70">關於經典握把式電子鎖的常見問題，我們一次為您解答。</p>
-    </div>
-
-    <div class="accordion" id="securityFAQ">
-      <!-- Q1 -->
-      <div class="accordion-item rounded-4 mb-3 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
-            <span class="text-gold me-3 fw-bold">Q1</span>握把式會不會比推拉式容易壞？
-          </button>
-        </h3>
-        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            不會。握把式的機械結構比推拉式更簡單，零件少故障率反而更低。ML660 採用 Dormakaba 德國原廠設計的離合器與鎖舌機構，經過嚴格的耐久測試，正常使用下可維持多年穩定運作。
+        <!-- Q2 -->
+        <div class="accordion-item rounded-4 mb-3 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq2">
+              <span class="text-gold me-3 fw-bold">Q2</span>指紋辨識速度會很慢嗎？
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              ML660 採用半導體指紋模組，辨識速度約 1 秒內。雖然不如旗艦款的 FPC 快速（0.3 秒），但對於一般家庭使用已非常足夠，而且價格更親民。
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Q2 -->
-      <div class="accordion-item rounded-4 mb-3 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-            <span class="text-gold me-3 fw-bold">Q2</span>指紋辨識速度會很慢嗎？
-          </button>
-        </h3>
-        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            ML660 採用半導體指紋模組，辨識速度約 1 秒內。雖然不如旗艦款的 FPC 快速（0.3 秒），但對於一般家庭使用已非常足夠，而且價格更親民。
+        <!-- Q3 -->
+        <div class="accordion-item rounded-4 mb-3 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq3">
+              <span class="text-gold me-3 fw-bold">Q3</span>電池大概可以用多久？沒電怎麼辦？
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              使用 4 顆 3 號鹼性電池，正常使用頻率下約可維持 8-12 個月。當電量低於 20% 時，每次開門都會有語音與 LED 燈提示。若真的沒電，可用 9V 方形電池在外部緊急供電，或直接使用機械鑰匙開門。
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Q3 -->
-      <div class="accordion-item rounded-4 mb-3 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-            <span class="text-gold me-3 fw-bold">Q3</span>電池大概可以用多久？沒電怎麼辦？
-          </button>
-        </h3>
-        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            使用 4 顆 3 號鹼性電池，正常使用頻率下約可維持 8-12 個月。當電量低於 20% 時，每次開門都會有語音與 LED 燈提示。若真的沒電，可用 9V 方形電池在外部緊急供電，或直接使用機械鑰匙開門。
+        <!-- Q4 -->
+        <div class="accordion-item rounded-4 mb-3 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq4">
+              <span class="text-gold me-3 fw-bold">Q4</span>這款適合租屋族嗎？搬家時可以帶走嗎？
+            </button>
+          </h3>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              非常適合。ML660 安裝過程不會對門扇造成不可逆的破壞，搬家時只需拆卸電子鎖，將舊鎖重新裝回即可。建議事前與房東溝通，大部分房東都樂見房客自費升級門鎖安全性。
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Q4 -->
-      <div class="accordion-item rounded-4 mb-3 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-            <span class="text-gold me-3 fw-bold">Q4</span>這款適合租屋族嗎？搬家時可以帶走嗎？
-          </button>
-        </h3>
-        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            非常適合。ML660 安裝過程不會對門扇造成不可逆的破壞，搬家時只需拆卸電子鎖，將舊鎖重新裝回即可。建議事前與房東溝通，大部分房東都樂見房客自費升級門鎖安全性。
+        <!-- Q5 -->
+        <div class="accordion-item rounded-4 mb-3 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq5">
+              <span class="text-gold me-3 fw-bold">Q5</span>舊門的鎖孔會很明顯嗎？
+            </button>
+          </h3>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              ML660 的面板尺寸能覆蓋大部分標準鎖孔。若您的舊鎖孔位特殊或過大，強匠會提供專用的不鏽鋼飾板進行修飾，確保安裝後外觀整潔美觀，不會有醜醜的洞。
+            </div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="accordion-item rounded-4 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq6">
+              <span class="text-gold me-3 fw-bold">Q6</span>ML660 跟 AS701 / AS850 有什麼差別？
+            </button>
+          </h3>
+          <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              最大差異在於開門方式與價格。ML660 是經典握把式（轉動開門），適合預算有限或長輩使用；AS701/AS850 是推拉式（推門開門），適合追求便利與科技感的用戶。三款都是 Dormakaba
+              德國品質，只是功能定位不同。
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Q5 -->
-      <div class="accordion-item rounded-4 mb-3 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-            <span class="text-gold me-3 fw-bold">Q5</span>舊門的鎖孔會很明顯嗎？
-          </button>
-        </h3>
-        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            ML660 的面板尺寸能覆蓋大部分標準鎖孔。若您的舊鎖孔位特殊或過大，強匠會提供專用的不鏽鋼飾板進行修飾，確保安裝後外觀整潔美觀，不會有醜醜的洞。
+      <div class="text-center mt-5">
+        <a class="btn-gold-solid btn-lg" href="#consult"><i class="bi bi-shield-check me-2"></i>把問題交給強匠，直接安排評估</a>
+        <div class="small text-secondary mt-3 opacity-70">建議傳門照最快，能立即確認門框規格與舊鎖孔遮蔽方案。</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. Specs Table (Dormakaba ML660 Specific) -->
+  <section class="py-5" id="specs">
+    <div class="container" style="max-width: 920px;">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">Specifications</span>
+        <h2 class="text-white mt-2">詳細規格參數</h2>
+      </div>
+
+      <div class="panel rounded-4 overflow-hidden">
+        <table class="table table-dark table-striped mb-0">
+          <tbody>
+            <tr>
+              <th style="width: 30%;" class="text-gold">產品型號</th>
+              <td>Dormakaba ML660</td>
+            </tr>
+            <tr>
+              <th class="text-gold">開門方式</th>
+              <td>經典握把式 (轉動把手)</td>
+            </tr>
+            <tr>
+              <th class="text-gold">指紋模組</th>
+              <td>半導體指紋感應器</td>
+            </tr>
+            <tr>
+              <th class="text-gold">解鎖方式</th>
+              <td>指紋 / 密碼 / 機械鑰匙</td>
+            </tr>
+            <tr>
+              <th class="text-gold">鎖體結構</th>
+              <td>全自動機械鎖體（鋅合金壓鑄）</td>
+            </tr>
+            <tr>
+              <th class="text-gold">適用門厚</th>
+              <td>40-80mm（依版本而異，請先評估）</td>
+            </tr>
+            <tr>
+              <th class="text-gold">電源供應</th>
+              <td>4顆 3號(AA) 鹼性電池</td>
+            </tr>
+            <tr>
+              <th class="text-gold">緊急供電</th>
+              <td>9V 方形電池外接點</td>
+            </tr>
+            <tr>
+              <th class="text-gold">容量規格</th>
+              <td>指紋 100 組 / 密碼 4 組 (6-12 位數)</td>
+            </tr>
+            <tr>
+              <th class="text-gold">強匠服務</th>
+              <td>舊鎖拆除、飾板修飾、操作教學、售後支援</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert alert-light border-0 mt-4 p-4 rounded-4"
+        style="background: rgba(214, 177, 94, 0.08); border-left: 4px solid var(--gold-matte) !important;">
+        <div class="d-flex align-items-start gap-3">
+          <i class="bi bi-info-circle-fill text-gold fs-4"></i>
+          <div class="small text-secondary">
+            <strong class="text-white d-block mb-2">規格說明</strong>
+            上述規格依產品版本與通路而異；電池建議使用 Panasonic 鈦元素或 Duracell 金頂等高品質鹼性電池，勿混用新舊電池。ML660 不支援感應卡片功能，如需卡片解鎖請選擇 AS701 或 AS850。
           </div>
         </div>
       </div>
 
-      <!-- Q6 -->
-      <div class="accordion-item rounded-4 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-            <span class="text-gold me-3 fw-bold">Q6</span>ML660 跟 AS701 / AS850 有什麼差別？
-          </button>
-        </h3>
-        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            最大差異在於開門方式與價格。ML660 是經典握把式（轉動開門），適合預算有限或長輩使用；AS701/AS850 是推拉式（推門開門），適合追求便利與科技感的用戶。三款都是 Dormakaba 德國品質，只是功能定位不同。
-          </div>
-        </div>
-      </div>
     </div>
-
-    <div class="text-center mt-5">
-      <a class="btn-gold-solid btn-lg" href="#consult"><i class="bi bi-shield-check me-2"></i>把問題交給強匠，直接安排評估</a>
-      <div class="small text-secondary mt-3 opacity-70">建議傳門照最快，能立即確認門框規格與舊鎖孔遮蔽方案。</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- 7. Specs Table (Dormakaba ML660 Specific) -->
-<section class="py-5" id="specs">
-  <div class="container" style="max-width: 920px;">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">Specifications</span>
-      <h2 class="text-white mt-2">詳細規格參數</h2>
-    </div>
-
-    <div class="panel rounded-4 overflow-hidden">
-      <table class="table table-dark table-striped mb-0">
-        <tbody>
-          <tr>
-            <th style="width: 30%;" class="text-gold">產品型號</th>
-            <td>Dormakaba ML660</td>
-          </tr>
-          <tr>
-            <th class="text-gold">開門方式</th>
-            <td>經典握把式 (轉動把手)</td>
-          </tr>
-          <tr>
-            <th class="text-gold">指紋模組</th>
-            <td>半導體指紋感應器</td>
-          </tr>
-          <tr>
-            <th class="text-gold">解鎖方式</th>
-            <td>指紋 / 密碼 / 機械鑰匙</td>
-          </tr>
-          <tr>
-            <th class="text-gold">鎖體結構</th>
-            <td>全自動機械鎖體（鋅合金壓鑄）</td>
-          </tr>
-          <tr>
-            <th class="text-gold">適用門厚</th>
-            <td>40-80mm（依版本而異，請先評估）</td>
-          </tr>
-          <tr>
-            <th class="text-gold">電源供應</th>
-            <td>4顆 3號(AA) 鹼性電池</td>
-          </tr>
-          <tr>
-            <th class="text-gold">緊急供電</th>
-            <td>9V 方形電池外接點</td>
-          </tr>
-          <tr>
-            <th class="text-gold">容量規格</th>
-            <td>指紋 100 組 / 密碼 4 組 (6-12 位數)</td>
-          </tr>
-          <tr>
-            <th class="text-gold">強匠服務</th>
-            <td>舊鎖拆除、飾板修飾、操作教學、售後支援</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="alert alert-light border-0 mt-4 p-4 rounded-4" style="background: rgba(214, 177, 94, 0.08); border-left: 4px solid var(--gold-matte) !important;">
-      <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-info-circle-fill text-gold fs-4"></i>
-        <div class="small text-secondary">
-          <strong class="text-white d-block mb-2">規格說明</strong>
-          上述規格依產品版本與通路而異；電池建議使用 Panasonic 鈦元素或 Duracell 金頂等高品質鹼性電池，勿混用新舊電池。ML660 不支援感應卡片功能，如需卡片解鎖請選擇 AS701 或 AS850。
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+  </section>
 
   <!-- 7. CTA / Consult (Region-focused, No Price) -->
-  <section class="py-5" id="consult" style="background: linear-gradient(135deg, rgba(18, 36, 66, 0.85) 0%, rgba(11, 27, 58, 0.95) 100%);">
+  <section class="py-5" id="consult"
+    style="background: linear-gradient(135deg, rgba(18, 36, 66, 0.85) 0%, rgba(11, 27, 58, 0.95) 100%);">
     <div class="container">
       <div class="row align-items-center g-5">
         <!-- Left: Text -->
@@ -1079,7 +1182,8 @@
           </p>
 
           <!-- Service Promise Cards -->
-          <div class="card border-0 shadow-lg mb-4 rounded-4 overflow-hidden" style="background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,249,250,0.95) 100%);">
+          <div class="card border-0 shadow-lg mb-4 rounded-4 overflow-hidden"
+            style="background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,249,250,0.95) 100%);">
             <div class="card-body p-4">
               <div class="row text-center g-3 align-items-center">
                 <!-- Left: Physical Store (Trust Focus) -->
@@ -1104,14 +1208,16 @@
 
 
           <div class="d-flex flex-column flex-lg-row gap-3">
-            <a href="https://line.me/ti/p/giw8057p" target="_blank" class="btn-gold-solid btn-lg flex-grow-1 d-flex align-items-center justify-content-center">
+            <a href="https://line.me/ti/p/giw8057p" target="_blank"
+              class="btn-gold-solid btn-lg flex-grow-1 d-flex align-items-center justify-content-center">
               <i class="bi bi-line me-2 fs-5"></i>
               <div class="text-start">
                 <div class="fw-bold">LINE 免費評估</div>
                 <div class="small opacity-75">傳照即知安裝費用</div>
               </div>
             </a>
-            <a href="tel:0906921957" class="btn-gold-outline btn-lg flex-grow-1 d-flex align-items-center justify-content-center">
+            <a href="tel:0906921957"
+              class="btn-gold-outline btn-lg flex-grow-1 d-flex align-items-center justify-content-center">
               <i class="bi bi-telephone-fill me-2 fs-5"></i>
               <div class="text-start">
                 <div class="fw-bold">0906-921-957</div>
@@ -1120,7 +1226,8 @@
             </a>
           </div>
 
-          <div class="mt-3 p-3 rounded-3" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
+          <div class="mt-3 p-3 rounded-3"
+            style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
             <div class="small text-white text-center">
               <i class="bi bi-shield-fill-check text-gold me-1"></i>
               <strong class="text-gold">安心承諾</strong>：現場測試完工才付費 · 原廠 3 年保固 · 24H 緊急救援
@@ -1136,13 +1243,14 @@
                 <i class="bi bi-shield-fill-check text-success fs-3"></i>
                 強匠安裝保證
               </h3>
-              
+
               <!-- Social Proof Badge -->
               <div class="d-flex align-items-center mb-4 p-3 rounded-3" style="background: rgba(255,255,255,0.05);">
                 <div class="h2 text-warning mb-0 me-3 fw-bold">4.8</div>
                 <div class="lh-1">
                   <div class="text-warning small mb-1">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <div class="text-white small">Google 真實好評認證</div>
                 </div>
@@ -1193,15 +1301,18 @@
           <div class="card card-dark rounded-4 h-100 overflow-hidden">
             <div class="position-relative">
               <!-- TODO: 替換為強匠鎖店 Facebook 粉絲專頁真實封面照片 (建議: 展示電子鎖產品與服務, 尺寸 1200x630px) -->
-              <img src="https://placehold.co/600x340/1877f2/ffffff.png?text=Facebook+Page" class="card-img-top" alt="Facebook" style="opacity: 0.9;">
-              <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(11, 27, 58, 0.9), transparent);">
+              <img src="https://placehold.co/600x340/1877f2/ffffff.png?text=Facebook+Page" class="card-img-top"
+                alt="Facebook" style="opacity: 0.9;">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3"
+                style="background: linear-gradient(to top, rgba(11, 27, 58, 0.9), transparent);">
                 <span class="text-white small fw-bold"><i class="bi bi-facebook me-2"></i>Facebook 粉絲團</span>
               </div>
             </div>
             <div class="card-body text-center p-4">
               <h3 class="h5 fw-bold text-white mb-2">Facebook 粉絲團</h3>
               <p class="text-secondary small mb-4">掌握最新電子鎖優惠、即時救援案例分享</p>
-              <a href="https://www.facebook.com/KHsmartlock" target="_blank" class="btn-gold-outline btn-sm rounded-pill px-4">
+              <a href="https://www.facebook.com/KHsmartlock" target="_blank"
+                class="btn-gold-outline btn-sm rounded-pill px-4">
                 前往電子鎖體驗館
               </a>
             </div>
@@ -1213,9 +1324,12 @@
           <div class="card card-dark rounded-4 h-100 overflow-hidden">
             <div class="position-relative">
               <!-- TODO: 替換為強匠鎖店 Instagram 真實封面照片 (建議: 展示安裝短片縮圖或產品展示, 尺寸 1080x1080px) -->
-              <img src="https://placehold.co/600x340/E1306C/ffffff.png?text=Instagram+Reels" class="card-img-top" alt="Instagram" style="opacity: 0.9;">
+              <img src="https://placehold.co/600x340/E1306C/ffffff.png?text=Instagram+Reels" class="card-img-top"
+                alt="Instagram" style="opacity: 0.9;">
               <div class="position-absolute top-50 start-50 translate-middle">
-                <a href="https://www.instagram.com/0906921957lock/reels" target="_blank" class="btn btn-light btn-lg rounded-circle shadow-lg text-danger" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                <a href="https://www.instagram.com/0906921957lock/reels" target="_blank"
+                  class="btn btn-light btn-lg rounded-circle shadow-lg text-danger"
+                  style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
                   <i class="bi bi-instagram fs-3"></i>
                 </a>
               </div>
@@ -1223,7 +1337,8 @@
             <div class="card-body text-center p-4">
               <h3 class="h5 fw-bold text-white mb-2">Instagram Reels</h3>
               <p class="text-secondary small mb-4">觀看安裝短片與實際操作展示</p>
-              <a href="https://www.instagram.com/0906921957lock/reels" target="_blank" class="btn-gold-outline btn-sm rounded-pill px-4">
+              <a href="https://www.instagram.com/0906921957lock/reels" target="_blank"
+                class="btn-gold-outline btn-sm rounded-pill px-4">
                 追蹤 IG 動態
               </a>
             </div>
@@ -1232,95 +1347,115 @@
       </div>
     </div>
   </section>
-<!-- Footer -->
-<footer class="py-5" style="background-color: #2d3748;">
+  <!-- Footer -->
+  <footer class="py-5" style="background-color: #2d3748;">
     <div class="container">
-        <!-- 手機版置中，大螢幕靠左 -->
-        <div class="row g-5 text-center text-lg-start">
-            
-            <!-- Column 1: Brand Info -->
-            <div class="col-lg-4">
-            <a class="navbar-brand text-gold d-block mb-3 h4 fw-bold" href="../index.html">強匠鎖店</a>
-            <p class="text-secondary small text-justify mx-auto mx-lg-0" style="max-width: 400px;">
-                在地經營 10 年，專注汽車晶片鑰匙與電子鎖安裝。<br>
-                以精品級服務標準，為高雄住家與商業客戶提供專業安裝與售後支援。
-            </p>
+      <!-- 手機版置中，大螢幕靠左 -->
+      <div class="row g-5 text-center text-lg-start">
 
-            <!-- 手機版置中 -->
-            <div class="d-flex gap-3 mb-4 justify-content-center justify-content-lg-start">
-                <a href="https://www.facebook.com/KHsmartlock" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/0906921957lock/reels" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.threads.net/@0906921957lock" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Threads"><i class="bi bi-at"></i></a>
-                <a href="https://www.youtube.com/@24H高雄強匠鎖店-電子鎖" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="YouTube"><i class="bi bi-youtube"></i></a>
-                <a href="https://line.me/ti/p/giw8057p" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="LINE"><i class="bi bi-line"></i></a>
-            </div>
+        <!-- Column 1: Brand Info -->
+        <div class="col-lg-4">
+          <a class="navbar-brand text-gold d-block mb-3 h4 fw-bold" href="../index.html">強匠鎖店</a>
+          <p class="text-secondary small text-justify mx-auto mx-lg-0" style="max-width: 400px;">
+            在地經營 10 年，專注汽車晶片鑰匙與電子鎖安裝。<br>
+            以精品級服務標準，為高雄住家與商業客戶提供專業安裝與售後支援。
+          </p>
 
-            <a href="https://maps.app.goo.gl/SaT1dbcffoTzWQxq8" target="_blank" class="btn btn-outline-light btn-sm rounded-pill px-3">
-                <i class="bi bi-geo-alt-fill me-1 text-danger"></i>Google 地圖
-            </a>
-            </div>
+          <!-- 手機版置中 -->
+          <div class="d-flex gap-3 mb-4 justify-content-center justify-content-lg-start">
+            <a href="https://www.facebook.com/KHsmartlock" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/0906921957lock/reels" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Instagram"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://www.threads.net/@0906921957lock" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Threads"><i
+                class="bi bi-at"></i></a>
+            <a href="https://www.youtube.com/@24H高雄強匠鎖店-電子鎖" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="YouTube"><i
+                class="bi bi-youtube"></i></a>
+            <a href="https://line.me/ti/p/giw8057p" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="LINE"><i
+                class="bi bi-line"></i></a>
+          </div>
 
-            <!-- Column 2: Service Areas (雙欄優化) -->
-            <div class="col-lg-4">
-                <h5 class="text-white small tracking-wide mb-3">高雄全區快速服務</h5>
-                <div class="row justify-content-center justify-content-lg-start">
-                    <div class="col-6 col-lg-6">
-                        <ul class="list-unstyled text-white-50 mb-0">
-                            <li class="mb-2"><a href="../area-sanmin.html" class="text-white-50 text-decoration-none hover-text-white">三民區電子鎖</a></li>
-                            <li class="mb-2"><a href="../area-zuoying.html" class="text-white-50 text-decoration-none hover-text-white">左營區電子鎖</a></li>
-                            <li class="mb-2"><a href="../area-lingya.html" class="text-white-50 text-decoration-none hover-text-white">苓雅區電子鎖</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-6">
-                        <ul class="list-unstyled text-white-50 mb-0">
-                            <li class="mb-2"><a href="../area-qianzheng.html" class="text-white-50 text-decoration-none hover-text-white">前鎮區電子鎖</a></li>
-                            <li class="mb-2"><a href="../area-xinxing.html" class="text-white-50 text-decoration-none hover-text-white">新興區電子鎖</a></li>
-                            <li class="mb-2"><a href="../area-qianjin.html" class="text-white-50 text-decoration-none hover-text-white">前金區電子鎖</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Column 3: Contact Info -->
-            <div class="col-lg-4">
-                <h6 class="text-white small tracking-wide mb-3">聯絡資訊</h6>
-                <!-- 手機版置中，文字靠左 -->
-                <ul class="list-unstyled small text-secondary d-inline-block d-lg-block text-start">
-                    <li class="mb-3 d-flex align-items-start">
-                        <i class="bi bi-telephone-fill me-2 mt-1 text-primary"></i>
-                        <div>
-                            <span class="d-block text-white-50">24H 救援專線</span>
-                            <a href="tel:0906921957" class="text-white fw-bold text-decoration-none fs-5">0906-921-957</a>
-                            <span class="ms-1">(林師傅)</span>
-                        </div>
-                    </li>
-                    <li class="mb-2 d-flex align-items-center">
-                        <i class="bi bi-line me-2 text-success"></i>
-                        <a href="https://line.me/ti/p/~@giw8057p" class="text-white-50 text-decoration-none hover-text-white" target="_blank">ID: @giw8057p</a>
-                    </li>
-                    <li class="mb-2 d-flex align-items-center">
-                        <i class="bi bi-envelope me-2"></i>
-                        <a href="mailto:s10552@chyp.com.tw" class="text-white-50 text-decoration-none hover-text-white">s10552@chyp.com.tw</a>
-                    </li>
-                    <li class="mb-2 d-flex align-items-start">
-                        <i class="bi bi-geo-alt me-2 mt-1"></i>
-                        <a href="https://share.google/mz73ioCzKOPI2kod4" class="text-white-50 text-decoration-none hover-text-white" target="_blank">高雄市新興區復橫一路 116 號</a>
-                    </li>
-                </ul>
-            </div>
+          <a href="https://maps.app.goo.gl/SaT1dbcffoTzWQxq8" target="_blank"
+            class="btn btn-outline-light btn-sm rounded-pill px-3">
+            <i class="bi bi-geo-alt-fill me-1 text-danger"></i>Google 地圖
+          </a>
         </div>
 
-        <div class="row align-items-center border-top pt-4 mt-4" style="border-color: rgba(255,255,255,0.1) !important;">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <span class="small text-white-50">&copy; 2026 強匠鎖店. All rights reserved.</span>
+        <!-- Column 2: Service Areas (雙欄優化) -->
+        <div class="col-lg-4">
+          <h5 class="text-white small tracking-wide mb-3">高雄全區快速服務</h5>
+          <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-6 col-lg-6">
+              <ul class="list-unstyled text-white-50 mb-0">
+                <li class="mb-2"><a href="../area-sanmin.html"
+                    class="text-white-50 text-decoration-none hover-text-white">三民區電子鎖</a></li>
+                <li class="mb-2"><a href="../area-zuoying.html"
+                    class="text-white-50 text-decoration-none hover-text-white">左營區電子鎖</a></li>
+                <li class="mb-2"><a href="../area-lingya.html"
+                    class="text-white-50 text-decoration-none hover-text-white">苓雅區電子鎖</a></li>
+              </ul>
             </div>
-            <div class="col-md-6 text-center text-md-end">
-            <span class="small text-white-50 me-3">最實在鎖店</span>
-            <span class="small text-white-50">專業 · 安全 · 信賴</span>
+            <div class="col-6 col-lg-6">
+              <ul class="list-unstyled text-white-50 mb-0">
+                <li class="mb-2"><a href="../area-qianzheng.html"
+                    class="text-white-50 text-decoration-none hover-text-white">前鎮區電子鎖</a></li>
+                <li class="mb-2"><a href="../area-xinxing.html"
+                    class="text-white-50 text-decoration-none hover-text-white">新興區電子鎖</a></li>
+                <li class="mb-2"><a href="../area-qianjin.html"
+                    class="text-white-50 text-decoration-none hover-text-white">前金區電子鎖</a></li>
+              </ul>
             </div>
+          </div>
         </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="col-lg-4">
+          <h6 class="text-white small tracking-wide mb-3">聯絡資訊</h6>
+          <!-- 手機版置中，文字靠左 -->
+          <ul class="list-unstyled small text-secondary d-inline-block d-lg-block text-start">
+            <li class="mb-3 d-flex align-items-start">
+              <i class="bi bi-telephone-fill me-2 mt-1 text-primary"></i>
+              <div>
+                <span class="d-block text-white-50">24H 救援專線</span>
+                <a href="tel:0906921957" class="text-white fw-bold text-decoration-none fs-5">0906-921-957</a>
+                <span class="ms-1">(林師傅)</span>
+              </div>
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <i class="bi bi-line me-2 text-success"></i>
+              <a href="https://line.me/ti/p/~@giw8057p" class="text-white-50 text-decoration-none hover-text-white"
+                target="_blank">ID: @giw8057p</a>
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <i class="bi bi-envelope me-2"></i>
+              <a href="mailto:s10552@chyp.com.tw"
+                class="text-white-50 text-decoration-none hover-text-white">s10552@chyp.com.tw</a>
+            </li>
+            <li class="mb-2 d-flex align-items-start">
+              <i class="bi bi-geo-alt me-2 mt-1"></i>
+              <a href="https://share.google/mz73ioCzKOPI2kod4"
+                class="text-white-50 text-decoration-none hover-text-white" target="_blank">高雄市新興區復橫一路 116 號</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row align-items-center border-top pt-4 mt-4" style="border-color: rgba(255,255,255,0.1) !important;">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="small text-white-50">&copy; 2026 強匠鎖店. All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <span class="small text-white-50 me-3">最實在鎖店</span>
+          <span class="small text-white-50">專業 · 安全 · 信賴</span>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
 
   <!-- Enhanced Mobile Sticky CTA -->
   <div class="sticky-cta fixed-bottom d-md-none">
@@ -1336,14 +1471,17 @@
         <!-- CTA Buttons -->
         <div class="row g-2">
           <div class="col-6">
-            <a href="tel:0906921957" class="btn btn-gold-solid w-100 d-flex flex-column align-items-center py-3 rounded-3">
+            <a href="tel:0906921957"
+              class="btn btn-gold-solid w-100 d-flex flex-column align-items-center py-3 rounded-3">
               <i class="bi bi-telephone-fill fs-5 mb-1"></i>
               <span class="fw-bold small">電話</span>
               <span class="small opacity-75">立即通話</span>
             </a>
           </div>
           <div class="col-6">
-            <a href="https://line.me/ti/p/giw8057p" target="_blank" class="btn btn-gold-outline w-100 d-flex flex-column align-items-center py-3 rounded-3" style="border-width: 2px;">
+            <a href="https://line.me/ti/p/giw8057p" target="_blank"
+              class="btn btn-gold-outline w-100 d-flex flex-column align-items-center py-3 rounded-3"
+              style="border-width: 2px;">
               <i class="bi bi-line fs-5 mb-1"></i>
               <span class="fw-bold small">LINE</span>
               <span class="small opacity-75">免費諮詢</span>
@@ -1381,5 +1519,5 @@
   </script>
 
 </body>
-</html>
 
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW" data-skin="high">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +13,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Samsung SR60Max 雷達電子鎖｜高雄強匠" />
   <meta property="og:description" content="三星SR60Max：毫米波雷達+3D人臉+變聲對講，高雄強匠免費評估+原廠安裝，獨居安心選。" />
-  <meta property="og:image" content="../assets/images/service-digital-locks/samsung/sr60max.jpg" /> <!-- 替换为SR60Max真实图片 -->
+  <meta property="og:image" content="../assets/images/service-digital-locks/samsung/sr60max.jpg" />
+  <!-- 替换为SR60Max真实图片 -->
   <meta property="og:url" content="https://www.kh-lock.com.tw/product-samsung-sr60max.html" /> <!-- 替换为SR60Max专属URL -->
   <meta property="og:locale" content="zh_TW" /> <!-- 新增：适配台湾社交平台 -->
   <meta property="og:site_name" content="高雄強匠鎖店" /> <!-- 新增：强化品牌记忆 -->
@@ -23,7 +25,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
   <!-- Google Fonts (same spirit as service-digital-locks.html) -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap"
+    rel="stylesheet" />
 
   <!-- Design System -->
   <link href="../assets/css/tokens.css" rel="stylesheet" />
@@ -120,11 +124,29 @@
       letter-spacing: 0.05em;
     }
 
-    h1, h2, h3, .serif-font { font-family: var(--font-serif); font-weight: 600; }
-    .text-gold { color: var(--gold-matte) !important; }
-    .opacity-70 { opacity: 0.7; }
-    .tracking-wide { letter-spacing: 0.15em; }
-    .text-justify { text-align: justify; }
+    h1,
+    h2,
+    h3,
+    .serif-font {
+      font-family: var(--font-serif);
+      font-weight: 600;
+    }
+
+    .text-gold {
+      color: var(--gold-matte) !important;
+    }
+
+    .opacity-70 {
+      opacity: 0.7;
+    }
+
+    .tracking-wide {
+      letter-spacing: 0.15em;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
 
     .navbar {
       background: rgba(11, 27, 58, 0.95) !important;
@@ -132,11 +154,30 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       padding: 1rem 0;
     }
-    .navbar .nav-link { color: rgba(255, 255, 255, 0.7) !important; font-weight: 500; }
-    .navbar .nav-link:hover, .navbar .nav-link.active { color: #fff !important; }
-    .navbar .dropdown-menu { background-color: var(--bg-surface); border: 1px solid rgba(255,255,255,0.1); }
-    .navbar .dropdown-item { color: var(--text-secondary); }
-    .navbar .dropdown-item:hover { background-color: rgba(255,255,255,0.05); color: #fff; }
+
+    .navbar .nav-link {
+      color: rgba(255, 255, 255, 0.7) !important;
+      font-weight: 500;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #fff !important;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: var(--bg-surface);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar .dropdown-item {
+      color: var(--text-secondary);
+    }
+
+    .navbar .dropdown-item:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #fff;
+    }
 
     .btn-gold-outline {
       border: 1px solid var(--gold-matte);
@@ -151,6 +192,7 @@
       display: inline-block;
       text-align: center;
     }
+
     .btn-gold-outline:hover {
       background: var(--gold-matte);
       color: #0B1B3A;
@@ -171,6 +213,7 @@
       display: inline-block;
       text-align: center;
     }
+
     .btn-gold-solid:hover {
       filter: brightness(1.05);
       transform: translateY(-2px);
@@ -186,33 +229,37 @@
         linear-gradient(180deg, rgba(11, 27, 58, 0.65) 0%, rgba(11, 27, 58, 0.98) 70%),
         url("../assets/images/service-digital-locks/hero.png") center/cover no-repeat;
     }
+
     .hero-card {
       background: rgba(18, 36, 66, 0.65);
-      border: 1px solid rgba(255,255,255,0.08);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
     }
 
     .feature-pill {
       font-size: 0.78rem;
       padding: 0.35rem 0.75rem;
-      border: 1px solid rgba(255,255,255,0.16);
+      border: 1px solid rgba(255, 255, 255, 0.16);
       border-radius: 999px;
       color: var(--text-secondary);
       display: inline-flex;
       gap: 0.4rem;
       align-items: center;
-      background: rgba(255,255,255,0.02);
+      background: rgba(255, 255, 255, 0.02);
     }
 
     .panel {
       background: var(--bg-surface);
-      border: 1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .icon-circle {
-      width: 56px; height: 56px;
+      width: 56px;
+      height: 56px;
       border-radius: 999px;
-      display: inline-flex; align-items: center; justify-content: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: rgba(214, 177, 94, 0.12);
       border: 1px solid rgba(214, 177, 94, 0.25);
       color: var(--gold-light);
@@ -220,37 +267,48 @@
 
     .card-dark {
       background: rgba(18, 36, 66, 0.65);
-      border: 1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       transition: transform 0.35s ease, box-shadow 0.35s ease;
     }
+
     .card-dark:hover {
       transform: translateY(-6px);
-      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
     }
 
     .divider {
-      border-top: 1px solid rgba(255,255,255,0.08);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     /* Accordion */
     .accordion-item {
       background: rgba(18, 36, 66, 0.65);
-      border: 1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
+
     .accordion-button {
       background: transparent !important;
       color: #fff !important;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
-    .accordion-button:focus { box-shadow: none; }
-    .accordion-body { color: var(--text-secondary); }
+
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+
+    .accordion-body {
+      color: var(--text-secondary);
+    }
 
     /* Footer */
     footer {
-      border-top: 1px solid rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
       background: #08142b;
     }
-    .hover-text-white:hover { color: #fff !important; }
+
+    .hover-text-white:hover {
+      color: #fff !important;
+    }
 
     /* Sticky CTA (mobile) */
     .sticky-cta {
@@ -258,11 +316,24 @@
       backdrop-filter: blur(10px);
       border-top: 1px solid var(--gold-matte);
     }
+
     /* Ad-hoc styles for this block */
-    .bg-gold-subtle { background-color: rgba(214, 177, 94, 0.15); }
-    .border-gold-subtle { border-color: rgba(214, 177, 94, 0.3) !important; }
-    .text-gold { color: var(--gold-matte) !important; }
-    .super-small { font-size: 0.75rem; }
+    .bg-gold-subtle {
+      background-color: rgba(214, 177, 94, 0.15);
+    }
+
+    .border-gold-subtle {
+      border-color: rgba(214, 177, 94, 0.3) !important;
+    }
+
+    .text-gold {
+      color: var(--gold-matte) !important;
+    }
+
+    .super-small {
+      font-size: 0.75rem;
+    }
+
     .feature-pill {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -278,395 +349,409 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand text-gold" href="../index.html">
-              <img src="../assets/images/logo2.png" alt="強匠鎖店" class="img-fluid " style="max-width: 40px;">
-                強匠鎖店 <span class="badge bg-primary ms-2 rounded-1">電子鎖體驗館</span>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-gold" href="../index.html">
+        <img src="../assets/images/logo2.png" alt="強匠鎖店" class="img-fluid " style="max-width: 40px;">
+        強匠鎖店 <span class="badge bg-primary ms-2 rounded-1">電子鎖體驗館</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-4">
+          <li class="nav-item"><a class="nav-link" href="../services.html"><i class="bi bi-tools me-1"></i>開鎖服務</a></li>
+          <li class="nav-item"><a class="nav-link" href="../service-auto-keys.html"><i
+                class="bi bi-car-front me-1"></i>汽車晶片鑰匙</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold" href="../service-digital-locks.html"><i
+                class="bi bi-fingerprint me-1"></i>電子鎖安裝</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-grid-fill me-1"></i>品牌系列
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center gap-4">
-                    <li class="nav-item"><a class="nav-link" href="../services.html"><i class="bi bi-tools me-1"></i>開鎖服務</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../service-auto-keys.html"><i class="bi bi-car-front me-1"></i>汽車晶片鑰匙</a></li>
-                    <li class="nav-item"><a class="nav-link active fw-bold" href="../service-digital-locks.html"><i class="bi bi-fingerprint me-1"></i>電子鎖安裝</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            <i class="bi bi-grid-fill me-1"></i>品牌系列
-                        </a>
-                        <ul class="dropdown-menu shadow-sm border-0">
-                            <li><a class="dropdown-item" href="../service-digital-locks.html?brand=philips#brands">Philips 飛利浦</a></li>
-                            <li><a class="dropdown-item" href="../service-digital-locks.html?brand=samsung#brands">Samsung 三星</a></li>
-                            <li><a class="dropdown-item" href="../service-digital-locks.html?brand=dormakaba#brands">Dormakaba 多瑪凱拔</a></li>
-                            <li><a class="dropdown-item" href="../service-digital-locks.html?brand=mrlock#brands">Sensirs 鎖先森</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a href="https://line.me/ti/p/giw8057p" target="_blank" class="btn-gold-outline py-2 px-4 small">
-                        <i class="bi bi-line me-2"></i>LINE 免費評估
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-<!-- 1. Hero: Active Defense Flagship (Samsung SR60Max) -->
-<header class="hero-product">
-  <div class="container">
-    <div class="row align-items-center g-5">
-
-      <div class="col-lg-6">
-        <!-- Top Badge -->
-        <span class="badge bg-gold-subtle text-gold mb-3 px-3 py-2 rounded-pill fw-bold border border-gold-subtle tracking-wide">
-          <i class="bi bi-radar me-1"></i> Radar Detection · Active Defense System
-        </span>
-
-        <!-- Main Title -->
-        <h1 class="display-4 fw-bold text-white mb-3 lh-sm">
-          Samsung SR60Max<br>
-          <span class="text-gold">雷達感應防禦旗艦</span>
-        </h1>
-
-        <!-- Value Prop -->
-        <p class="lead text-white-50 mb-4 opacity-70 fw-light">
-          不止是鎖，更是您的 24 小時貼身保鑣。搭載高靈敏毫米波雷達，<br>
-          主動偵測門口異常逗留，3D 刷臉秒開，安全等級再進化。
-        </p>
-
-        <!-- Feature Pills -->
-        <div class="d-flex flex-wrap gap-2 mb-4">
-          <span class="feature-pill"><i class="bi bi-broadcast text-gold"></i> 雷達偵測</span>
-          <span class="feature-pill"><i class="bi bi-face-id text-gold"></i> 3D 人臉辨識</span>
-          <span class="feature-pill"><i class="bi bi-camera-video text-gold"></i> 4吋高清螢幕</span>
-          <span class="feature-pill"><i class="bi bi-shield-exclamation text-gold"></i> 逗留抓拍</span>
-          <span class="feature-pill"><i class="bi bi-mic text-gold"></i> 變聲對講</span>
-          <span class="feature-pill"><i class="bi bi-wifi text-gold"></i> 遠端智控</span>
-        </div>
-
-        <!-- Urgency Banner -->
-        <div class="mt-4 p-3 rounded-3 mb-3" style="background: rgba(214, 177, 94, 0.1); border: 1px solid var(--gold-matte); border-radius: 12px;">
-          <div class="text-center">
-            <i class="bi bi-gift text-gold fs-4 me-2"></i>
-            <span class="text-gold fw-bold">強匠專屬服務：</span>
-            <span class="text-white">主動防禦系統調校</span>
-            <div class="small text-gold mt-1">⚡ 雷達靈敏度設定 · 視角最佳化安裝</div>
-          </div>
-        </div>
-
-        <!-- CTA Buttons -->
-        <div class="d-flex gap-3 mb-5">
-          <a class="btn-gold-solid flex-grow-1 text-center py-3 rounded-1 shadow-lg" href="#consult">
-            <i class="bi bi-shield-check me-2"></i>找強匠安裝 / 諮詢
-          </a>
-          <a class="btn-gold-outline flex-grow-1 text-center py-3 rounded-1" href="#scenarios">
-            <i class="bi bi-arrow-down-circle me-2"></i>看雷達防禦優勢
-          </a>
-        </div>
-
-        <!-- Service Pillars -->
-        <div class="mt-4">
-          <div class="row g-3">
-            <div class="col-6 col-md-3">
-              <div class="panel rounded-3 p-3 text-center h-100">
-                <div class="icon-circle mx-auto mb-2"><i class="bi bi-award"></i></div>
-                <div class="small text-white">在地經驗</div>
-                <div class="small text-secondary opacity-70">高雄服務</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="panel rounded-3 p-3 text-center h-100">
-                <div class="icon-circle mx-auto mb-2"><i class="bi bi-tools"></i></div>
-                <div class="small text-white">精準施工</div>
-                <div class="small text-secondary opacity-70">SOP 安裝</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="panel rounded-3 p-3 text-center h-100">
-                <div class="icon-circle mx-auto mb-2"><i class="bi bi-phone"></i></div>
-                <div class="small text-white">App 教學</div>
-                <div class="small text-secondary opacity-70">警報設定</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="panel rounded-3 p-3 text-center h-100">
-                <div class="icon-circle mx-auto mb-2"><i class="bi bi-headset"></i></div>
-                <div class="small text-white">售後支援</div>
-                <div class="small text-secondary opacity-70">原廠保固</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right: Product Visual -->
-      <div class="col-lg-6">
-        <div class="card hero-card border-0 rounded-4 overflow-hidden">
-          <div class="row g-0 align-items-stretch">
-            <div class="col-md-6 p-4">
-              <p class="text-gold tracking-wide small text-uppercase mb-2 opacity-70">Product View</p>
-              <h2 class="h4 text-white serif-font mb-3">科技防護 · 固若金湯</h2>
-              <p class="text-secondary small text-justify mb-4">
-                SR60Max 採用航空級鋁合金 CNC 精雕工藝，搭配強化玻璃面板。內建毫米波雷達，人未到、鎖先知，打造滴水不漏的安全防線。
-              </p>
-
-              <div class="divider my-3"></div>
-
-              <div class="d-grid gap-2">
-                <a class="btn-gold-solid" href="https://line.me/ti/p/giw8057p" target="_blank">
-                  <i class="bi bi-line me-2"></i>LINE 傳門照 → 快速評估
-                </a>
-                <a class="btn-gold-outline" href="tel:0906921957">
-                  <i class="bi bi-telephone-fill me-2"></i>0906-921-957
-                </a>
-              </div>
-
-              <div class="mt-3 small text-secondary opacity-70">
-                建議傳：門扇正面、側面、門框與走道環境照。
-              </div>
-            </div>
-
-            <div class="col-md-6 bg-dark d-flex align-items-center justify-content-center p-4">
-              <!-- TODO: 替換為 Samsung SR60Max 真實產品照片 -->
-              <img src="../assets/images/service-digital-locks/samsung/sr60max.jpg"
-                   class="img-fluid"
-                   alt="Samsung SR60Max 雷達感應電子鎖產品圖 - 高雄強匠鎖店專業安裝推薦"
-                   style="max-height: 420px; object-fit: contain; filter: drop-shadow(0 12px 30px rgba(0,0,0,0.45));" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</header>
-
-<!-- 2. Scenarios: Active Defense Solutions -->
-<section class="py-5" id="scenarios">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">Scenario Solutions</span>
-      <h2 class="text-white mt-2">獨居安全 / 異常跟蹤 / 視訊變聲：痛點逐一擊破</h2>
-      <p class="text-secondary mx-auto opacity-70" style="max-width: 820px;">
-        為什麼 SR60Max 被稱為「防禦旗艦」？因為它比傳統門鎖想得更多、反應更快。
-      </p>
-    </div>
-
-    <div class="row g-4">
-      <!-- Scenario 1: Active Loitering Detection -->
-      <div class="col-lg-4">
-        <div class="card card-dark rounded-4 h-100">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="icon-circle"><i class="bi bi-broadcast"></i></div>
-              <h3 class="h5 text-white mb-0 serif-font">門口異常逗留偵測</h3>
-            </div>
-            <div class="small text-secondary opacity-70 mb-3">
-              擔心有陌生人在門口鬼鬼祟祟、做記號，但沒有按下門鈴你根本不知道？
-            </div>
-            <ul class="small text-secondary mb-0">
-              <li class="mb-2"><strong class="text-gold">毫米波雷達感應</strong>：SR60Max 能主動偵測門前動態。當有人在門口逗留超過設定時間（如 10 秒），立即啟動錄影並推播警報至手機。</li>
-              <li class="mb-2">與被動等待按鈴不同，它能「主動」發現潛在威脅，有效嚇阻可疑人士。</li>
-              <li>所有影像加密上傳雲端，隨時可回放取證。</li>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item" href="../service-digital-locks.html?brand=philips#brands">Philips 飛利浦</a>
+              </li>
+              <li><a class="dropdown-item" href="../service-digital-locks.html?brand=samsung#brands">Samsung 三星</a></li>
+              <li><a class="dropdown-item" href="../service-digital-locks.html?brand=dormakaba#brands">Dormakaba
+                  多瑪凱拔</a></li>
+              <li><a class="dropdown-item" href="../service-digital-locks.html?brand=mrlock#brands">Sensirs 鎖先森</a></li>
+              <li><a class="dropdown-item" href="../service-digital-locks.html?brand=milre#brands">Milre 美樂</a></li>
             </ul>
-          </div>
-          <div class="card-footer bg-transparent border-0 p-4 pt-0">
-            <a class="btn-gold-outline w-100" href="#consult">了解雷達防禦</a>
-          </div>
-        </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <a href="https://line.me/ti/p/giw8057p" target="_blank" class="btn-gold-outline py-2 px-4 small">
+              <i class="bi bi-line me-2"></i>LINE 免費評估
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <!-- Scenario 2: Female Safety (Voice Changer) -->
-      <div class="col-lg-4">
-        <div class="card card-dark rounded-4 h-100">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="icon-circle"><i class="bi bi-mic"></i></div>
-              <h3 class="h5 text-white mb-0 serif-font">獨居女性變聲應答</h3>
-            </div>
-            <div class="small text-secondary opacity-70 mb-3">
-              獨居女性或小孩在家，遇到陌生人按鈴，不敢出聲或不想暴露家中只有女生？
-            </div>
-            <ul class="small text-secondary mb-0">
-              <li class="mb-2"><strong class="text-gold">App 變聲對講</strong>：透過手機遠端應答時，可選擇「大叔音」或「小丑音」進行變聲。</li>
-              <li class="mb-2">讓門外陌生人誤以為家中有成年男性，降低被騷擾或鎖定的風險。</li>
-              <li>搭配室內 4 吋螢幕確認身份，無需開門即可安全應對。</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-transparent border-0 p-4 pt-0">
-            <a class="btn-gold-outline w-100" href="#consult">詢問變聲功能</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Scenario 3: Hands-Free Entry -->
-      <div class="col-lg-4">
-        <div class="card card-dark rounded-4 h-100">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="icon-circle"><i class="bi bi-face-id"></i></div>
-              <h3 class="h5 text-white mb-0 serif-font">提重物秒進家門</h3>
-            </div>
-            <div class="small text-secondary opacity-70 mb-3">
-              手上大包小包，還要空出手來按指紋或找卡片？
-            </div>
-            <ul class="small text-secondary mb-0">
-              <li class="mb-2"><strong class="text-gold">雷達喚醒 + 3D 人臉</strong>：當您靠近門鎖約 1 公尺處，雷達即刻喚醒人臉辨識模組。</li>
-              <li class="mb-2">走到門前無需等待，鎖舌自動收回，身體輕推即可進門，全程零接觸、零停頓。</li>
-              <li>雙紅外線夜視補光，即使樓道全黑也能精準辨識，無需摸黑找鑰匙。</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-transparent border-0 p-4 pt-0">
-            <a class="btn-gold-outline w-100" href="#consult">體驗 3D 刷臉</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
-<!-- 3. Key Features (Samsung SR60Max Specific) -->
-<section class="py-5" id="features" style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, var(--bg-deep) 100%);">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">Key Features</span>
-      <h2 class="text-white mt-2">雷達主動偵測，安全先發制人</h2>
-      <p class="text-secondary mx-auto opacity-70" style="max-width: 860px;">
-        Samsung SR60Max 整合毫米波雷達與 3D 結構光技術，不僅是被動守護，更能主動預警潛在威脅，將居家安全提升至全新層次。
-      </p>
-    </div>
+  </nav>
+  <!-- 1. Hero: Active Defense Flagship (Samsung SR60Max) -->
+  <header class="hero-product">
+    <div class="container">
+      <div class="row align-items-center g-5">
 
-    <div class="row g-4 align-items-center">
-      <!-- Left: Product Features -->
-      <div class="col-lg-6">
-        <div class="panel rounded-4 p-4">
-          
-          <!-- Feature 1: Radar Detection -->
-          <div class="d-flex align-items-start gap-3">
-            <div class="icon-circle"><i class="bi bi-broadcast"></i></div>
-            <div>
-              <h3 class="h5 text-white serif-font mb-2">毫米波雷達感應</h3>
-              <p class="text-secondary opacity-70 mb-0">
-                內建高靈敏度雷達，精準偵測門前 1 公尺範圍內的人體動態。無論是喚醒人臉辨識或偵測異常逗留，反應速度皆優於傳統紅外線感應。
-              </p>
-            </div>
-          </div>
+        <div class="col-lg-6">
+          <!-- Top Badge -->
+          <span
+            class="badge bg-gold-subtle text-gold mb-3 px-3 py-2 rounded-pill fw-bold border border-gold-subtle tracking-wide">
+            <i class="bi bi-radar me-1"></i> Radar Detection · Active Defense System
+          </span>
 
-          <hr class="divider my-4" />
+          <!-- Main Title -->
+          <h1 class="display-4 fw-bold text-white mb-3 lh-sm">
+            Samsung SR60Max<br>
+            <span class="text-gold">雷達感應防禦旗艦</span>
+          </h1>
 
-          <!-- Feature 2: 3D Face ID -->
-          <div class="d-flex align-items-start gap-3">
-            <div class="icon-circle"><i class="bi bi-face-id"></i></div>
-            <div>
-              <h3 class="h5 text-white serif-font mb-2">3D 結構光人臉識別</h3>
-              <p class="text-secondary opacity-70 mb-0">
-                金融支付級防護，透過投射數萬個隱形光點建構臉部 3D 模型。無論戴眼鏡、化妝或更換髮型皆可精準辨識，徹底杜絕照片影片破解。
-              </p>
-            </div>
-          </div>
-
-          <hr class="divider my-4" />
-
-          <!-- Feature 3: Smart Intercom -->
-          <div class="d-flex align-items-start gap-3">
-            <div class="icon-circle"><i class="bi bi-mic-fill"></i></div>
-            <div>
-              <h3 class="h5 text-white serif-font mb-2">變聲對講與 4 吋螢幕</h3>
-              <p class="text-secondary opacity-70 mb-0">
-                室內配備 4 吋高清螢幕，一鍵查看門外狀況。App 支援遠端視訊通話，並提供「大叔音/小丑音」變聲功能，獨居更安心。
-              </p>
-            </div>
-          </div>
-
-          <hr class="divider my-4" />
-
-          <!-- Feature 4: Active Defense -->
-          <div class="d-flex align-items-start gap-3">
-            <div class="icon-circle"><i class="bi bi-shield-exclamation"></i></div>
-            <div>
-              <h3 class="h5 text-white serif-font mb-2">主動防禦警報</h3>
-              <p class="text-secondary opacity-70 mb-0">
-                當偵測到長時間逗留、暴力破壞或嘗試試開時，門鎖會發出高分貝警報並同步推送影像至手機，嚇阻宵小並保留證據。
-              </p>
-            </div>
-          </div>
-
-          <div class="mt-4 small text-secondary opacity-70">
-            備註：雷達偵測距離與靈敏度可透過 App 進行多段調整，以適應不同樓道環境，避免誤報。
-          </div>
-        </div>
-      </div>
-
-      <!-- Right: Installation SOP (Standardized) -->
-      <div class="col-lg-6">
-        <div class="panel rounded-4 p-4 h-100">
-          <p class="text-gold tracking-wide small text-uppercase mb-2 opacity-70">Installation matters</p>
-          <h3 class="text-white serif-font mb-3">雷達感應鎖，安裝位置是關鍵</h3>
-          <p class="text-secondary opacity-70 text-justify mb-4">
-            強匠技師深知雷達感應的特性，安裝時會特別避開可能造成誤判的遮蔽物或對向門干擾，並現場調校最佳偵測靈敏度，確保「該警報時警報，該安靜時安靜」。
+          <!-- Value Prop -->
+          <p class="lead text-white-50 mb-4 opacity-70 fw-light">
+            不止是鎖，更是您的 24 小時貼身保鑣。搭載高靈敏毫米波雷達，<br>
+            主動偵測門口異常逗留，3D 刷臉秒開，安全等級再進化。
           </p>
 
-          <div class="row g-3">
-            <div class="col-md-4">
-              <div class="card card-dark rounded-4 h-100">
-                <div class="card-body p-4">
-                  <div class="text-gold serif-font display-6 mb-2">01</div>
-                  <h4 class="h6 text-white mb-2">雷達調校</h4>
-                  <p class="small text-secondary mb-0 text-justify">
-                    依據樓道寬度與對門距離，協助設定最佳雷達感應範圍，避免鄰居經過頻繁誤觸。
-                  </p>
+          <!-- Feature Pills -->
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="feature-pill"><i class="bi bi-broadcast text-gold"></i> 雷達偵測</span>
+            <span class="feature-pill"><i class="bi bi-face-id text-gold"></i> 3D 人臉辨識</span>
+            <span class="feature-pill"><i class="bi bi-camera-video text-gold"></i> 4吋高清螢幕</span>
+            <span class="feature-pill"><i class="bi bi-shield-exclamation text-gold"></i> 逗留抓拍</span>
+            <span class="feature-pill"><i class="bi bi-mic text-gold"></i> 變聲對講</span>
+            <span class="feature-pill"><i class="bi bi-wifi text-gold"></i> 遠端智控</span>
+          </div>
+
+          <!-- Urgency Banner -->
+          <div class="mt-4 p-3 rounded-3 mb-3"
+            style="background: rgba(214, 177, 94, 0.1); border: 1px solid var(--gold-matte); border-radius: 12px;">
+            <div class="text-center">
+              <i class="bi bi-gift text-gold fs-4 me-2"></i>
+              <span class="text-gold fw-bold">強匠專屬服務：</span>
+              <span class="text-white">主動防禦系統調校</span>
+              <div class="small text-gold mt-1">⚡ 雷達靈敏度設定 · 視角最佳化安裝</div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="d-flex gap-3 mb-5">
+            <a class="btn-gold-solid flex-grow-1 text-center py-3 rounded-1 shadow-lg" href="#consult">
+              <i class="bi bi-shield-check me-2"></i>找強匠安裝 / 諮詢
+            </a>
+            <a class="btn-gold-outline flex-grow-1 text-center py-3 rounded-1" href="#scenarios">
+              <i class="bi bi-arrow-down-circle me-2"></i>看雷達防禦優勢
+            </a>
+          </div>
+
+          <!-- Service Pillars -->
+          <div class="mt-4">
+            <div class="row g-3">
+              <div class="col-6 col-md-3">
+                <div class="panel rounded-3 p-3 text-center h-100">
+                  <div class="icon-circle mx-auto mb-2"><i class="bi bi-award"></i></div>
+                  <div class="small text-white">在地經驗</div>
+                  <div class="small text-secondary opacity-70">高雄服務</div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-dark rounded-4 h-100">
-                <div class="card-body p-4">
-                  <div class="text-gold serif-font display-6 mb-2">02</div>
-                  <h4 class="h6 text-white mb-2">視角優化</h4>
-                  <p class="small text-secondary mb-0 text-justify">
-                    確認鏡頭安裝高度，確保 4 吋螢幕與 App 抓拍畫面能完整覆蓋訪客臉部與全身。
-                  </p>
+              <div class="col-6 col-md-3">
+                <div class="panel rounded-3 p-3 text-center h-100">
+                  <div class="icon-circle mx-auto mb-2"><i class="bi bi-tools"></i></div>
+                  <div class="small text-white">精準施工</div>
+                  <div class="small text-secondary opacity-70">SOP 安裝</div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-dark rounded-4 h-100">
-                <div class="card-body p-4">
-                  <div class="text-gold serif-font display-6 mb-2">03</div>
-                  <h4 class="h6 text-white mb-2">防暴加固</h4>
-                  <p class="small text-secondary mb-0 text-justify">
-                    使用加長型不鏽鋼螺絲與專用襯板，強化鎖體與門扇結合力，提升物理防破壞性能。
-                  </p>
+              <div class="col-6 col-md-3">
+                <div class="panel rounded-3 p-3 text-center h-100">
+                  <div class="icon-circle mx-auto mb-2"><i class="bi bi-phone"></i></div>
+                  <div class="small text-white">App 教學</div>
+                  <div class="small text-secondary opacity-70">警報設定</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="panel rounded-3 p-3 text-center h-100">
+                  <div class="icon-circle mx-auto mb-2"><i class="bi bi-headset"></i></div>
+                  <div class="small text-white">售後支援</div>
+                  <div class="small text-secondary opacity-70">原廠保固</div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="mt-4 d-flex flex-wrap gap-3">
-            <a class="btn-gold-solid flex-grow-1" href="#consult"><i class="bi bi-shield-check me-2"></i>我要雷達旗艦款（找強匠）</a>
-            <a class="btn-gold-outline flex-grow-1" href="https://line.me/ti/p/giw8057p" target="_blank"><i class="bi bi-line me-2"></i>LINE 傳門照</a>
+        <!-- Right: Product Visual -->
+        <div class="col-lg-6">
+          <div class="card hero-card border-0 rounded-4 overflow-hidden">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-md-6 p-4">
+                <p class="text-gold tracking-wide small text-uppercase mb-2 opacity-70">Product View</p>
+                <h2 class="h4 text-white serif-font mb-3">科技防護 · 固若金湯</h2>
+                <p class="text-secondary small text-justify mb-4">
+                  SR60Max 採用航空級鋁合金 CNC 精雕工藝，搭配強化玻璃面板。內建毫米波雷達，人未到、鎖先知，打造滴水不漏的安全防線。
+                </p>
+
+                <div class="divider my-3"></div>
+
+                <div class="d-grid gap-2">
+                  <a class="btn-gold-solid" href="https://line.me/ti/p/giw8057p" target="_blank">
+                    <i class="bi bi-line me-2"></i>LINE 傳門照 → 快速評估
+                  </a>
+                  <a class="btn-gold-outline" href="tel:0906921957">
+                    <i class="bi bi-telephone-fill me-2"></i>0906-921-957
+                  </a>
+                </div>
+
+                <div class="mt-3 small text-secondary opacity-70">
+                  建議傳：門扇正面、側面、門框與走道環境照。
+                </div>
+              </div>
+
+              <div class="col-md-6 bg-dark d-flex align-items-center justify-content-center p-4">
+                <!-- TODO: 替換為 Samsung SR60Max 真實產品照片 -->
+                <img src="../assets/images/service-digital-locks/samsung/sr60max.jpg" class="img-fluid"
+                  alt="Samsung SR60Max 雷達感應電子鎖產品圖 - 高雄強匠鎖店專業安裝推薦"
+                  style="max-height: 420px; object-fit: contain; filter: drop-shadow(0 12px 30px rgba(0,0,0,0.45));" />
+              </div>
+            </div>
           </div>
+        </div>
 
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Scenarios: Active Defense Solutions -->
+  <section class="py-5" id="scenarios">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">Scenario Solutions</span>
+        <h2 class="text-white mt-2">獨居安全 / 異常跟蹤 / 視訊變聲：痛點逐一擊破</h2>
+        <p class="text-secondary mx-auto opacity-70" style="max-width: 820px;">
+          為什麼 SR60Max 被稱為「防禦旗艦」？因為它比傳統門鎖想得更多、反應更快。
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Scenario 1: Active Loitering Detection -->
+        <div class="col-lg-4">
+          <div class="card card-dark rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="icon-circle"><i class="bi bi-broadcast"></i></div>
+                <h3 class="h5 text-white mb-0 serif-font">門口異常逗留偵測</h3>
+              </div>
+              <div class="small text-secondary opacity-70 mb-3">
+                擔心有陌生人在門口鬼鬼祟祟、做記號，但沒有按下門鈴你根本不知道？
+              </div>
+              <ul class="small text-secondary mb-0">
+                <li class="mb-2"><strong class="text-gold">毫米波雷達感應</strong>：SR60Max 能主動偵測門前動態。當有人在門口逗留超過設定時間（如 10
+                  秒），立即啟動錄影並推播警報至手機。</li>
+                <li class="mb-2">與被動等待按鈴不同，它能「主動」發現潛在威脅，有效嚇阻可疑人士。</li>
+                <li>所有影像加密上傳雲端，隨時可回放取證。</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-4 pt-0">
+              <a class="btn-gold-outline w-100" href="#consult">了解雷達防禦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scenario 2: Female Safety (Voice Changer) -->
+        <div class="col-lg-4">
+          <div class="card card-dark rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="icon-circle"><i class="bi bi-mic"></i></div>
+                <h3 class="h5 text-white mb-0 serif-font">獨居女性變聲應答</h3>
+              </div>
+              <div class="small text-secondary opacity-70 mb-3">
+                獨居女性或小孩在家，遇到陌生人按鈴，不敢出聲或不想暴露家中只有女生？
+              </div>
+              <ul class="small text-secondary mb-0">
+                <li class="mb-2"><strong class="text-gold">App 變聲對講</strong>：透過手機遠端應答時，可選擇「大叔音」或「小丑音」進行變聲。</li>
+                <li class="mb-2">讓門外陌生人誤以為家中有成年男性，降低被騷擾或鎖定的風險。</li>
+                <li>搭配室內 4 吋螢幕確認身份，無需開門即可安全應對。</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-4 pt-0">
+              <a class="btn-gold-outline w-100" href="#consult">詢問變聲功能</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scenario 3: Hands-Free Entry -->
+        <div class="col-lg-4">
+          <div class="card card-dark rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="icon-circle"><i class="bi bi-face-id"></i></div>
+                <h3 class="h5 text-white mb-0 serif-font">提重物秒進家門</h3>
+              </div>
+              <div class="small text-secondary opacity-70 mb-3">
+                手上大包小包，還要空出手來按指紋或找卡片？
+              </div>
+              <ul class="small text-secondary mb-0">
+                <li class="mb-2"><strong class="text-gold">雷達喚醒 + 3D 人臉</strong>：當您靠近門鎖約 1 公尺處，雷達即刻喚醒人臉辨識模組。</li>
+                <li class="mb-2">走到門前無需等待，鎖舌自動收回，身體輕推即可進門，全程零接觸、零停頓。</li>
+                <li>雙紅外線夜視補光，即使樓道全黑也能精準辨識，無需摸黑找鑰匙。</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 p-4 pt-0">
+              <a class="btn-gold-outline w-100" href="#consult">體驗 3D 刷臉</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- 3. Key Features (Samsung SR60Max Specific) -->
+  <section class="py-5" id="features"
+    style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, var(--bg-deep) 100%);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">Key Features</span>
+        <h2 class="text-white mt-2">雷達主動偵測，安全先發制人</h2>
+        <p class="text-secondary mx-auto opacity-70" style="max-width: 860px;">
+          Samsung SR60Max 整合毫米波雷達與 3D 結構光技術，不僅是被動守護，更能主動預警潛在威脅，將居家安全提升至全新層次。
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <!-- Left: Product Features -->
+        <div class="col-lg-6">
+          <div class="panel rounded-4 p-4">
+
+            <!-- Feature 1: Radar Detection -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-circle"><i class="bi bi-broadcast"></i></div>
+              <div>
+                <h3 class="h5 text-white serif-font mb-2">毫米波雷達感應</h3>
+                <p class="text-secondary opacity-70 mb-0">
+                  內建高靈敏度雷達，精準偵測門前 1 公尺範圍內的人體動態。無論是喚醒人臉辨識或偵測異常逗留，反應速度皆優於傳統紅外線感應。
+                </p>
+              </div>
+            </div>
+
+            <hr class="divider my-4" />
+
+            <!-- Feature 2: 3D Face ID -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-circle"><i class="bi bi-face-id"></i></div>
+              <div>
+                <h3 class="h5 text-white serif-font mb-2">3D 結構光人臉識別</h3>
+                <p class="text-secondary opacity-70 mb-0">
+                  金融支付級防護，透過投射數萬個隱形光點建構臉部 3D 模型。無論戴眼鏡、化妝或更換髮型皆可精準辨識，徹底杜絕照片影片破解。
+                </p>
+              </div>
+            </div>
+
+            <hr class="divider my-4" />
+
+            <!-- Feature 3: Smart Intercom -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-circle"><i class="bi bi-mic-fill"></i></div>
+              <div>
+                <h3 class="h5 text-white serif-font mb-2">變聲對講與 4 吋螢幕</h3>
+                <p class="text-secondary opacity-70 mb-0">
+                  室內配備 4 吋高清螢幕，一鍵查看門外狀況。App 支援遠端視訊通話，並提供「大叔音/小丑音」變聲功能，獨居更安心。
+                </p>
+              </div>
+            </div>
+
+            <hr class="divider my-4" />
+
+            <!-- Feature 4: Active Defense -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-circle"><i class="bi bi-shield-exclamation"></i></div>
+              <div>
+                <h3 class="h5 text-white serif-font mb-2">主動防禦警報</h3>
+                <p class="text-secondary opacity-70 mb-0">
+                  當偵測到長時間逗留、暴力破壞或嘗試試開時，門鎖會發出高分貝警報並同步推送影像至手機，嚇阻宵小並保留證據。
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-4 small text-secondary opacity-70">
+              備註：雷達偵測距離與靈敏度可透過 App 進行多段調整，以適應不同樓道環境，避免誤報。
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Installation SOP (Standardized) -->
+        <div class="col-lg-6">
+          <div class="panel rounded-4 p-4 h-100">
+            <p class="text-gold tracking-wide small text-uppercase mb-2 opacity-70">Installation matters</p>
+            <h3 class="text-white serif-font mb-3">雷達感應鎖，安裝位置是關鍵</h3>
+            <p class="text-secondary opacity-70 text-justify mb-4">
+              強匠技師深知雷達感應的特性，安裝時會特別避開可能造成誤判的遮蔽物或對向門干擾，並現場調校最佳偵測靈敏度，確保「該警報時警報，該安靜時安靜」。
+            </p>
+
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="card card-dark rounded-4 h-100">
+                  <div class="card-body p-4">
+                    <div class="text-gold serif-font display-6 mb-2">01</div>
+                    <h4 class="h6 text-white mb-2">雷達調校</h4>
+                    <p class="small text-secondary mb-0 text-justify">
+                      依據樓道寬度與對門距離，協助設定最佳雷達感應範圍，避免鄰居經過頻繁誤觸。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-dark rounded-4 h-100">
+                  <div class="card-body p-4">
+                    <div class="text-gold serif-font display-6 mb-2">02</div>
+                    <h4 class="h6 text-white mb-2">視角優化</h4>
+                    <p class="small text-secondary mb-0 text-justify">
+                      確認鏡頭安裝高度，確保 4 吋螢幕與 App 抓拍畫面能完整覆蓋訪客臉部與全身。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-dark rounded-4 h-100">
+                  <div class="card-body p-4">
+                    <div class="text-gold serif-font display-6 mb-2">03</div>
+                    <h4 class="h6 text-white mb-2">防暴加固</h4>
+                    <p class="small text-secondary mb-0 text-justify">
+                      使用加長型不鏽鋼螺絲與專用襯板，強化鎖體與門扇結合力，提升物理防破壞性能。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 d-flex flex-wrap gap-3">
+              <a class="btn-gold-solid flex-grow-1" href="#consult"><i
+                  class="bi bi-shield-check me-2"></i>我要雷達旗艦款（找強匠）</a>
+              <a class="btn-gold-outline flex-grow-1" href="https://line.me/ti/p/giw8057p" target="_blank"><i
+                  class="bi bi-line me-2"></i>LINE 傳門照</a>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- 🔥 POWERFUL CONVERSION CTA (Refined Gold) -->
-  <section class="py-5 text-center" style="background: linear-gradient(135deg, #D6B15E 0%, #E5C985 100%); position: relative; overflow: hidden;">
+  <section class="py-5 text-center"
+    style="background: linear-gradient(135deg, #D6B15E 0%, #E5C985 100%); position: relative; overflow: hidden;">
     <div class="container position-relative">
       <!-- Background Pattern (Subtle Grain) -->
-      <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.08; background-image: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3e%3cdefs%3e%3cpattern id=%22grain%22 width=%22100%22 height=%22100%22 patternUnits=%22userSpaceOnUse%22%3e%3ccircle cx=%2225%22 cy=%2225%22 r=%221%22 fill=%22%23000%22/%3e%3ccircle cx=%2275%22 cy=%2275%22 r=%221%22 fill=%22%23000%22/%3e%3ccircle cx=%2250%22 cy=%2250%22 r=%220.5%22 fill=%22%23000%22/%3e%3c/pattern%3e%3c/defs%3e%3crect width=%22100%22 height=%22100%22 fill=%22url(%23grain)%22/%3e%3c/svg%3e');"></div>
+      <div
+        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.08; background-image: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3e%3cdefs%3e%3cpattern id=%22grain%22 width=%22100%22 height=%22100%22 patternUnits=%22userSpaceOnUse%22%3e%3ccircle cx=%2225%22 cy=%2225%22 r=%221%22 fill=%22%23000%22/%3e%3ccircle cx=%2275%22 cy=%2275%22 r=%221%22 fill=%22%23000%22/%3e%3ccircle cx=%2250%22 cy=%2250%22 r=%220.5%22 fill=%22%23000%22/%3e%3c/pattern%3e%3c/defs%3e%3crect width=%22100%22 height=%22100%22 fill=%22url(%23grain)%22/%3e%3c/svg%3e');">
+      </div>
 
       <div class="row justify-content-center position-relative" style="z-index: 2;">
         <div class="col-lg-8">
-          
+
           <!-- Trust Badge -->
-          <div class="d-inline-flex align-items-center bg-white bg-opacity-25 border border-white border-opacity-50 px-4 py-2 rounded-pill mb-4 backdrop-blur shadow-sm">
+          <div
+            class="d-inline-flex align-items-center bg-white bg-opacity-25 border border-white border-opacity-50 px-4 py-2 rounded-pill mb-4 backdrop-blur shadow-sm">
             <i class="bi bi-patch-check-fill text-dark me-2 fs-5"></i>
             <span class="text-dark fw-bold tracking-wide">高雄在地 · 實體店面保障</span>
           </div>
@@ -685,15 +770,19 @@
           <!-- CTA Buttons -->
           <div class="d-flex flex-column flex-md-row gap-3 justify-content-center mb-5">
             <!-- Primary Action -->
-            <a href="https://line.me/ti/p/giw8057p" target="_blank" class="btn btn-dark btn-lg px-5 py-3 shadow-lg d-flex align-items-center justify-content-center" style="border-radius: 50px; min-width: 260px;">
+            <a href="https://line.me/ti/p/giw8057p" target="_blank"
+              class="btn btn-dark btn-lg px-5 py-3 shadow-lg d-flex align-items-center justify-content-center"
+              style="border-radius: 50px; min-width: 260px;">
               <div class="text-start">
                 <div class="fw-bold fs-5"><i class="bi bi-line me-2"></i>LINE 免費評估</div>
                 <div class="small text-white-50" style="font-size: 0.75rem;">傳照片，快速回覆</div>
               </div>
             </a>
-            
+
             <!-- Secondary Action -->
-            <a href="tel:0906921957" class="btn btn-success btn-lg px-5 py-3 shadow-sm d-flex align-items-center justify-content-center" style="border-radius: 50px; border-width: 2px; min-width: 260px;">
+            <a href="tel:0906921957"
+              class="btn btn-success btn-lg px-5 py-3 shadow-sm d-flex align-items-center justify-content-center"
+              style="border-radius: 50px; border-width: 2px; min-width: 260px;">
               <div class="text-start">
                 <div class="fw-bold fs-5"><i class="bi bi-telephone-fill me-2"></i>0906-921-957</div>
                 <div class="small opacity-75" style="font-size: 0.75rem;">24H 緊急諮詢專線</div>
@@ -733,346 +822,364 @@
   </section>
 
 
-<!-- 4. Install Proof / Gallery (Local Proof) -->
-<section class="py-5" id="portfolio">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">Local Proof</span>
-      <h2 class="text-white mt-2">強匠安裝實績</h2>
-      <p class="text-secondary mx-auto opacity-70" style="max-width: 820px;">
-        無論是高級大樓或獨立透天，SR60Max 的時尚外型都能完美融入，成為守護家門的科技藝術品。
-      </p>
-    </div>
+  <!-- 4. Install Proof / Gallery (Local Proof) -->
+  <section class="py-5" id="portfolio">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">Local Proof</span>
+        <h2 class="text-white mt-2">強匠安裝實績</h2>
+        <p class="text-secondary mx-auto opacity-70" style="max-width: 820px;">
+          無論是高級大樓或獨立透天，SR60Max 的時尚外型都能完美融入，成為守護家門的科技藝術品。
+        </p>
+      </div>
 
-    <div class="row g-3">
-      <div class="col-md-4">
-        <div class="panel rounded-4 overflow-hidden h-100">
-          <!-- TODO: 替換為 SR60Max 安裝照片 -->
-          <img src="../assets/images/service-digital-locks/door-assess-1.jpg" class="img-fluid w-100" alt="高雄大樓 SR60Max 安裝實例" loading="lazy">
-          <div class="p-3">
-            <div class="small text-white">高雄 · 苓雅大樓</div>
-            <div class="small text-secondary opacity-70">特色：雷達偵測/變聲對講</div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="panel rounded-4 overflow-hidden h-100">
+            <!-- TODO: 替換為 SR60Max 安裝照片 -->
+            <img src="../assets/images/service-digital-locks/door-assess-1.jpg" class="img-fluid w-100"
+              alt="高雄大樓 SR60Max 安裝實例" loading="lazy">
+            <div class="p-3">
+              <div class="small text-white">高雄 · 苓雅大樓</div>
+              <div class="small text-secondary opacity-70">特色：雷達偵測/變聲對講</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel rounded-4 overflow-hidden h-100">
+            <!-- TODO: 替換為 SR60Max 安裝照片 -->
+            <img src="../assets/images/service-digital-locks/door-assess-2.jpg" class="img-fluid w-100"
+              alt="高雄透天 SR60Max 安裝實例" loading="lazy">
+            <div class="p-3">
+              <div class="small text-white">高雄 · 鳳山透天</div>
+              <div class="small text-secondary opacity-70">特色：3D人臉/主動防禦</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel rounded-4 overflow-hidden h-100">
+            <!-- TODO: 替換為師傅施工照片 -->
+            <img src="../assets/images/service-digital-locks/technician-at-work.png" class="img-fluid w-100"
+              alt="強匠師傅施工示意" loading="lazy">
+            <div class="p-3">
+              <div class="small text-white">精品級安裝流程</div>
+              <div class="small text-secondary opacity-70">雷達調校、線路隱藏、完整交付</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="panel rounded-4 overflow-hidden h-100">
-          <!-- TODO: 替換為 SR60Max 安裝照片 -->
-          <img src="../assets/images/service-digital-locks/door-assess-2.jpg" class="img-fluid w-100" alt="高雄透天 SR60Max 安裝實例" loading="lazy">
-          <div class="p-3">
-            <div class="small text-white">高雄 · 鳳山透天</div>
-            <div class="small text-secondary opacity-70">特色：3D人臉/主動防禦</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="panel rounded-4 overflow-hidden h-100">
-          <!-- TODO: 替換為師傅施工照片 -->
-          <img src="../assets/images/service-digital-locks/technician-at-work.png" class="img-fluid w-100" alt="強匠師傅施工示意" loading="lazy">
-          <div class="p-3">
-            <div class="small text-white">精品級安裝流程</div>
-            <div class="small text-secondary opacity-70">雷達調校、線路隱藏、完整交付</div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- 5. Customer Testimonials (Samsung SR60Max Specific) -->
-<section class="py-5" style="background: linear-gradient(180deg, rgba(11, 27, 58, 0.95) 0%, rgba(18, 36, 66, 0.95) 100%);">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">客戶見證</span>
-      <h2 class="text-white mt-2">選擇 Samsung SR60Max 的理由</h2>
-      <p class="text-secondary mx-auto opacity-70" style="max-width: 600px;">
-        聽聽高雄客戶的真實使用體驗
-      </p>
-    </div>
+  <!-- 5. Customer Testimonials (Samsung SR60Max Specific) -->
+  <section class="py-5"
+    style="background: linear-gradient(180deg, rgba(11, 27, 58, 0.95) 0%, rgba(18, 36, 66, 0.95) 100%);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">客戶見證</span>
+        <h2 class="text-white mt-2">選擇 Samsung SR60Max 的理由</h2>
+        <p class="text-secondary mx-auto opacity-70" style="max-width: 600px;">
+          聽聽高雄客戶的真實使用體驗
+        </p>
+      </div>
 
-    <div class="row g-4">
-      <!-- Testimonial 1 -->
-      <div class="col-lg-4">
-        <div class="card card-dark h-100 rounded-4 shadow-lg">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center mb-3">
-              <div class="flex-shrink-0">
-                <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                  <span class="text-dark fw-bold fs-5">陳</span>
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-lg-4">
+          <div class="card card-dark h-100 rounded-4 shadow-lg">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0">
+                  <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <span class="text-dark fw-bold fs-5">陳</span>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div class="text-white fw-bold">陳小姐 · 楠梓單身公寓</div>
+                  <div class="text-secondary small">安裝時間：2024年12月</div>
                 </div>
               </div>
-              <div class="ms-3">
-                <div class="text-white fw-bold">陳小姐 · 楠梓單身公寓</div>
-                <div class="text-secondary small">安裝時間：2024年12月</div>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
               </div>
+              <p class="text-secondary mb-0">
+                "一個人住真的很沒安全感，這款鎖有<strong class="text-gold">變聲功能</strong>讓我放心很多。外送員來我都用變聲大叔音回話，而且門口有人逗留手機馬上會叫，真的很有安全感。"
+              </p>
             </div>
-            <div class="mb-3">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-            </div>
-            <p class="text-secondary mb-0">
-              "一個人住真的很沒安全感，這款鎖有<strong class="text-gold">變聲功能</strong>讓我放心很多。外送員來我都用變聲大叔音回話，而且門口有人逗留手機馬上會叫，真的很有安全感。"
-            </p>
           </div>
         </div>
-      </div>
 
-      <!-- Testimonial 2 -->
-      <div class="col-lg-4">
-        <div class="card card-dark h-100 rounded-4 shadow-lg">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center mb-3">
-              <div class="flex-shrink-0">
-                <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                  <span class="text-dark fw-bold fs-5">郭</span>
+        <!-- Testimonial 2 -->
+        <div class="col-lg-4">
+          <div class="card card-dark h-100 rounded-4 shadow-lg">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0">
+                  <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <span class="text-dark fw-bold fs-5">郭</span>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div class="text-white fw-bold">郭先生 · 鼓山大樓</div>
+                  <div class="text-secondary small">安裝時間：2024年11月</div>
                 </div>
               </div>
-              <div class="ms-3">
-                <div class="text-white fw-bold">郭先生 · 鼓山大樓</div>
-                <div class="text-secondary small">安裝時間：2024年11月</div>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
               </div>
+              <p class="text-secondary mb-0">
+                "<strong
+                  class="text-gold">雷達偵測</strong>真的很靈敏！只要有人靠近，鎖上面的燈就會亮，人臉辨識也同步啟動，我手還沒伸出去門就開了，這種無縫接軌的體驗真的很棒，朋友來都說很高級。"
+              </p>
             </div>
-            <div class="mb-3">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-            </div>
-            <p class="text-secondary mb-0">
-              "<strong class="text-gold">雷達偵測</strong>真的很靈敏！只要有人靠近，鎖上面的燈就會亮，人臉辨識也同步啟動，我手還沒伸出去門就開了，這種無縫接軌的體驗真的很棒，朋友來都說很高級。"
-            </p>
           </div>
         </div>
-      </div>
 
-      <!-- Testimonial 3 -->
-      <div class="col-lg-4">
-        <div class="card card-dark h-100 rounded-4 shadow-lg">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center mb-3">
-              <div class="flex-shrink-0">
-                <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                  <span class="text-dark fw-bold fs-5">黃</span>
+        <!-- Testimonial 3 -->
+        <div class="col-lg-4">
+          <div class="card card-dark h-100 rounded-4 shadow-lg">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0">
+                  <div class="bg-gold rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <span class="text-dark fw-bold fs-5">黃</span>
+                  </div>
+                </div>
+                <div class="ms-3">
+                  <div class="text-white fw-bold">黃設計師 · 左營工作室</div>
+                  <div class="text-secondary small">安裝時間：2024年10月</div>
                 </div>
               </div>
-              <div class="ms-3">
-                <div class="text-white fw-bold">黃設計師 · 左營工作室</div>
-                <div class="text-secondary small">安裝時間：2024年10月</div>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
               </div>
+              <p class="text-secondary mb-0">
+                "這款的外型很有科技感，4 吋螢幕畫質也很細膩。最強的是它的<strong class="text-gold">抓拍功能</strong>，上次鄰居小孩在門口玩耍亂按，App
+                全部都有紀錄下來，證據確鑿，避免了很多不必要的誤會。"
+              </p>
             </div>
-            <div class="mb-3">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Stats -->
+      <div class="row text-center mt-5 pt-4 border-top border-secondary border-opacity-25">
+        <div class="col-3">
+          <div class="h2 text-gold mb-2 fw-bold">250+</div>
+          <div class="text-secondary small">雷達款安裝案例</div>
+        </div>
+        <div class="col-3">
+          <div class="h2 text-gold mb-2 fw-bold">4.9</div>
+          <div class="text-secondary small">客戶滿意度</div>
+        </div>
+        <div class="col-3">
+          <div class="h2 text-gold mb-2 fw-bold">10年</div>
+          <div class="text-secondary small">在地服務經驗</div>
+        </div>
+        <div class="col-3">
+          <div class="h2 text-gold mb-2 fw-bold">24H</div>
+          <div class="text-secondary small">技術支援服務</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 6. Security FAQ (Samsung SR60Max Specific) -->
+  <section class="py-5" id="faq" style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, var(--bg-deep) 100%);">
+    <div class="container" style="max-width: 920px;">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">FAQ</span>
+        <h2 class="text-white mt-2">安全疑慮先解決，安裝才會順</h2>
+        <p class="text-secondary opacity-70">關於雷達感應與主動防禦，我們整理了客戶最常問的幾個關鍵問題。</p>
+      </div>
+
+      <div class="accordion" id="securityFAQ">
+        <!-- Q1 -->
+        <div class="accordion-item rounded-4 mb-3 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+              aria-expanded="true">
+              <span class="text-gold me-3 fw-bold">Q1</span>雷達感應會不會太靈敏，一直亂叫？
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              不會。SR60Max 採用高階「毫米波雷達」，比傳統紅外線更精準。您可以透過 App 調整偵測距離（例如 0.5m ~ 1m）與逗留時間（例如逗留 10
+              秒才警報），有效過濾路過的鄰居，只針對真正長時間徘徊的可疑人士發出警報。
             </div>
-            <p class="text-secondary mb-0">
-              "這款的外型很有科技感，4 吋螢幕畫質也很細膩。最強的是它的<strong class="text-gold">抓拍功能</strong>，上次鄰居小孩在門口玩耍亂按，App 全部都有紀錄下來，證據確鑿，避免了很多不必要的誤會。"
-            </p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Trust Stats -->
-    <div class="row text-center mt-5 pt-4 border-top border-secondary border-opacity-25">
-      <div class="col-3">
-        <div class="h2 text-gold mb-2 fw-bold">250+</div>
-        <div class="text-secondary small">雷達款安裝案例</div>
-      </div>
-      <div class="col-3">
-        <div class="h2 text-gold mb-2 fw-bold">4.9</div>
-        <div class="text-secondary small">客戶滿意度</div>
-      </div>
-      <div class="col-3">
-        <div class="h2 text-gold mb-2 fw-bold">10年</div>
-        <div class="text-secondary small">在地服務經驗</div>
-      </div>
-      <div class="col-3">
-        <div class="h2 text-gold mb-2 fw-bold">24H</div>
-        <div class="text-secondary small">技術支援服務</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- 6. Security FAQ (Samsung SR60Max Specific) -->
-<section class="py-5" id="faq" style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, var(--bg-deep) 100%);">
-  <div class="container" style="max-width: 920px;">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">FAQ</span>
-      <h2 class="text-white mt-2">安全疑慮先解決，安裝才會順</h2>
-      <p class="text-secondary opacity-70">關於雷達感應與主動防禦，我們整理了客戶最常問的幾個關鍵問題。</p>
-    </div>
-
-    <div class="accordion" id="securityFAQ">
-      <!-- Q1 -->
-      <div class="accordion-item rounded-4 mb-3 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
-            <span class="text-gold me-3 fw-bold">Q1</span>雷達感應會不會太靈敏，一直亂叫？
-          </button>
-        </h3>
-        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            不會。SR60Max 採用高階「毫米波雷達」，比傳統紅外線更精準。您可以透過 App 調整偵測距離（例如 0.5m ~ 1m）與逗留時間（例如逗留 10 秒才警報），有效過濾路過的鄰居，只針對真正長時間徘徊的可疑人士發出警報。
+        <!-- Q2 -->
+        <div class="accordion-item rounded-4 mb-3 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq2">
+              <span class="text-gold me-3 fw-bold">Q2</span>變聲對講功能是做什麼用的？
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              這是為了保護獨居女性或獨自在家的小孩。當有陌生人按鈴時，您可以透過手機 App 選擇「大叔音」或「小丑音」進行回應，隱藏真實性別與年齡，讓門外的人誤以為家中有成年男性，降低被騷擾的風險。
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Q2 -->
-      <div class="accordion-item rounded-4 mb-3 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-            <span class="text-gold me-3 fw-bold">Q2</span>變聲對講功能是做什麼用的？
-          </button>
-        </h3>
-        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            這是為了保護獨居女性或獨自在家的小孩。當有陌生人按鈴時，您可以透過手機 App 選擇「大叔音」或「小丑音」進行回應，隱藏真實性別與年齡，讓門外的人誤以為家中有成年男性，降低被騷擾的風險。
+        <!-- Q3 -->
+        <div class="accordion-item rounded-4 mb-3 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq3">
+              <span class="text-gold me-3 fw-bold">Q3</span>3D 人臉辨識會被照片破解嗎？
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              絕對不會。SR60Max 採用 3D 結構光技術，會投射數萬個不可見光點來構建臉部的深度模型。平面照片、高清影片或擬真面具都沒有「深度資訊」，因此無法通過驗證，安全性達到金融支付等級。
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Q3 -->
-      <div class="accordion-item rounded-4 mb-3 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-            <span class="text-gold me-3 fw-bold">Q3</span>3D 人臉辨識會被照片破解嗎？
-          </button>
-        </h3>
-        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            絕對不會。SR60Max 採用 3D 結構光技術，會投射數萬個不可見光點來構建臉部的深度模型。平面照片、高清影片或擬真面具都沒有「深度資訊」，因此無法通過驗證，安全性達到金融支付等級。
+        <!-- Q4 -->
+        <div class="accordion-item rounded-4 mb-3 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq4">
+              <span class="text-gold me-3 fw-bold">Q4</span>鋰電池沒電怎麼辦？續航力多久？
+            </button>
+          </h3>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              標配 5000mAh 大容量鋰電池，在開啟雷達與 Wi-Fi 的情況下，平均續航約 4-6 個月（視進出頻率而定）。低電量會提前警報。若完全沒電，可用機械鑰匙開門，或用行動電源接上外部 Type-C 孔緊急供電。
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Q4 -->
-      <div class="accordion-item rounded-4 mb-3 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-            <span class="text-gold me-3 fw-bold">Q4</span>鋰電池沒電怎麼辦？續航力多久？
-          </button>
-        </h3>
-        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            標配 5000mAh 大容量鋰電池，在開啟雷達與 Wi-Fi 的情況下，平均續航約 4-6 個月（視進出頻率而定）。低電量會提前警報。若完全沒電，可用機械鑰匙開門，或用行動電源接上外部 Type-C 孔緊急供電。
+        <!-- Q5 -->
+        <div class="accordion-item rounded-4 mb-3 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq5">
+              <span class="text-gold me-3 fw-bold">Q5</span>4 吋螢幕一定要按才會亮嗎？
+            </button>
+          </h3>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              螢幕平時為休眠省電狀態。有兩種喚醒方式：1. 訪客按門鈴時自動亮起；2. 您在室內想查看門外時，輕觸螢幕按鈕即可喚醒。這樣設計是為了最大化延長電池壽命。
+            </div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="accordion-item rounded-4 shadow-sm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq6">
+              <span class="text-gold me-3 fw-bold">Q6</span>如果家裡 Wi-Fi 斷線，鎖還能用嗎？
+            </button>
+          </h3>
+          <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
+            <div class="accordion-body text-secondary text-justify">
+              鎖的基本功能（人臉、指紋、密碼、鑰匙開門）完全不受影響，依然能正常進出。斷線期間只是無法使用「手機遠端對講」與「即時推播通知」，待網路恢復後會自動重新連線。
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Q5 -->
-      <div class="accordion-item rounded-4 mb-3 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-            <span class="text-gold me-3 fw-bold">Q5</span>4 吋螢幕一定要按才會亮嗎？
-          </button>
-        </h3>
-        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            螢幕平時為休眠省電狀態。有兩種喚醒方式：1. 訪客按門鈴時自動亮起；2. 您在室內想查看門外時，輕觸螢幕按鈕即可喚醒。這樣設計是為了最大化延長電池壽命。
+      <div class="text-center mt-5">
+        <a class="btn-gold-solid btn-lg" href="#consult"><i class="bi bi-shield-check me-2"></i>把問題交給強匠，直接安排評估</a>
+        <div class="small text-secondary mt-3 opacity-70">建議傳門照最快，能立即確認雷達感應是否會被鄰居大門干擾。</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. Specs Table (Samsung SR60Max Specific) -->
+  <section class="py-5" id="specs">
+    <div class="container" style="max-width: 920px;">
+      <div class="text-center mb-5">
+        <span class="text-gold small tracking-wide text-uppercase">Specifications</span>
+        <h2 class="text-white mt-2">詳細規格參數</h2>
+      </div>
+
+      <div class="panel rounded-4 overflow-hidden">
+        <table class="table table-dark table-striped mb-0">
+          <tbody>
+            <tr>
+              <th style="width: 30%;" class="text-gold">產品型號</th>
+              <td>Samsung SR60Max (R60Max)</td>
+            </tr>
+            <tr>
+              <th class="text-gold">感應核心</th>
+              <td>毫米波雷達 (Millimeter-wave Radar)</td>
+            </tr>
+            <tr>
+              <th class="text-gold">生物辨識</th>
+              <td>3D 結構光人臉識別 / 半導體指紋</td>
+            </tr>
+            <tr>
+              <th class="text-gold">螢幕規格</th>
+              <td>4.0 吋 IPS 高清室內螢幕</td>
+            </tr>
+            <tr>
+              <th class="text-gold">核心功能</th>
+              <td>主動防禦、變聲對講、逗留抓拍、九合一解鎖</td>
+            </tr>
+            <tr>
+              <th class="text-gold">鎖體類型</th>
+              <td>全自動電子鎖體（關門自動上鎖）</td>
+            </tr>
+            <tr>
+              <th class="text-gold">適用門厚</th>
+              <td>40-120mm（依版本而異，請先評估）</td>
+            </tr>
+            <tr>
+              <th class="text-gold">電源供應</th>
+              <td>5000mAh 可充電鋰電池（Type-C 緊急供電）</td>
+            </tr>
+            <tr>
+              <th class="text-gold">容量規格</th>
+              <td>人臉 50 組 / 指紋 100 組 / 密碼 10 組 / 卡片 100 組</td>
+            </tr>
+            <tr>
+              <th class="text-gold">強匠服務</th>
+              <td>雷達靈敏度調校、SOP 安裝、App 設定教學、售後支援</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert alert-light border-0 mt-4 p-4 rounded-4"
+        style="background: rgba(214, 177, 94, 0.08); border-left: 4px solid var(--gold-matte) !important;">
+        <div class="d-flex align-items-start gap-3">
+          <i class="bi bi-info-circle-fill text-gold fs-4"></i>
+          <div class="small text-secondary">
+            <strong class="text-white d-block mb-2">規格說明</strong>
+            上述規格依產品版本與通路而異；雷達偵測距離預設為 0.5-1m，建議安裝環境前方需有足夠空間以發揮最佳效能。Wi-Fi 連線建議 2.4G 頻段且訊號強度 -70dBm 以上。
           </div>
         </div>
       </div>
 
-      <!-- Q6 -->
-      <div class="accordion-item rounded-4 shadow-sm">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-            <span class="text-gold me-3 fw-bold">Q6</span>如果家裡 Wi-Fi 斷線，鎖還能用嗎？
-          </button>
-        </h3>
-        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#securityFAQ">
-          <div class="accordion-body text-secondary text-justify">
-            鎖的基本功能（人臉、指紋、密碼、鑰匙開門）完全不受影響，依然能正常進出。斷線期間只是無法使用「手機遠端對講」與「即時推播通知」，待網路恢復後會自動重新連線。
-          </div>
-        </div>
-      </div>
     </div>
-
-    <div class="text-center mt-5">
-      <a class="btn-gold-solid btn-lg" href="#consult"><i class="bi bi-shield-check me-2"></i>把問題交給強匠，直接安排評估</a>
-      <div class="small text-secondary mt-3 opacity-70">建議傳門照最快，能立即確認雷達感應是否會被鄰居大門干擾。</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- 7. Specs Table (Samsung SR60Max Specific) -->
-<section class="py-5" id="specs">
-  <div class="container" style="max-width: 920px;">
-    <div class="text-center mb-5">
-      <span class="text-gold small tracking-wide text-uppercase">Specifications</span>
-      <h2 class="text-white mt-2">詳細規格參數</h2>
-    </div>
-
-    <div class="panel rounded-4 overflow-hidden">
-      <table class="table table-dark table-striped mb-0">
-        <tbody>
-          <tr>
-            <th style="width: 30%;" class="text-gold">產品型號</th>
-            <td>Samsung SR60Max (R60Max)</td>
-          </tr>
-          <tr>
-            <th class="text-gold">感應核心</th>
-            <td>毫米波雷達 (Millimeter-wave Radar)</td>
-          </tr>
-          <tr>
-            <th class="text-gold">生物辨識</th>
-            <td>3D 結構光人臉識別 / 半導體指紋</td>
-          </tr>
-          <tr>
-            <th class="text-gold">螢幕規格</th>
-            <td>4.0 吋 IPS 高清室內螢幕</td>
-          </tr>
-          <tr>
-            <th class="text-gold">核心功能</th>
-            <td>主動防禦、變聲對講、逗留抓拍、九合一解鎖</td>
-          </tr>
-          <tr>
-            <th class="text-gold">鎖體類型</th>
-            <td>全自動電子鎖體（關門自動上鎖）</td>
-          </tr>
-          <tr>
-            <th class="text-gold">適用門厚</th>
-            <td>40-120mm（依版本而異，請先評估）</td>
-          </tr>
-          <tr>
-            <th class="text-gold">電源供應</th>
-            <td>5000mAh 可充電鋰電池（Type-C 緊急供電）</td>
-          </tr>
-          <tr>
-            <th class="text-gold">容量規格</th>
-            <td>人臉 50 組 / 指紋 100 組 / 密碼 10 組 / 卡片 100 組</td>
-          </tr>
-          <tr>
-            <th class="text-gold">強匠服務</th>
-            <td>雷達靈敏度調校、SOP 安裝、App 設定教學、售後支援</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="alert alert-light border-0 mt-4 p-4 rounded-4" style="background: rgba(214, 177, 94, 0.08); border-left: 4px solid var(--gold-matte) !important;">
-      <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-info-circle-fill text-gold fs-4"></i>
-        <div class="small text-secondary">
-          <strong class="text-white d-block mb-2">規格說明</strong>
-          上述規格依產品版本與通路而異；雷達偵測距離預設為 0.5-1m，建議安裝環境前方需有足夠空間以發揮最佳效能。Wi-Fi 連線建議 2.4G 頻段且訊號強度 -70dBm 以上。
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+  </section>
 
   <!-- 7. CTA / Consult (Region-focused, No Price) -->
-  <section class="py-5" id="consult" style="background: linear-gradient(135deg, rgba(18, 36, 66, 0.85) 0%, rgba(11, 27, 58, 0.95) 100%);">
+  <section class="py-5" id="consult"
+    style="background: linear-gradient(135deg, rgba(18, 36, 66, 0.85) 0%, rgba(11, 27, 58, 0.95) 100%);">
     <div class="container">
       <div class="row align-items-center g-5">
         <!-- Left: Text -->
@@ -1088,7 +1195,8 @@
           </p>
 
           <!-- Service Promise Cards -->
-          <div class="card border-0 shadow-lg mb-4 rounded-4 overflow-hidden" style="background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,249,250,0.95) 100%);">
+          <div class="card border-0 shadow-lg mb-4 rounded-4 overflow-hidden"
+            style="background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,249,250,0.95) 100%);">
             <div class="card-body p-4">
               <div class="row text-center g-3 align-items-center">
                 <!-- Left: Physical Store (Trust Focus) -->
@@ -1113,14 +1221,16 @@
 
 
           <div class="d-flex flex-column flex-lg-row gap-3">
-            <a href="https://line.me/ti/p/giw8057p" target="_blank" class="btn-gold-solid btn-lg flex-grow-1 d-flex align-items-center justify-content-center">
+            <a href="https://line.me/ti/p/giw8057p" target="_blank"
+              class="btn-gold-solid btn-lg flex-grow-1 d-flex align-items-center justify-content-center">
               <i class="bi bi-line me-2 fs-5"></i>
               <div class="text-start">
                 <div class="fw-bold">LINE 免費評估</div>
                 <div class="small opacity-75">傳照即知安裝費用</div>
               </div>
             </a>
-            <a href="tel:0906921957" class="btn-gold-outline btn-lg flex-grow-1 d-flex align-items-center justify-content-center">
+            <a href="tel:0906921957"
+              class="btn-gold-outline btn-lg flex-grow-1 d-flex align-items-center justify-content-center">
               <i class="bi bi-telephone-fill me-2 fs-5"></i>
               <div class="text-start">
                 <div class="fw-bold">0906-921-957</div>
@@ -1129,7 +1239,8 @@
             </a>
           </div>
 
-          <div class="mt-3 p-3 rounded-3" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
+          <div class="mt-3 p-3 rounded-3"
+            style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
             <div class="small text-white text-center">
               <i class="bi bi-shield-fill-check text-gold me-1"></i>
               <strong class="text-gold">安心承諾</strong>：現場測試完工才付費 · 原廠 3 年保固 · 24H 緊急救援
@@ -1145,13 +1256,14 @@
                 <i class="bi bi-shield-fill-check text-success fs-3"></i>
                 強匠安裝保證
               </h3>
-              
+
               <!-- Social Proof Badge -->
               <div class="d-flex align-items-center mb-4 p-3 rounded-3" style="background: rgba(255,255,255,0.05);">
                 <div class="h2 text-warning mb-0 me-3 fw-bold">4.8</div>
                 <div class="lh-1">
                   <div class="text-warning small mb-1">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <div class="text-white small">Google 真實好評認證</div>
                 </div>
@@ -1202,15 +1314,18 @@
           <div class="card card-dark rounded-4 h-100 overflow-hidden">
             <div class="position-relative">
               <!-- TODO: 替換為強匠鎖店 Facebook 粉絲專頁真實封面照片 (建議: 展示電子鎖產品與服務, 尺寸 1200x630px) -->
-              <img src="https://placehold.co/600x340/1877f2/ffffff.png?text=Facebook+Page" class="card-img-top" alt="Facebook" style="opacity: 0.9;">
-              <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(11, 27, 58, 0.9), transparent);">
+              <img src="https://placehold.co/600x340/1877f2/ffffff.png?text=Facebook+Page" class="card-img-top"
+                alt="Facebook" style="opacity: 0.9;">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3"
+                style="background: linear-gradient(to top, rgba(11, 27, 58, 0.9), transparent);">
                 <span class="text-white small fw-bold"><i class="bi bi-facebook me-2"></i>Facebook 粉絲團</span>
               </div>
             </div>
             <div class="card-body text-center p-4">
               <h3 class="h5 fw-bold text-white mb-2">Facebook 粉絲團</h3>
               <p class="text-secondary small mb-4">掌握最新電子鎖優惠、即時救援案例分享</p>
-              <a href="https://www.facebook.com/KHsmartlock" target="_blank" class="btn-gold-outline btn-sm rounded-pill px-4">
+              <a href="https://www.facebook.com/KHsmartlock" target="_blank"
+                class="btn-gold-outline btn-sm rounded-pill px-4">
                 前往電子鎖體驗館
               </a>
             </div>
@@ -1222,9 +1337,12 @@
           <div class="card card-dark rounded-4 h-100 overflow-hidden">
             <div class="position-relative">
               <!-- TODO: 替換為強匠鎖店 Instagram 真實封面照片 (建議: 展示安裝短片縮圖或產品展示, 尺寸 1080x1080px) -->
-              <img src="https://placehold.co/600x340/E1306C/ffffff.png?text=Instagram+Reels" class="card-img-top" alt="Instagram" style="opacity: 0.9;">
+              <img src="https://placehold.co/600x340/E1306C/ffffff.png?text=Instagram+Reels" class="card-img-top"
+                alt="Instagram" style="opacity: 0.9;">
               <div class="position-absolute top-50 start-50 translate-middle">
-                <a href="https://www.instagram.com/0906921957lock/reels" target="_blank" class="btn btn-light btn-lg rounded-circle shadow-lg text-danger" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                <a href="https://www.instagram.com/0906921957lock/reels" target="_blank"
+                  class="btn btn-light btn-lg rounded-circle shadow-lg text-danger"
+                  style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
                   <i class="bi bi-instagram fs-3"></i>
                 </a>
               </div>
@@ -1232,7 +1350,8 @@
             <div class="card-body text-center p-4">
               <h3 class="h5 fw-bold text-white mb-2">Instagram Reels</h3>
               <p class="text-secondary small mb-4">觀看安裝短片與實際操作展示</p>
-              <a href="https://www.instagram.com/0906921957lock/reels" target="_blank" class="btn-gold-outline btn-sm rounded-pill px-4">
+              <a href="https://www.instagram.com/0906921957lock/reels" target="_blank"
+                class="btn-gold-outline btn-sm rounded-pill px-4">
                 追蹤 IG 動態
               </a>
             </div>
@@ -1241,95 +1360,115 @@
       </div>
     </div>
   </section>
-<!-- Footer -->
-<footer class="py-5" style="background-color: #2d3748;">
+  <!-- Footer -->
+  <footer class="py-5" style="background-color: #2d3748;">
     <div class="container">
-        <!-- 手機版置中，大螢幕靠左 -->
-        <div class="row g-5 text-center text-lg-start">
-            
-            <!-- Column 1: Brand Info -->
-            <div class="col-lg-4">
-            <a class="navbar-brand text-gold d-block mb-3 h4 fw-bold" href="../index.html">強匠鎖店</a>
-            <p class="text-secondary small text-justify mx-auto mx-lg-0" style="max-width: 400px;">
-                在地經營 10 年，專注汽車晶片鑰匙與電子鎖安裝。<br>
-                以精品級服務標準，為高雄住家與商業客戶提供專業安裝與售後支援。
-            </p>
+      <!-- 手機版置中，大螢幕靠左 -->
+      <div class="row g-5 text-center text-lg-start">
 
-            <!-- 手機版置中 -->
-            <div class="d-flex gap-3 mb-4 justify-content-center justify-content-lg-start">
-                <a href="https://www.facebook.com/KHsmartlock" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/0906921957lock/reels" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.threads.net/@0906921957lock" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Threads"><i class="bi bi-at"></i></a>
-                <a href="https://www.youtube.com/@24H高雄強匠鎖店-電子鎖" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="YouTube"><i class="bi bi-youtube"></i></a>
-                <a href="https://line.me/ti/p/giw8057p" target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="LINE"><i class="bi bi-line"></i></a>
-            </div>
+        <!-- Column 1: Brand Info -->
+        <div class="col-lg-4">
+          <a class="navbar-brand text-gold d-block mb-3 h4 fw-bold" href="../index.html">強匠鎖店</a>
+          <p class="text-secondary small text-justify mx-auto mx-lg-0" style="max-width: 400px;">
+            在地經營 10 年，專注汽車晶片鑰匙與電子鎖安裝。<br>
+            以精品級服務標準，為高雄住家與商業客戶提供專業安裝與售後支援。
+          </p>
 
-            <a href="https://maps.app.goo.gl/SaT1dbcffoTzWQxq8" target="_blank" class="btn btn-outline-light btn-sm rounded-pill px-3">
-                <i class="bi bi-geo-alt-fill me-1 text-danger"></i>Google 地圖
-            </a>
-            </div>
+          <!-- 手機版置中 -->
+          <div class="d-flex gap-3 mb-4 justify-content-center justify-content-lg-start">
+            <a href="https://www.facebook.com/KHsmartlock" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/0906921957lock/reels" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Instagram"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://www.threads.net/@0906921957lock" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Threads"><i
+                class="bi bi-at"></i></a>
+            <a href="https://www.youtube.com/@24H高雄強匠鎖店-電子鎖" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="YouTube"><i
+                class="bi bi-youtube"></i></a>
+            <a href="https://line.me/ti/p/giw8057p" target="_blank"
+              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="LINE"><i
+                class="bi bi-line"></i></a>
+          </div>
 
-            <!-- Column 2: Service Areas (雙欄優化) -->
-            <div class="col-lg-4">
-                <h5 class="text-white small tracking-wide mb-3">高雄全區快速服務</h5>
-                <div class="row justify-content-center justify-content-lg-start">
-                    <div class="col-6 col-lg-6">
-                        <ul class="list-unstyled text-white-50 mb-0">
-                            <li class="mb-2"><a href="../area-sanmin.html" class="text-white-50 text-decoration-none hover-text-white">三民區電子鎖</a></li>
-                            <li class="mb-2"><a href="../area-zuoying.html" class="text-white-50 text-decoration-none hover-text-white">左營區電子鎖</a></li>
-                            <li class="mb-2"><a href="../area-lingya.html" class="text-white-50 text-decoration-none hover-text-white">苓雅區電子鎖</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-6">
-                        <ul class="list-unstyled text-white-50 mb-0">
-                            <li class="mb-2"><a href="../area-qianzheng.html" class="text-white-50 text-decoration-none hover-text-white">前鎮區電子鎖</a></li>
-                            <li class="mb-2"><a href="../area-xinxing.html" class="text-white-50 text-decoration-none hover-text-white">新興區電子鎖</a></li>
-                            <li class="mb-2"><a href="../area-qianjin.html" class="text-white-50 text-decoration-none hover-text-white">前金區電子鎖</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Column 3: Contact Info -->
-            <div class="col-lg-4">
-                <h6 class="text-white small tracking-wide mb-3">聯絡資訊</h6>
-                <!-- 手機版置中，文字靠左 -->
-                <ul class="list-unstyled small text-secondary d-inline-block d-lg-block text-start">
-                    <li class="mb-3 d-flex align-items-start">
-                        <i class="bi bi-telephone-fill me-2 mt-1 text-primary"></i>
-                        <div>
-                            <span class="d-block text-white-50">24H 救援專線</span>
-                            <a href="tel:0906921957" class="text-white fw-bold text-decoration-none fs-5">0906-921-957</a>
-                            <span class="ms-1">(林師傅)</span>
-                        </div>
-                    </li>
-                    <li class="mb-2 d-flex align-items-center">
-                        <i class="bi bi-line me-2 text-success"></i>
-                        <a href="https://line.me/ti/p/~@giw8057p" class="text-white-50 text-decoration-none hover-text-white" target="_blank">ID: @giw8057p</a>
-                    </li>
-                    <li class="mb-2 d-flex align-items-center">
-                        <i class="bi bi-envelope me-2"></i>
-                        <a href="mailto:s10552@chyp.com.tw" class="text-white-50 text-decoration-none hover-text-white">s10552@chyp.com.tw</a>
-                    </li>
-                    <li class="mb-2 d-flex align-items-start">
-                        <i class="bi bi-geo-alt me-2 mt-1"></i>
-                        <a href="https://share.google/mz73ioCzKOPI2kod4" class="text-white-50 text-decoration-none hover-text-white" target="_blank">高雄市新興區復橫一路 116 號</a>
-                    </li>
-                </ul>
-            </div>
+          <a href="https://maps.app.goo.gl/SaT1dbcffoTzWQxq8" target="_blank"
+            class="btn btn-outline-light btn-sm rounded-pill px-3">
+            <i class="bi bi-geo-alt-fill me-1 text-danger"></i>Google 地圖
+          </a>
         </div>
 
-        <div class="row align-items-center border-top pt-4 mt-4" style="border-color: rgba(255,255,255,0.1) !important;">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <span class="small text-white-50">&copy; 2026 強匠鎖店. All rights reserved.</span>
+        <!-- Column 2: Service Areas (雙欄優化) -->
+        <div class="col-lg-4">
+          <h5 class="text-white small tracking-wide mb-3">高雄全區快速服務</h5>
+          <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-6 col-lg-6">
+              <ul class="list-unstyled text-white-50 mb-0">
+                <li class="mb-2"><a href="../area-sanmin.html"
+                    class="text-white-50 text-decoration-none hover-text-white">三民區電子鎖</a></li>
+                <li class="mb-2"><a href="../area-zuoying.html"
+                    class="text-white-50 text-decoration-none hover-text-white">左營區電子鎖</a></li>
+                <li class="mb-2"><a href="../area-lingya.html"
+                    class="text-white-50 text-decoration-none hover-text-white">苓雅區電子鎖</a></li>
+              </ul>
             </div>
-            <div class="col-md-6 text-center text-md-end">
-            <span class="small text-white-50 me-3">最實在鎖店</span>
-            <span class="small text-white-50">專業 · 安全 · 信賴</span>
+            <div class="col-6 col-lg-6">
+              <ul class="list-unstyled text-white-50 mb-0">
+                <li class="mb-2"><a href="../area-qianzheng.html"
+                    class="text-white-50 text-decoration-none hover-text-white">前鎮區電子鎖</a></li>
+                <li class="mb-2"><a href="../area-xinxing.html"
+                    class="text-white-50 text-decoration-none hover-text-white">新興區電子鎖</a></li>
+                <li class="mb-2"><a href="../area-qianjin.html"
+                    class="text-white-50 text-decoration-none hover-text-white">前金區電子鎖</a></li>
+              </ul>
             </div>
+          </div>
         </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="col-lg-4">
+          <h6 class="text-white small tracking-wide mb-3">聯絡資訊</h6>
+          <!-- 手機版置中，文字靠左 -->
+          <ul class="list-unstyled small text-secondary d-inline-block d-lg-block text-start">
+            <li class="mb-3 d-flex align-items-start">
+              <i class="bi bi-telephone-fill me-2 mt-1 text-primary"></i>
+              <div>
+                <span class="d-block text-white-50">24H 救援專線</span>
+                <a href="tel:0906921957" class="text-white fw-bold text-decoration-none fs-5">0906-921-957</a>
+                <span class="ms-1">(林師傅)</span>
+              </div>
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <i class="bi bi-line me-2 text-success"></i>
+              <a href="https://line.me/ti/p/~@giw8057p" class="text-white-50 text-decoration-none hover-text-white"
+                target="_blank">ID: @giw8057p</a>
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <i class="bi bi-envelope me-2"></i>
+              <a href="mailto:s10552@chyp.com.tw"
+                class="text-white-50 text-decoration-none hover-text-white">s10552@chyp.com.tw</a>
+            </li>
+            <li class="mb-2 d-flex align-items-start">
+              <i class="bi bi-geo-alt me-2 mt-1"></i>
+              <a href="https://share.google/mz73ioCzKOPI2kod4"
+                class="text-white-50 text-decoration-none hover-text-white" target="_blank">高雄市新興區復橫一路 116 號</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row align-items-center border-top pt-4 mt-4" style="border-color: rgba(255,255,255,0.1) !important;">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="small text-white-50">&copy; 2026 強匠鎖店. All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <span class="small text-white-50 me-3">最實在鎖店</span>
+          <span class="small text-white-50">專業 · 安全 · 信賴</span>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
 
 
   <!-- Enhanced Mobile Sticky CTA -->
@@ -1346,14 +1485,17 @@
         <!-- CTA Buttons -->
         <div class="row g-2">
           <div class="col-6">
-            <a href="tel:0906921957" class="btn btn-gold-solid w-100 d-flex flex-column align-items-center py-3 rounded-3">
+            <a href="tel:0906921957"
+              class="btn btn-gold-solid w-100 d-flex flex-column align-items-center py-3 rounded-3">
               <i class="bi bi-telephone-fill fs-5 mb-1"></i>
               <span class="fw-bold small">電話</span>
               <span class="small opacity-75">立即通話</span>
             </a>
           </div>
           <div class="col-6">
-            <a href="https://line.me/ti/p/giw8057p" target="_blank" class="btn btn-gold-outline w-100 d-flex flex-column align-items-center py-3 rounded-3" style="border-width: 2px;">
+            <a href="https://line.me/ti/p/giw8057p" target="_blank"
+              class="btn btn-gold-outline w-100 d-flex flex-column align-items-center py-3 rounded-3"
+              style="border-width: 2px;">
               <i class="bi bi-line fs-5 mb-1"></i>
               <span class="fw-bold small">LINE</span>
               <span class="small opacity-75">免費諮詢</span>
@@ -1391,5 +1533,5 @@
   </script>
 
 </body>
-</html>
 
+</html>
