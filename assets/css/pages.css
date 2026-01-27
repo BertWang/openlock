@@ -792,3 +792,13 @@ body {
         padding-bottom: 110px; /* 懸浮欄高度 + 緩衝 */
     }
 }
+
+/* 行政區推薦區塊專屬樣式 */
+.recommend-card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.recommend-card-text {
+    flex-grow: 1;
+}

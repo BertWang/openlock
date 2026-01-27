@@ -1,93 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- 首頁 -->
+  <!-- ========== 首頁 ========== -->
   <url>
-    <loc>https://suoyicoffee.com/</loc>
-    <lastmod>2025-12-09</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://openlock.tw/</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
-  <!-- 關於我們 -->
+  <!-- ========== 主要服務頁面 ========== -->
   <url>
-    <loc>https://suoyicoffee.com/about.html</loc>
-    <lastmod>2025-12-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- 菜單 -->
-  <url>
-    <loc>https://suoyicoffee.com/menu.html</loc>
-    <lastmod>2025-12-09</lastmod>
+    <loc>https://openlock.tw/services.html</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
   </url>
 
-  <!-- 門市總覽 -->
   <url>
-    <loc>https://suoyicoffee.com/stores.html</loc>
-    <lastmod>2025-12-09</lastmod>
+    <loc>https://openlock.tw/service-digital-locks.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/service-auto-keys.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- ========== 區域服務頁面 ========== -->
+  <url>
+    <loc>https://openlock.tw/area-sanmin.html</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- 分店專頁 -->
   <url>
-    <loc>https://suoyicoffee.com/store-niaosong.html</loc>
-    <lastmod>2025-12-09</lastmod>
+    <loc>https://openlock.tw/area-zuoying.html</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://suoyicoffee.com/store-xinxing.html</loc>
-    <lastmod>2025-12-09</lastmod>
+    <loc>https://openlock.tw/area-xinxing.html</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://suoyicoffee.com/store-zuoying.html</loc>
-    <lastmod>2025-12-09</lastmod>
+    <loc>https://openlock.tw/area-qianjin.html</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://suoyicoffee.com/store-fuheng.html</loc>
-    <lastmod>2025-12-09</lastmod>
+    <loc>https://openlock.tw/area-lingya.html</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://suoyicoffee.com/store-tainan.html</loc>
-    <lastmod>2025-12-09</lastmod>
+    <loc>https://openlock.tw/area-qianzheng.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ========== 電子鎖產品頁面 - Philips 飛利浦 ========== -->
+  <url>
+    <loc>https://openlock.tw/digital-locks/DDL702-FVP.html</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
-  <!-- 加盟專區 -->
   <url>
-    <loc>https://suoyicoffee.com/franchise.html</loc>
-    <lastmod>2025-12-09</lastmod>
+    <loc>https://openlock.tw/digital-locks/DDL702E.html</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.70</priority>
   </url>
 
-  <!-- 聯絡我們 -->
   <url>
-    <loc>https://suoyicoffee.com/contact.html</loc>
-    <lastmod>2025-12-09</lastmod>
+    <loc>https://openlock.tw/digital-locks/DDL703k.html</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.50</priority>
+    <priority>0.70</priority>
   </url>
 
-  <!-- 優惠活動 -->
   <url>
-    <loc>https://suoyicoffee.com/offers.html</loc>
-    <lastmod>2025-12-09</lastmod>
+    <loc>https://openlock.tw/digital-locks/DDL705E.html</loc>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.50</priority>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/DDL709-FVP.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- ========== 電子鎖產品頁面 - Milre 美樂 ========== -->
+  <url>
+    <loc>https://openlock.tw/digital-locks/MI-510F.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/MI-510S.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/MI-570F.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/MI-570S.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/MI-6450.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/MI-6500F.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/MDL-400F.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/MDL-7150.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/ML660.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- ========== 電子鎖產品頁面 - Arpha 亞爾發 ========== -->
+  <url>
+    <loc>https://openlock.tw/digital-locks/AS701.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/AS850.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- ========== 電子鎖產品頁面 - DORMAKABA ========== -->
+  <url>
+    <loc>https://openlock.tw/digital-locks/P70MAX.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/SR60MAX.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/SY30MAX.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- ========== 電子鎖產品頁面 - SENSORS 鑫司 ========== -->
+  <url>
+    <loc>https://openlock.tw/digital-locks/SENSORS-K1.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/SENSORS-S1.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://openlock.tw/digital-locks/SENSORS-V8.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
 
 </urlset>

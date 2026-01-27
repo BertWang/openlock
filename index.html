@@ -1,21 +1,115 @@
-<!doctype html>
-<html lang="zh-Hant">
+<!DOCTYPE html>
 
+<html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="強匠鎖店 - 高雄在地10年專業鎖匠。24小時緊急開鎖、電子鎖安裝、汽車晶片鑰匙。30分鐘快速抵達，鎖不開不收錢。">
-  <title>強匠鎖店｜高雄 24H 緊急開鎖・電子鎖專家</title>
-  <!-- Bootstrap 5.3 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <!-- Design System Layers -->
-  <link rel="stylesheet" href="assets/css/tokens.css" />
-  <link rel="stylesheet" href="assets/css/skins.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/home.css" />
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<meta content="強匠鎖店 - 高雄在地10年專業鎖匠。24小時緊急開鎖、電子鎖安裝、汽車晶片鑰匙。30分鐘快速抵達，鎖不開不收錢。" name="description"/>
+<title>強匠鎖店｜高雄 24H 緊急開鎖・電子鎖專家</title>
+<!-- Canonical URL -->
+<link href="https://openlock.tw/" rel="canonical"/>
+<!-- Open Graph / Facebook -->
+<meta content="website" property="og:type"/>
+<meta content="https://openlock.tw/" property="og:url"/>
+<meta content="強匠鎖店｜高雄 24H 緊急開鎖・電子鎖專家" property="og:title"/>
+<meta content="高雄在地10年專業鎖匠。24小時緊急開鎖、電子鎖安裝、汽車晶片鑰匙。30分鐘快速抵達，鎖不開不收錢。" property="og:description"/>
+<meta content="https://openlock.tw/assets/images/index/index_hero2.webp" property="og:image"/>
+<meta content="zh_TW" property="og:locale"/>
+<meta content="強匠鎖店" property="og:site_name"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="強匠鎖店｜高雄 24H 緊急開鎖" name="twitter:title"/>
+<meta content="高雄在地10年專業鎖匠。24小時緊急開鎖，30分鐘快速抵達，鎖不開不收錢。" name="twitter:description"/>
+<meta content="https://openlock.tw/assets/images/index/index_hero2.webp" name="twitter:image"/>
+<!-- LocalBusiness JSON-LD -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "強匠鎖店",
+    "image": "https://openlock.tw/assets/images/logo.png",
+    "description": "高雄在地10年專業鎖匠，提供24小時緊急開鎖、電子鎖安裝、汽車晶片鑰匙服務",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "復橫一路116號",
+      "addressLocality": "新興區",
+      "addressRegion": "高雄市",
+      "postalCode": "800",
+      "addressCountry": "TW"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 22.6273,
+      "longitude": 120.3014
+    },
+    "telephone": "+886-906-921-957",
+    "url": "https://openlock.tw/",
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "200"
+    },
+    "areaServed": ["三民區", "左營區", "新興區", "前金區", "苓雅區", "前鎮區", "鼓山區", "楠梓區", "鳳山區", "小港區"]
+  }
+  </script>
+<!-- FAQPage JSON-LD (Voice Search Optimized) -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "高雄開鎖服務大約多少錢？現場會加價嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "高雄市區一般開鎖費用約在 300至800元 之間（視鎖頭難度與時段而定）。強匠堅持「先報價、後施工」，電話中確認鎖種後給予精確報價，現場絕不額外亂加價。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "打電話後師傅多久會到？開鎖要花很久時間嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "在三民、左營、新興等核心區域，我們通常能在 20-30 分鐘內抵達。大多數一般家用鎖 5-10 分鐘即可開啟；若是高級防盜鎖或進口車開鎖，則需視技術難度而定。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "如果電子鎖沒電了開不了門怎麼辦？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "別擔心！大多數電子鎖都有「外部緊急供電孔」，可用行動電源或 9V 電池緊急啟動。若仍無法開啟，可撥打強匠 24H 專線提供專業的電子鎖無損救援服務。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "車鑰匙全部遺失也能現場配製嗎？需要拖車嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "完全不需要拖車！強匠提供專業「現場配製晶片鑰匙」服務，直接到您車子停放的地點（包括地下室），讀取齒痕並編寫晶片，現場即可完工領匙。"
+        }
+      }
+    ]
+  }
+  </script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Design System Layers -->
+<link href="assets/css/tokens.css" rel="stylesheet">
+<link href="assets/css/skins.css" rel="stylesheet">
+<link href="assets/css/components.css" rel="stylesheet">
+<link href="assets/css/home.css" rel="stylesheet"/>
+<style>
     /* =========================================
    質感增強 CSS - 記憶錨點系統
    ========================================= */
@@ -205,965 +299,877 @@
       letter-spacing: 1px;
     }
   </style>
-</head>
-
+</link></link></link></head>
 <body>
-  <!-- 1. Header / Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold align-items-center gap-2r" href="index.html">
-        <img src="assets/images/logo.png" alt="強匠鎖店" class="img-fluid " style="max-width: 40px;">
-        <span style="color: #D6B15E;">強匠</span>鎖店
+<!-- 1. Header / Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+<div class="container">
+<a class="navbar-brand fw-bold align-items-center gap-2r" href="index.html">
+<img alt="強匠鎖店" class="img-fluid" src="assets/images/logo.webp" style="max-width: 40px;"/>
+<span style="color: #D6B15E;">強匠</span>鎖店
       </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-          <!-- 主要服務 - 按用戶意圖分類 -->
-          <li class="nav-item"><a class="nav-link" href="services.html"><i class="bi bi-tools me-1"></i>開鎖服務</a></li>
-          <li class="nav-item"><a class="nav-link" href="service-auto-keys.html"><i
-                class="bi bi-car-front me-1"></i>汽車晶片鑰匙</a></li>
-          <li class="nav-item"><a class="nav-link" href="service-digital-locks.html"><i
-                class="bi bi-fingerprint me-1"></i>電子鎖安裝</a></li>
-          <!-- 服務區域下拉選單 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              <i class="bi bi-geo-alt me-1"></i>服務地區
+<button class="navbar-toggler border-0" data-bs-target="#mainNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+<!-- 主要服務 - 按用戶意圖分類 -->
+<li class="nav-item"><a class="nav-link" href="services.html"><i class="bi bi-tools me-1"></i>開鎖服務</a></li>
+<li class="nav-item"><a class="nav-link" href="service-auto-keys.html"><i class="bi bi-car-front me-1"></i>汽車晶片鑰匙</a></li>
+<li class="nav-item"><a class="nav-link" href="service-digital-locks.html"><i class="bi bi-fingerprint me-1"></i>電子鎖安裝</a></li>
+<!-- 服務區域下拉選單 -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+<i class="bi bi-geo-alt me-1"></i>服務地區
             </a>
-            <ul class="dropdown-menu shadow-sm border-0">
-              <li><a class="dropdown-item" href="area-sanmin.html">三民區開鎖</a></li>
-              <li><a class="dropdown-item" href="area-zuoying.html">左營區開鎖</a></li>
-              <li><a class="dropdown-item" href="area-xinxing.html">新興區開鎖</a></li>
-              <li><a class="dropdown-item" href="area-qianjin.html">前金區開鎖</a></li>
-              <li><a class="dropdown-item" href="area-lingya.html">苓雅區開鎖</a></li>
-              <li><a class="dropdown-item" href="area-qianzheng.html">前鎮區開鎖</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-info-circle me-1"></i>關於我們</a></li>
-          <li class="nav-item"><a class="nav-link" href="#reviews"><i class="bi bi-star me-1"></i>客戶評價</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq"><i class="bi bi-question-circle me-1"></i>常見問題</a></li>
-          <!-- Desktop Only CTA Button -->
-          <li class="nav-item d-none d-lg-block ms-2">
-            <a href="tel:0906921957" class="btn rounded-pill px-4 py-2 fw-bold"
-              style="background-color: var(--cta-phone); color: white; border: none;">
-              <i class="bi bi-telephone-fill me-2"></i>24H 緊急開鎖
+<ul class="dropdown-menu shadow-sm border-0">
+<li><a class="dropdown-item" href="area-sanmin.html">三民區開鎖</a></li>
+<li><a class="dropdown-item" href="area-zuoying.html">左營區開鎖</a></li>
+<li><a class="dropdown-item" href="area-xinxing.html">新興區開鎖</a></li>
+<li><a class="dropdown-item" href="area-qianjin.html">前金區開鎖</a></li>
+<li><a class="dropdown-item" href="area-lingya.html">苓雅區開鎖</a></li>
+<li><a class="dropdown-item" href="area-qianzheng.html">前鎮區開鎖</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-info-circle me-1"></i>關於我們</a></li>
+<li class="nav-item"><a class="nav-link" href="#reviews"><i class="bi bi-star me-1"></i>客戶評價</a></li>
+<li class="nav-item"><a class="nav-link" href="#faq"><i class="bi bi-question-circle me-1"></i>常見問題</a></li>
+<!-- Desktop Only CTA Button -->
+<li class="nav-item d-none d-lg-block ms-2">
+<a class="btn rounded-pill px-4 py-2 fw-bold" href="tel:0906921957" style="background-color: var(--cta-phone); color: white; border: none;">
+<i class="bi bi-telephone-fill me-2"></i>24H 緊急開鎖
             </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- 2. Hero Section: 救援優先戰情室 + 質感紋理 -->
-  <header class="hero-section hero-texture text-center position-relative overflow-hidden border-bottom">
-    <!-- 背景遮罩：讓文字更清晰 -->
-    <div class="position-absolute top-0 start-0 w-100 h-100"
-      style="background-color: rgba(0, 0, 0, 0.425); z-index: 1;"></div>
-    <!-- 內容層 -->
-    <div class="container position-relative mt-lg-5" style="z-index: 2;">
-      <div class="row justify-content-center py-1 py-lg-5 align-items-center min-vh-75">
-        <div class="col-lg-8">
-          <img src="assets/images/index/hero_locksmith.webp" class="img-fluid mb-4 rounded-token d-block d-sm-none fs-5"
-            alt="強匠鎖店-高雄24小時緊急開鎖服務" style="max-width: 100%; height: auto; ">
-          <!-- 閃電急救標籤 (視覺定錨) -->
-          <div
-            class="d-inline-flex align-items-center bg-warning text-dark fw-bold px-4 py-2 rounded-pill mb-4 shadow-lg animate-bounce">
-            <i class="bi bi-lightning-charge-fill me-2 fs-5 text-danger"></i>
-            <span class="text-uppercase" style="letter-spacing: 1px;">高雄全區・最快 30 分鐘抵達</span>
-          </div>
-
-          <!-- 主標題：紅黃配色激發急迫感 -->
-          <h1 class="display-3 fw-bolder text-white mb-3" style="text-shadow: 0 4px 12px rgba(0,0,0,0.5);">
-            <span class="text-warning">急需</span> 開鎖救援？
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- 2. Hero Section: 救援優先戰情室 + 質感紋理 -->
+<header class="hero-section hero-texture text-center position-relative overflow-hidden border-bottom">
+<!-- 背景遮罩：讓文字更清晰 -->
+<div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.425); z-index: 1;"></div>
+<!-- 內容層 -->
+<div class="container position-relative mt-lg-5" style="z-index: 2;">
+<div class="row justify-content-center py-1 py-lg-5 align-items-center min-vh-75">
+<div class="col-lg-8">
+<img alt="強匠鎖店-高雄24小時緊急開鎖服務" class="img-fluid mb-4 rounded-token d-block d-sm-none fs-5" src="assets/images/index/hero_locksmith.webp" style="max-width: 100%; height: auto; "/>
+<!-- 閃電急救標籤 (視覺定錨) -->
+<div class="d-inline-flex align-items-center bg-warning text-dark fw-bold px-4 py-2 rounded-pill mb-4 shadow-lg animate-bounce">
+<i class="bi bi-lightning-charge-fill me-2 fs-5 text-danger"></i>
+<span class="text-uppercase" style="letter-spacing: 1px;">高雄全區・最快 30 分鐘抵達</span>
+</div>
+<!-- 主標題：紅黃配色激發急迫感 -->
+<h1 class="display-3 fw-bolder text-white mb-3" style="text-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+<span class="text-warning">急需</span> 開鎖救援？
           </h1>
-          <p class="lead text-white-50 mb-4 mb-lg-5 fs-4">
-            忘帶鑰匙、門鎖故障、汽機車鑰匙遺失、夜間開鎖。<br>
-            <span class="text-white fw-bold">鎖不開不收錢，報價透明，立刻出發。</span>
-          </p>
-
-          <!-- 巨大的緊急按鈕群 -->
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-4 mb-4 mb-lg-5">
-            <!-- 紅色救援按鈕：帶有脈衝動畫 + 流光 -->
-            <a href="tel:0906921957"
-              class="btn btn-danger btn-lg btn-shimmer pulse-anim px-5 py-4 fs-3 fw-bold shadow-lg rounded-pill d-flex align-items-center justify-content-center gap-3"
-              style="position: relative; z-index: 1;">
-              <i class="bi bi-telephone-fill"></i>
-              <span>一鍵開鎖</span>
-            </a>
-
-            <!-- LINE 報價按鈕：次要但顯眼 + 流光 -->
-            <a href="https://line.me/ti/p/~@giw8057p"
-              class="btn btn-success btn-lg btn-shimmer px-5 py-4 fs-3 fw-bold shadow-lg rounded-pill d-flex align-items-center justify-content-center gap-3"
-              style="position: relative; z-index: 1; background-color: #06c755; border: none;">
-              <i class="bi bi-line"></i>
-              <span>鎖匠服務</span>
-            </a>
-          </div>
-
-          <!-- 信任指標 -->
-          <div class="d-flex flex-wrap justify-content-center gap-4 text-white-50 small mb-4">
-            <div class="d-flex align-items-center">
-              <i class="bi bi-shield-fill-check text-warning me-2 fs-5"></i>
-              <span>實體店面經營</span>
-            </div>
-            <div class="d-flex align-items-center">
-              <i class="bi bi-star-fill text-warning me-2 fs-5"></i>
-              <span>Google 4.8 星好評</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 3. Service Split Bar (底部三層分流) - 嵌入在 Hero 底部 -->
-    <div class="service-split-bar container-fluid p-0 mt-5 position-relative" style="z-index: 3;">
-      <div class="row g-0">
-
-        <!-- Base: 居家開鎖 -->
-        <div class="col-12 col-md-6 col-lg-4 service-split-item p-4 p-lg-5 text-dark bg-white border-end"
-          onclick="location.href='#locksmith'">
-          <div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
-            <div class="p-3 rounded-circle bg-danger bg-opacity-10 text-danger">
-              <i class="bi bi-house-lock-fill fs-2"></i>
-            </div>
-            <div class="text-start">
-              <h3 class="h5 fw-bold mb-1">居家開鎖 / 換鎖</h3>
-              <p class="mb-0 text-muted small">忘帶鑰匙、門鎖故障</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mid: 汽車鑰匙 -->
-        <div class="col-12 col-md-6 col-lg-4 service-split-item p-4 p-lg-5 text-dark bg-light border-end"
-          onclick="location.href='#carkey'">
-          <div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
-            <div class="p-3 rounded-circle bg-primary bg-opacity-10 text-primary">
-              <i class="bi bi-car-front-fill fs-2"></i>
-            </div>
-            <div class="text-start">
-              <h3 class="h5 fw-bold mb-1">汽車晶片鑰匙</h3>
-              <p class="mb-0 text-muted small">鑰匙全丟、備份製作</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- High: 電子鎖 -->
-        <div class="col-12 col-md-12 col-lg-4 service-split-item p-4 p-lg-5 text-white bg-primary"
-          onclick="location.href='#smartlock'">
-          <div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
-            <div class="p-3 rounded-circle bg-warning bg-opacity-25 text-warning">
-              <i class="bi bi-fingerprint fs-2"></i>
-            </div>
-            <div class="text-start">
-              <h3 class="h5 fw-bold mb-1 text-warning">電子鎖安裝</h3>
-              <p class="mb-0 text-white-50 small">指紋鎖、人臉辨識</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
-
-  <!-- 4. Stats Bar (信任數據展示) -->
-  <section class="stats-section py-5 bg-light position-relative border-bottom">
-    <!-- 裝飾背景：讓區塊不單調 -->
-    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-50"
-      style="background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 20px 20px;"></div>
-
-    <div class="container position-relative">
-      <div class="row g-4 justify-content-center">
-
-        <!-- Item 1: 經驗 (專業藍) -->
-        <div class="col-6 col-md-3">
-          <div
-            class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-primary hover-lift transition-base">
-            <div
-              class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle mb-3"
-              style="width: 60px; height: 60px;">
-              <i class="bi bi-award-fill fs-3"></i>
-            </div>
-            <h3 class="fw-bolder text-dark mb-1 display-6">10<span class="fs-5 text-muted ms-1">年</span></h3>
-            <p class="text-secondary fw-bold small mb-0 ls-1">在地專業經驗</p>
-          </div>
-        </div>
-
-        <!-- Item 2: 速度 (緊急紅) -->
-        <div class="col-6 col-md-3">
-          <div
-            class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-danger hover-lift transition-base">
-            <div
-              class="d-inline-flex align-items-center justify-content-center bg-danger bg-opacity-10 text-danger rounded-circle mb-3"
-              style="width: 60px; height: 60px;">
-              <i class="bi bi-stopwatch-fill fs-3"></i>
-            </div>
-            <h3 class="fw-bolder text-dark mb-1 display-6">30<span class="fs-5 text-muted ms-1">分</span></h3>
-            <p class="text-secondary fw-bold small mb-0 ls-1">最快抵達時間</p>
-          </div>
-        </div>
-
-        <!-- Item 3: 案例 (成功綠) -->
-        <div class="col-6 col-md-3">
-          <div
-            class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-success hover-lift transition-base">
-            <div
-              class="d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-circle mb-3"
-              style="width: 60px; height: 60px;">
-              <i class="bi bi-check-circle-fill fs-3"></i>
-            </div>
-            <h3 class="fw-bolder text-dark mb-1 display-6">5000<span class="fs-5 text-muted ms-1">+</span></h3>
-            <p class="text-secondary fw-bold small mb-0 ls-1">服務成功案例</p>
-          </div>
-        </div>
-
-        <!-- Item 4: 好評 (星級黃) -->
-        <div class="col-6 col-md-3">
-          <div
-            class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-warning hover-lift transition-base">
-            <div
-              class="d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning rounded-circle mb-3"
-              style="width: 60px; height: 60px;">
-              <i class="bi bi-star-fill fs-3"></i>
-            </div>
-            <h3 class="fw-bolder text-dark mb-1 display-6">4.8<span class="fs-5 text-muted ms-1">星</span></h3>
-            <p class="text-secondary fw-bold small mb-0 ls-1">Google 真實好評</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- 5. Services Showcase (Zig-Zag) -->
-  <section id="services" class="py-5 bg-white">
-    <div class="container py-lg-4">
-
-      <!-- Block 1: Smart Lock -->
-      <div class="row align-items-center mb-5 gx-lg-5" id="smartlock">
-        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-          <img src="assets/images/index/digital_lock_installation.png"
-            class="img-fluid rounded-token shadow-lg border border-white border-4" alt="強匠鎖店-實體門市電子鎖展示"
-            style="max-width: 100%; height: auto; transform: rotate(-2deg);">
-
-        </div>
-        <div class="col-lg-6">
-          <div class="ps-lg-4">
-            <span class="badge bg-primary text-white mb-2">居家升級首選</span>
-            <h2 class="display-6 fw-bold mb-3">智能居家，無損安裝</h2>
-            <p class="lead text-muted mb-4">
+<p class="lead text-white-50 mb-4 mb-lg-5 fs-4">
+            忘帶鑰匙、門鎖故障、汽機車鑰匙遺失、夜間開鎖。<br/>
+<span class="text-white fw-bold">鎖不開不收錢，報價透明，立刻出發。</span>
+</p>
+<!-- 巨大的緊急按鈕群 -->
+<div class="d-flex flex-column flex-sm-row justify-content-center gap-4 mb-4 mb-lg-5">
+<!-- 紅色救援按鈕：帶有脈衝動畫 + 流光 -->
+<a class="btn btn-danger btn-lg btn-shimmer pulse-anim px-5 py-4 fs-3 fw-bold shadow-lg rounded-pill d-flex align-items-center justify-content-center gap-3" href="tel:0906921957" style="position: relative; z-index: 1;">
+<i class="bi bi-telephone-fill"></i>
+<span>一鍵開鎖</span>
+</a>
+<!-- LINE 報價按鈕：次要但顯眼 + 流光 -->
+<a class="btn btn-success btn-lg btn-shimmer px-5 py-4 fs-3 fw-bold shadow-lg rounded-pill d-flex align-items-center justify-content-center gap-3" href="https://line.me/ti/p/~@giw8057p" style="position: relative; z-index: 1; background-color: #06c755; border: none;">
+<i class="bi bi-line"></i>
+<span>鎖匠服務</span>
+</a>
+</div>
+<!-- 信任指標 -->
+<div class="d-flex flex-wrap justify-content-center gap-4 text-white-50 small mb-4">
+<div class="d-flex align-items-center">
+<i class="bi bi-shield-fill-check text-warning me-2 fs-5"></i>
+<span>實體店面經營</span>
+</div>
+<div class="d-flex align-items-center">
+<i class="bi bi-star-fill text-warning me-2 fs-5"></i>
+<span>Google 4.8 星好評</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Service Split Bar (底部三層分流) - 嵌入在 Hero 底部 -->
+<div class="service-split-bar container-fluid p-0 mt-5 position-relative" style="z-index: 3;">
+<div class="row g-0">
+<!-- Base: 居家開鎖 -->
+<div class="col-12 col-md-6 col-lg-4 service-split-item p-4 p-lg-5 text-dark bg-white border-end" onclick="location.href='#locksmith'">
+<div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
+<div class="p-3 rounded-circle bg-danger bg-opacity-10 text-danger">
+<i class="bi bi-house-lock-fill fs-2"></i>
+</div>
+<div class="text-start">
+<h3 class="h5 fw-bold mb-1">居家開鎖 / 換鎖</h3>
+<p class="mb-0 text-muted small">忘帶鑰匙、門鎖故障</p>
+</div>
+</div>
+</div>
+<!-- Mid: 汽車鑰匙 -->
+<div class="col-12 col-md-6 col-lg-4 service-split-item p-4 p-lg-5 text-dark bg-light border-end" onclick="location.href='#carkey'">
+<div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
+<div class="p-3 rounded-circle bg-primary bg-opacity-10 text-primary">
+<i class="bi bi-car-front-fill fs-2"></i>
+</div>
+<div class="text-start">
+<h3 class="h5 fw-bold mb-1">汽車晶片鑰匙</h3>
+<p class="mb-0 text-muted small">鑰匙全丟、備份製作</p>
+</div>
+</div>
+</div>
+<!-- High: 電子鎖 -->
+<div class="col-12 col-md-12 col-lg-4 service-split-item p-4 p-lg-5 text-white bg-primary" onclick="location.href='#smartlock'">
+<div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
+<div class="p-3 rounded-circle bg-warning bg-opacity-25 text-warning">
+<i class="bi bi-fingerprint fs-2"></i>
+</div>
+<div class="text-start">
+<h3 class="h5 fw-bold mb-1 text-warning">電子鎖安裝</h3>
+<p class="mb-0 text-white-50 small">指紋鎖、人臉辨識</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- 4. Stats Bar (信任數據展示) -->
+<section class="stats-section py-5 bg-light position-relative border-bottom">
+<!-- 裝飾背景：讓區塊不單調 -->
+<div class="position-absolute top-0 start-0 w-100 h-100 opacity-50" style="background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="container position-relative">
+<div class="row g-4 justify-content-center">
+<!-- Item 1: 經驗 (專業藍) -->
+<div class="col-6 col-md-3">
+<div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-primary hover-lift transition-base">
+<div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle mb-3" style="width: 60px; height: 60px;">
+<i class="bi bi-award-fill fs-3"></i>
+</div>
+<h3 class="fw-bolder text-dark mb-1 display-6">10<span class="fs-5 text-muted ms-1">年</span></h3>
+<p class="text-secondary fw-bold small mb-0 ls-1">在地專業經驗</p>
+</div>
+</div>
+<!-- Item 2: 速度 (緊急紅) -->
+<div class="col-6 col-md-3">
+<div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-danger hover-lift transition-base">
+<div class="d-inline-flex align-items-center justify-content-center bg-danger bg-opacity-10 text-danger rounded-circle mb-3" style="width: 60px; height: 60px;">
+<i class="bi bi-stopwatch-fill fs-3"></i>
+</div>
+<h3 class="fw-bolder text-dark mb-1 display-6">30<span class="fs-5 text-muted ms-1">分</span></h3>
+<p class="text-secondary fw-bold small mb-0 ls-1">最快抵達時間</p>
+</div>
+</div>
+<!-- Item 3: 案例 (成功綠) -->
+<div class="col-6 col-md-3">
+<div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-success hover-lift transition-base">
+<div class="d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-circle mb-3" style="width: 60px; height: 60px;">
+<i class="bi bi-check-circle-fill fs-3"></i>
+</div>
+<h3 class="fw-bolder text-dark mb-1 display-6">5000<span class="fs-5 text-muted ms-1">+</span></h3>
+<p class="text-secondary fw-bold small mb-0 ls-1">服務成功案例</p>
+</div>
+</div>
+<!-- Item 4: 好評 (星級黃) -->
+<div class="col-6 col-md-3">
+<div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center border-bottom border-4 border-warning hover-lift transition-base">
+<div class="d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning rounded-circle mb-3" style="width: 60px; height: 60px;">
+<i class="bi bi-star-fill fs-3"></i>
+</div>
+<h3 class="fw-bolder text-dark mb-1 display-6">4.8<span class="fs-5 text-muted ms-1">星</span></h3>
+<p class="text-secondary fw-bold small mb-0 ls-1">Google 真實好評</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Services Showcase (Zig-Zag) -->
+<section class="py-5 bg-white" id="services">
+<div class="container py-lg-4">
+<!-- Block 1: Smart Lock -->
+<div class="row align-items-center mb-5 gx-lg-5" id="smartlock">
+<div class="col-lg-6 mb-4 mb-lg-0 text-center">
+<img alt="強匠鎖店-實體門市電子鎖展示" class="img-fluid rounded-token shadow-lg border border-white border-4" src="assets/images/index/digital_lock_installation.webp" style="max-width: 100%; height: auto; transform: rotate(-2deg);"/>
+</div>
+<div class="col-lg-6">
+<div class="ps-lg-4">
+<span class="badge bg-primary text-white mb-2">居家升級首選</span>
+<h2 class="display-6 fw-bold mb-3">智能居家，無損安裝</h2>
+<p class="lead text-muted mb-4">
               告別帶鑰匙的麻煩。我們提供 Philips, Yale, Samsung 等各大品牌電子鎖安裝。
               專業技師施工，不破壞門扇美觀，提供完整操作教學。
             </p>
-            <ul class="list-unstyled mb-4 text-muted">
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>多種解鎖方式：指紋、密碼、卡片</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>原廠保固，售後維修有保障</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>配合裝潢風格，提供美學建議</li>
-            </ul>
-            <a href="digital-locks-catalog.html" class="btn btn-danger px-5 d-flex justify-content-center"
-              style="background-color: var(--cta-phone); color: white; border: none;">查看電子鎖型錄</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Block 2: Car Key -->
-      <div class="row align-items-center mb-5 gx-lg-5 flex-lg-row-reverse" id="carkey">
-        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-          <img src="assets/images/index/car_key_service.webp"
-            class="img-fluid rounded-token shadow-lg border border-white border-4" alt="強匠鎖店-汽車晶片鑰匙專業配製"
-            style="max-width: 100%; height: auto; transform: rotate(2deg);">
-
-        </div>
-        <div class="col-lg-6">
-          <div class="pe-lg-4">
-            <span class="badge bg-primary bg-opacity-10 text-primary mb-2">車主救星</span>
-            <h2 class="display-6 fw-bold mb-3">原廠品質，現場配製</h2>
-            <p class="lead text-muted mb-4">
+<ul class="list-unstyled mb-4 text-muted">
+<li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>多種解鎖方式：指紋、密碼、卡片</li>
+<li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>原廠保固，售後維修有保障</li>
+<li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>配合裝潢風格，提供美學建議</li>
+</ul>
+<a class="btn btn-danger px-5 d-flex justify-content-center" href="service-digital-locks.html" style="background-color: var(--cta-phone); color: white; border: none;">查看電子鎖型錄</a>
+</div>
+</div>
+</div>
+<!-- Block 2: Car Key -->
+<div class="row align-items-center mb-5 gx-lg-5 flex-lg-row-reverse" id="carkey">
+<div class="col-lg-6 mb-4 mb-lg-0 text-center">
+<img alt="強匠鎖店-汽車晶片鑰匙專業配製" class="img-fluid rounded-token shadow-lg border border-white border-4" src="assets/images/index/car_key_service.webp" style="max-width: 100%; height: auto; transform: rotate(2deg);"/>
+</div>
+<div class="col-lg-6">
+<div class="pe-lg-4">
+<span class="badge bg-primary bg-opacity-10 text-primary mb-2">車主救星</span>
+<h2 class="display-6 fw-bold mb-3">原廠品質，現場配製</h2>
+<p class="lead text-muted mb-4">
               無論是國產車或進口雙 B 轎跑，鑰匙遺失不必拖回原廠等待。
               我們擁有專業解碼設備，24 小時現場為您製作全新的晶片鑰匙。
             </p>
-            <ul class="list-unstyled mb-4 text-muted">
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>價格低於原廠，CP 值高</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>現場取件，無需留車</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>支援各年份主流車款</li>
-            </ul>
-            <a href="service-auto-keys.html" class="btn rounded-token px-5 d-flex justify-content-center"
-              style="background-color: var(--cta-line); color: white; border: none;">車鑰匙服務詳情</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Block 3: Emergency -->
-      <div class="row align-items-center gx-lg-5" id="locksmith">
-        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-
-          <img src="assets/images/index/emergency_lock_service.webp"
-            class="img-fluid rounded-token shadow-lg border border-white border-4" alt="強匠鎖店-居家開鎖"
-            style="max-width: 100%; height: auto; transform: rotate(-2deg);">
-        </div>
-        <div class="col-lg-6">
-          <div class="ps-lg-4">
-            <span class="badge bg-danger bg-opacity-10 text-danger mb-2">緊急救援24H</span>
-            <h2 class="display-6 fw-bold mb-3">快速抵達，透明報價</h2>
-            <p class="lead text-muted mb-4">
+<ul class="list-unstyled mb-4 text-muted">
+<li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>價格低於原廠，CP 值高</li>
+<li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>現場取件，無需留車</li>
+<li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>支援各年份主流車款</li>
+</ul>
+<a class="btn rounded-token px-5 d-flex justify-content-center" href="service-auto-keys.html" style="background-color: var(--cta-line); color: white; border: none;">車鑰匙服務詳情</a>
+</div>
+</div>
+</div>
+<!-- Block 3: Emergency -->
+<div class="row align-items-center gx-lg-5" id="locksmith">
+<div class="col-lg-6 mb-4 mb-lg-0 text-center">
+<img alt="強匠鎖店-居家開鎖" class="img-fluid rounded-token shadow-lg border border-white border-4" src="assets/images/index/emergency_lock_service.webp" style="max-width: 100%; height: auto; transform: rotate(-2deg);"/>
+</div>
+<div class="col-lg-6">
+<div class="ps-lg-4">
+<span class="badge bg-danger bg-opacity-10 text-danger mb-2">緊急救援24H</span>
+<h2 class="display-6 fw-bold mb-3">快速抵達，透明報價</h2>
+<p class="lead text-muted mb-4">
               被反鎖在門外？鑰匙斷在孔裡？別擔心，強匠是您最可靠的鄰居。
               電話中即可初步報價，師傅到場確認無誤後才施工，絕無隱藏費用。
             </p>
-            <ul class="list-unstyled mb-4 text-muted">
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>30 分鐘內急速救援</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>保護門鎖結構，優先採用無損開鎖</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>合法立案，安全有保障</li>
-            </ul>
-            <a href="tel:0906921957" class="btn rounded-token px-5 d-flex justify-content-center"
-              style="background-color: var(--cta-phone); color: white; border: none;">立即呼叫師傅</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- 6. Bottom CTA (Desktop Only) - 修正按鍵色系與增強質感 -->
-  <section class="py-5 text-white d-none d-lg-block"
-    style="background: linear-gradient(180deg, #654321 0%, #8B4513 100%);">
-    <div class="container text-center py-4">
-      <h2 class="fw-bold mb-3">遇到鎖的問題？現在就解決</h2>
-      <p class="lead mb-4 opacity-50">一通電話，強匠為您即刻處理。</p>
-
-      <div class="d-flex justify-content-center gap-4 flex-wrap">
-
-        <!-- 一鍵撥號：紅色 + 脈衝動畫 + 流光效果 -->
-        <a href="tel:0906921957"
-          class="btn btn-danger btn-lg rounded-pill px-5 py-3 shadow-lg btn-shimmer pulse-anim d-flex align-items-center gap-2"
-          style="background-color: #dc3545; border: none; font-size: 1.25rem;">
-          <i class="bi bi-telephone-fill"></i> 一鍵開鎖
+<ul class="list-unstyled mb-4 text-muted">
+<li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>30 分鐘內急速救援</li>
+<li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>保護門鎖結構，優先採用無損開鎖</li>
+<li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>合法立案，安全有保障</li>
+</ul>
+<a class="btn rounded-token px-5 d-flex justify-content-center" href="tel:0906921957" style="background-color: var(--cta-phone); color: white; border: none;">立即呼叫師傅</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Bottom CTA (Desktop Only) - 修正按鍵色系與增強質感 -->
+<section class="py-5 text-white d-none d-lg-block" style="background: linear-gradient(180deg, #654321 0%, #8B4513 100%);">
+<div class="container text-center py-4">
+<h2 class="fw-bold mb-3">遇到鎖的問題？現在就解決</h2>
+<p class="lead mb-4 opacity-50">一通電話，強匠為您即刻處理。</p>
+<div class="d-flex justify-content-center gap-4 flex-wrap">
+<!-- 一鍵撥號：紅色 + 脈衝動畫 + 流光效果 -->
+<a class="btn btn-danger btn-lg rounded-pill px-5 py-3 shadow-lg btn-shimmer pulse-anim d-flex align-items-center gap-2" href="tel:0906921957" style="background-color: #dc3545; border: none; font-size: 1.25rem;">
+<i class="bi bi-telephone-fill"></i> 一鍵開鎖
         </a>
-
-        <!-- LINE 諮詢：官方綠色 + 流光效果 -->
-        <a href="https://line.me/ti/p/~@giw8057p"
-          class="btn btn-success btn-lg rounded-pill px-5 py-3 shadow-lg btn-shimmer d-flex align-items-center gap-2"
-          style="background-color: #06c755; border: none; font-size: 1.25rem;">
-          <i class="bi bi-line fs-4"></i> 鎖匠服務
+<!-- LINE 諮詢：官方綠色 + 流光效果 -->
+<a class="btn btn-success btn-lg rounded-pill px-5 py-3 shadow-lg btn-shimmer d-flex align-items-center gap-2" href="https://line.me/ti/p/~@giw8057p" style="background-color: #06c755; border: none; font-size: 1.25rem;">
+<i class="bi bi-line fs-4"></i> 鎖匠服務
         </a>
-
-      </div>
-    </div>
-  </section>
-  <!-- 5. Reviews (Carousel) -->
-  <section id="reviews" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-5">客戶真實見證</h2>
-
-      <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-
-          <!-- Review 1 -->
-          <div class="carousel-item active">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <div class="review-card text-center">
-                  <div class="text-warning mb-3">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p class="fs-5 fst-italic mb-4 text-muted">
+</div>
+</div>
+</section>
+<!-- 5. Reviews (Carousel) -->
+<section class="py-5 bg-light" id="reviews">
+<div class="container">
+<h2 class="text-center fw-bold mb-5">客戶真實見證</h2>
+<div class="carousel slide" data-bs-ride="carousel" id="reviewCarousel">
+<div class="carousel-inner">
+<!-- Review 1 -->
+<div class="carousel-item active">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="review-card text-center">
+<div class="text-warning mb-3">
+<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+</div>
+<p class="fs-5 fst-italic mb-4 text-muted">
                     "半夜兩點回家發現鑰匙不見，還好有強匠！師傅 20 分鐘就到了，開鎖速度超快，而且價格比我想像中便宜，真的救了我一命！"
                   </p>
-                  <h5 class="fw-bold">林小姐</h5>
-                  <small class="text-muted">三民區・緊急開鎖</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Review 2 -->
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <div class="review-card text-center">
-                  <div class="text-warning mb-3">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p class="fs-5 fst-italic mb-4 text-muted">
+<h5 class="fw-bold">林小姐</h5>
+<small class="text-muted">三民區・緊急開鎖</small>
+</div>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="carousel-item">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="review-card text-center">
+<div class="text-warning mb-3">
+<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+</div>
+<p class="fs-5 fst-italic mb-4 text-muted">
                     "想把家裡的舊鎖換成電子鎖，老闆解說很詳細，安裝過程地板都鋪了墊子很細心，教學也很有耐心，長輩一次就學會了。"
                   </p>
-                  <h5 class="fw-bold">陳先生</h5>
-                  <small class="text-muted">左營區・電子鎖安裝</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Review 3 -->
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <div class="review-card text-center">
-                  <div class="text-warning mb-3">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p class="fs-5 fst-italic mb-4 text-muted">
+<h5 class="fw-bold">陳先生</h5>
+<small class="text-muted">左營區・電子鎖安裝</small>
+</div>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="carousel-item">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="review-card text-center">
+<div class="text-warning mb-3">
+<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+</div>
+<p class="fs-5 fst-italic mb-4 text-muted">
                     "車鑰匙掉在水溝裡壞了，原廠說要等兩週。來這邊現場半小時就搞定，晶片感應很靈敏，還多打了一把備用，大推！"
                   </p>
-                  <h5 class="fw-bold">黃先生</h5>
-                  <small class="text-muted">前鎮區・汽車鑰匙配製</small>
-                </div>
-              </div>
+<h5 class="fw-bold">黃先生</h5>
+<small class="text-muted">前鎮區・汽車鑰匙配製</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Controls -->
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#reviewCarousel" type="button">
+<span aria-hidden="true" class="carousel-control-prev-icon rounded-circle p-3" style="background-color: #8B4513;"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#reviewCarousel" type="button">
+<span aria-hidden="true" class="carousel-control-next-icon rounded-circle p-3" style="background-color: #8B4513;"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 5.5 Service Areas Section (服務區域) -->
+<!-- 5.5 Service Areas Section (服務區域) -->
+<section class="py-5 bg-white border-top" id="areas">
+<div class="container">
+<div class="row align-items-center">
+<!-- 左側：視覺意象 (地圖或機動性) -->
+<div class="col-lg-5 mb-4 mb-lg-0 text-center">
+<div class="position-relative d-inline-block">
+<!-- 圖片建議：使用一張高雄地圖上有標記點的圖片，或者師傅騎機車穿梭街道的照片 -->
+<img alt="高雄服務區域地圖" class="img-fluid rounded-token shadow-sm" src="assets/images/index/kaohsiung_service_area_map.webp"/>
+<!-- 浮動標籤：強調速度與覆蓋率 -->
+<div class="position-absolute top-50 start-50 translate-middle bg-danger text-white px-4 py-2 rounded-pill shadow fw-bold" style="white-space: nowrap;">
+<i class="bi bi-geo-alt-fill me-1"></i> 全高雄皆可服務
             </div>
-          </div>
-
-        </div>
-
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon rounded-circle p-3" style="background-color: #8B4513;"
-            aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon rounded-circle p-3" style="background-color: #8B4513;"
-            aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-  <!-- 5.5 Service Areas Section (服務區域) -->
-  <!-- 5.5 Service Areas Section (服務區域) -->
-  <section id="areas" class="py-5 bg-white border-top">
-    <div class="container">
-      <div class="row align-items-center">
-
-        <!-- 左側：視覺意象 (地圖或機動性) -->
-        <div class="col-lg-5 mb-4 mb-lg-0 text-center">
-          <div class="position-relative d-inline-block">
-            <!-- 圖片建議：使用一張高雄地圖上有標記點的圖片，或者師傅騎機車穿梭街道的照片 -->
-            <img src="assets/images/index/kaohsiung_service_area_map.webp" class="img-fluid rounded-token shadow-sm"
-              alt="高雄服務區域地圖">
-
-            <!-- 浮動標籤：強調速度與覆蓋率 -->
-            <div
-              class="position-absolute top-50 start-50 translate-middle bg-danger text-white px-4 py-2 rounded-pill shadow fw-bold"
-              style="white-space: nowrap;">
-              <i class="bi bi-geo-alt-fill me-1"></i> 全高雄皆可服務
-            </div>
-          </div>
-        </div>
-
-        <!-- 右側：區域列表 -->
-        <div class="col-lg-7 ps-lg-5">
-          <span class="badge bg-primary text-white mb-2">Service Coverage</span>
-          <h2 class="fw-bold mb-4">服務區域涵蓋全高雄</h2>
-          <p class="text-muted mb-4">
+</div>
+</div>
+<!-- 右側：區域列表 -->
+<div class="col-lg-7 ps-lg-5">
+<span class="badge bg-primary text-white mb-2">Service Coverage</span>
+<h2 class="fw-bold mb-4">服務區域涵蓋全高雄</h2>
+<p class="text-muted mb-4">
             無論您身在何處，強匠鎖店的專業技師團隊都能迅速抵達。
             <span class="text-danger fw-bold">三民、左營、新興、前金、苓雅</span> 為重點快速服務區，最快 15 分鐘到場。
           </p>
-
-          <div class="row g-3">
-            <!-- 北高雄 -->
-            <div class="col-md-4">
-              <div class="p-3 bg-light rounded h-100 border-start border-4 border-primary">
-                <h5 class="fw-bold mb-3 h6 text-primary">北高雄</h5>
-                <ul class="list-unstyled small text-secondary mb-0">
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-primary"></i> 左營區</li>
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-primary"></i> 楠梓區</li>
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-primary"></i> 鼓山區 (美術館)</li>
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-primary"></i> 三民區 (北)</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- 市中心 (重點區) -->
-            <div class="col-md-4">
-              <div class="p-3 bg-light rounded h-100 border-start border-4 border-warning">
-                <h5 class="fw-bold mb-3 h6 text-warning">市中心精華區</h5>
-                <ul class="list-unstyled small text-secondary mb-0">
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-warning"></i> 新興區</li>
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-warning"></i> 前金區</li>
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-warning"></i> 苓雅區</li>
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-warning"></i> 鹽埕區</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- 南高雄/鳳山 -->
-            <div class="col-md-4">
-              <div class="p-3 bg-light rounded h-100 border-start border-4 border-success">
-                <h5 class="fw-bold mb-3 h6 text-success">南高雄 / 鳳山</h5>
-                <ul class="list-unstyled small text-secondary mb-0">
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-success"></i> 前鎮區</li>
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-success"></i> 鳳山區</li>
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-success"></i> 小港區</li>
-                  <li class="mb-1"><i class="bi bi-geo-alt me-1 text-success"></i> 大寮區</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- 補充說明 -->
-          <div class="mt-4 p-3 bg-warning bg-opacity-10 rounded border border-warning border-opacity-25">
-            <div class="d-flex align-items-start gap-2">
-              <i class="bi bi-info-circle-fill text-warning mt-1"></i>
-              <small class="text-muted">
-                <strong>偏遠地區說明：</strong> 若您位於大樹、林園、旗津或其他偏遠區域，歡迎先來電確認抵達時間與報價，我們將竭誠為您安排。
+<div class="row g-3">
+<!-- 北高雄 -->
+<div class="col-md-4">
+<div class="p-3 bg-light rounded h-100 border-start border-4 border-primary">
+<h5 class="fw-bold mb-3 h6 text-primary">北高雄</h5>
+<ul class="list-unstyled small text-secondary mb-0">
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-primary"></i> 左營區</li>
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-primary"></i> 楠梓區</li>
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-primary"></i> 鼓山區 (美術館)</li>
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-primary"></i> 三民區 (北)</li>
+</ul>
+</div>
+</div>
+<!-- 市中心 (重點區) -->
+<div class="col-md-4">
+<div class="p-3 bg-light rounded h-100 border-start border-4 border-warning">
+<h5 class="fw-bold mb-3 h6 text-warning">市中心精華區</h5>
+<ul class="list-unstyled small text-secondary mb-0">
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-warning"></i> 新興區</li>
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-warning"></i> 前金區</li>
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-warning"></i> 苓雅區</li>
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-warning"></i> 鹽埕區</li>
+</ul>
+</div>
+</div>
+<!-- 南高雄/鳳山 -->
+<div class="col-md-4">
+<div class="p-3 bg-light rounded h-100 border-start border-4 border-success">
+<h5 class="fw-bold mb-3 h6 text-success">南高雄 / 鳳山</h5>
+<ul class="list-unstyled small text-secondary mb-0">
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-success"></i> 前鎮區</li>
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-success"></i> 鳳山區</li>
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-success"></i> 小港區</li>
+<li class="mb-1"><i class="bi bi-geo-alt me-1 text-success"></i> 大寮區</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 補充說明 -->
+<div class="mt-4 p-3 bg-warning bg-opacity-10 rounded border border-warning border-opacity-25">
+<div class="d-flex align-items-start gap-2">
+<i class="bi bi-info-circle-fill text-warning mt-1"></i>
+<small class="text-muted">
+<strong>偏遠地區說明：</strong> 若您位於大樹、林園、旗津或其他偏遠區域，歡迎先來電確認抵達時間與報價，我們將竭誠為您安排。
               </small>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- 7. FAQ Section -->
-  <section id="faq" class="py-5 bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="text-center mb-5">
-            <span class="badge bg-primary bg-opacity-10 text-primary mb-2">FAQ</span>
-            <h2 class="fw-bold">常見問題</h2>
-            <p class="text-muted">鎖不開不收錢，報價透明，無隱藏費用</p>
-          </div>
-
-          <div class="accordion" id="faqAccordion">
-            <!-- Q1: 緊急開鎖費用 -->
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                  <i class="bi bi-question-circle me-2"></i>緊急開鎖需要多少費用？
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. FAQ Section -->
+<section class="py-5 bg-light" id="faq">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="text-center mb-5">
+<span class="badge bg-primary bg-opacity-10 text-primary mb-2">FAQ</span>
+<h2 class="fw-bold">常見問題</h2>
+<p class="text-muted">鎖不開不收錢，報價透明，無隱藏費用</p>
+</div>
+<div class="accordion" id="faqAccordion">
+<!-- Q1: 緊急開鎖費用 -->
+<div class="accordion-item">
+<h3 class="accordion-header">
+<button class="accordion-button" data-bs-target="#faq1" data-bs-toggle="collapse" type="button">
+<i class="bi bi-question-circle me-2"></i>緊急開鎖需要多少費用？
                 </button>
-              </h3>
-              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  <p>我們的收費標準：</p>
-                  <ul>
-                    <li><strong>喇叭鎖：</strong> NT$ 500-800（依鎖型複雜度）</li>
-                    <li><strong>多段鎖：</strong> NT$ 500-2000（依鎖型複雜度）</li>
-                    <li><strong>汽車門鎖：</strong> NT$ 800-3000（依車型與晶片複雜度）</li>
-                    <li><strong>機車鎖：</strong> NT$ 500-1200（依車型與晶片複雜度）</li>
-                    <li><strong>電子鎖：</strong> NT$ 800-4500（依品牌與安裝難度）</li>
-                  </ul>
-                  <p class="text-muted small mt-2">※ 鎖不開不收錢，報價透明，無隱藏費用</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Q2: 服務時間 -->
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq2">
-                  <i class="bi bi-clock me-2"></i>什麼時候可以提供服務？
+</h3>
+<div class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" id="faq1">
+<div class="accordion-body">
+<p>我們的收費標準：</p>
+<ul>
+<li><strong>喇叭鎖：</strong> NT$ 500-800（依鎖型複雜度）</li>
+<li><strong>多段鎖：</strong> NT$ 500-2000（依鎖型複雜度）</li>
+<li><strong>汽車門鎖：</strong> NT$ 800-3000（依車型與晶片複雜度）</li>
+<li><strong>機車鎖：</strong> NT$ 500-1200（依車型與晶片複雜度）</li>
+<li><strong>電子鎖：</strong> NT$ 800-4500（依品牌與安裝難度）</li>
+</ul>
+<p class="text-muted small mt-2">※ 鎖不開不收錢，報價透明，無隱藏費用</p>
+</div>
+</div>
+</div>
+<!-- Q2: 服務時間 -->
+<div class="accordion-item">
+<h3 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-target="#faq2" data-bs-toggle="collapse" type="button">
+<i class="bi bi-clock me-2"></i>什麼時候可以提供服務？
                 </button>
-              </h3>
-              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  <p>我們提供<strong>24小時全年無休</strong>的緊急開鎖服務：</p>
-                  <ul>
-                    <li>平日：08:00-22:00（正常服務時間）</li>
-                    <li>假日：24小時（緊急救援優先）</li>
-                    <li>夜間：22:00-08:00（夜間加成費 每個時段不一樣 歡迎來電諮詢）</li>
-                  </ul>
-                  <p class="text-success fw-bold">高雄全區最快30分鐘抵達！</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Q3: 服務區域 -->
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq3">
-                  <i class="bi bi-geo-alt me-2"></i>服務範圍涵蓋哪些區域？
+</h3>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq2">
+<div class="accordion-body">
+<p>我們提供<strong>24小時全年無休</strong>的緊急開鎖服務：</p>
+<ul>
+<li>平日：08:00-22:00（正常服務時間）</li>
+<li>假日：24小時（緊急救援優先）</li>
+<li>夜間：22:00-08:00（夜間加成費 每個時段不一樣 歡迎來電諮詢）</li>
+</ul>
+<p class="text-success fw-bold">高雄全區最快30分鐘抵達！</p>
+</div>
+</div>
+</div>
+<!-- Q3: 服務區域 -->
+<div class="accordion-item">
+<h3 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-target="#faq3" data-bs-toggle="collapse" type="button">
+<i class="bi bi-geo-alt me-2"></i>服務範圍涵蓋哪些區域？
                 </button>
-              </h3>
-              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  <p>我們服務高雄市全區，包括：</p>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <ul>
-                        <li>鹽埕區</li>
-                        <li>鼓山區</li>
-                        <li>左營區</li>
-                        <li>楠梓區</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                      <ul>
-                        <li>三民區</li>
-                        <li>新興區</li>
-                        <li>前金區</li>
-                        <li>苓雅區</li>
-                        <li>前鎮區</li>
-                        <li>旗津區</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <p class="text-muted small">其他區域請來電詢問，我們會盡力安排。</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Q4: 電子鎖安裝 -->
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq4">
-                  <i class="bi bi-fingerprint me-2"></i>電子鎖安裝需要準備什麼？
+</h3>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq3">
+<div class="accordion-body">
+<p>我們服務高雄市全區，包括：</p>
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li>鹽埕區</li>
+<li>鼓山區</li>
+<li>左營區</li>
+<li>楠梓區</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul>
+<li>三民區</li>
+<li>新興區</li>
+<li>前金區</li>
+<li>苓雅區</li>
+<li>前鎮區</li>
+<li>旗津區</li>
+</ul>
+</div>
+</div>
+<p class="text-muted small">其他區域請來電詢問，我們會盡力安排。</p>
+</div>
+</div>
+</div>
+<!-- Q4: 電子鎖安裝 -->
+<div class="accordion-item">
+<h3 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-target="#faq4" data-bs-toggle="collapse" type="button">
+<i class="bi bi-fingerprint me-2"></i>電子鎖安裝需要準備什麼？
                 </button>
-              </h3>
-              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  <p>安裝電子鎖前請準備：</p>
-                  <ul>
-                    <li>✅ 門的尺寸規格（寬度、高度、厚度）</li>
-                    <li>✅ 門的照片（正反兩面）</li>
-                    <li>✅ 預算範圍</li>
-                    <li>✅ 需要的解鎖方式（指紋/密碼/卡片/APP）</li>
-                  </ul>
-                  <p>我們提供<strong>免費到府丈量</strong>，專業評估最適合的電子鎖款式。</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Q5: 保固服務 -->
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq5">
-                  <i class="bi bi-shield-check me-2"></i>電子鎖有保固嗎？
+</h3>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq4">
+<div class="accordion-body">
+<p>安裝電子鎖前請準備：</p>
+<ul>
+<li>✅ 門的尺寸規格（寬度、高度、厚度）</li>
+<li>✅ 門的照片（正反兩面）</li>
+<li>✅ 預算範圍</li>
+<li>✅ 需要的解鎖方式（指紋/密碼/卡片/APP）</li>
+</ul>
+<p>我們提供<strong>免費到府丈量</strong>，專業評估最適合的電子鎖款式。</p>
+</div>
+</div>
+</div>
+<!-- Q5: 保固服務 -->
+<div class="accordion-item">
+<h3 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-target="#faq5" data-bs-toggle="collapse" type="button">
+<i class="bi bi-shield-check me-2"></i>電子鎖有保固嗎？
                 </button>
-              </h3>
-              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  <p>我們提供完整的保固服務：</p>
-                  <ul>
-                    <li><strong>安裝保固：</strong> 1 年免費維修（人為損壞除外）</li>
-                    <li><strong>產品保固：</strong> 依原廠保固（通常 1-2 年）</li>
-                    <li><strong>售後服務：</strong> 電池更換、程式設定免費</li>
-                    <li><strong>緊急支援：</strong> 24H 技術支援熱線</li>
-                  </ul>
-                  <p class="text-primary fw-bold">所有服務均有發票與保固卡！</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 8. About Us Section (品牌故事更新) -->
-  <section id="about" class="py-5 bg-white border-top">
-    <div class="container">
-      <div class="row align-items-center gy-5">
-
-        <!-- 左側：品牌故事文案 -->
-        <div class="col-lg-6">
-          <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold">
-            <i class="bi bi-check-circle-fill me-1"></i> 高雄在地首選
+</h3>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq5">
+<div class="accordion-body">
+<p>我們提供完整的保固服務：</p>
+<ul>
+<li><strong>安裝保固：</strong> 1 年免費維修（人為損壞除外）</li>
+<li><strong>產品保固：</strong> 依原廠保固（通常 1-2 年）</li>
+<li><strong>售後服務：</strong> 電池更換、程式設定免費</li>
+<li><strong>緊急支援：</strong> 24H 技術支援熱線</li>
+</ul>
+<p class="text-primary fw-bold">所有服務均有發票與保固卡！</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. About Us Section (品牌故事更新) -->
+<section class="py-5 bg-white border-top" id="about">
+<div class="container">
+<div class="row align-items-center gy-5">
+<!-- 左側：品牌故事文案 -->
+<div class="col-lg-6">
+<span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold">
+<i class="bi bi-check-circle-fill me-1"></i> 高雄在地首選
           </span>
-          <h2 class="display-6 fw-bold mb-4">最實在鎖店 — 強匠鎖店</h2>
-
-          <p class="lead text-dark fw-bold mb-4">
+<h2 class="display-6 fw-bold mb-4">最實在鎖店 &mdash; 強匠鎖店</h2>
+<p class="lead text-dark fw-bold mb-4">
             開鎖至今已有 10 多年的經驗，技術純熟、收費實在，廣受消費者肯定。
           </p>
-
-          <p class="text-muted mb-4" style="line-height: 1.8;">
+<p class="text-muted mb-4" style="line-height: 1.8;">
             我們服務迄今始終秉持著<span class="text-danger fw-bold bg-danger bg-opacity-10 px-1">【鎖不開、不收錢】</span>的態度來做事。
             在這個漫天喊價的市場中，強匠堅持以誠懇實在的精神，提供最合理的報價來服務大家！
             無論是半夜緊急救援，還是精密電子鎖安裝，我們都是您最安心的依靠。
           </p>
-
-          <!-- 重點承諾列表 -->
-          <div class="row g-3 mb-5">
-            <div class="col-sm-6">
-              <div class="d-flex align-items-center p-3 bg-light rounded shadow-sm">
-                <i class="bi bi-shield-fill-check text-success fs-3 me-3"></i>
-                <div>
-                  <h6 class="fw-bold mb-0">誠信報價</h6>
-                  <small class="text-muted">絕不就地起價</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="d-flex align-items-center p-3 bg-light rounded shadow-sm">
-                <i class="bi bi-tools text-primary fs-3 me-3"></i>
-                <div>
-                  <h6 class="fw-bold mb-0">技術純熟</h6>
-                  <small class="text-muted">10年經驗傳承</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="align-items-center justify-content-center justify-content-sm-start">
-            <a href="tel:0906921957" class="btn btn-primary d-flex justify-content-center">
-              <i class="bi bi-telephone-fill me-2"></i>聯絡林師傅
+<!-- 重點承諾列表 -->
+<div class="row g-3 mb-5">
+<div class="col-sm-6">
+<div class="d-flex align-items-center p-3 bg-light rounded shadow-sm">
+<i class="bi bi-shield-fill-check text-success fs-3 me-3"></i>
+<div>
+<h6 class="fw-bold mb-0">誠信報價</h6>
+<small class="text-muted">絕不就地起價</small>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="d-flex align-items-center p-3 bg-light rounded shadow-sm">
+<i class="bi bi-tools text-primary fs-3 me-3"></i>
+<div>
+<h6 class="fw-bold mb-0">技術純熟</h6>
+<small class="text-muted">10年經驗傳承</small>
+</div>
+</div>
+</div>
+</div>
+<div class="align-items-center justify-content-center justify-content-sm-start">
+<a class="btn btn-primary d-flex justify-content-center" href="tel:0906921957">
+<i class="bi bi-telephone-fill me-2"></i>聯絡林師傅
             </a>
-          </div>
-        </div>
-
-        <!-- 右側：師傅照片 (建議使用先前上傳的 DM_20260104110826_031.webp) -->
-        <div class="col-lg-6 position-relative">
-          <!-- 背景裝飾 -->
-          <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning rounded-4"
-            style="transform: rotate(3deg); z-index: 0; opacity: 0.1;"></div>
-          <div class="position-absolute bottom-0 end-0 w-100 h-100 border border-2 border-primary rounded-4"
-            style="transform: rotate(-2deg); z-index: 0; opacity: 0.2;"></div>
-
-          <!-- 實際照片 -->
-          <img src="assets/images/index/about-locksmith.webp" class="img-fluid rounded-4 shadow-lg position-relative"
-            alt="林師傅專注修鎖-強匠鎖店" style="z-index: 1;">
-
-          <!-- 浮動卡片：強調口碑 -->
-          <div
-            class="position-absolute bottom-0 start-0 bg-white p-3 rounded-3 shadow-lg m-4 d-flex align-items-center gap-3 animate-bounce"
-            style="z-index: 2; max-width: 250px;">
-            <div class="bg-success text-white rounded-circle p-2">
-              <i class="bi bi-hand-thumbs-up-fill fs-4"></i>
-            </div>
-            <div>
-              <p class="mb-0 fw-bold text-dark">廣受消費者肯定</p>
-              <small class="text-muted">Google 真實好評認證</small>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- 4.5 Social Media & Video Showcase (社群生態系) -->
-  <section class="py-5 bg-light border-top">
-    <div class="container">
-      <div class="text-center mb-5">
-        <span class="badge bg-primary bg-opacity-10 text-primary mb-2">Social Media</span>
-        <h2 class="fw-bold">真實案例，眼見為憑</h2>
-        <p class="text-muted">追蹤我們的社群，觀看更多開鎖實錄與電子鎖開箱</p>
-      </div>
-
-      <div class="row g-4 justify-content-center">
-        <!-- Threads Card (取代原本的 YouTube) -->
-        <div class="col-md-4">
-          <div class="card border-0 shadow-card h-100 overflow-hidden group-hover-effect">
-            <div class="position-relative">
-              <!-- 模擬 Threads 封面 (使用黑色系) -->
-              <img src="https://placehold.co/600x340/000000/ffffff/png?text=Threads" class="card-img-top"
-                alt="強匠鎖店 Threads">
-              <div class="position-absolute top-50 start-50 translate-middle">
-                <!-- Threads 的 Logo 通常是白色線條，背景用黑色圓形 -->
-                <a href="https://www.threads.net/@0906921957lock" target="_blank"
-                  class="btn btn-dark btn-lg rounded-circle shadow-lg pulse-anim"
-                  style="width: 64px; height: 64px; display: flex; align-items: center; justify-content: center;">
-                  <!-- Bootstrap Icons 可能還沒有 Threads icon，暫用 @ 符號或類似的 -->
-                  <i class="bi bi-at fs-2"></i>
-                  <!-- 如果 bi-threads 顯示不出來，可以改用 bi-at 或 SVG -->
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center p-4">
-              <h5 class="fw-bold mb-2">Threads 官方帳號</h5>
-              <p class="text-muted small mb-3">查看師傅的即時碎碎念與開鎖日常。</p>
-              <a href="https://www.threads.net/@0906921957lock" target="_blank"
-                class="btn btn-dark btn-sm rounded-pill px-4">
+</div>
+</div>
+<!-- 右側：師傅照片 (建議使用先前上傳的 DM_20260104110826_031.webp) -->
+<div class="col-lg-6 position-relative">
+<!-- 背景裝飾 -->
+<div class="position-absolute top-0 start-0 w-100 h-100 bg-warning rounded-4" style="transform: rotate(3deg); z-index: 0; opacity: 0.1;"></div>
+<div class="position-absolute bottom-0 end-0 w-100 h-100 border border-2 border-primary rounded-4" style="transform: rotate(-2deg); z-index: 0; opacity: 0.2;"></div>
+<!-- 實際照片 -->
+<img alt="林師傅專注修鎖-強匠鎖店" class="img-fluid rounded-4 shadow-lg position-relative" src="assets/images/index/about-locksmith.webp" style="z-index: 1;"/>
+<!-- 浮動卡片：強調口碑 -->
+<div class="position-absolute bottom-0 start-0 bg-white p-3 rounded-3 shadow-lg m-4 d-flex align-items-center gap-3 animate-bounce" style="z-index: 2; max-width: 250px;">
+<div class="bg-success text-white rounded-circle p-2">
+<i class="bi bi-hand-thumbs-up-fill fs-4"></i>
+</div>
+<div>
+<p class="mb-0 fw-bold text-dark">廣受消費者肯定</p>
+<small class="text-muted">Google 真實好評認證</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4.5 Social Media & Video Showcase (社群生態系) -->
+<section class="py-5 bg-light border-top">
+<div class="container">
+<div class="text-center mb-5">
+<span class="badge bg-primary bg-opacity-10 text-primary mb-2">Social Media</span>
+<h2 class="fw-bold">真實案例，眼見為憑</h2>
+<p class="text-muted">追蹤我們的社群，觀看更多開鎖實錄與電子鎖開箱</p>
+</div>
+<div class="row g-4 justify-content-center">
+<!-- Threads Card (取代原本的 YouTube) -->
+<div class="col-md-4">
+<div class="card border-0 shadow-card h-100 overflow-hidden group-hover-effect">
+<div class="position-relative">
+<!-- 模擬 Threads 封面 (使用黑色系) -->
+<img alt="強匠鎖店 Threads" class="card-img-top" src="https://placehold.co/600x340/000000/ffffff/png?text=Threads"/>
+<div class="position-absolute top-50 start-50 translate-middle">
+<!-- Threads 的 Logo 通常是白色線條，背景用黑色圓形 -->
+<a class="btn btn-dark btn-lg rounded-circle shadow-lg pulse-anim" href="https://www.threads.net/@0906921957lock" style="width: 64px; height: 64px; display: flex; align-items: center; justify-content: center;" target="_blank">
+<!-- Bootstrap Icons 可能還沒有 Threads icon，暫用 @ 符號或類似的 -->
+<i class="bi bi-at fs-2"></i>
+<!-- 如果 bi-threads 顯示不出來，可以改用 bi-at 或 SVG -->
+</a>
+</div>
+</div>
+<div class="card-body text-center p-4">
+<h5 class="fw-bold mb-2">Threads 官方帳號</h5>
+<p class="text-muted small mb-3">查看師傅的即時碎碎念與開鎖日常。</p>
+<a class="btn btn-dark btn-sm rounded-pill px-4" href="https://www.threads.net/@0906921957lock" target="_blank">
                 追蹤起來
               </a>
-            </div>
-          </div>
-        </div>
-        <!-- Facebook Fanpage Card -->
-        <div class="col-md-4">
-          <div class="card border-0 shadow-card h-100 overflow-hidden group-hover-effect">
-            <div class="position-relative">
-              <!-- 模擬 FB 封面 -->
-              <img src="https://placehold.co/600x340/1877f2/ffffff/png?text=Facebook+Page" class="card-img-top"
-                alt="強匠鎖店 Facebook">
-              <div class="position-absolute bottom-0 start-0 w-100 p-3"
-                style="background: linear-gradient(to top, rgba(139, 69, 19, 0.8), rgba(0,0,0,0.6));">
-                <span class="text-white small"><i class="bi bi-hand-thumbs-up-fill me-1"></i> 粉絲專頁</span>
-              </div>
-            </div>
-            <div class="card-body text-center p-4">
-              <h5 class="fw-bold mb-2">Facebook 粉絲團</h5>
-              <p class="text-muted small mb-3">掌握最新電子鎖優惠、即時救援案例分享。</p>
-              <div class="d-flex justify-content-center gap-2">
-                <a href="https://www.facebook.com/p/%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97-%E9%AB%98%E9%9B%84%E6%B1%BD%E8%BB%8A%E6%99%B6%E7%89%87%E9%91%B0%E5%8C%99%E6%8B%B7%E8%B2%9D-100064005971195/?locale=zh_TW"
-                  target="_blank" class="btn btn-dark btn-sm rounded-pill px-3">
+</div>
+</div>
+</div>
+<!-- Facebook Fanpage Card -->
+<div class="col-md-4">
+<div class="card border-0 shadow-card h-100 overflow-hidden group-hover-effect">
+<div class="position-relative">
+<!-- 模擬 FB 封面 -->
+<img alt="強匠鎖店 Facebook" class="card-img-top" src="https://placehold.co/600x340/1877f2/ffffff/png?text=Facebook+Page"/>
+<div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(139, 69, 19, 0.8), rgba(0,0,0,0.6));">
+<span class="text-white small"><i class="bi bi-hand-thumbs-up-fill me-1"></i> 粉絲專頁</span>
+</div>
+</div>
+<div class="card-body text-center p-4">
+<h5 class="fw-bold mb-2">Facebook 粉絲團</h5>
+<p class="text-muted small mb-3">掌握最新電子鎖優惠、即時救援案例分享。</p>
+<div class="d-flex justify-content-center gap-2">
+<a class="btn btn-dark btn-sm rounded-pill px-3" href="https://www.facebook.com/p/%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97-%E9%AB%98%E9%9B%84%E6%B1%BD%E8%BB%8A%E6%99%B6%E7%89%87%E9%91%B0%E5%8C%99%E6%8B%B7%E8%B2%9D-100064005971195/?locale=zh_TW" target="_blank">
                   汽車鑰匙專頁
                 </a>
-                <a href="https://www.facebook.com/KHsmartlock/" target="_blank"
-                  class="btn btn-dark btn-sm rounded-pill px-3">
+<a class="btn btn-dark btn-sm rounded-pill px-3" href="https://www.facebook.com/KHsmartlock/" target="_blank">
                   電子鎖體驗館
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Instagram Reels Card -->
-        <div class="col-md-4">
-          <div class="card border-0 shadow-card h-100 overflow-hidden group-hover-effect">
-            <div class="position-relative">
-              <!-- 模擬 IG 封面 -->
-              <img src="https://placehold.co/600x340/E1306C/ffffff/png?text=Instagram+Reels" class="card-img-top"
-                alt="強匠鎖店 IG">
-              <div class="position-absolute top-50 start-50 translate-middle">
-                <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank"
-                  class="btn btn-light btn-lg rounded-circle shadow-lg text-danger">
-                  <i class="bi bi-instagram fs-4"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center p-4">
-              <h5 class="fw-bold mb-2">Instagram Reels</h5>
-              <p class="text-muted small mb-3">高雄電子鎖專賣店 飛利浦 美樂 Yale Dormakaba</p>
-              <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank"
-                class="btn btn-dark btn-sm rounded-pill px-4">
+</div>
+</div>
+</div>
+</div>
+<!-- Instagram Reels Card -->
+<div class="col-md-4">
+<div class="card border-0 shadow-card h-100 overflow-hidden group-hover-effect">
+<div class="position-relative">
+<!-- 模擬 IG 封面 -->
+<img alt="強匠鎖店 IG" class="card-img-top" src="https://placehold.co/600x340/E1306C/ffffff/png?text=Instagram+Reels"/>
+<div class="position-absolute top-50 start-50 translate-middle">
+<a class="btn btn-light btn-lg rounded-circle shadow-lg text-danger" href="https://www.instagram.com/0906921957lock/reels/" target="_blank">
+<i class="bi bi-instagram fs-4"></i>
+</a>
+</div>
+</div>
+<div class="card-body text-center p-4">
+<h5 class="fw-bold mb-2">Instagram Reels</h5>
+<p class="text-muted small mb-3">高雄電子鎖專賣店 飛利浦 美樂 Yale Dormakaba</p>
+<a class="btn btn-dark btn-sm rounded-pill px-4" href="https://www.instagram.com/0906921957lock/reels/" target="_blank">
                 追蹤 IG
               </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. FAQ (Voice Search Optimized) -->
+<section class="py-5 bg-light" id="faq">
+<div class="container" style="max-width: 900px;">
+<div class="text-center mb-5">
+<span class="badge bg-primary bg-opacity-10 text-primary mb-2">Q&amp;A</span>
+<h2 class="fw-bold">常見問題</h2>
+<p class="text-muted">針對高雄開鎖與電子鎖服務，我們整理了車主與住家最常詢問的問題</p>
+</div>
+<div class="accordion shadow-sm" id="indexFaqAccordion">
+<!-- Q1: 價格 (Voice: 高雄開鎖多少錢？) -->
+<div class="accordion-item border-0 mb-2">
+<h3 class="accordion-header">
+<button class="accordion-button fw-bold" data-bs-target="#ifaq1" data-bs-toggle="collapse" type="button">
+              Q: 高雄開鎖服務大約多少錢？現場會加價嗎？
+            </button>
+</h3>
+<div class="accordion-collapse collapse show" data-bs-parent="#indexFaqAccordion" id="ifaq1">
+<div class="accordion-body text-secondary">
+              高雄市區一般開鎖費用約在 <strong>300至800元</strong>
+              之間（視鎖頭難度與時段而定）。強匠堅持<strong>「先報價、後施工」</strong>，電話中確認鎖種後給予精確報價，現場絕不惡外亂加價。
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- 7. Footer -->
-  <footer class="text-secondary py-5" style="background-color: #2d3748;">
-    <div class="container">
-      <!-- 加入 text-center text-lg-start 讓手機版置中，大螢幕左對齊 -->
-      <div class="row g-4 text-center text-lg-start">
-
-        <!-- Column 1: Brand Info & Social Icons -->
-        <div class="col-lg-4">
-          <h5 class="text-white mb-3">🔒 強匠鎖店</h5>
-          <p class="small text-white-50 mb-4 mx-auto mx-lg-0" style="max-width: 400px;">
+</div>
+</div>
+<!-- Q2: 時間 (Voice: 開鎖要等多久？) -->
+<div class="accordion-item border-0 mb-2">
+<h3 class="accordion-header">
+<button class="accordion-button collapsed fw-bold" data-bs-target="#ifaq2" data-bs-toggle="collapse" type="button">
+              Q: 打電話後師傅多久會到？開鎖要花很久時間嗎？
+            </button>
+</h3>
+<div class="accordion-collapse collapse" data-bs-parent="#indexFaqAccordion" id="ifaq2">
+<div class="accordion-body text-secondary">
+              在三民、左營、新興等核心區域，我們通常能在 <strong>20-30 分鐘內</strong> 抵達。大多數一般家用鎖 5-10
+              分鐘即可開啟；若是高級防盜鎖或進口車開鎖，則需視技術難度而定，師傅到場後會先說明預估時間。
+            </div>
+</div>
+</div>
+<!-- Q3: 沒電 (Voice: 電子鎖沒電怎麼辦？) -->
+<div class="accordion-item border-0 mb-2">
+<h3 class="accordion-header">
+<button class="accordion-button collapsed fw-bold" data-bs-target="#ifaq3" data-bs-toggle="collapse" type="button">
+              Q: 如果電子鎖沒電了開不了門怎麼辦？
+            </button>
+</h3>
+<div class="accordion-collapse collapse" data-bs-parent="#indexFaqAccordion" id="ifaq3">
+<div class="accordion-body text-secondary">
+              別擔心！大多數電子鎖（如飛利浦、Yale）都有<strong>「外部緊急供電孔」</strong>，可用行動電源或 9V 電池緊急啟動。若仍無法開啟，可撥打強匠 24H 專線，我們提供專業的電子鎖無損救援服務。
+            </div>
+</div>
+</div>
+<!-- Q4: 汽車 (Voice: 車鑰匙全丟可以配嗎？) -->
+<div class="accordion-item border-0 mb-2">
+<h3 class="accordion-header">
+<button class="accordion-button collapsed fw-bold" data-bs-target="#ifaq4" data-bs-toggle="collapse" type="button">
+              Q: 車鑰匙全部遺失也能現場配製嗎？需要拖車嗎？
+            </button>
+</h3>
+<div class="accordion-collapse collapse" data-bs-parent="#indexFaqAccordion" id="ifaq4">
+<div class="accordion-body text-secondary">
+<strong>完全不需要拖車！</strong>強匠提供專業「現場配製晶片鑰匙」服務，直接到您車子停放的地點（包括地下室），讀取齒痕並編寫晶片，現場即可完工領匙，幫您省下昂貴拖車費。
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Footer -->
+<footer class="text-secondary py-5" style="background-color: #2d3748;">
+<div class="container">
+<!-- 加入 text-center text-lg-start 讓手機版置中，大螢幕左對齊 -->
+<div class="row g-4 text-center text-lg-start">
+<!-- Column 1: Brand Info & Social Icons -->
+<div class="col-lg-4">
+<h5 class="text-white mb-3">🔒 強匠鎖店</h5>
+<p class="small text-white-50 mb-4 mx-auto mx-lg-0" style="max-width: 400px;">
             高雄在地經營10年，最實在的鎖店，提供高雄鎖店、高雄開鎖、24小時開鎖、高雄汽機車開鎖救援、機車開鎖、夜間開鎖等全方位服務。
           </p>
-
-          <!-- Social Media Icons Row -->
-          <!-- 加入 justify-content-center justify-content-lg-start -->
-          <div class="d-flex gap-3 mb-4 justify-content-center justify-content-lg-start">
-            <a href="https://www.facebook.com/KHsmartlock/" target="_blank"
-              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Facebook">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/0906921957lock/reels/" target="_blank"
-              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.threads.net/@0906921957lock" target="_blank"
-              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="Threads">
-              <i class="bi bi-at"></i>
-            </a>
-            <a href="https://www.youtube.com/@24H%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97%E9%AB%98%E9%9B%84%E9%9B%BB%E5%AD%90%E9%8E%96"
-              target="_blank" class="text-white-50 text-decoration-none fs-5 hover-text-white" title="YouTube">
-              <i class="bi bi-youtube"></i>
-            </a>
-            <a href="https://line.me/ti/p/~@giw8057p" target="_blank"
-              class="text-white-50 text-decoration-none fs-5 hover-text-white" title="LINE">
-              <i class="bi bi-line"></i>
-            </a>
-          </div>
-
-          <!-- Google Maps Button -->
-          <a href="https://maps.app.goo.gl/SaT1dbcffoTzWQxq8" target="_blank"
-            class="btn btn-outline-light btn-sm rounded-pill px-3 mb-4 mb-lg-0">
-            <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Google 地圖導航
+<!-- Social Media Icons Row -->
+<!-- 加入 justify-content-center justify-content-lg-start -->
+<div class="d-flex gap-3 mb-4 justify-content-center justify-content-lg-start">
+<a class="text-white-50 text-decoration-none fs-5 hover-text-white" href="https://www.facebook.com/KHsmartlock/" target="_blank" title="Facebook">
+<i class="bi bi-facebook"></i>
+</a>
+<a class="text-white-50 text-decoration-none fs-5 hover-text-white" href="https://www.instagram.com/0906921957lock/reels/" target="_blank" title="Instagram">
+<i class="bi bi-instagram"></i>
+</a>
+<a class="text-white-50 text-decoration-none fs-5 hover-text-white" href="https://www.threads.net/@0906921957lock" target="_blank" title="Threads">
+<i class="bi bi-at"></i>
+</a>
+<a class="text-white-50 text-decoration-none fs-5 hover-text-white" href="https://www.youtube.com/@24H%E5%BC%B7%E5%8C%A0%E9%8E%96%E5%BA%97%E9%AB%98%E9%9B%84%E9%9B%BB%E5%AD%90%E9%8E%96" target="_blank" title="YouTube">
+<i class="bi bi-youtube"></i>
+</a>
+<a class="text-white-50 text-decoration-none fs-5 hover-text-white" href="https://line.me/ti/p/~@giw8057p" target="_blank" title="LINE">
+<i class="bi bi-line"></i>
+</a>
+</div>
+<!-- Google Maps Button -->
+<a class="btn btn-outline-light btn-sm rounded-pill px-3 mb-4 mb-lg-0" href="https://maps.app.goo.gl/SaT1dbcffoTzWQxq8" target="_blank">
+<i class="bi bi-geo-alt-fill me-1 text-danger"></i> Google 地圖導航
           </a>
-        </div>
-
-        <!-- Column 2: Service Areas -->
-        <!-- 改為雙欄排列以節省手機版高度 -->
-        <div class="col-lg-4">
-          <h5 class="text-white mb-3">快速服務區域</h5>
-          <div class="row justify-content-center justify-content-lg-start">
-            <div class="col-6 col-lg-6">
-              <ul class="list-unstyled text-white-50 mb-0">
-                <li class="mb-2"><a href="area-sanmin.html"
-                    class="text-white-50 text-decoration-none hover-text-white">三民區</a></li>
-                <li class="mb-2"><a href="area-zuoying.html"
-                    class="text-white-50 text-decoration-none hover-text-white">左營區</a></li>
-                <li class="mb-2"><a href="area-qianjin.html"
-                    class="text-white-50 text-decoration-none hover-text-white">前金區</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-lg-6">
-              <ul class="list-unstyled text-white-50 mb-0">
-                <li class="mb-2"><a href="area-qianzheng.html"
-                    class="text-white-50 text-decoration-none hover-text-white">前鎮區</a></li>
-                <li class="mb-2"><a href="area-xinxing.html"
-                    class="text-white-50 text-decoration-none hover-text-white">新興區</a></li>
-                <li class="mb-2"><a href="area-lingya.html"
-                    class="text-white-50 text-decoration-none hover-text-white">苓雅區</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Column 3: Contact Info -->
-        <div class="col-lg-4">
-          <h5 class="text-white mb-3">聯絡資訊</h5>
-          <!-- 手機版置中，大螢幕靠左 -->
-          <ul class="list-unstyled small text-white-50 d-inline-block d-lg-block text-start">
-            <li class="mb-3 d-flex align-items-start">
-              <div class="me-2 mt-1"><i class="bi bi-telephone-fill text-primary"></i></div>
-              <div>
-                <span class="d-block text-white-50">24H 救援專線</span>
-                <a href="tel:0906921957" class="text-white fw-bold text-decoration-none fs-5">0906-921-957</a>
-                <span class="ms-1">(林師傅)</span>
-              </div>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <div class="me-2"><i class="bi bi-line text-success"></i></div>
-              <a href="https://line.me/ti/p/~@giw8057p" class="text-white-50 text-decoration-none hover-text-white"
-                target="_blank">ID: @giw8057p</a>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <div class="me-2"><i class="bi bi-envelope"></i></div>
-              <a href="mailto:s10552@chyp.com.tw"
-                class="text-white-50 text-decoration-none hover-text-white">s10552@chyp.com.tw</a>
-            </li>
-            <li class="mb-2 d-flex align-items-start">
-              <div class="me-2 mt-1"><i class="bi bi-geo-alt"></i></div>
-              <a href="https://share.google/mz73ioCzKOPI2kod4"
-                class="text-white-50 text-decoration-none hover-text-white" target="_blank">
+</div>
+<!-- Column 2: Service Areas -->
+<!-- 改為雙欄排列以節省手機版高度 -->
+<div class="col-lg-4">
+<h5 class="text-white mb-3">高雄各區開鎖快速服務</h5>
+<div class="row justify-content-center justify-content-lg-start">
+<div class="col-6 col-lg-6">
+<ul class="list-unstyled text-white-50 mb-0">
+<li class="mb-2"><a class="text-white-50 text-decoration-none hover-text-white" href="area-sanmin.html">三民區</a></li>
+<li class="mb-2"><a class="text-white-50 text-decoration-none hover-text-white" href="area-zuoying.html">左營區</a></li>
+<li class="mb-2"><a class="text-white-50 text-decoration-none hover-text-white" href="area-qianjin.html">前金區</a></li>
+</ul>
+</div>
+<div class="col-6 col-lg-6">
+<ul class="list-unstyled text-white-50 mb-0">
+<li class="mb-2"><a class="text-white-50 text-decoration-none hover-text-white" href="area-qianzheng.html">前鎮區</a></li>
+<li class="mb-2"><a class="text-white-50 text-decoration-none hover-text-white" href="area-xinxing.html">新興區</a></li>
+<li class="mb-2"><a class="text-white-50 text-decoration-none hover-text-white" href="area-lingya.html">苓雅區</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Column 3: Contact Info -->
+<div class="col-lg-4">
+<h5 class="text-white mb-3">聯絡資訊</h5>
+<!-- 手機版置中，大螢幕靠左 -->
+<ul class="list-unstyled small text-white-50 d-inline-block d-lg-block text-start">
+<li class="mb-3 d-flex align-items-start">
+<div class="me-2 mt-1"><i class="bi bi-telephone-fill text-primary"></i></div>
+<div>
+<span class="d-block text-white-50">24H 救援專線</span>
+<a class="text-white fw-bold text-decoration-none fs-5" href="tel:0906921957">0906-921-957</a>
+<span class="ms-1">(林師傅)</span>
+</div>
+</li>
+<li class="mb-2 d-flex align-items-center">
+<div class="me-2"><i class="bi bi-line text-success"></i></div>
+<a class="text-white-50 text-decoration-none hover-text-white" href="https://line.me/ti/p/~@giw8057p" target="_blank">ID: @giw8057p</a>
+</li>
+<li class="mb-2 d-flex align-items-center">
+<div class="me-2"><i class="bi bi-envelope"></i></div>
+<a class="text-white-50 text-decoration-none hover-text-white" href="mailto:s10552@chyp.com.tw">s10552@chyp.com.tw</a>
+</li>
+<li class="mb-2 d-flex align-items-start">
+<div class="me-2 mt-1"><i class="bi bi-geo-alt"></i></div>
+<a class="text-white-50 text-decoration-none hover-text-white" href="https://share.google/mz73ioCzKOPI2kod4" target="_blank">
                 高雄市新興區復橫一路 116 號
               </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <hr class="border-secondary mt-5 mb-4 opacity-25">
-
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <span class="small text-white-50">&copy; 2026 強匠鎖店. All rights reserved.</span>
-        </div>
-        <div class="col-md-6 text-center text-md-end">
-          <span class="small text-white-50 me-3">最實在鎖店</span>
-          <span class="small text-white-50">專業 · 安全 · 信賴</span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bottom Fixed CTA Bar for Mobile -->
-  <div class="fixed-cta-bar d-lg-none">
-    <div class="d-flex gap-2">
-      <a href="tel:0906921957" class="btn btn-primary flex-fill py-3 fw-bold">
-        <i class="bi bi-telephone-fill me-2"></i>電話
+</li>
+</ul>
+</div>
+</div>
+<hr class="border-secondary mt-5 mb-4 opacity-25"/>
+<div class="row align-items-center">
+<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+<span class="small text-white-50">&copy; 2026 強匠鎖店. All rights reserved.</span>
+</div>
+<div class="col-md-6 text-center text-md-end">
+<span class="small text-white-50 me-3">最實在鎖店</span>
+<span class="small text-white-50">專業 &middot; 安全 &middot; 信賴</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bottom Fixed CTA Bar for Mobile -->
+<div class="fixed-cta-bar d-lg-none">
+<div class="d-flex gap-2">
+<a class="btn btn-primary flex-fill py-3 fw-bold" href="tel:0906921957">
+<i class="bi bi-telephone-fill me-2"></i>電話
       </a>
-      <a href="https://line.me/ti/p/~@giw8057p" class="btn btn-success flex-fill py-3 fw-bold" target="_blank">
-        <i class="bi bi-line me-2"></i>LINE
+<a class="btn btn-success flex-fill py-3 fw-bold" href="https://line.me/ti/p/~@giw8057p" target="_blank">
+<i class="bi bi-line me-2"></i>LINE
       </a>
-    </div>
-  </div>
-  <!-- 9. Footer -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+</div>
+<!-- 9. Footer -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
